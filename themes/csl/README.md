@@ -1,4 +1,6 @@
-# RED Starter
+# The Avengers
+
+Jenny: Hi
 
 A WordPress starter theme for RED Academy students, forked from Underscores.
 
