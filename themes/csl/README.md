@@ -20,5 +20,4 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
-I wish all drivers would follow the zipper merge
-
+si esta bien
