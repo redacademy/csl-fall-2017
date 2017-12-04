@@ -1,5 +1,7 @@
 # RED Starter
 
+Jenny: Hi
+
 A WordPress starter theme for RED Academy students, forked from Underscores.
 
 ## Installation
