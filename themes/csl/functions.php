@@ -7,6 +7,12 @@
  * @package RED_Starter_Theme
  */
 
+
+
+
+
+
+
 if ( ! function_exists( 'red_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -84,7 +90,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-
+	wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/js/mobile-menu.js');
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -92,6 +98,38 @@ function red_starter_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+
+
+// add_action( 'customize_register', 'cd_customizer_settings' );
+// function cd_customizer_settings( $wp_customize ) {
+
+// 	$wp_customize->add_section( 'text' , array(
+// 		'title'      => 'Title',
+// 		'priority'   => 30,
+// ) );
+
+// 	$wp_customize->add_section( 'text' , array(
+// 		'title'      => 'Address',
+// 		'priority'   => 30,
+// ) );
+
+// 	$wp_customize->add_section( 'text' , array(
+// 		'title'      => 'Mon-Fri',
+// 		'priority'   => 30,
+// ) );
+
+// 	$wp_customize->add_section( 'text' , array(
+// 		'title'      => 'Weekends',
+// 		'priority'   => 30,
+// ) );
+
+// 	$wp_customize->add_section( 'text' , array(
+// 		'title'      => 'Content',
+// 		'priority'   => 30,
+// ) );
+
+// }
+
 
 /**
  * Custom template tags for this theme.
@@ -102,3 +140,7 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+
+include get_template_directory() . '/inc/customizer.php';
+

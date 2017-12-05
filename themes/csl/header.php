@@ -29,6 +29,24 @@
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+					<div id="topNav" class="navigation">
+						<span class="close-btn" onclick="navToggle()">
+							<span class="line1"></span>
+							<span class="line2"></span>
+							<span class="line3"></span>
+						</span>
+						<ul>
+							<?php /* ADD MENU ITEMS HERE */ ?>
+							<li>ok</li>
+							<li>yes</li>
+							<li>o</li>
+							<li>k</li>
+							<li>o</li>
+						</ul>
+					</div>
+
+
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 

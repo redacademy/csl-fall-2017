@@ -10,6 +10,14 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
+
+		<h1><?php echo get_theme_mod( 'test_value' ); ?></h1>
+		<?php echo get_theme_mod( 'address_value' ); ?>
+
+
+
+
+		
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>
