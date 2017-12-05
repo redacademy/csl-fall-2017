@@ -1,12 +1,14 @@
 <?php
 /**
- * POST TYPES
+ * EVENTS POST TYPES
  *
  * @link  http://codex.wordpress.org/Function_Reference/register_post_type
  */
 
 // Add your custom post types here...
 // Register Custom Post Type
+
+
 function custom_post_type_events() {
   
     $labels = array(
@@ -62,3 +64,59 @@ function custom_post_type_events() {
   
   }
   add_action( 'init', 'custom_post_type_events', 0 );
+
+  // Story Posts
+function custom_story_type() {
+  
+    $labels = array(
+      'name'                  => 'Story Types',
+      'singular_name'         => 'Story Type',
+      'menu_name'             => 'Story Types',
+      'name_admin_bar'        => 'Story Type',
+      'archives'              => 'Story Archives',
+      'attributes'            => 'Story Attributes',
+      'parent_item_colon'     => 'Parent Story:',
+      'all_items'             => 'All Stories',
+      'add_new_item'          => 'Add New Story',
+      'add_new'               => 'Add New',
+      'new_item'              => 'New Story',
+      'edit_item'             => 'Edit Story',
+      'update_item'           => 'Update Story',
+      'view_item'             => 'View Story',
+      'view_items'            => 'View Stories',
+      'search_items'          => 'Search Story',
+      'not_found'             => 'Not found',
+      'not_found_in_trash'    => 'Not found in Trash',
+      'featured_image'        => 'Featured Image',
+      'set_featured_image'    => 'Set featured image',
+      'remove_featured_image' => 'Remove featured image',
+      'use_featured_image'    => 'Use as featured image',
+      'insert_into_item'      => 'Insert into Story',
+      'uploaded_to_this_item' => 'Uploaded to this Story',
+      'items_list'            => 'Stories list',
+      'items_list_navigation' => 'Stories list navigation',
+      'filter_items_list'     => 'Filter Stories list',
+    );
+    $args = array(
+      'label'                 => 'Story Type',
+      'description'           => 'Story Type Description',
+      'labels'                => $labels,
+      'supports'              => array( 'title', 'editor' ),
+      'hierarchical'          => true,
+      'public'                => true,
+      'show_ui'               => true,
+      'show_in_menu'          => true,
+      'menu_position'         => 5,
+      'menu_icon'             => 'dashicons-admin-post',
+      'show_in_admin_bar'     => true,
+      'show_in_nav_menus'     => true,
+      'can_export'            => true,
+      'has_archive'           => true,
+      'exclude_from_search'   => false,
+      'publicly_queryable'    => true,
+      'capability_type'       => 'post',
+    );
+    register_post_type( 'story_type', $args );
+  
+  }
+  add_action( 'init', 'custom_story_type', 0 );
