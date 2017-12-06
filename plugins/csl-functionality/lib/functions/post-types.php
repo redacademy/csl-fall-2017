@@ -6,9 +6,9 @@
  */
 
 // Add your custom post types here...
-// Register Custom Post Type
 
 
+// EVENT posts
 function custom_post_type_events() {
   
     $labels = array(
@@ -65,7 +65,7 @@ function custom_post_type_events() {
   }
   add_action( 'init', 'custom_post_type_events', 0 );
 
-  // Story Posts
+  // STORY Posts
 function custom_story_type() {
   
     $labels = array(
@@ -116,7 +116,63 @@ function custom_story_type() {
       'publicly_queryable'    => true,
       'capability_type'       => 'post',
     );
-    register_post_type( 'story_type', $args );
+    register_post_type( 'story', $args );
   
   }
   add_action( 'init', 'custom_story_type', 0 );
+
+  // NEWS Posts
+function custom_news_type() {
+  
+    $labels = array(
+      'name'                  => 'News Types',
+      'singular_name'         => 'News Type',
+      'menu_name'             => 'Article Types',
+      'name_admin_bar'        => 'Article Type',
+      'archives'              => 'Article Archives',
+      'attributes'            => 'Item Article Attributes',
+      'parent_item_colon'     => 'Parent Article:',
+      'all_items'             => 'All Articles',
+      'add_new_item'          => 'Add New Article',
+      'add_new'               => 'Add New',
+      'new_item'              => 'New Article',
+      'edit_item'             => 'Edit Article',
+      'update_item'           => 'Update Article',
+      'view_item'             => 'View Article',
+      'view_items'            => 'View Articles',
+      'search_items'          => 'Search Article',
+      'not_found'             => 'Not found',
+      'not_found_in_trash'    => 'Not found in Trash',
+      'featured_image'        => 'Featured Image',
+      'set_featured_image'    => 'Set featured image',
+      'remove_featured_image' => 'Remove featured image',
+      'use_featured_image'    => 'Use as featured image',
+      'insert_into_item'      => 'Insert into Article',
+      'uploaded_to_this_item' => 'Uploaded to this Article',
+      'items_list'            => 'Articles list',
+      'items_list_navigation' => 'Articles list navigation',
+      'filter_items_list'     => 'Filter Articles list',
+    );
+    $args = array(
+      'label'                 => 'News Type',
+      'description'           => 'News Type Description',
+      'labels'                => $labels,
+      'supports'              => array( 'title' ),
+      'hierarchical'          => false,
+      'public'                => true,
+      'show_ui'               => true,
+      'show_in_menu'          => true,
+      'menu_position'         => 5,
+      'menu_icon'             => 'dashicons-media-document',
+      'show_in_admin_bar'     => true,
+      'show_in_nav_menus'     => true,
+      'can_export'            => true,
+      'has_archive'           => true,
+      'exclude_from_search'   => false,
+      'publicly_queryable'    => true,
+      'capability_type'       => 'post',
+    );
+    register_post_type( 'news', $args );
+  
+  }
+  add_action( 'init', 'custom_news_type', 0 );
