@@ -71,7 +71,7 @@ function custom_story_type() {
     $labels = array(
       'name'                  => 'Story Types',
       'singular_name'         => 'Story Type',
-      'menu_name'             => 'Story Types',
+      'menu_name'             => 'Story',
       'name_admin_bar'        => 'Story Type',
       'archives'              => 'Story Archives',
       'attributes'            => 'Story Attributes',
@@ -127,7 +127,7 @@ function custom_news_type() {
     $labels = array(
       'name'                  => 'News Types',
       'singular_name'         => 'News Type',
-      'menu_name'             => 'Article Types',
+      'menu_name'             => 'News',
       'name_admin_bar'        => 'Article Type',
       'archives'              => 'Article Archives',
       'attributes'            => 'Item Article Attributes',

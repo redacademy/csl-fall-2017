@@ -46,3 +46,4 @@ themes/csl/node_modules/*
 # ================== #
 themes/csl/gulpfile.js
 themes/csl/build/*
+themes/csl/style.css
