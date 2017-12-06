@@ -141,26 +141,6 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/extras.php';
 
-<<<<<<< HEAD
 
 include get_template_directory() . '/inc/customizer.php';
 
-=======
-/**
- * Add metaboxes.
- */
-
-/**
- * Events meta-boxes.
- */
-
-if ( ! defined( 'CMB2_DIR' ) ) {
-	define( 'CMB2_DIR', WP_PLUGIN_DIR . '/CMB2/' );
-}
-if ( file_exists( CMB2_DIR . 'init.php' ) ) {
-	require_once CMB2_DIR . 'init.php';
-}
-
-require get_template_directory() . '/inc/event-mb.php';
- 
->>>>>>> 5d075b2c37f2487cb48fc75f14b89a5f9c187597
