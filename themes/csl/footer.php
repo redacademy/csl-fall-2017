@@ -11,10 +11,25 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 				<div class="site-info">
-				<div class="footer-contact-info">
-					<p><?php echo get_theme_mod( 'title_value' ); ?></p>		
-					<p><?php echo get_theme_mod( 'address_value' ); ?></p>
-					<p><?php echo get_theme_mod( 'date_value' ); ?></p>
+				<div>
+					<ul class="footer-nav">
+						<a href="#"><li>Home</li></a>
+						<a href="#"><li>Story</li></a>
+						<a href="#"><li>Events</li></a>
+						<a href="#"><li>Gallery</li></a>
+						<a href="#"><li>News</li></a>
+						<a href="#"><li>Contact</li></a>
+					</ul>
+				</div>
+				<div class="footer-container">
+					<div class="footer-logo-container">
+						<!-- -->
+					</div>
+					<div class="footer-contact-info">
+						<p><?php echo get_theme_mod( 'title_value' ); ?></p>		
+						<p><?php echo get_theme_mod( 'address_value' ); ?></p>
+						<p><?php echo get_theme_mod( 'date_value' ); ?></p>
+					</div>
 				</div>
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
