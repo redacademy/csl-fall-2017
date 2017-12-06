@@ -1,6 +1,4 @@
-
 <?php
-
 function csl_customizer_register( $wp_customize ) {
   
     // Contact Information Panel in Customize Bar //  
@@ -117,14 +115,10 @@ function csl_customizer_register( $wp_customize ) {
     ) );
   }
   add_action( 'customize_register', 'csl_customizer_register' );
-?> 
+<<<<<<< HEAD
+
 
   
-    <!--
-    how to add the fields to 
-    echo get_theme_mod( 'title_value' );
-    echo get_theme_mod( 'content_value' ); 
-    echo get_theme_mod( 'address_value' );
-    echo get_theme_mod( 'date_value' ); 
-    
-    -->
+ 
+=======
+>>>>>>> 938f5b1c97febea8247d4c5801a3305987c75d17
