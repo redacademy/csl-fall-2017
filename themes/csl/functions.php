@@ -99,38 +99,6 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
-
-// add_action( 'customize_register', 'cd_customizer_settings' );
-// function cd_customizer_settings( $wp_customize ) {
-
-// 	$wp_customize->add_section( 'text' , array(
-// 		'title'      => 'Title',
-// 		'priority'   => 30,
-// ) );
-
-// 	$wp_customize->add_section( 'text' , array(
-// 		'title'      => 'Address',
-// 		'priority'   => 30,
-// ) );
-
-// 	$wp_customize->add_section( 'text' , array(
-// 		'title'      => 'Mon-Fri',
-// 		'priority'   => 30,
-// ) );
-
-// 	$wp_customize->add_section( 'text' , array(
-// 		'title'      => 'Weekends',
-// 		'priority'   => 30,
-// ) );
-
-// 	$wp_customize->add_section( 'text' , array(
-// 		'title'      => 'Content',
-// 		'priority'   => 30,
-// ) );
-
-// }
-
-
 /**
  * Custom template tags for this theme.
  */

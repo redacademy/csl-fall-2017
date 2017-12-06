@@ -121,7 +121,7 @@ function csl_customizer_register( $wp_customize ) {
 
   
     <!--
-    how to add the fields to php file
+    how to add the fields to 
     echo get_theme_mod( 'title_value' );
     echo get_theme_mod( 'content_value' ); 
     echo get_theme_mod( 'address_value' );
