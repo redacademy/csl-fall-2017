@@ -13,12 +13,16 @@
 				<div class="site-info">
 				<div>
 					<ul class="footer-nav">
-						<a href="#"><li>Home</li></a>
-						<a href="#"><li>Story</li></a>
-						<a href="#"><li>Events</li></a>
-						<a href="#"><li>Gallery</li></a>
-						<a href="#"><li>News</li></a>
-						<a href="#"><li>Contact</li></a>
+						<div>
+							<a href="#"><li>Home</li></a>
+							<a href="#"><li>Story</li></a>
+							<a href="#"><li>Events</li></a>
+						</div>
+						<div>
+							<a href="#"><li>Gallery</li></a>
+							<a href="#"><li>News</li></a>
+							<a href="#"><li>Contact</li></a>
+						</div>
 					</ul>
 				</div>
 				<div class="footer-container">
