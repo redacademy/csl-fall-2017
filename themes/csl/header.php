@@ -27,7 +27,7 @@
 				
 				<div class= "site-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri() . '/images/CultureSavesLives_separate.svg'; ?>" class="logo" alt="csl logo" />
+						<img src="<?php echo get_template_directory_uri() . '/images/CultureSavesLives_separate.svg'; ?>" class="header-logo" alt="csl logo" />
 					</a>
 				</div>
 
