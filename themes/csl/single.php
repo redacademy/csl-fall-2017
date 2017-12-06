@@ -7,20 +7,8 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-	<div class="contact-info">
-		<?php /*  add other contact info here		 */?>
-		<h1><?php echo get_theme_mod( 'title_value' ); ?></h1>
-		<p><?php echo get_theme_mod( 'content_value' ); ?></p>		
-		<p><?php echo get_theme_mod( 'address_value' ); ?></p>
-		<p><?php echo get_theme_mod( 'date_value' ); ?></p>
-	</div>
+	<?php if(have_posts()): ?>
 
-
-
-
-	
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'template-parts/content', 'single' ); ?>

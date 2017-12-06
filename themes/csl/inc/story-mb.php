@@ -28,20 +28,68 @@ function story_register_story_info() {
     ),
     'options' => array(
       'one-house' => __( 'One House', 'cmb2' ),
-		  'origin'   => __( 'Origin', 'cmb2' ),
-		  'vision'     => __( 'Vision', 'cmb2' ),
-      'heritage'     => __( 'Heritage', 'cmb2' ),
+		  'origin'    => __( 'Origin', 'cmb2' ),
+		  'vision'    => __( 'Vision', 'cmb2' ),
+      'heritage'  => __( 'Heritage', 'cmb2' ),
     ) ) );
+    
     // Optional :
-
     $cmb->add_field( array(
     'name'    => 'Alternate Title',
     'desc'    => 'A translation of the title (optional)',
     'id'      => $prefix . 'alt_title',
-    'type'    => 'text',
-    
+    'type'    => 'text',  
   ) );
 
+//VISION
+  $cmb->add_field( array(
+    'name'    => 'Vision Image',
+    'desc'    => 'Upload an image.',
+    'id'      => $prefix . 'vision_image',
+    'type'    => 'file',
+    // Optional:
+    'attributes' => array(
+      'data-conditional-id'    => $prefix . 'radio',
+      'data-conditional-value' => 'vision',
+    ),
+    'options' => array(
+      'url' => true, // Hide the text input for the url
+    ),
+    'text'    => array(
+      'add_upload_file_text' => 'Add Image' // Change upload button text. Default: "Add or Upload File"
+    ),
+    // query_args are passed to wp.media's library query.
+    // 'query_args' => array(
+    //   'type' => 'application/pdf', // Make library only display PDFs.
+    // ),
+    'preview_size' => 'medium', // Image size to use when previewing in the admin.
+  ) );
+
+//HERITAGE
+  $cmb->add_field( array(
+    'name'    => 'Heritage Image',
+    'desc'    => 'Upload an image.',
+    'id'      => $prefix . 'heritage_image',
+    'type'    => 'file',
+    // Optional:
+    'attributes' => array(
+      'data-conditional-id'    => $prefix . 'radio',
+      'data-conditional-value' => 'heritage',
+    ),
+    'options' => array(
+      'url' => true, // Hide the text input for the url
+    ),
+    'text'    => array(
+      'add_upload_file_text' => 'Add Image' // Change upload button text. Default: "Add or Upload File"
+    ),
+    // query_args are passed to wp.media's library query.
+    // 'query_args' => array(
+    //   'type' => 'application/pdf', // Make library only display PDFs.
+    // ),
+    'preview_size' => 'medium', // Image size to use when previewing in the admin.
+  ) );
+
+  //ONE HOUSE
   //Team Members Field - add/delete
   $team_member_field = $cmb->add_field( array(
     'id'          => $prefix . 'team_member_group',
@@ -89,7 +137,7 @@ function story_register_story_info() {
   $cmb->add_group_field( $team_member_field, array(
     'name' => 'Description',
     'description' => 'Write a short description for this Team Member',
-    'id'   => $prefix . 'description',
+    'id'   => $prefix . 'member_description',
     'type' => 'textarea_small',
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'radio',
@@ -99,26 +147,17 @@ function story_register_story_info() {
   
   $cmb->add_group_field( $team_member_field, array(
     'name' => 'Team Member Image',
-    'id'   => $prefix . 'image',
+    'id'   => $prefix . 'member_image',
     'type' => 'file',
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'radio',
       'data-conditional-value' => 'one-house',
     ),
   ) );
-  
+  //End of One House
 
-  // Heritage
-  $cmb->add_field( array(
-    'name'    => 'Heritage wysiwyg',
-    'desc'    => 'field description (optional)',
-    'id'      => $prefix . 'heritage_wysiwyg',
-    'type'    => 'wysiwyg',
-    'options' => array(),
-    'attributes' => array(
-      'data-conditional-id'    => $prefix . 'wysiwyg',
-      'data-conditional-value' => 'heritage',
-    ),
-  ) );
+  //ORIGIN
+ 
+
 
 }

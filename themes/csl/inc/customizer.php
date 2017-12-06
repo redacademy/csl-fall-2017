@@ -115,3 +115,4 @@ function csl_customizer_register( $wp_customize ) {
     ) );
   }
   add_action( 'customize_register', 'csl_customizer_register' );
+?>
