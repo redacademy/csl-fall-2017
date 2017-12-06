@@ -129,3 +129,7 @@ if ( file_exists( CMB2_DIR . 'init.php' ) ) {
 
 require get_template_directory() . '/inc/event-mb.php';
 
+require get_template_directory() . '/inc/story-mb.php';
+
+require get_template_directory() . '/inc/news-mb.php';
+

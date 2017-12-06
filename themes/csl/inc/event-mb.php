@@ -100,6 +100,9 @@ function event_register_event_info() {
     'text'    => array(
       'add_upload_file_text' => 'Add File' // Change upload button text. Default: "Add or Upload File"
     ),
+    'query_args' => array(
+      'type' => 'image', // Make library only display images.
+    ),
     'preview_size' => 'small', // Image size to use when previewing in the admin.
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'taxonomy_radio',
