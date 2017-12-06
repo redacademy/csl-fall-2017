@@ -137,7 +137,7 @@ function story_register_story_info() {
   $cmb->add_group_field( $team_member_field, array(
     'name' => 'Description',
     'description' => 'Write a short description for this Team Member',
-    'id'   => $prefix . 'description',
+    'id'   => $prefix . 'member_description',
     'type' => 'textarea_small',
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'radio',
@@ -147,7 +147,7 @@ function story_register_story_info() {
   
   $cmb->add_group_field( $team_member_field, array(
     'name' => 'Team Member Image',
-    'id'   => $prefix . 'image',
+    'id'   => $prefix . 'member_image',
     'type' => 'file',
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'radio',
