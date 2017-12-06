@@ -41,7 +41,7 @@ function story_register_story_info() {
     'type'    => 'text',
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'radio',
-      'data-conditional-value' => 'our-house',
+      'data-conditional-value' => 'one-house',
     ),
   ) );
 
