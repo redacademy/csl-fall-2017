@@ -30,6 +30,8 @@ access_log
 # ========================================================== #
 plugins/*
 !plugins/csl-functionality/
+!plugins/CMB2/
+!plugins/cmb2-conditionals/
 
 # Ignore everything in "themes" except the active theme. #
 # ====================================================== #

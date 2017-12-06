@@ -112,3 +112,20 @@ require get_template_directory() . '/inc/extras.php';
 
 include get_template_directory() . '/inc/customizer.php';
 
+/**
+ * Add metaboxes.
+ */
+
+/**
+ * Events meta-boxes.
+ */
+
+if ( ! defined( 'CMB2_DIR' ) ) {
+	define( 'CMB2_DIR', WP_PLUGIN_DIR . '/CMB2/' );
+}
+if ( file_exists( CMB2_DIR . 'init.php' ) ) {
+	require_once CMB2_DIR . 'init.php';
+}
+
+require get_template_directory() . '/inc/event-mb.php';
+
