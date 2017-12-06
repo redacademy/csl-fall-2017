@@ -35,24 +35,24 @@
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-					<div id="topNav" class="navigation">
-						<span class="close-btn" onclick="navToggle()">
-							<span class="line1"></span>
-							<span class="line2"></span>
-							<span class="line3"></span>
-						</span>
-						<ul>
-							<?php /* ADD MENU ITEMS HERE */ ?>
-							<li>ok</li>
-							<li>yes</li>
-							<li>o</li>
-							<li>k</li>
-							<li>o</li>
-						</ul>
-					</div>
-
+					<button class="toggle-open">
+						<span class="line1"></span>
+						<span class="line2"></span>
+						<span class="line3"></span>
+					</button>
+					
 
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
-
+			<div class="mobile-menu">
+				<ul>
+					<a href="#"><li>Story</li></a>
+					<a href="#"><li>Our House</li></a>
+					<a href="#"><li>Seasonal Events</li></a>
+					<a href="#"><li>Weekly Events</li></a>
+					<a href="#"><li>Gallery</li></a>
+					<a href="#"><li>News</li></a>
+					<a href="#"><li>Contact</li></a>
+				</ul>
+			</div> 
 			<div id="content" class="site-content">
