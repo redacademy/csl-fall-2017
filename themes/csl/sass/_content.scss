@@ -64,24 +64,23 @@
 }	
 
 .toggle-open{
-	background:none;
+	background:white;
 	position:absolute;
 	top:15%;
-	line-height:45px;
 	color:black;
 	height:3.5rem;
 	z-index:9999;
 }
 
 .mobile-menu{
-	margin-top:2rem;
 	z-index:2; 
 	font-size:1rem;
-	width:50%; 
-	height:80%;
+	width:85%; 
+	height:75%;
 	background:$teal;
 	position:absolute; 
-	text-align:center; 
+	text-align:left;
+	padding-left:1rem; 
 }
 
 .mobile-menu ul {
@@ -92,7 +91,6 @@
 .mobile-menu li {
 	display: block; 
 	padding:1rem 0 1rem 0; 
-	border-bottom:#dddddd 1px solid;
 }
 
 .mobile-menu ul li a { 
