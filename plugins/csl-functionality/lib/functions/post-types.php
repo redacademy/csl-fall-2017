@@ -116,7 +116,7 @@ function custom_story_type() {
       'publicly_queryable'    => true,
       'capability_type'       => 'post',
     );
-    register_post_type( 'story_type', $args );
+    register_post_type( 'story', $args );
   
   }
   add_action( 'init', 'custom_story_type', 0 );
