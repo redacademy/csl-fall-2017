@@ -38,7 +38,11 @@ function story_register_story_info() {
     'name'    => 'Alternate Title',
     'desc'    => 'A translation of the title (optional)',
     'id'      => $prefix . 'alt_title',
-    'type'    => 'text',  
+    'type'    => 'text',
+    'attributes' => array(
+      'data-conditional-id'    => $prefix . 'radio',
+      'data-conditional-value' => 'our-house',
+    ),
   ) );
 
 //VISION
