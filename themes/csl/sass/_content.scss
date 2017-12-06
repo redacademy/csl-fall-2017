@@ -47,3 +47,79 @@
 .bypostauthor {
 	display: block;
 }
+
+
+/* MOBILE MENU	*/
+
+
+.navigation {
+	height:50px;
+	width: auto;
+	position: fixed;
+	top: 10%;
+	left: 2%;
+	background-color:$teal;
+	box-shadow: 0 4px 4px -3px #232323;
+	overflow: hidden;
+	transition: all 0.4s ease-in-out;
+
+}
+
+.navigation a {
+	text-decoration: none;
+}
+/*	MENU ITEMS	 */
+.navigation ul {
+	display:flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left:1rem;
+	margin-top:2rem;
+	text-align:center;
+	list-style:none; 
+}
+
+
+.menulist {
+	width:200px;
+}
+
+
+.logo {
+	text-align:center;
+	margin:0 auto;
+}
+
+.line1, .line2, .line3 {
+margin-top:5px;
+background-color:black;
+width:25px;
+height:3px;
+display:block;
+position:relative;
+opacity:1.0;
+border-radius:15%;
+transition: all .3s;
+}
+
+.line1.active {
+transform: rotate(270deg);
+opacity:0.0;
+background-color:black;
+top:5px;
+}
+
+.line2.active {
+transform: rotate(45deg);
+background-color:black;
+}
+
+.line3.active {
+transform: rotate(-45deg);
+background-color:black;
+top:-7px;
+}
+
+.btn-close{
+
+}
