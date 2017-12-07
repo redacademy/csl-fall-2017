@@ -87,18 +87,17 @@ function csl_customizer_register( $wp_customize ) {
       'description' => '',
   ) );
 
-// Add Date Section //
-
-    $wp_customize->add_section( 'date_section', array(
+//province
+    $wp_customize->add_section( 'province_section', array(
       'priority' => 10,
       'capability' => 'edit_theme_options',
       'theme_supports' => '',
-      'title' => __( 'Dates and time'),
+      'title' => __( 'Province'),
       'description' => '',
       'panel' => 'panel_id',
     ) );
 
-    $wp_customize->add_setting( 'date_value', array(
+    $wp_customize->add_setting( 'province_value', array(
     'default' => '',
     'type' => 'theme_mod',
     'capability' => 'edit_theme_options',
@@ -106,13 +105,126 @@ function csl_customizer_register( $wp_customize ) {
     'sanitize_callback' => 'esc_textarea',
     ) );
 
-    $wp_customize->add_control( 'date_value', array(
+    $wp_customize->add_control( 'province_value', array(
       'type' => 'textarea',
       'priority' => 10,
-      'section' => 'date_section',
-      'label' => __( 'Textarea Field'),
+      'section' => 'province_section',
+      'label' => __( 'Add A Province'),
       'description' => '',
     ) );
-  }
-  add_action( 'customize_register', 'csl_customizer_register' );
-?>
+
+
+
+  
+
+// Mon - Fri Date Section //
+
+    $wp_customize->add_section( 'weekdays_section', array(
+      'priority' => 10,
+      'capability' => 'edit_theme_options',
+      'theme_supports' => '',
+      'title' => __( 'Add Weekdays Open'),
+      'description' => '',
+      'panel' => 'panel_id',
+    ) );
+
+    $wp_customize->add_setting( 'weekdays_value', array(
+    'default' => '',
+    'type' => 'theme_mod',
+    'capability' => 'edit_theme_options',
+    'transport' => '',
+    'sanitize_callback' => 'esc_textarea',
+    ) );
+
+    $wp_customize->add_control( 'weekdays_value', array(
+      'type' => 'textarea',
+      'priority' => 10,
+      'section' => 'weekdays_section',
+      'label' => __( 'Add Weekdays Open'),
+      'description' => '',
+    ) );
+
+// Mon - Fri Hours //
+    $wp_customize->add_section( 'weekday_hours_section', array(
+      'priority' => 10,
+      'capability' => 'edit_theme_options',
+      'theme_supports' => '',
+      'title' => __( 'Add Weekday Hours/Time'),
+      'description' => '',
+      'panel' => 'panel_id',
+    ) );
+
+    $wp_customize->add_setting( 'weekday_hours_value', array(
+    'default' => '',
+    'type' => 'theme_mod',
+    'capability' => 'edit_theme_options',
+    'transport' => '',
+    'sanitize_callback' => 'esc_textarea',
+    ) );
+
+    $wp_customize->add_control( 'weekday_hours_value', array(
+      'type' => 'textarea',
+      'priority' => 10,
+      'section' => 'weekday_hours_section',
+      'label' => __( 'Add Weekday Hours/Time'),
+      'description' => '',
+    ) );
+
+// weekend dates//
+    $wp_customize->add_section( 'weekend_section', array(
+      'priority' => 10,
+      'capability' => 'edit_theme_options',
+      'theme_supports' => '',
+      'title' => __( 'Add Weekend Dates/Time Open'),
+      'description' => '',
+      'panel' => 'panel_id',
+    ) );
+
+    $wp_customize->add_setting( 'weekend_value', array(
+    'default' => '',
+    'type' => 'theme_mod',
+    'capability' => 'edit_theme_options',
+    'transport' => '',
+    'sanitize_callback' => 'esc_textarea',
+    ) );
+
+    $wp_customize->add_control( 'weekend_value', array(
+      'type' => 'textarea',
+      'priority' => 10,
+      'section' => 'weekend_section',
+      'label' => __( 'Add Weekend Dates/Time'),
+      'description' => '',
+    ) );    
+
+// weekend hours//
+$wp_customize->add_section( 'weekend_hours_section', array(
+  'priority' => 10,
+  'capability' => 'edit_theme_options',
+  'theme_supports' => '',
+  'title' => __( 'Add Weekend Hours/Time'),
+  'description' => '',
+  'panel' => 'panel_id',
+) );
+
+$wp_customize->add_setting( 'weekend_hours_value', array(
+'default' => '',
+'type' => 'theme_mod',
+'capability' => 'edit_theme_options',
+'transport' => '',
+'sanitize_callback' => 'esc_textarea',
+) );
+
+$wp_customize->add_control( 'weekend_hours_value', array(
+  'type' => 'textarea',
+  'priority' => 10,
+  'section' => 'weekend_hours_section',
+  'label' => __( 'Add Weekend Hours/Time'),
+  'description' => '',
+) );    
+  
+  
+}
+
+
+
+add_action( 'customize_register', 'csl_customizer_register' );

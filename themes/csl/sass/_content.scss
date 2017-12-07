@@ -164,7 +164,7 @@ header{
 	flex-direction: column;
 	flex-wrap: wrap;
 	list-style: none;
-	height:35vw;
+	height:6rem;
 	padding-top:2rem;
 	font-size: 1.25rem;
 	a{
@@ -173,6 +173,7 @@ header{
 }
 .footer-container{
 	display:flex;
+	height:15rem;
 	position: relative;
 	padding-top:2rem;
 }
@@ -192,6 +193,7 @@ header{
 .footer-contact-info{
 	display:flex;
 	flex-direction: column;
+	justify-content: center;
 	color:white;
 	margin-left: 46%;
 	border-left: 1px solid white;
@@ -203,6 +205,15 @@ header{
 	p:nth-child(2){
 		margin:0;
 		font-weight:lighter;
+	}
+}
+
+.weekday-hours,.weekend-hours{
+	display:flex;
+	p:nth-child(2){
+		padding-left:1rem;
+		font-size:0.75rem;
+		align-self:center;
 	}
 }
 

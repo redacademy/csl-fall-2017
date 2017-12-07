@@ -705,7 +705,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-  height: 35vw;
+  height: 6rem;
   padding-top: 2rem;
   font-size: 1.25rem; }
   .footer-nav a {
@@ -715,6 +715,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 15rem;
   position: relative;
   padding-top: 2rem; }
 
@@ -740,6 +741,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   margin-left: 46%;
   border-left: 1px solid white;
@@ -750,6 +754,16 @@ header {
   .footer-contact-info p:nth-child(2) {
     margin: 0;
     font-weight: lighter; }
+
+.weekday-hours, .weekend-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .weekday-hours p:nth-child(2), .weekend-hours p:nth-child(2) {
+    padding-left: 1rem;
+    font-size: 0.75rem;
+    -ms-flex-item-align: center;
+        align-self: center; }
 
 .site-header {
   width: 100%;
