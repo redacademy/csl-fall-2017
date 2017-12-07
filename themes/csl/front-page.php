@@ -18,6 +18,10 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
+				<div class= "hero-container">
+					<img src="<?php echo get_template_directory_uri() . '/images/csl-text.svg'; ?>" alt="hero-image">
+				</div>
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 

@@ -38,7 +38,11 @@ function story_register_story_info() {
     'name'    => 'Alternate Title',
     'desc'    => 'A translation of the title (optional)',
     'id'      => $prefix . 'alt_title',
-    'type'    => 'text',  
+    'type'    => 'text',
+    'attributes' => array(
+      'data-conditional-id'    => $prefix . 'radio',
+      'data-conditional-value' => 'one-house',
+    ),
   ) );
 
 //VISION
@@ -92,6 +96,7 @@ function story_register_story_info() {
   //ONE HOUSE
   //Team Members Field - add/delete
   $team_member_field = $cmb->add_field( array(
+    'name'        => __( 'Team Members', 'cmb2' ),
     'id'          => $prefix . 'team_member_group',
     'type'        => 'group',
     'description' => __( 'Meet our team', 'cmb2' ),
@@ -99,6 +104,7 @@ function story_register_story_info() {
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'radio',
       'data-conditional-value' => 'one-house',
+      'name'                   => 'team-members',
     ),
     'options'     => array(
       'group_title'   => __( 'Team Member {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number

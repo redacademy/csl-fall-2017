@@ -421,12 +421,10 @@ a {
 .main-navigation {
   clear: both;
   display: block;
-  float: left;
   width: 100%; }
   .main-navigation ul {
     display: none;
     list-style: none;
-    margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
       -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
@@ -615,7 +613,8 @@ a {
   border: none;
   background: none;
   position: absolute;
-  top: 15%;
+  -ms-flex-item-align: center;
+      align-self: center;
   height: 3.5rem;
   z-index: 9999; }
 
@@ -626,21 +625,23 @@ a {
   height: 75%;
   background: #1DAFB8;
   position: absolute;
-  text-align: left;
-  padding-left: 1rem; }
+  text-align: left; }
 
 .mobile-menu ul {
   margin: 0;
   padding: 0; }
+  .mobile-menu ul a:nth-child(odd) li {
+    background: #18949a; }
 
 .mobile-menu li {
   display: block;
   padding: 1rem 0 1rem 0; }
 
-.mobile-menu ul li a {
+.mobile-menu ul a li {
   text-decoration: none;
   margin: 0px;
-  color: white; }
+  color: white;
+  padding-left: 1rem; }
 
 .mobile-menu a {
   text-decoration: none;
@@ -649,6 +650,23 @@ a {
 header {
   display: inline-block;
   font-size: 12px; }
+
+.main-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .main-navigation .social-icons {
+    display: block;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 2rem;
+    color: white; }
+    .main-navigation .social-icons .fa {
+      font-size: 1.5rem;
+      padding-right: 1rem; }
 
 .line1.toggle-open {
   -webkit-transform: rotate(270deg);
@@ -687,7 +705,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-  height: 35vw;
+  height: 6rem;
   padding-top: 2rem;
   font-size: 1.25rem; }
   .footer-nav a {
@@ -697,6 +715,7 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 15rem;
   position: relative;
   padding-top: 2rem; }
 
@@ -722,6 +741,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: white;
   margin-left: 46%;
   border-left: 1px solid white;
@@ -733,18 +755,34 @@ header {
     margin: 0;
     font-weight: lighter; }
 
+.weekday-hours, .weekend-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .weekday-hours p:nth-child(2), .weekend-hours p:nth-child(2) {
+    padding-left: 1rem;
+    font-size: 0.75rem;
+    -ms-flex-item-align: center;
+        align-self: center; }
+
 .site-header {
   width: 100%;
   background: black;
-  height: 20vw;
+  height: 5.75rem;
   position: relative; }
 
 .header-logo {
-  height: 150px;
-  width: 100%;
-  position: fixed;
-  top: 2%;
-  z-index: 99; }
+  height: 40px;
+  width: 135px;
+  position: absolute;
+  top: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 25%;
+  right: 25%; }
+
+.header-teal {
+  background: #1DAFB8; }
 
 /*--------------------------------------------------------------
 # Media
@@ -810,3 +848,22 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.hero-container {
+  background: url(../../images/csl-hero.png);
+  background-size: cover;
+  height: 40vh;
+  position: relative; }
+  .hero-container img {
+    position: absolute;
+    height: 55px;
+    bottom: 3vh;
+    left: 5vw; }
+
+@media screen and (min-width: 1024px) {
+  .hero-container {
+    height: 85vh; }
+    .hero-container img {
+      height: 25%;
+      top: 4%;
+      right: 4%;
+      left: auto; } }

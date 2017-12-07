@@ -70,9 +70,10 @@
 	border: none;
 	background:none;
 	position:absolute;
-	top:15%;
+	align-self:center;
 	height:3.5rem;
 	z-index:9999;
+	
 }
 
 .mobile-menu{
@@ -83,12 +84,16 @@
 	background:$teal;
 	position:absolute; 
 	text-align:left;
-	padding-left:1rem; 
 }
 
 .mobile-menu ul {
 	margin: 0;
 	padding: 0; 
+	a:nth-child(odd){
+		li {
+			background:$secondary-teal;
+		 }
+	 };
 }
 
 .mobile-menu li {
@@ -96,10 +101,11 @@
 	padding:1rem 0 1rem 0; 
 }
 
-.mobile-menu ul li a { 
+.mobile-menu ul a li { 
 	text-decoration:none; 
 	margin: 0px; 
 	color:white;
+	padding-left:1rem;
 }
 
 .mobile-menu a{
@@ -111,6 +117,20 @@ header{
 	display:inline-block; 
 	font-size:12px;
 }
+.main-navigation{
+	display:flex;
+	justify-content: space-between;
+		.social-icons{
+		display:block;
+		align-self:center;
+		margin-top: 2rem;
+		color:white;
+		.fa{
+			font-size:1.5rem;
+			padding-right:1rem;
+		}
+	}
+}	
 
 	//animate shit//
 .line1.toggle-open {
@@ -144,7 +164,7 @@ header{
 	flex-direction: column;
 	flex-wrap: wrap;
 	list-style: none;
-	height:35vw;
+	height:6rem;
 	padding-top:2rem;
 	font-size: 1.25rem;
 	a{
@@ -153,6 +173,7 @@ header{
 }
 .footer-container{
 	display:flex;
+	height:15rem;
 	position: relative;
 	padding-top:2rem;
 }
@@ -172,6 +193,7 @@ header{
 .footer-contact-info{
 	display:flex;
 	flex-direction: column;
+	justify-content: center;
 	color:white;
 	margin-left: 46%;
 	border-left: 1px solid white;
@@ -186,19 +208,34 @@ header{
 	}
 }
 
+.weekday-hours,.weekend-hours{
+	display:flex;
+	p:nth-child(2){
+		padding-left:1rem;
+		font-size:0.75rem;
+		align-self:center;
+	}
+}
+
 
 // header//
 .site-header{
 	width: 100%;
 	background: black;
-	height: 20vw;
+	height: 5.75rem;
 	position: relative;
 }
 
 .header-logo{
-	height: 150px;
-	width: 100%;
-	position: fixed;
-	top: 2%;
-	z-index: 99;
+	height: 40px;
+	width:135px;
+	position: absolute;
+	top: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	left: 25%;
+	right: 25%;
+}
+.header-teal{
+	background:$teal;
 }

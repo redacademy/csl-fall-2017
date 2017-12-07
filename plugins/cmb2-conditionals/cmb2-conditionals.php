@@ -126,7 +126,7 @@ if ( ! class_exists( 'CMB2_Conditionals' ) ) {
 			if ( ! isset( $group_args->args['attributes']['data-conditional-id'] ) ) {
 				return $attr;
 			}
-			$attr['name'] = 'janky_bugfix';
+			$attr['name'] = $group_args->args['attributes']['name'];
 			$attr['data-conditional-id'] = $group_args->args['attributes']['data-conditional-id'];
 
 			if ( isset( $group_args->args['attributes']['data-conditional-value'] ) ) {
