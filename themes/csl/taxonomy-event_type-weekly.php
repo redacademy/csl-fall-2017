@@ -19,7 +19,7 @@ get_header(); ?>
 			$location = get_post_meta( get_the_ID(), '_event_location', true );
 			$days = get_post_meta( get_the_ID(), '_event_day', true );
 			$time = get_post_meta( get_the_ID(), '_event_time', true );
-			$icon = wp_get_attachment_image( get_post_meta( get_the_ID(), '_event_icon', true ), 'thumbnail' );
+			$icon = wp_get_attachment_image( get_post_meta( get_the_ID(), '_event_icon_id', 1 ), 'thumbnail' );
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
@@ -144,9 +144,9 @@ get_header(); ?>
 					</span>
 
 					<?php endif; ?>
-					<?php if ( $icon ) : ?>
-					<span class="icon"><?php echo $icon ?></span>
-					<?php endif; ?>
+					<?php //if ( $icon ) : ?>
+					<?php echo $icon ?>
+					<?php //endif; ?>
 					<?php if ( $location ) : ?>
 					<span class="location"><?php echo $location ?></span>
 					<?php endif; ?>
