@@ -32,7 +32,7 @@ get_header(); ?>
 						</div>
             <?php echo get_theme_mod( 'content_value' );?>
 					</div>
-            <?php the_content(); ?>
+           
 
           </div><!-- .entry-content -->
         </article><!-- #post-## -->
