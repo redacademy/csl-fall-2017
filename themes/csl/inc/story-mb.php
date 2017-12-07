@@ -94,7 +94,7 @@ function story_register_story_info() {
   $team_member_field = $cmb->add_field( array(
     'id'          => $prefix . 'team_member_group',
     'type'        => 'group',
-    'description' => __( 'Add in team members.', 'cmb2' ),
+    'description' => __( 'Meet our team', 'cmb2' ),
     // 'repeatable'  => false, // use false if you want non-repeatable group
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'radio',
