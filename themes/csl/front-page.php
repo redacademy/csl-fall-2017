@@ -5,8 +5,7 @@
  * @package RED_Starter_Theme
  */
 
-get_header();
-echo get_term_link( 'weekly', 'event_type' ) ?>
+get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

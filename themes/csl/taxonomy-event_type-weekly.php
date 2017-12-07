@@ -19,7 +19,7 @@ get_header(); ?>
 			$location = get_post_meta( get_the_ID(), '_event_location', true );
 			$days = get_post_meta( get_the_ID(), '_event_day', true );
 			$time = get_post_meta( get_the_ID(), '_event_time', true );
-			$icon = wp_get_attachment_image( get_post_meta( get_the_ID(), '_event_icon', true ), 'medium' );
+			$icon = wp_get_attachment_image( get_post_meta( get_the_ID(), '_event_icon', true ), 'thumbnail' );
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
