@@ -101,7 +101,7 @@ function custom_story_type() {
       'label'                 => 'Story Type',
       'description'           => 'Story Type Description',
       'labels'                => $labels,
-      'supports'              => array( 'title', 'editor' ),
+      'supports'              => array( 'title', 'editor', 'thumbnail' ),
       'hierarchical'          => true,
       'public'                => true,
       'show_ui'               => true,

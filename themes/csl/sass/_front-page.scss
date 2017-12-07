@@ -1,0 +1,25 @@
+//** Hero Image **//
+.hero-container {
+  background: url(../../images/csl-hero.png);
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  img {
+    position: absolute;
+    height: 55px;
+    bottom: 3vh;
+    left: 5vw;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .hero-container {
+    height: 85vh;
+    img {
+      height: 25%;
+      top: 4%;
+      right: 4%;
+      left: auto;
+    }
+  }
+}
