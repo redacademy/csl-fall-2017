@@ -27,10 +27,10 @@
 				
 				<div class= "site-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-						<img src="<?php echo get_template_directory_uri() . '/images/CultureSavesLives_separate.svg'; ?>" class="header-logo" alt="csl logo" />
+						<img src="<?php echo get_template_directory_uri() . '/images/header-logo.png'; ?>" class="header-logo" alt="csl logo" />
 					</a>
 				</div>
-
+	
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
@@ -40,6 +40,10 @@
 						<span class="line2"></span>
 						<span class="line3"></span>
 					</button>
+					<ul class="social-icons">
+						<?php echo '<i class="fa fa-facebook-square" aria-hidden="true"></i>' ?>
+						<?php echo '<i class="fa fa-twitter" aria-hidden="true"></i>' ?>
+					<ul>
 					
 
 				</nav><!-- #site-navigation -->
