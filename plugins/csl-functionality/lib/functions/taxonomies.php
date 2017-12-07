@@ -47,7 +47,7 @@ function custom_events_taxonomy() {
       'rewrite'                    => $rewrite,
       'show_in_rest'               => true,
     );
-    register_taxonomy( 'event_type', array( 'events' ), $args );
+    register_taxonomy( 'event_type', array( 'event' ), $args );
   
   }
   add_action( 'init', 'custom_events_taxonomy', 0 );
