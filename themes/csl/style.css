@@ -404,16 +404,6 @@ textarea {
   padding-left: 3px;
   width: 100%; }
 
-.wpcf7-form {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto; }
-  .wpcf7-form p:nth-child(7) {
-    text-align: right; }
-
-.mapp-layout {
-  width: 90%; }
-
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
@@ -571,9 +561,6 @@ a {
 /* Posts and pages */
 .sticky {
   display: block; }
-
-.hentry {
-  margin: 0 0 1.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -757,9 +744,11 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  margin-left: 46%;
   border-left: 1px solid white;
-  padding-left: 1rem; }
+  padding-left: 1rem;
+  position: absolute;
+  right: 10%;
+  bottom: 10%; }
   .footer-contact-info p:nth-child(1) {
     margin: 0;
     font-weight: bold; }
@@ -796,18 +785,104 @@ header {
 .header-teal {
   background: #1DAFB8; }
 
-.wpcf7-form {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto; }
-  .wpcf7-form p:nth-child(7) {
+.page-template-contact .wpcf7-form {
+  background: url("../../images/contact-form-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  padding-bottom: 3rem; }
+  .page-template-contact .wpcf7-form p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white; }
+  .page-template-contact .wpcf7-form p:nth-child(2) {
+    font-size: 1.5rem; }
+  .page-template-contact .wpcf7-form p:nth-child(7) {
     text-align: right; }
 
-.mapp-layout {
-  width: 90%; }
-
-.widget-area {
+.page-template-contact .widget-area {
   display: none; }
+
+.page-template-contact .entry-title {
+  position: absolute;
+  top: -1%;
+  left: 5%; }
+
+.page-template-contact .contact-page-contact-info {
+  padding-top: 3rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .page-template-contact .contact-page-contact-info p:nth-child(1) {
+    margin: 0;
+    font-size: 1.5rem; }
+  .page-template-contact .contact-page-contact-info p:nth-child(2) {
+    margin: 0; }
+  .page-template-contact .contact-page-contact-info p:nth-child(3) {
+    margin: 0; }
+
+.page-template-contact .contact-weekday-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem; }
+  .page-template-contact .contact-weekday-hours p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: bold; }
+  .page-template-contact .contact-weekday-hours p:nth-child(2) {
+    font-size: 1rem;
+    padding-left: 1rem; }
+
+.page-template-contact .contact-weekend-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-template-contact .contact-weekend-hours p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: bold; }
+  .page-template-contact .contact-weekend-hours p:nth-child(2) {
+    font-size: 1rem;
+    padding-left: 1rem; }
+
+.page-template-contact .contact-additional-info {
+  position: absolute;
+  top: 17%; }
+
+.page-template-contact .entry-content {
+  position: relative; }
+  .page-template-contact .entry-content p {
+    margin: 0; }
+
+.page-template-contact .mapp-layout {
+  margin-bottom: 10rem; }
+
+.page-template-contact .social-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 46%;
+  left: 2.5%; }
+  .page-template-contact .social-info .fa {
+    font-size: 2rem;
+    color: black;
+    padding-right: 1rem; }
+  .page-template-contact .social-info p:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .page-template-contact .social-info a:nth-child(2) {
+    margin-top: 1rem; }
+
+.page-template-contact .eagle-logo {
+  position: absolute;
+  right: -90%;
+  top: 50%; }
+  .page-template-contact .eagle-logo img {
+    height: 80px; }
 
 /*--------------------------------------------------------------
 # Media

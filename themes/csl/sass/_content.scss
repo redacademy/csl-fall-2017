@@ -9,7 +9,7 @@
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+	// margin: 0 0 $base__space-unit;
 }
 
 .updated:not(.published){
@@ -195,9 +195,11 @@ header{
 	flex-direction: column;
 	justify-content: center;
 	color:white;
-	margin-left: 46%;
 	border-left: 1px solid white;
 	padding-left: 1rem;
+	position: absolute;
+	right: 10%;
+	bottom: 10%;
 	p:nth-child(1){
 		margin:0;
 		font-weight:bold;
@@ -231,8 +233,7 @@ header{
 	width:135px;
 	position: absolute;
 	top: 25%;
-	margin-left: auto;
-	margin-right: auto;
+	@include center();
 	left: 25%;
 	right: 25%;
 }
@@ -242,19 +243,114 @@ header{
 
 
 // contact page //
-
-.wpcf7-form{
-	width: 80%;
-	margin-left: auto;
-	margin-right: auto;
-	
-	p:nth-child(7){
-		text-align:right;
+.page-template-contact{
+	.wpcf7-form{
+		background:url('../../images/contact-form-background.png');
+		background-size:cover;
+		background-repeat: no-repeat;
+		padding-top:1rem;
+		padding-bottom:3rem;
+		p{
+			padding-left:1rem;
+			padding-right:1rem;
+			color:white;
+		}
+		p:nth-child(2){
+			font-size:1.5rem;
+		}
+		p:nth-child(7){
+			text-align:right;
+		}
 	}
-}
-.mapp-layout{
-	width:90%;
-}
-.widget-area{
-	display:none;
-}
+	
+	.widget-area{
+		display:none;
+	}
+
+	.entry-title{
+		position: absolute;
+		top:-1%;
+		left:5%;
+	}
+	.contact-page-contact-info{
+		padding-top:3rem;
+		width: 90%;
+    @include center();
+		p:nth-child(1){
+			margin:0;
+			font-size:1.5rem;
+		}
+		p:nth-child(2){
+			margin:0;
+		}
+		p:nth-child(3){
+			margin:0;
+		}
+	}
+
+	.contact-weekday-hours{
+		display:flex;
+		padding-top:2rem;
+		p:nth-child(1){
+			font-size:1rem;
+			font-weight:bold;
+		}
+		p:nth-child(2){
+			font-size:1rem;
+			padding-left:1rem;
+		}
+	}
+
+	.contact-weekend-hours{
+		display:flex;
+		p:nth-child(1){
+			font-size:1rem;
+			font-weight:bold;
+		}
+		p:nth-child(2){
+			font-size:1rem;
+			padding-left:1rem;
+		}
+	}
+	.contact-additional-info{
+		position: absolute;
+		top:17%;
+	}
+	.entry-content{
+		position: relative;
+		p{
+			margin:0;
+		}
+	}
+	.mapp-layout{
+		margin-bottom:10rem;
+	}
+
+	.social-info{
+		display: flex;
+    flex-direction: column;
+		position: absolute;
+    top: 46%;
+    left: 2.5%;
+		.fa{
+			font-size:2rem;
+			color:black;
+			padding-right:1rem;
+		}
+		p:nth-child(1){
+			font-size:1.5rem;
+			font-weight:bold;
+		}
+		a:nth-child(2){
+			margin-top:1rem;
+		}
+	}
+	.eagle-logo{
+		position: absolute;
+    right: -90%;
+		top: 50%;
+		img{
+			height:80px;
+		}
+	}
+}	
