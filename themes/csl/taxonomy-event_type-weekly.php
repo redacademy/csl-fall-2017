@@ -28,7 +28,7 @@ get_header(); ?>
 					<!-- .entry-header -->
 
 					<div class="entry-title">
-						<span class="title"><?php the_title(); ?></span>
+						<h2 class="title"><?php the_title(); ?></h2>
 						<?php if ( $alt_title ) : ?>
 						<span class="alt-title"><?php echo $alt_title ?></span>
 						<?php endif; ?>
