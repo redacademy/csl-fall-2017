@@ -15,7 +15,8 @@ get_header(); ?>
 				$alt_title = get_post_meta( get_the_ID(), '_event_alt_title', true );
 				$location = get_post_meta( get_the_ID(), '_event_location', true );
 				$days = get_post_meta( get_the_ID(), '_event_day', true );
-				$time = get_post_meta( get_the_ID(), '_event_time', true );
+				$s_time = get_post_meta( get_the_ID(), '_event_start_time', true );
+				$e_time = get_post_meta( get_the_ID(), '_event_end_time', true );
 				$icon = wp_get_attachment_image( get_post_meta( get_the_ID(), '_event_icon_id', 1 ), 'thumbnail' );
 				?>
 
@@ -33,8 +34,13 @@ get_header(); ?>
 						<?php endif; ?>
 					</div><!-- .entry-title -->
 					<div class="entry-content">
-						<?php if ( $time ) : ?>
-						<span class="time"><?php echo ltrim($time, '0' ); ?></span>
+						<?php if ( $s_time ) : ?>
+						<span class="time"><?php 
+						echo strtolower( str_replace( ' ', '', ltrim($s_time, '0' ) ) ); 
+						if ( $e_time ) {
+							echo ' - ' . strtolower( str_replace( ' ', '', ltrim($e_time, '0' ) ) );
+						}
+						?></span>
 						<?php endif; ?>
 						<?php if ( $days ) : ?>
 						<span class="days">
