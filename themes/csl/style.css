@@ -396,7 +396,9 @@ input[type="email"],
 input[type="url"],
 input[type="password"],
 input[type="search"] {
-  padding: 3px; }
+  padding: 3px;
+  width: 100%;
+  height: 3rem; }
 
 textarea {
   padding-left: 3px;
@@ -559,9 +561,6 @@ a {
 /* Posts and pages */
 .sticky {
   display: block; }
-
-.hentry {
-  margin: 0 0 1.5rem; }
 
 .updated:not(.published) {
   display: none; }
@@ -745,9 +744,11 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   color: white;
-  margin-left: 46%;
   border-left: 1px solid white;
-  padding-left: 1rem; }
+  padding-left: 1rem;
+  position: absolute;
+  right: 10%;
+  bottom: 10%; }
   .footer-contact-info p:nth-child(1) {
     margin: 0;
     font-weight: bold; }
@@ -783,6 +784,166 @@ header {
 
 .header-teal {
   background: #1DAFB8; }
+
+.page-template-contact .wpcf7-form {
+  background: url("../../images/contact-form-background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 1rem;
+  padding-bottom: 3rem; }
+  .page-template-contact .wpcf7-form p {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: white; }
+  .page-template-contact .wpcf7-form p:nth-child(2) {
+    font-size: 1.5rem; }
+  .page-template-contact .wpcf7-form p:nth-child(7) {
+    text-align: right; }
+
+.page-template-contact .widget-area {
+  display: none; }
+
+.page-template-contact .entry-title {
+  position: absolute;
+  top: -1%;
+  left: 5%; }
+
+.page-template-contact .contact-page-contact-info {
+  padding-top: 3rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto; }
+  .page-template-contact .contact-page-contact-info p:nth-child(1) {
+    margin: 0;
+    font-size: 1.5rem; }
+  .page-template-contact .contact-page-contact-info p:nth-child(2) {
+    margin: 0; }
+  .page-template-contact .contact-page-contact-info p:nth-child(3) {
+    margin: 0; }
+
+.page-template-contact .contact-weekday-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 2rem; }
+  .page-template-contact .contact-weekday-hours p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: bold; }
+  .page-template-contact .contact-weekday-hours p:nth-child(2) {
+    font-size: 1rem;
+    padding-left: 1rem; }
+
+.page-template-contact .contact-weekend-hours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-template-contact .contact-weekend-hours p:nth-child(1) {
+    font-size: 1rem;
+    font-weight: bold; }
+  .page-template-contact .contact-weekend-hours p:nth-child(2) {
+    font-size: 1rem;
+    padding-left: 1rem; }
+
+.page-template-contact .contact-additional-info {
+  position: absolute;
+  top: 17%; }
+
+.page-template-contact .entry-content {
+  position: relative; }
+  .page-template-contact .entry-content p {
+    margin: 0; }
+
+.page-template-contact .mapp-layout {
+  margin-bottom: 10rem; }
+
+.page-template-contact .social-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  width: 95%;
+  top: 46%;
+  left: 2.5%; }
+  .page-template-contact .social-info .fa {
+    font-size: 2rem;
+    color: black;
+    padding-right: 1rem; }
+  .page-template-contact .social-info p:nth-child(1) {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  .page-template-contact .social-info a:nth-child(2) {
+    margin-top: 1rem; }
+
+.page-template-contact .eagle-logo {
+  position: absolute;
+  right: 5%;
+  top: 50%; }
+  .page-template-contact .eagle-logo img {
+    height: 80px; }
+
+@media screen and (min-width: 1024px) {
+  .page-template-contact .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .page-template-contact .wpcf7 {
+    width: 100%;
+    margin-top: 10rem; }
+  .page-template-contact .wpcf7-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template-contact .wpcf7-form p:nth-child(2) {
+      position: absolute; }
+    .page-template-contact .wpcf7-form p:nth-child(3) {
+      margin-top: 3rem;
+      width: 35%; }
+    .page-template-contact .wpcf7-form p:nth-child(4) {
+      margin-top: 3rem;
+      width: 45%; }
+    .page-template-contact .wpcf7-form p:nth-child(5) {
+      margin-top: 3rem;
+      width: 20%; }
+    .page-template-contact .wpcf7-form p:nth-child(6) {
+      margin-top: 3rem;
+      width: 80%; }
+    .page-template-contact .wpcf7-form p:nth-child(7) {
+      position: absolute;
+      right: 5%;
+      bottom: 5%; }
+  .page-template-contact .mapp-layout {
+    width: 40% !important;
+    position: absolute;
+    left: 35%;
+    top: -35%; }
+  .page-template-contact .social-info {
+    height: 50%;
+    width: auto;
+    top: 5%;
+    right: 5%;
+    left: 77%; }
+  .page-template-contact .contact-page-contact-info {
+    margin-top: 0; }
+    .page-template-contact .contact-page-contact-info > p:nth-child(2) {
+      position: absolute;
+      top: 17%; }
+    .page-template-contact .contact-page-contact-info > p:nth-child(3) {
+      position: absolute;
+      top: 19%; }
+  .page-template-contact .contact-weekday-hours {
+    padding-top: 10rem; }
+  .page-template-contact .contact-additional-info {
+    position: absolute;
+    top: 10%;
+    width: 30%; } }
 
 /*--------------------------------------------------------------
 # Media
