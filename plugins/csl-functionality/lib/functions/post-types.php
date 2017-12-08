@@ -60,7 +60,7 @@ function custom_post_type_events() {
       'capability_type'       => 'post',
       'show_in_rest'          => true,
     );
-    register_post_type( 'events', $args );
+    register_post_type( 'event', $args );
   
   }
   add_action( 'init', 'custom_post_type_events', 0 );
@@ -101,7 +101,7 @@ function custom_story_type() {
       'label'                 => 'Story Type',
       'description'           => 'Story Type Description',
       'labels'                => $labels,
-      'supports'              => array( 'title', 'editor' ),
+      'supports'              => array( 'title', 'editor', 'thumbnail' ),
       'hierarchical'          => true,
       'public'                => true,
       'show_ui'               => true,

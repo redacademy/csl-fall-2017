@@ -28,37 +28,24 @@
 	<div class="entry-content">
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
+
   <div class="meta-data">
 
 <?php 
 
-// $array_length = count( $team_member_group );
-// d($array_length);
-// d( $team_member_group[0]['_story_name'] ); 
-
-  $team_member_group = get_post_meta( get_the_ID(), '_story_team_member_group', true );
+$array_length = count( $vision_secondary_image );
+d($array_length);
+d( $vision_secondary_image[0]['_story_vision_image'] ); 
 
 
-
-  foreach( $team_member_group as $team_member ){
-    if(isset($team_member['_story_name'])){ ?>
-    <h2><?php echo ($team_member['_story_name']); ?></h2>
-    <p><?php echo ( $team_member['_story_title']); ?></p>
-    <p><?php echo ($team_member['_story_member_description']); ?></p>
-    <div class="team-member-image"><img src="<?php echo ( $team_member['_story_member_image']); ?>" alt="Team member image" />
-    </div>
-    <?php
-    }
-  }
+  $vision_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_vision_image', 1 ), 'medium' );
 
 ?>
 
-<?php echo ( $team_member_name ); ?>
+    <div class="vision-image"><img src="<?php echo ( $vision_secondary_image['_story_vision_image'] ); ?>" alt="Vision secondary image" />
+    </div>
 
-<h3><?php echo ( $team_member_title); ?> </h3>
+		
 
-  
-
-
-  </div>
-</article><!-- #post-## -->
+</div>
+</article>

@@ -13,7 +13,7 @@ function event_register_event_info() {
 	$cmb = new_cmb2_box( array(
 		'id'            => $prefix . 'metabox',
 		'title'         => 'Event Info',
-		'object_types'  => array( 'events' ), // Post type.
+		'object_types'  => array( 'event' ), // Post type.
   ) );
   
   $cmb->add_field( array(

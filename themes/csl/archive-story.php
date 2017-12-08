@@ -19,16 +19,18 @@ get_header(); ?>
 				?>
 			</header><!-- .page-header -->
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+      <?php /* Start the Loop */
+			
 
-				<?php
-					get_template_part( 'template-parts/content', 'story' );
-				?>
+			$args = array( 'posts_per_page' => 10, 'orderby' => 'rand');
+			$story = get_posts( $args );
 
-			<?php endwhile; ?>
+			foreach ( $story as $post ) : setup_postdata( $post ); ?>
+			
+			<?php get_template_part( 'template-parts/content-story-one' ); ?>
 
-			<?php the_posts_navigation(); ?>
+			<?php endforeach; 
+			wp_reset_postdata();?>
 
 		<?php else : ?>
 
@@ -36,8 +38,8 @@ get_header(); ?>
 
 		<?php endif; ?>
 
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
