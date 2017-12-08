@@ -806,16 +806,24 @@ header {
 .page-template-contact .entry-title {
   position: absolute;
   top: -1%;
-  left: 5%; }
+  left: 5%;
+  text-transform: uppercase; }
 
 .page-template-contact .contact-page-contact-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 3rem;
   width: 90%;
   margin-left: auto;
   margin-right: auto; }
-  .page-template-contact .contact-page-contact-info p:nth-child(1) {
+  .page-template-contact .contact-page-contact-info > p:nth-child(1) {
     margin: 0;
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
   .page-template-contact .contact-page-contact-info p:nth-child(2) {
     margin: 0; }
   .page-template-contact .contact-page-contact-info p:nth-child(3) {
@@ -845,8 +853,10 @@ header {
     padding-left: 1rem; }
 
 .page-template-contact .contact-additional-info {
-  position: absolute;
-  top: 17%; }
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-top: 2rem; }
 
 .page-template-contact .entry-content {
   position: relative; }
@@ -920,30 +930,24 @@ header {
       right: 5%;
       bottom: 5%; }
   .page-template-contact .mapp-layout {
-    width: 40% !important;
+    width: 39% !important;
     position: absolute;
-    left: 35%;
-    top: -35%; }
+    left: 36%;
+    top: -48%; }
   .page-template-contact .social-info {
     height: 50%;
     width: auto;
     top: 5%;
     right: 5%;
     left: 77%; }
-  .page-template-contact .contact-page-contact-info {
-    margin-top: 0; }
-    .page-template-contact .contact-page-contact-info > p:nth-child(2) {
-      position: absolute;
-      top: 17%; }
-    .page-template-contact .contact-page-contact-info > p:nth-child(3) {
-      position: absolute;
-      top: 19%; }
-  .page-template-contact .contact-weekday-hours {
-    padding-top: 10rem; }
   .page-template-contact .contact-additional-info {
-    position: absolute;
-    top: 10%;
-    width: 30%; } }
+    width: 30%;
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    margin-top: 2rem; }
+  .page-template-contact .address-province {
+    margin-top: 2rem; } }
 
 /*--------------------------------------------------------------
 # Media

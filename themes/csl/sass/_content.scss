@@ -271,14 +271,17 @@ header{
 		position: absolute;
 		top:-1%;
 		left:5%;
+		text-transform: uppercase;
 	}
 	.contact-page-contact-info{
+		display: flex;
+		flex-direction: column;
 		padding-top:3rem;
 		width: 90%;
     @include center();
-		p:nth-child(1){
+		>p:nth-child(1){
 			margin:0;
-			font-size:1.5rem;
+			font-size:1.25rem;
 		}
 		p:nth-child(2){
 			margin:0;
@@ -313,8 +316,8 @@ header{
 		}
 	}
 	.contact-additional-info{
-		position: absolute;
-		top:17%;
+		order: 1;
+    margin-top: 2rem;
 	}
 	.entry-content{
 		position: relative;
@@ -397,10 +400,10 @@ header{
 			}
 		}
 		.mapp-layout{
-			width: 40% !important;
+			width: 39% !important;
 			position: absolute;
-			left: 35%;
-			top: -35%;
+			left: 36%;
+			top: -48%;
 		}
 		.social-info{
 			height:50%;
@@ -409,24 +412,18 @@ header{
 			right: 5%;
 			left:77%;
 		}
-		.contact-page-contact-info{
-			margin-top:0;
-			>p:nth-child(2){
-				position: absolute;
-				top: 17%;
-			}
-			>p:nth-child(3){
-				position: absolute;
-				top: 19%;
-			}
-		}
-		.contact-weekday-hours{
-			padding-top:10rem;
-		}
+		// .contact-page-contact-info{
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	margin-top:0;
+		// }
 		.contact-additional-info{
-			position: absolute;
-			top: 10%;
 			width: 30%;
+			order:0;
+			margin-top: 2rem;
+		}
+		.address-province{
+			margin-top:2rem;
 		}
 	}
 }
