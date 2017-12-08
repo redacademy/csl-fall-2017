@@ -689,8 +689,6 @@ header {
   background: #000000; }
 
 .footer-nav {
-  margin: 0;
-  padding-left: 0;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -704,9 +702,11 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   list-style: none;
-  height: 6rem;
+  height: 8rem;
   padding-top: 2rem;
-  font-size: 1.25rem; }
+  font-size: 1.25rem;
+  margin: 0;
+  padding-left: 0; }
   .footer-nav a {
     color: white; }
 
@@ -714,12 +714,13 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   height: 15rem;
-  position: relative;
   padding-top: 2rem; }
 
 .footer-logo-container {
-  position: absolute;
   background: url("../../images/footer-icon.png");
   border-radius: 50%;
   width: 65px;
@@ -746,9 +747,7 @@ header {
   color: white;
   border-left: 1px solid white;
   padding-left: 1rem;
-  position: absolute;
-  right: 10%;
-  bottom: 10%; }
+  padding-right: 1rem; }
   .footer-contact-info p:nth-child(1) {
     margin: 0;
     font-weight: bold; }
@@ -765,6 +764,25 @@ header {
     font-size: 0.75rem;
     -ms-flex-item-align: center;
         align-self: center; }
+
+@media screen and (min-width: 1024px) {
+  .footer-nav {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    position: absolute;
+    width: 70%;
+    margin-left: 15%; }
+  .footer-logo-container {
+    height: 75%;
+    width: 15%;
+    margin-left: 1%;
+    background-size: 120px; }
+  .footer-contact-info {
+    font-size: 0.75rem; } }
 
 .site-header {
   width: 100%;
@@ -790,7 +808,8 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 1rem;
-  padding-bottom: 3rem; }
+  padding-bottom: 3rem;
+  width: 100vw; }
   .page-template-contact .wpcf7-form p {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -876,7 +895,7 @@ header {
           flex-direction: column;
   position: absolute;
   width: 95%;
-  top: 46%;
+  top: 52%;
   left: 2.5%; }
   .page-template-contact .social-info .fa {
     font-size: 2rem;
@@ -891,7 +910,7 @@ header {
 .page-template-contact .eagle-logo {
   position: absolute;
   right: 5%;
-  top: 50%; }
+  top: 30%; }
   .page-template-contact .eagle-logo img {
     height: 80px; }
 
@@ -933,7 +952,7 @@ header {
     width: 39% !important;
     position: absolute;
     left: 36%;
-    top: -48%; }
+    top: -61%; }
   .page-template-contact .social-info {
     height: 50%;
     width: auto;

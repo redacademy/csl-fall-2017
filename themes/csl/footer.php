@@ -10,21 +10,19 @@
 			</div><!-- #content -->
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
-				<div class="site-info">
-				<div>
+			<div class="site-info">
 					<ul class="footer-nav">
-						<div>
+						
 							<a href="#"><li>Home</li></a>
 							<a href="#"><li>Story</li></a>
 							<a href="#"><li>Events</li></a>
-						</div>
-						<div>
+							
 							<a href="#"><li>Gallery</li></a>
 							<a href="#"><li>News</li></a>
 							<a href="#"><li>Contact</li></a>
-						</div>
+						
 					</ul>
-				</div>
+					
 				<div class="footer-container">
 					<div class="footer-logo-container">
 						<!-- -->

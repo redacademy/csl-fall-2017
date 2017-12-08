@@ -157,28 +157,27 @@ header{
 	background:$black;
 }
 .footer-nav{
-	margin: 0;
-	padding-left: 0;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	list-style: none;
-	height:6rem;
+	height:8rem;
 	padding-top:2rem;
 	font-size: 1.25rem;
+	margin: 0;
+	padding-left: 0;
 	a{
 		color:white;
 	}
 }
 .footer-container{
 	display:flex;
+	justify-content: space-between;
 	height:15rem;
-	position: relative;
 	padding-top:2rem;
 }
 .footer-logo-container{
-	position: absolute;
 	background:url("../../images/footer-icon.png");
 	border-radius: 50%;
 	width: 65px;
@@ -197,9 +196,7 @@ header{
 	color:white;
 	border-left: 1px solid white;
 	padding-left: 1rem;
-	position: absolute;
-	right: 10%;
-	bottom: 10%;
+	padding-right:1rem;
 	p:nth-child(1){
 		margin:0;
 		font-weight:bold;
@@ -218,7 +215,28 @@ header{
 		align-self:center;
 	}
 }
+@media screen  and (min-width:1024px) {
+ .footer-nav{
+	flex-direction: row;
+	justify-content: space-around;
+	position: absolute;
+	width: 70%;
+	margin-left: 15%;
+ }
+ .footer-logo-container{
+	height: 75%;
+	width: 15%;
+	margin-left: 1%;
+	background-size: 120px;
+ }
+ .footer-contact-info{
+	 font-size:0.75rem;
+ }
 
+
+
+
+}	
 
 // header//
 .site-header{
@@ -250,6 +268,7 @@ header{
 		background-repeat: no-repeat;
 		padding-top:1rem;
 		padding-bottom:3rem;
+		width: 100vw;
 		p{
 			padding-left:1rem;
 			padding-right:1rem;
@@ -334,7 +353,7 @@ header{
     flex-direction: column;
 		position: absolute;
 		width:95%;
-    top: 46%;
+    top: 52%;
     left: 2.5%;
 		.fa{
 			font-size:2rem;
@@ -352,7 +371,7 @@ header{
 	.eagle-logo{
 		position: absolute;
     right: 5%;
-		top: 50%;
+		top: 30%;
 		img{
 			height:80px;
 		}
@@ -403,7 +422,7 @@ header{
 			width: 39% !important;
 			position: absolute;
 			left: 36%;
-			top: -48%;
+			top: -61%;
 		}
 		.social-info{
 			height:50%;
@@ -412,11 +431,6 @@ header{
 			right: 5%;
 			left:77%;
 		}
-		// .contact-page-contact-info{
-		// 	display: flex;
-		// 	flex-direction: column;
-		// 	margin-top:0;
-		// }
 		.contact-additional-info{
 			width: 30%;
 			order:0;
