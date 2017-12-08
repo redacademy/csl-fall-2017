@@ -865,6 +865,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: absolute;
+  width: 95%;
   top: 46%;
   left: 2.5%; }
   .page-template-contact .social-info .fa {
@@ -879,10 +880,70 @@ header {
 
 .page-template-contact .eagle-logo {
   position: absolute;
-  right: -90%;
+  right: 5%;
   top: 50%; }
   .page-template-contact .eagle-logo img {
     height: 80px; }
+
+@media screen and (min-width: 1024px) {
+  .page-template-contact .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .page-template-contact .wpcf7 {
+    width: 100%;
+    margin-top: 10rem; }
+  .page-template-contact .wpcf7-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .page-template-contact .wpcf7-form p:nth-child(2) {
+      position: absolute; }
+    .page-template-contact .wpcf7-form p:nth-child(3) {
+      margin-top: 3rem;
+      width: 35%; }
+    .page-template-contact .wpcf7-form p:nth-child(4) {
+      margin-top: 3rem;
+      width: 45%; }
+    .page-template-contact .wpcf7-form p:nth-child(5) {
+      margin-top: 3rem;
+      width: 20%; }
+    .page-template-contact .wpcf7-form p:nth-child(6) {
+      margin-top: 3rem;
+      width: 80%; }
+    .page-template-contact .wpcf7-form p:nth-child(7) {
+      position: absolute;
+      right: 5%;
+      bottom: 5%; }
+  .page-template-contact .mapp-layout {
+    width: 40% !important;
+    position: absolute;
+    left: 35%;
+    top: -35%; }
+  .page-template-contact .social-info {
+    height: 50%;
+    width: auto;
+    top: 5%;
+    right: 5%;
+    left: 77%; }
+  .page-template-contact .contact-page-contact-info {
+    margin-top: 0; }
+    .page-template-contact .contact-page-contact-info > p:nth-child(2) {
+      position: absolute;
+      top: 17%; }
+    .page-template-contact .contact-page-contact-info > p:nth-child(3) {
+      position: absolute;
+      top: 19%; }
+  .page-template-contact .contact-weekday-hours {
+    padding-top: 10rem; }
+  .page-template-contact .contact-additional-info {
+    position: absolute;
+    top: 10%;
+    width: 30%; } }
 
 /*--------------------------------------------------------------
 # Media

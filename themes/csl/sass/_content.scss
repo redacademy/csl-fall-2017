@@ -330,6 +330,7 @@ header{
 		display: flex;
     flex-direction: column;
 		position: absolute;
+		width:95%;
     top: 46%;
     left: 2.5%;
 		.fa{
@@ -347,10 +348,85 @@ header{
 	}
 	.eagle-logo{
 		position: absolute;
-    right: -90%;
+    right: 5%;
 		top: 50%;
 		img{
 			height:80px;
 		}
 	}
 }	
+
+
+//contact desktop//
+@media screen  and (min-width:1024px) {
+	.page-template-contact{
+		.entry-content{
+			display:flex;
+			flex-wrap:wrap;
+		}
+		.wpcf7{
+			width:100%;
+			margin-top:10rem;
+		}
+		.wpcf7-form{
+			display:flex;
+			flex-wrap:wrap;
+			p:nth-child(2){
+				position: absolute;;
+			}
+			p:nth-child(3){
+				margin-top: 3rem;
+				width: 35%;
+			}
+			p:nth-child(4){
+				margin-top: 3rem;
+				width: 45%;
+			}
+			p:nth-child(5){
+				margin-top: 3rem;
+				width: 20%;
+			}
+			p:nth-child(6){
+				margin-top: 3rem;
+				width: 80%;
+			}
+			p:nth-child(7){
+				position: absolute;
+				right: 5%;
+				bottom: 5%;
+			}
+		}
+		.mapp-layout{
+			width: 40% !important;
+			position: absolute;
+			left: 35%;
+			top: -35%;
+		}
+		.social-info{
+			height:50%;
+			width:auto;
+			top: 5%;
+			right: 5%;
+			left:77%;
+		}
+		.contact-page-contact-info{
+			margin-top:0;
+			>p:nth-child(2){
+				position: absolute;
+				top: 17%;
+			}
+			>p:nth-child(3){
+				position: absolute;
+				top: 19%;
+			}
+		}
+		.contact-weekday-hours{
+			padding-top:10rem;
+		}
+		.contact-additional-info{
+			position: absolute;
+			top: 10%;
+			width: 30%;
+		}
+	}
+}
