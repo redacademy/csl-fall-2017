@@ -121,7 +121,7 @@ header{
 	display:flex;
 	justify-content: space-between;
 		.social-icons{
-		display:block;
+		display:flex;
 		align-self:center;
 		margin-top: 2rem;
 		color:white;
@@ -238,12 +238,15 @@ header{
 
 }	
 
-// header//
+// mobile header//
 .site-header{
 	width: 100%;
 	background: black;
 	height: 5.75rem;
 	position: relative;
+}
+.header-teal{
+	background:$teal;
 }
 
 .header-logo{
@@ -255,9 +258,52 @@ header{
 	left: 25%;
 	right: 25%;
 }
-.header-teal{
-	background:$teal;
+
+.desktop-site-header{
+	display:none;
 }
+.menu-menu-1-container{
+	visibility: hidden;
+}
+// desktop header //
+@media screen  and (min-width:1024px){
+	.site-header{
+		display:none;
+	}
+	.desktop-site-header{
+		display: block;
+		width: 100%;
+		background: black;
+		height: 5.75rem;
+		position: relative;
+	}
+	.desktop-header-logo{
+		position: absolute;
+		height: 5rem;
+		padding-top:1rem;
+	}
+	.menu{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+    width: 56vw;
+		margin: 0;
+		li{
+			a{
+				color:white;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.menu-menu-1-container{
+		visibility: visible;
+		max-width: 60%;
+    flex-basis: 90%;
+    display: flex;
+    font-size: 1.25rem;
+    margin-left: auto;
+	}
+}	
 
 
 // contact page //
