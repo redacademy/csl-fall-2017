@@ -23,6 +23,14 @@
 		<?php endif; ?>
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    <?php if ( get_post_meta(get_the_ID(), '_story_alt_title', true ) ) : ?>
+  <div class="alt-title">
+
+<?php 
+  $story_alt_title = get_post_meta( get_the_ID(), '_story_alt_title', true );
+  ?>
+  
+  <h3><?php echo ( $story_alt_title['_story_alt-title'] ); ?></h3>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
@@ -40,6 +48,7 @@
 // d( $team_member_group[0]['_story_name'] ); 
 
   $team_member_group = get_post_meta( get_the_ID(), '_story_team_member_group', true );
+  
 ?>
 
 
@@ -47,19 +56,24 @@
 <?php
   foreach( $team_member_group as $team_member ){
     if(isset($team_member['_story_name'])){ ?>
+  <?php  $team_member_image = wp_get_attachment_image( $team_member['_story_member_image_id'], 'medium' ); ?>
 
+    <div class="team-member-image">
+      <?php echo $team_member_image; ?>
+    </div>
     <h3><?php echo ( $team_member['_story_name'] ); ?></h3>
     <p><?php echo ( $team_member['_story_title'] ); ?></p>
     <p><?php echo ( $team_member['_story_member_description'] ); ?></p>
-    <div class="team-member-image"><img src="<?php echo ( $team_member['_story_member_image'] ); ?>" alt="Team member image" />
-    </div>
+
+
+
     <?php
     }
   }
 
 ?>
 			<?php endif; ?>
-
+  
   
 
 

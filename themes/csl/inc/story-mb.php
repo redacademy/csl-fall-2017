@@ -122,11 +122,6 @@ function story_register_story_info() {
     'id'   => $prefix . 'name',
     'type' => 'text',
     // 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-    'attributes' => array(
-      'data-conditional-id'    => $prefix . 'radio',
-      'data-conditional-value' => 'one-house',
-    ),
-  
   ) );
 
   $cmb->add_group_field( $team_member_field, array(
@@ -134,10 +129,6 @@ function story_register_story_info() {
     'id'   => $prefix . 'title',
     'type' => 'text',
     // 'repeatable' => true, // Repeatable fields are supported w/in repeatable groups (for most types)
-    'attributes' => array(
-      'data-conditional-id'    => $prefix . 'radio',
-      'data-conditional-value' => 'one-house',
-    ),
   ) );
   
   $cmb->add_group_field( $team_member_field, array(
@@ -145,20 +136,12 @@ function story_register_story_info() {
     'description' => 'Write a short description for this Team Member',
     'id'   => $prefix . 'member_description',
     'type' => 'textarea_small',
-    'attributes' => array(
-      'data-conditional-id'    => $prefix . 'radio',
-      'data-conditional-value' => 'one-house',
-    ),
   ) );
   
   $cmb->add_group_field( $team_member_field, array(
     'name' => 'Team Member Image',
     'id'   => $prefix . 'member_image',
     'type' => 'file',
-    'attributes' => array(
-      'data-conditional-id'    => $prefix . 'radio',
-      'data-conditional-value' => 'one-house',
-    ),
   ) );
   //End of One House
 
