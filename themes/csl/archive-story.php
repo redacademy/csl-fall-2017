@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying story archive.
  *
  * @package Culture_Saves_Lives_Theme
  */
