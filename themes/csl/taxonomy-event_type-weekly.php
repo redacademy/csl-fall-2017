@@ -20,10 +20,7 @@ get_header(); ?>
 				$icon = wp_get_attachment_image( get_post_meta( get_the_ID(), '_event_icon_id', 1 ), 'thumbnail' );
 				?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'medium_large' ); ?>
-					<?php endif; ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
 					
 					<!-- .entry-header -->
 

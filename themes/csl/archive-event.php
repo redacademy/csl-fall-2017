@@ -3,34 +3,36 @@
 
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
-      <?php
-      $args = array( 'numberposts' => '8', 'order' => 'DESC');
-			$event_posts = get_posts( $args );
-			$thumbnail = array( 'large' ); ?>
-      
-				<?php while ( have_posts() ) : the_post(); ?>
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 
-					<?php get_template_part( 'content', 'page' ); ?>
+	<?php if ( have_posts() ) : ?>
+		<?php	$alt_title = get_post_meta( get_the_ID(), '_event_alt_title', true ); ?>
 
-					<?php
-					$event  = get_post_meta( get_the_ID(), '_event_taxonomy_radio', true );
-          echo ( $event );
+		<?php /* Start the Loop */ ?>
+		<?php while ( have_posts() ) : the_post(); ?>
 
-					?>
+		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
+			
+			<!-- .entry-header -->
 
-				<?php endwhile; // end of the loop. ?>
+			<div class="entry-title">
+				<h2 class="title"><?php the_title(); ?>
+					<?php if ( $alt_title ) : ?>
+					<span class="alt-title"><?php echo $alt_title ?></span>
+					<?php endif; ?>
+				</h2>
+			</div><!-- .entry-title -->
+		</article><!-- #post-## -->
+	<?php endwhile; ?>
 
-			</div><!-- #content -->
-		</div><!-- #primary -->
 
+	<?php else : ?>
+
+		<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+	<?php endif; ?>
+
+	</main><!-- #main -->
+</div><!-- #primary -->
 <?php get_footer(); ?>
-
-<!-- add_filter('pre_get_posts', 'limit_archive_posts');
-function limit_archive_posts($query){
-    if ($query->is_archive) {
-        $query->set('posts_per_page', 8);
-    }
-    return $query;
-} -->
