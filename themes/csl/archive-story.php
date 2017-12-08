@@ -1,8 +1,8 @@
 <?php
 /**
- * The template for displaying archive pages.
+ * The template for displaying story archive.
  *
- * @package RED_Starter_Theme
+ * @package Culture_Saves_Lives_Theme
  */
 
 get_header(); ?>
@@ -10,33 +10,51 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-		<?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
-					// the_archive_description( '<div class="taxonomy-description">', '</div>' );
-				?>
-			</header><!-- .page-header -->
+<?php
+		$one_house_query = new WP_Query( array( 'name' => 'one-house', 'post_type' => 'story', 'post_per_page' => 1  ) );
+	if ($one_house_query -> have_posts() ) {
+		
+			$one_house_query -> the_post(  );
+			get_template_part( 'template-parts/content-single-story-one-house');
+		}
+		wp_reset_postdata();
+	?>
 
-      <?php /* Start the Loop */
-			
+<?php
+		$origin_query = new WP_Query( array( 'name' => 'origin', 'post_type' => 'story', 'post_per_page' => 1  ) );
+	if ($origin_query -> have_posts() ) {
+		
+			$origin_query -> the_post(  );
+			get_template_part( 'template-parts/content-single-story-origin');
+		}
+		wp_reset_postdata();
+	?>
 
-			$args = array( 'posts_per_page' => 10, 'orderby' => 'rand');
-			$story = get_posts( $args );
+<?php
+		$vision_query = new WP_Query( array( 'name' => 'vision', 'post_type' => 'story', 'post_per_page' => 1  ) );
+	if ($vision_query -> have_posts() ) {
+		
+			$vision_query -> the_post(  );
+			get_template_part( 'template-parts/content-single-story-vision');
+		}
+		wp_reset_postdata();
+	?>
 
-			foreach ( $story as $post ) : setup_postdata( $post ); ?>
-			
-			<?php get_template_part( 'template-parts/content-story-one' ); ?>
+<?php
+		$heritage_query = new WP_Query( array( 'name' => 'heritage', 'post_type' => 'story', 'post_per_page' => 1  ) );
+	if ($heritage_query -> have_posts() ) {
+		
+			$heritage_query -> the_post(  );
+			get_template_part( 'template-parts/content-single-story-heritage');
+		}
+		wp_reset_postdata();
+	?>
 
-			<?php endforeach; 
-			wp_reset_postdata();?>
 
-		<?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
+
 
 
 		</main><!-- #main -->
