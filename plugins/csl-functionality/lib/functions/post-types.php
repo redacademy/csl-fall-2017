@@ -157,7 +157,7 @@ function custom_news_type() {
       'label'                 => 'News Type',
       'description'           => 'News Type Description',
       'labels'                => $labels,
-      'supports'              => array( 'title' ),
+      'supports'              => array( 'title', 'thumbnail' ),
       'hierarchical'          => false,
       'public'                => true,
       'show_ui'               => true,

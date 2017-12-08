@@ -44,28 +44,32 @@ get_header(); ?>
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
+<?php endwhile; ?>
+<?php endif; ?>
 
-<?php
-		$heritage_query = new WP_Query( array( 'name' => 'story', 'post_type' => 'story', 'post_per_page' => 3  ) );
-	if ($heritage_query -> have_posts() ) {
+
+		<?php	$news_query = new WP_Query( array( 'post_type' => 'news', 'post_per_page' => 3  ) );?>
 		
-			$heritage_query -> the_post(  );
-			get_template_part( 'template-parts/content-story.php');
-		}
-		wp_reset_postdata();
-	?>
+<!-- start of the loops -->
+		<?php if ($news_query -> have_posts()):  while ( $news_query->have_posts() ) : $news_query -> the_post(); ?>
+		<?php $news_url = get_post_meta( get_the_ID(), '_article_url', true); ?>
 
-			<?php endwhile; ?>
+	<h2><?php the_title(); ?></h2>
 
-			<?php the_posts_navigation(); ?>
+	
+	
+	<div class="news-archive-image-wrapper">
+				<a href="<?php echo $news_url ?>"><?php the_post_thumbnail('large');?></a>
+				</div>
 
-		<?php else : ?>
+<?php endwhile; ?>
+<?php endif; ?>
+<!-- end of the loops -->
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
-
-		<?php endif; ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
+
+	
 
 <?php get_footer(); ?>
