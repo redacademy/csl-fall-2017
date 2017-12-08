@@ -2,8 +2,6 @@
 
 get_header(); ?>
 
-
-
 		<?php while ( have_posts() ) : the_post(); ?>
 		<?php if ( is_single( $story = 'one-house' ) ) : ?>
 			
@@ -17,8 +15,6 @@ get_header(); ?>
 
 		<?php elseif ( is_single( $story = 'heritage' ) ) : ?>
 			<?php get_template_part( 'template-parts/content', 'single-story-heritage' ); ?>
-
-			
 
 <?php endif; ?>
 
