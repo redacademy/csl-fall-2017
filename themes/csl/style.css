@@ -618,7 +618,7 @@ a {
   z-index: 2;
   font-size: 1rem;
   width: 85%;
-  height: 75%;
+  height: auto;
   background: #1DAFB8;
   position: absolute;
   text-align: left; }
@@ -626,12 +626,13 @@ a {
 .mobile-menu ul {
   margin: 0;
   padding: 0; }
-  .mobile-menu ul a:nth-child(odd) li {
+  .mobile-menu ul li:nth-child(odd) {
     background: #18949a; }
 
 .mobile-menu li {
   display: block;
-  padding: 1rem 0 1rem 0; }
+  padding: 1rem 0 1rem 0;
+  padding-left: 1rem; }
 
 .mobile-menu ul a li {
   text-decoration: none;

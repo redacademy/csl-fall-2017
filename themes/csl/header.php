@@ -50,13 +50,7 @@
 			</header><!-- #masthead -->
 			<div class="mobile-menu">
 				<ul>
-					<a href="#"><li>Story</li></a>
-					<a href="#"><li>Our House</li></a>
-					<a href="#"><li>Seasonal Events</li></a>
-					<a href="#"><li>Weekly Events</li></a>
-					<a href="#"><li>Gallery</li></a>
-					<a href="#"><li>News</li></a>
-					<a href="#"><li>Contact</li></a>
+				<?php wp_nav_menu (array('theme_location' => 'secondary-menu','menu_class' => 'nav'));?>
 				</ul>
 			</div> 
 			<div id="content" class="site-content">

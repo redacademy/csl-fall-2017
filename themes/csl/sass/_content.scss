@@ -80,7 +80,7 @@
 	z-index:2; 
 	font-size:1rem;
 	width:85%; 
-	height:75%;
+	height:auto;
 	background:$teal;
 	position:absolute; 
 	text-align:left;
@@ -89,16 +89,21 @@
 .mobile-menu ul {
 	margin: 0;
 	padding: 0; 
-	a:nth-child(odd){
-		li {
-			background:$secondary-teal;
-		 }
-	 };
+
+	li:nth-child(odd){
+		background:$secondary-teal;
+	}
+	// a:nth-child(odd){
+	// 	li {
+	// 		background:$secondary-teal;
+	// 	 }
+	//  };
 }
 
 .mobile-menu li {
 	display: block; 
 	padding:1rem 0 1rem 0; 
+	padding-left:1rem;
 }
 
 .mobile-menu ul a li { 
