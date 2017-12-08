@@ -62,15 +62,8 @@ get_header(); ?>
 						<div class="content"><?php the_content(); ?></div>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
-				<?php endwhile; 
+				<?php endwhile; ?>
 				
-				/**
-				 * Close Output buffer and echo stored html
-				 */
-				$stored_buffer = ob_get_clean();
-				echo $stored_buffer;	
-				?>
-
 			<?php else : ?>
 
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>
