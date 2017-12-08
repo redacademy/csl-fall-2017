@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying product archive page.
- * Template Name: Weekly Archive
+ *
  *
  * @package inhabitent_Theme
  */
@@ -144,9 +144,11 @@ get_header(); ?>
 					</span>
 
 					<?php endif; ?>
-					<?php //if ( $icon ) : ?>
-					<?php echo $icon ?>
-					<?php //endif; ?>
+					<?php if ( $icon ) : ?>
+					<div class="icon">
+						<?php echo $icon ?>
+					</div>
+					<?php endif; ?>
 					<?php if ( $location ) : ?>
 					<span class="location"><?php echo $location ?></span>
 					<?php endif; ?>
