@@ -45,6 +45,16 @@ get_header(); ?>
 	</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
+<?php
+		$heritage_query = new WP_Query( array( 'name' => 'story', 'post_type' => 'story', 'post_per_page' => 3  ) );
+	if ($heritage_query -> have_posts() ) {
+		
+			$heritage_query -> the_post(  );
+			get_template_part( 'template-parts/content-story.php');
+		}
+		wp_reset_postdata();
+	?>
+
 			<?php endwhile; ?>
 
 			<?php the_posts_navigation(); ?>
