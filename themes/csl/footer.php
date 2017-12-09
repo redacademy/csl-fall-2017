@@ -11,16 +11,9 @@
 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">
-					<ul class="footer-nav">
+					<ul class="footer-nav-wrapper">
 						
-							<a href="#"><li>Home</li></a>
-							<a href="#"><li>Story</li></a>
-							<a href="#"><li>Events</li></a>
-							
-							<a href="#"><li>Gallery</li></a>
-							<a href="#"><li>News</li></a>
-							<a href="#"><li>Contact</li></a>
-						
+					<?php wp_nav_menu (array('theme_location' => 'footer-menu','menu_class' => 'footer-nav'));?>
 					</ul>
 					
 				<div class="footer-container">
