@@ -81,9 +81,16 @@ function event_register_event_info() {
   ) );
 
   $cmb->add_field( array(
-    'name' => 'Time',
-    'desc' => 'When is the event taking place (optional)',
-    'id'   => $prefix . 'time',
+    'name' => 'Start Time',
+    'desc' => 'What is the start time of the event (optional)',
+    'id'   => $prefix . 'start_time',
+    'type' => 'text_time'
+    // 'time_format' => 'h:i:s A',
+  ) );
+  $cmb->add_field( array(
+    'name' => 'End Time',
+    'desc' => 'What is the end time of the event (optional)',
+    'id'   => $prefix . 'end_time',
     'type' => 'text_time'
     // 'time_format' => 'h:i:s A',
   ) );

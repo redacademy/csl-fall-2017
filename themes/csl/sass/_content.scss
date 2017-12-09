@@ -9,7 +9,7 @@
 }
 
 .hentry {
-	margin: 0 0 $base__space-unit;
+	// margin: 0 0 $base__space-unit;
 }
 
 .updated:not(.published){
@@ -80,7 +80,7 @@
 	z-index:2; 
 	font-size:1rem;
 	width:85%; 
-	height:75%;
+	height:auto;
 	background:$teal;
 	position:absolute; 
 	text-align:left;
@@ -89,16 +89,16 @@
 .mobile-menu ul {
 	margin: 0;
 	padding: 0; 
-	a:nth-child(odd){
-		li {
-			background:$secondary-teal;
-		 }
-	 };
+
+	li:nth-child(odd){
+		background:$secondary-teal;
+	}
 }
 
 .mobile-menu li {
 	display: block; 
 	padding:1rem 0 1rem 0; 
+	padding-left:1rem;
 }
 
 .mobile-menu ul a li { 
@@ -121,7 +121,7 @@ header{
 	display:flex;
 	justify-content: space-between;
 		.social-icons{
-		display:block;
+		display:flex;
 		align-self:center;
 		margin-top: 2rem;
 		color:white;
@@ -156,29 +156,33 @@ header{
 .site-info{
 	background:$black;
 }
-.footer-nav{
-	margin: 0;
-	padding-left: 0;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	list-style: none;
-	height:6rem;
-	padding-top:2rem;
+.footer-nav-wrapper{
+	height: auto;
+	padding-top: 2rem;
 	font-size: 1.25rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	padding-left: 0;
 	a{
 		color:white;
 	}
 }
+.footer-nav{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: baseline;
+	margin: 0;
+	max-height: 6rem;
+	list-style: none;
+}
 .footer-container{
 	display:flex;
+	justify-content: space-between;
 	height:15rem;
-	position: relative;
 	padding-top:2rem;
 }
 .footer-logo-container{
-	position: absolute;
 	background:url("../../images/footer-icon.png");
 	border-radius: 50%;
 	width: 65px;
@@ -195,9 +199,9 @@ header{
 	flex-direction: column;
 	justify-content: center;
 	color:white;
-	margin-left: 46%;
 	border-left: 1px solid white;
 	padding-left: 1rem;
+	padding-right:1rem;
 	p:nth-child(1){
 		margin:0;
 		font-weight:bold;
@@ -216,14 +220,56 @@ header{
 		align-self:center;
 	}
 }
+.sub-menu{
+	display:none;
+}
+@media screen  and (min-width:1024px) {
+	.site-info{
+		position: relative;
+	}
+ .footer-nav{
+	flex-direction: row;
+	justify-content: space-around;
+	position: absolute;
+	width: 70%;
+	position: absolute;
+	bottom: 35%;
+	margin-left: 10%;
+ }
+ .footer-logo-container{
+	height: 75%;
+	width: 15%;
+	margin-left: 1%;
+	background-size: 120px;
+ }
+ .footer-contact-info{
+	 font-size:0.75rem;
+ }
+ .sub-menu{
+	 font-size:0.75rem;
+	 font-weight: lighter;
+	 display: block;
+	 margin: 0;
+	 padding: 0;
+	 list-style: none;
+	 li{
+		 padding-top:0.5rem;
+		 a{
+			 text-decoration: none;
+		 }
+	 }
+ }
+}	
 
-
-// header//
+// mobile header//
 .site-header{
 	width: 100%;
 	background: black;
 	height: 5.75rem;
 	position: relative;
+}
+.header-teal{
+	background:$teal;
 }
 
 .header-logo{
@@ -231,11 +277,236 @@ header{
 	width:135px;
 	position: absolute;
 	top: 25%;
-	margin-left: auto;
-	margin-right: auto;
+	@include center();
 	left: 25%;
 	right: 25%;
 }
-.header-teal{
-	background:$teal;
+
+.desktop-site-header{
+	display:none;
+}
+.menu-menu-1-container{
+	visibility: hidden;
+}
+// desktop header //
+@media screen  and (min-width:1024px){
+	.site-header{
+		display:none;
+	}
+	.desktop-site-header{
+		display: block;
+		width: 100%;
+		background: black;
+		height: 5.75rem;
+		position: relative;
+	}
+	.desktop-header-logo{
+		position: absolute;
+		height: 5rem;
+		padding-top:1rem;
+	}
+	.menu{
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+    width: 56vw;
+		margin: 0;
+		li{
+			a{
+				color:white;
+				text-transform: uppercase;
+			}
+		}
+	}
+	.menu-menu-1-container{
+		visibility: visible;
+		max-width: 60%;
+    flex-basis: 90%;
+    display: flex;
+    font-size: 1.25rem;
+    margin-left: auto;
+	}
+}	
+
+
+// contact page //
+.page-template-contact{
+	.wpcf7-form{
+		background:url('../../images/contact-form-background.png');
+		background-size:cover;
+		background-repeat: no-repeat;
+		padding-top:1rem;
+		padding-bottom:3rem;
+		width: 100vw;
+		p{
+			padding-left:1rem;
+			padding-right:1rem;
+			color:white;
+		}
+		p:nth-child(2){
+			font-size:1.5rem;
+		}
+		p:nth-child(7){
+			text-align:right;
+		}
+	}
+	
+	.widget-area{
+		display:none;
+	}
+
+	.entry-title{
+		position: absolute;
+		top:-1%;
+		left:5%;
+		text-transform: uppercase;
+	}
+	.contact-page-contact-info{
+		display: flex;
+		flex-direction: column;
+		padding-top:3rem;
+		width: 90%;
+    @include center();
+		>p:nth-child(1){
+			margin:0;
+			font-size:1.25rem;
+		}
+		p:nth-child(2){
+			margin:0;
+		}
+		p:nth-child(3){
+			margin:0;
+		}
+	}
+
+	.contact-weekday-hours{
+		display:flex;
+		padding-top:2rem;
+		p:nth-child(1){
+			font-size:1rem;
+			font-weight:bold;
+		}
+		p:nth-child(2){
+			font-size:1rem;
+			padding-left:1rem;
+		}
+	}
+
+	.contact-weekend-hours{
+		display:flex;
+		p:nth-child(1){
+			font-size:1rem;
+			font-weight:bold;
+		}
+		p:nth-child(2){
+			font-size:1rem;
+			padding-left:1rem;
+		}
+	}
+	.contact-additional-info{
+		order: 1;
+    margin-top: 2rem;
+	}
+	.entry-content{
+		position: relative;
+		p{
+			margin:0;
+		}
+	}
+	.mapp-layout{
+		margin-bottom:10rem;
+	}
+
+	.social-info{
+		display: flex;
+    flex-direction: column;
+		position: absolute;
+		width:95%;
+    top: 52%;
+    left: 2.5%;
+		.fa{
+			font-size:2rem;
+			color:black;
+			padding-right:1rem;
+		}
+		p:nth-child(1){
+			font-size:1.5rem;
+			font-weight:bold;
+		}
+		a:nth-child(2){
+			margin-top:1rem;
+		}
+	}
+	.eagle-logo{
+		position: absolute;
+    right: 5%;
+		top: 30%;
+		img{
+			height:80px;
+		}
+	}
+}	
+
+
+//contact desktop//
+@media screen  and (min-width:1024px) {
+	.page-template-contact{
+		.entry-content{
+			display:flex;
+			flex-wrap:wrap;
+		}
+		.wpcf7{
+			width:100%;
+			margin-top:10rem;
+		}
+		.wpcf7-form{
+			display:flex;
+			flex-wrap:wrap;
+			p:nth-child(2){
+				position: absolute;;
+			}
+			p:nth-child(3){
+				margin-top: 3rem;
+				width: 35%;
+			}
+			p:nth-child(4){
+				margin-top: 3rem;
+				width: 45%;
+			}
+			p:nth-child(5){
+				margin-top: 3rem;
+				width: 20%;
+			}
+			p:nth-child(6){
+				margin-top: 3rem;
+				width: 80%;
+			}
+			p:nth-child(7){
+				position: absolute;
+				right: 5%;
+				bottom: 5%;
+			}
+		}
+		.mapp-layout{
+			width: 39% !important;
+			position: absolute;
+			left: 36%;
+			top: -61%;
+		}
+		.social-info{
+			height:50%;
+			width:auto;
+			top: 5%;
+			right: 5%;
+			left:77%;
+		}
+		.contact-additional-info{
+			width: 30%;
+			order:0;
+			margin-top: 2rem;
+		}
+		.address-province{
+			margin-top:2rem;
+		}
+	}
 }
