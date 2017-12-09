@@ -19,9 +19,10 @@ get_header(); ?>
 			$location = get_post_meta( get_the_ID(), '_event_location', true );
 			$date = get_post_meta( get_the_ID(), '_event_date', true );
 			$s_time = get_post_meta( get_the_ID(), '_event_start_time', true );
-			$e_time = get_post_meta( get_the_ID(), '_event_end_time', true );
+      $e_time = get_post_meta( get_the_ID(), '_event_end_time', true );
+      $gallery = get_post_meta( get_the_ID(), '_event_gallery_images', true );
 			?>
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
 				<!-- .entry-header -->
 
@@ -52,6 +53,19 @@ get_header(); ?>
 					<?php endif; ?>
 					<div class="content"><?php the_content(); ?></div>
 				</div><!-- .entry-content -->
+        <div class="image-cara">
+          <div class="current-image image1">
+          <?php the_post_thumbnail( )?>
+          </div>
+          <div class="thumbnail-wrapper">
+            <?php $i = 2; foreach( $gallery as $image_id => $image_url ) : ?>
+
+              <div class="thumbnail-image image<?php echo $i ?>">
+                <?php echo wp_get_attachment_image( $image_id, 'thumbnail' ); ?>
+              </div>
+            <?php $i++; endforeach;?>
+          </div>
+        </div>
 			</article><!-- #post-## -->
 		<?php endwhile; ?>
 

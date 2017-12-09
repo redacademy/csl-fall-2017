@@ -5,24 +5,18 @@ get_header(); ?>
 
 		<div id="primary">
 			<div id="content" role="main">
-      <?php
-      $args = array( 'numberposts' => '8', 'order' => 'DESC');
-			$news_posts = get_posts( $args );
-			$thumbnail = array( 'large' ); ?>
-      
+			<?php if(have_posts()): ?>
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'content', 'page' ); ?>
+					<?php get_template_part( 'template-parts/content', 'news' ); ?>
 
-					<?php
-					$news  = get_post_meta( get_the_ID(), '_event_taxonomy_radio', true );
-          echo ( $news );
 
-					?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</div><!-- #content -->
-		</div><!-- #primary -->
+				<?php endwhile; // End of the loop. ?>
+			<?php else : ?>
+						
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+		
+			<?php endif; ?>
+			<a class="twitter-timeline" href="https://twitter.com/cultrsaveslives?ref_src=twsrc%5Etfw">Tweets by cultrsaveslives</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 <?php get_footer(); ?>

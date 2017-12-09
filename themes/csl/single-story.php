@@ -1,6 +1,7 @@
 <?php
 
 get_header(); ?>
+	<?php if(have_posts()): ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 		<?php if ( is_single( $story = 'one-house' ) ) : ?>
@@ -16,14 +17,13 @@ get_header(); ?>
 		<?php elseif ( is_single( $story = 'heritage' ) ) : ?>
 			<?php get_template_part( 'template-parts/content', 'single-story-heritage' ); ?>
 
-<?php endif; ?>
-
-			<?php the_post_navigation(); ?>
-
-
+		<?php endif; ?>
 
 		<?php endwhile; // End of the loop. ?>
+	<?php else : ?>
+		
+		<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-<footer class="entry-footer">
-	<?php get_footer(); ?>
-</footer><!-- .entry-footer -->
+	<?php endif; ?>
+
+<?php get_footer(); ?>

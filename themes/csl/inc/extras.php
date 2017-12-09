@@ -21,8 +21,18 @@ function red_starter_body_classes( $classes ) {
 }
 add_filter( 'body_class', 'red_starter_body_classes' );
 
+/**
+ * Redirects
+ */
 
+function redirect_pages() {
+  if ( is_single() && get_query_var('post_type') ==  'news') {
+    wp_redirect( home_url(), 301 );
+    exit;
+  }
+}
 
+add_action( 'template_redirect', 'redirect_pages' );
 
 /**
  * Date function
