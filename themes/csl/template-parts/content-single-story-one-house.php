@@ -13,7 +13,6 @@
 
 //  $team_member_description = get_post_meta( get_the_ID(), '_story_description', true );
 
-
  ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -22,15 +21,6 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-    <?php if ( get_post_meta(get_the_ID(), '_story_alt_title', true ) ) : ?>
-  <div class="alt-title">
-
-<?php 
-  $story_alt_title = get_post_meta( get_the_ID(), '_story_alt_title', true );
-  ?>
-  
-  <h3><?php echo ( $story_alt_title['_story_alt-title'] ); ?></h3>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
