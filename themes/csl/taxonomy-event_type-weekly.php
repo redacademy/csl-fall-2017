@@ -20,18 +20,16 @@ get_header(); ?>
 				$icon = wp_get_attachment_image( get_post_meta( get_the_ID(), '_event_icon_id', 1 ), 'thumbnail' );
 				?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<?php if ( has_post_thumbnail() ) : ?>
-						<?php the_post_thumbnail( 'medium_large' ); ?>
-					<?php endif; ?>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
 					
 					<!-- .entry-header -->
 
 					<div class="entry-title">
-						<span class="title"><?php the_title(); ?></span>
-						<?php if ( $alt_title ) : ?>
-						<span class="alt-title"><?php echo $alt_title ?></span>
-						<?php endif; ?>
+						<h2 class="title"><?php the_title(); ?>
+							<?php if ( $alt_title ) : ?>
+							<span class="alt-title"><?php echo $alt_title ?></span>
+							<?php endif; ?>
+						</h2>
 					</div><!-- .entry-title -->
 					<div class="entry-content">
 						<?php if ( $s_time ) : ?>
@@ -61,15 +59,8 @@ get_header(); ?>
 						<div class="content"><?php the_content(); ?></div>
 					</div><!-- .entry-content -->
 				</article><!-- #post-## -->
-				<?php endwhile; 
+				<?php endwhile; ?>
 				
-				/**
-				 * Close Output buffer and echo stored html
-				 */
-				$stored_buffer = ob_get_clean();
-				echo $stored_buffer;	
-				?>
-
 			<?php else : ?>
 
 				<?php get_template_part( 'template-parts/content', 'none' ); ?>

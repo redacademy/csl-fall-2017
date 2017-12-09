@@ -18,32 +18,42 @@ get_header(); ?>
 			$alt_title = get_post_meta( get_the_ID(), '_event_alt_title', true );
 			$location = get_post_meta( get_the_ID(), '_event_location', true );
 			$date = get_post_meta( get_the_ID(), '_event_date', true );
-			$time = get_post_meta( get_the_ID(), '_event_time', true );
+			$s_time = get_post_meta( get_the_ID(), '_event_start_time', true );
+			$e_time = get_post_meta( get_the_ID(), '_event_end_time', true );
 			?>
 			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
 				
 				<!-- .entry-header -->
 
 				<div class="entry-title">
-					<span class="title"><?php the_title(); ?></span>
-					<?php if ( $alt_title ) : ?>
-					<span class="alt-title"><?php echo $alt_title ?></span>
-					<?php endif; ?>
+					<h2 class="title"><?php the_title(); ?>
+						<?php if ( $alt_title ) : ?>
+						<span class="alt-title"><?php echo $alt_title ?></span>
+						<?php endif; ?>
+					</h2>
 				</div><!-- .entry-title -->
 				<div class="entry-content">
-					<?php if ( $time ) : ?>
-					<span class="time"><?php echo ltrim($time, '0' ); ?></span>
+					<?php if ( $date ) : ?>
+					<span class="date"><?php 
+					$date = explode( '/', $date);
+					echo date('F jS, Y', mktime(0, 0, 0, $date[0], $date[1], $date[2]));
+					?></span>
+					<?php endif; ?>
+					<?php if ( $s_time ) : ?>
+					<span class="time"><?php 
+					echo strtolower( str_replace( ' ', '', ltrim($s_time, '0' ) ) ); 
+					if ( $e_time ) {
+						echo ' - ' . strtolower( str_replace( ' ', '', ltrim($e_time, '0' ) ) );
+					}
+					?></span>
 					<?php endif; ?>
 					<?php if ( $location ) : ?>
 					<span class="location"><?php echo $location ?></span>
 					<?php endif; ?>
 					<div class="content"><?php the_content(); ?></div>
 				</div><!-- .entry-content -->
-        <div class="img-wrapper">
-          
-        </div>
 			</article><!-- #post-## -->
-			<?php endwhile; ?>
+		<?php endwhile; ?>
 
 
 		<?php else : ?>
