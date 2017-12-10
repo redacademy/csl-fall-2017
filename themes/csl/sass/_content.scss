@@ -87,11 +87,12 @@
 }
 
 .mobile-menu ul {
+	text-transform:uppercase;
 	margin: 0;
 	padding: 0; 
 
 	li:nth-child(odd){
-		background:$secondary-teal;
+		background-color:$secondary-teal;
 	}
 }
 
