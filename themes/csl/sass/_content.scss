@@ -526,6 +526,7 @@ header{
 		width: 100%;
 		height: 220px;
 		margin: 1rem 0 1rem 0;
+		background-size:cover;
 	}
 	.entry-title{
 		display: flex;
@@ -554,6 +555,13 @@ header{
 			background-color:red;
 		}
 	}
+	.hover{
+		display:none;
+	}
+	.display{
+		display:flex;
+	}
+
 	@media screen  and (min-width:1024px){
 		.site-main{
 			display: flex;
