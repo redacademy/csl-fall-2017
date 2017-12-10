@@ -1057,6 +1057,12 @@ header {
   margin: 1rem 0 1rem 0;
   background-size: cover; }
 
+.term-weekly .entry-title-wrapper {
+  position: relative;
+  height: 100px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%; }
+
 .term-weekly .entry-title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1067,9 +1073,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100px;
-  -ms-flex-preferred-size: 90%;
-      flex-basis: 90%;
   color: white;
   background: #1DAFB8; }
 
@@ -1080,6 +1083,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1088,18 +1094,12 @@ header {
   margin-right: auto;
   width: 90%;
   color: white;
-  display: none; }
+  display: none;
+  position: absolute;
+  top: -100%; }
 
 .term-weekly .entry-title nth:child(1n+3) {
   background-color: red; }
-
-.term-weekly .hover {
-  display: none; }
-
-.term-weekly .display {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
 
 @media screen and (min-width: 1024px) {
   .term-weekly .site-main {

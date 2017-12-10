@@ -528,12 +528,16 @@ header{
 		margin: 1rem 0 1rem 0;
 		background-size:cover;
 	}
+	.entry-title-wrapper{
+		position: relative;
+		height:100px;
+		flex-basis: 90%;
+
+	}
 	.entry-title{
 		display: flex;
     justify-content: center;
     align-items: center;
-		height:100px;
-		flex-basis: 90%;
 		color:white;
 		background:$teal;
 	}
@@ -542,25 +546,24 @@ header{
 	}
 	.entry-content{
 		display:flex;
+		justify-content: center;
 		flex-direction: column;
 		margin-left: auto;
     margin-right: auto;
     width: 90%;
 		color:white;
 		display: none;
+		position: absolute;
+    top: -100%;
 	}
 
+// color scheme//	
 	.entry-title{
 		nth:child(1n+3){
 			background-color:red;
 		}
 	}
-	.hover{
-		display:none;
-	}
-	.display{
-		display:flex;
-	}
+
 
 	@media screen  and (min-width:1024px){
 		.site-main{
