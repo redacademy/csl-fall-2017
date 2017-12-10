@@ -5,6 +5,7 @@
  *
  * @package inhabitent_Theme
  */
+get_header('desktop');
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
