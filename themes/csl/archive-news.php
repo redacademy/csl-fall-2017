@@ -1,28 +1,34 @@
 <?php
-
+/**
+ * The template for displaying all single posts.
+ *
+ * @package RED_Starter_Theme
+ */
 get_header('desktop');
 get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
-      <?php
-      $args = array( 'numberposts' => '8', 'order' => 'DESC');
-			$news_posts = get_posts( $args );
-			$thumbnail = array( 'large' ); ?>
+	<?php if(have_posts()): ?>
+
+  
+
+		<?php while ( have_posts() ) : the_post(); ?>
+
+   
+			<?php get_template_part( 'template-parts/content-news' ); ?>
       
-				<?php while ( have_posts() ) : the_post(); ?>
+			<?php the_post_navigation(); ?>
 
-					<?php get_template_part( 'content', 'page' ); ?>
+			<?php
+				// If comments are open or we have at least one comment, load up the comment template.
+				if ( comments_open() || get_comments_number() ) :
+					comments_template();
+				endif;
+			?>
 
-					<?php
-					$news  = get_post_meta( get_the_ID(), '_event_taxonomy_radio', true );
-          echo ( $news );
+		<?php endwhile; // End of the loop. ?>
+			<?php endif; ?>
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-					?>
-
-				<?php endwhile; // end of the loop. ?>
-
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
+<?php get_sidebar(); ?>
 <?php get_footer(); ?>
