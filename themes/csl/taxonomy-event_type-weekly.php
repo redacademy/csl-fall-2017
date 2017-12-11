@@ -3,7 +3,7 @@
  * The template for displaying product archive page.
  *
  *
- * @package inhabitent_Theme
+ * @package CSL_Theme
  */
 get_header('desktop');
 get_header(); ?>

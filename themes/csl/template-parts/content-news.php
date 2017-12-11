@@ -2,29 +2,18 @@
 /**
  * Template part for displaying posts.
  *
- * @package RED_Starter_Theme
+ * @package CSL_Theme
  */
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="entry-header">
+<?php $news_url = get_post_meta( get_the_ID(), '_article_url', true); ?>
 
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-
-<?php foreach ( $posts as $post ) : setup_postdata( $post ); ?>
-			<div class="news-wrapper">
-				<div class="news-archive-image-wrapper">
-				<a href="<?php echo the_permalink()?>"><?php the_post_thumbnail('large');?></a>
-				</div>
-				<div class="news-archive-text-wrapper">
-					
-				</div>
-			</div>
-		<?php endforeach; wp_reset_postdata(); ?> 
-		
-	</div><!-- .entry-header -->
-
-
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php 
+			$news_article_image_url = wp_get_attachment_url( get_post_meta( get_the_ID(), '_article_image_id', 1 ), 'medium' );
+			echo $news_article_image_url;
+			?>);">
+	<a href="<?php echo $news_url ?>">
+			<h2><?php the_title(); ?></h2>
+	</a>
 </article><!-- #post-## -->

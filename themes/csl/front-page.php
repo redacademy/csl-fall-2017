@@ -2,7 +2,7 @@
 /**
  * The main template file.
  *
- * @package RED_Starter_Theme
+ * @package CSL_Theme
  */
 get_header('desktop');
 get_header(); ?>
