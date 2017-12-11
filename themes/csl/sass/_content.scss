@@ -447,6 +447,9 @@ header{
 		}
 	}
 }	
+/*	disables response output	 */
+div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !important; }
+span.wpcf7-not-valid-tip { display: none; }
 
 
 //contact desktop//
@@ -545,7 +548,12 @@ header{
 		flex-basis:90%;
 		color:white;
 		padding-top: 1rem;
-    padding-bottom: 1rem;
+		padding-bottom: 1rem;
+		.title{
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
 	}
 
 	.entry-content{
@@ -597,7 +605,6 @@ header{
 		}
 		.entry-content{
 			font-size:1.5rem;
-			// top:-100%;
 		}
 	}
 }

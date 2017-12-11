@@ -964,7 +964,7 @@ header {
           flex-direction: column;
   position: absolute;
   width: 95%;
-  top: 52%;
+  top: 49%;
   left: 2.5%; }
   .page-template-contact .social-info .fa {
     font-size: 2rem;
@@ -982,6 +982,13 @@ header {
   top: 30%; }
   .page-template-contact .eagle-logo img {
     height: 80px; }
+
+/*	disables response output	 */
+div.wpcf7-response-output, div.wpcf7-validation-errors {
+  display: none !important; }
+
+span.wpcf7-not-valid-tip {
+  display: none; }
 
 @media screen and (min-width: 1024px) {
   .page-template-contact .entry-content {
@@ -1183,17 +1190,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.hero-container {
-  background: url(../../images/csl-hero.png);
-  background-size: cover;
-  height: 40vh;
-  position: relative; }
-  .hero-container img {
-    position: absolute;
-    height: 55px;
-    bottom: 3vh;
-    left: 5vw; }
-
 .home article {
   background: url(../../images/mobile-front-bg.png);
   background-size: 20rem;
