@@ -529,6 +529,10 @@ header{
 		background-size:cover;
 	}
 	.entry-title-wrapper{
+		// display: flex;
+    // justify-content: center;
+		// align-items: center;
+		// centers content but mades fade out janky as fuck
 		position: relative;
 		height:100px;
 		flex-basis: 90%;
@@ -537,22 +541,21 @@ header{
 	.entry-title{
 		display: flex;
     justify-content: center;
-    align-items: center;
+		align-items: center;
+		flex-basis:90%;
 		color:white;
 		padding-top: 1rem;
     padding-bottom: 1rem;
 	}
+
 	.entry-content{
-		display:flex;
-		justify-content: center;
-		flex-direction: column;
+		position: absolute;
+		top: -60%;
+		color:white;
+		display: none;
 		margin-left: auto;
     margin-right: auto;
     width: 90%;
-		color:white;
-		display: none;
-		position: absolute;
-    top: -60%;
 	}
 	.location{
 		display:flex;
