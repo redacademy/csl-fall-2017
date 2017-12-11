@@ -1112,16 +1112,32 @@ object {
     bottom: 3vh;
     left: 5vw; }
 
+.home article {
+  background: url(../../images/mobile-front-bg.png);
+  background-size: 20rem;
+  height: 500px;
+  text-align: center; }
+  .home article h2 {
+    text-transform: uppercase;
+    padding-top: 3rem; }
+  .home article p {
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 0; }
+
+.home .front-page-news {
+  display: none; }
+
 @media screen and (min-width: 1024px) {
-  .hero-container {
+  .home .hero-container {
     height: 85vh; }
-    .hero-container img {
+    .home .hero-container img {
       height: 25%;
       top: 4%;
       right: 4%;
-      left: auto; } }
-
-.home article {
-  background: url(../../images/mobile-front-bg.png);
-  background-size: cover;
-  height: 88vh; }
+      left: auto; }
+  .home .front-page-news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }

@@ -7,6 +7,7 @@
 get_header('desktop');
 get_header(); ?>
 
+
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		
@@ -79,11 +80,15 @@ get_header(); ?>
 	</div>
 
 	<?php endwhile; ?>
-<?php endif; ?>
-<!-- end of the loops -->
 
+	<a href="/csl/news">
+		<img src="<?php echo get_template_directory_uri() . '/images/teal-button.png'; ?>" alt="see more button">
+	</a>
 </section>
 
+
+<?php endif; ?>
+<!-- end of the loops -->
 	
 
 <?php get_footer(); ?>
