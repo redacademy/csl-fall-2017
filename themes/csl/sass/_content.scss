@@ -334,8 +334,6 @@ header{
 .page-template-contact{
 	.wpcf7-form{
 		background:url('../../images/contact-form-background.png');
-		background-size:cover;
-		background-repeat: no-repeat;
 		padding-top:1rem;
 		padding-bottom:3rem;
 		width: 100vw;
@@ -517,6 +515,11 @@ span.wpcf7-not-valid-tip { display: none; }
 
 //weekly events//
 .term-weekly{
+	.weekly-event-page-title{
+		padding-left:0.5rem;
+		text-transform: uppercase;
+		color:$black;
+	}
 	.site-main{
 		margin-left: auto;
     margin-right: auto;
@@ -532,10 +535,6 @@ span.wpcf7-not-valid-tip { display: none; }
 		background-size:cover;
 	}
 	.entry-title-wrapper{
-		// display: flex;
-    // justify-content: center;
-		// align-items: center;
-		// centers content but mades fade out janky as fuck
 		position: relative;
 		height:100px;
 		flex-basis: 90%;
@@ -605,6 +604,17 @@ span.wpcf7-not-valid-tip { display: none; }
 }	
 
 	@media screen  and (min-width:1024px){
+		.weekly-event-page-title{
+			padding-left: 2.5%;
+			color: #fff;
+			background:$black;
+			width: 31%;
+			height: 5vw;
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			font-size: 2rem;
+		}
 		.site-main{
 			display: flex;
 			flex-wrap: wrap;

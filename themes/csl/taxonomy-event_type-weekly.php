@@ -8,7 +8,9 @@
 get_header('desktop');
 get_header(); ?>
 	<div id="primary" class="content-area">
+	<h2 class="weekly-event-page-title">weekly events</h2>
 		<main id="main" class="site-main" role="main">
+		
 
 		<?php
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
