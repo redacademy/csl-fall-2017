@@ -1183,3 +1183,46 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+<<<<<<< HEAD
+=======
+.hero-container {
+  background: url(../../images/csl-hero.png);
+  background-size: cover;
+  height: 40vh;
+  position: relative; }
+  .hero-container img {
+    position: absolute;
+    height: 55px;
+    bottom: 3vh;
+    left: 5vw; }
+
+.home article {
+  background: url(../../images/mobile-front-bg.png);
+  background-size: 20rem;
+  height: 500px;
+  text-align: center; }
+  .home article h2 {
+    text-transform: uppercase;
+    padding-top: 3rem; }
+  .home article p {
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 0; }
+
+.home .front-page-news {
+  display: none; }
+
+@media screen and (min-width: 1024px) {
+  .home .hero-container {
+    height: 85vh; }
+    .home .hero-container img {
+      height: 25%;
+      top: 4%;
+      right: 4%;
+      left: auto; }
+  .home .front-page-news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
+>>>>>>> 3530f08ece7a6256ad936a0a4fc5262775b7f691
