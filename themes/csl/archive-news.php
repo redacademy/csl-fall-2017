@@ -1,6 +1,6 @@
 <?php
 
-get_header('desktop');
+
 get_header(); ?>
 
 		<div id="primary">

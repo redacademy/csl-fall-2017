@@ -30,6 +30,11 @@
 						<img src="<?php echo get_template_directory_uri() . '/images/header-logo.png'; ?>" class="header-logo" alt="csl logo" />
 					</a>
 				</div>
+				<div class= "site-logo">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+						<img src="<?php echo get_template_directory_uri() . '/images/desktop-header-logo.png'; ?>" class="desktop-header-logo" alt="csl logo" />
+					</a>
+				</div>
 	
 				<nav id="site-navigation" class="main-navigation" role="navigation">
 					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
