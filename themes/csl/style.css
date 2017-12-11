@@ -1183,17 +1183,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-.hero-container {
-  background: url(../../images/csl-hero.png);
-  background-size: cover;
-  height: 40vh;
-  position: relative; }
-  .hero-container img {
-    position: absolute;
-    height: 55px;
-    bottom: 3vh;
-    left: 5vw; }
-
 .home article {
   background: url(../../images/nature-background.png);
   background-size: cover;
