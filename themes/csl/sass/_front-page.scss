@@ -1,27 +1,28 @@
-// //** Hero Image **//
-// .hero-container {
-//   background: url(../../images/csl-hero.png);
-//   background-size: cover;
-//   height: 40vh;
-//   position: relative;
-//   img {
-//     position: absolute;
-//     height: 55px;
-//     bottom: 3vh;
-//     left: 5vw;
-//   }
-// }
+//** Hero Image **//
+.hero-container {
+  background: url(../../images/csl-hero.png);
+  background-size: cover;
+  height: 40vh;
+  position: relative;
+  img {
+    position: absolute;
+    height: 55px;
+    bottom: 3vh;
+    left: 5vw;
+  }
+}
 
 //** Mission **//
 .home {
   article {
-    background: url(../../images/mobile-front-bg.png);
-    background-size: 20rem;
+    background: url(../../images/nature-background.png);
+    background-size: cover;
     height: 500px;
     text-align: center;
+    color: white;
     h2{
       text-transform: uppercase;
-      padding-top: 3rem;
+      margin-top: 3rem;
     }
     p {
       text-align: left;
@@ -38,10 +39,17 @@
   .front-page-news {
     display: none;
   }
+  .front-page-button {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   .home {
+    .desktop-bg {
+      background: url(../../images/nature-background.png);
+      background-size: cover;
+    }
     .hero-container {
       height: 85vh;
       img {
@@ -51,8 +59,52 @@
         left: auto;
       }
     }
+    article {
+      background: none;
+      background-size: 20rem;
+      height: 500px;
+      text-align: left;
+      color: white;
+      h2{
+        text-transform: uppercase;
+        margin-top: 3rem;
+        border: 1px solid black;
+        background-color: black;
+      }
+      p {
+        text-align: left;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 0; 
+      }
+    }
     .front-page-news {
       display: flex;
+      flex-wrap: wrap;
+      h2 {
+        width: 100%;
+        text-align: center;
+      }
+      .front-page-news-gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+    }
+    .front-page-button {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      .see-more {
+        font-family: 'lato';
+        position: absolute;
+        top: 1.2rem;
+        text-align: center;
+        color: $teal;
+        line-height: 27px;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+      }
     }
   // home
   }
