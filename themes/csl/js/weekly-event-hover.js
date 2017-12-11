@@ -1,6 +1,4 @@
 (function ($){
-
-
 $('.entry-title-wrapper').hover(function(){
   $(this).find('.entry-title').fadeOut(50);
   $(this).find('.entry-content').fadeIn(100);

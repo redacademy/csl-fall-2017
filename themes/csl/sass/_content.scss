@@ -552,17 +552,12 @@ header{
 		position: absolute;
     top: -60%;
 	}
-//top 65% mobile, 100% desktop
 
-
-// color scheme//
 .site-main{
 	.type-event:nth-child(3n+1){
 		.entry-title-wrapper{
 			.entry-title{
-			// background:#1DAFB8;
 			background-color: rgba(29, 175, 184, 0.75);
-			
 			}
 		}
 	}
@@ -580,7 +575,6 @@ header{
 			}
 		}
 	}
-
 }	
 
 	@media screen  and (min-width:1024px){
