@@ -1093,19 +1093,29 @@ span.wpcf7-not-valid-tip {
         flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .term-weekly .entry-title .alt-title {
     color: #d3d3d3;
     font-size: 1rem;
-    font-weight: lighter; }
+    font-weight: lighter;
+    padding-left: 1rem; }
   .term-weekly .entry-title .alt-title::before {
     content: '['; }
   .term-weekly .entry-title .alt-title::after {
     content: ']'; }
 
+.term-weekly .entry-title-wrapper:hover {
+  height: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
+
 .term-weekly .entry-content {
   position: absolute;
-  top: -60%;
+  top: 0%;
+  left: 5%;
   color: white;
   display: none;
   margin-left: auto;
@@ -1117,13 +1127,13 @@ span.wpcf7-not-valid-tip {
   display: -ms-flexbox;
   display: flex; }
 
-.term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper .entry-title {
+.term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper {
   background-color: rgba(29, 175, 184, 0.75); }
 
-.term-weekly .site-main .type-event:nth-child(3n+2) .entry-title-wrapper .entry-title {
+.term-weekly .site-main .type-event:nth-child(3n+2) .entry-title-wrapper {
   background-color: rgba(217, 31, 24, 0.75); }
 
-.term-weekly .site-main .type-event:nth-child(3n+3) .entry-title-wrapper .entry-title {
+.term-weekly .site-main .type-event:nth-child(3n+3) .entry-title-wrapper {
   background-color: rgba(255, 203, 51, 0.75); }
 
 @media screen and (min-width: 1024px) {
