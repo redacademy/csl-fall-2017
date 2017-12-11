@@ -554,6 +554,17 @@ span.wpcf7-not-valid-tip { display: none; }
 			flex-wrap: wrap;
 			justify-content: center;
 		}
+		.alt-title{
+			color:$alt-gray;
+			font-size:1rem;
+			font-weight:lighter;
+		}
+		.alt-title::before{
+			content:'[';
+		}
+		.alt-title::after{
+			content:']';
+		}
 	}
 
 	.entry-content{

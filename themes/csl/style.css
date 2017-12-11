@@ -1085,6 +1085,23 @@ span.wpcf7-not-valid-tip {
   color: white;
   padding-top: 1rem;
   padding-bottom: 1rem; }
+  .term-weekly .entry-title .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .term-weekly .entry-title .alt-title {
+    color: #d3d3d3;
+    font-size: 1rem;
+    font-weight: lighter; }
+  .term-weekly .entry-title .alt-title::before {
+    content: '['; }
+  .term-weekly .entry-title .alt-title::after {
+    content: ']'; }
 
 .term-weekly .entry-content {
   position: absolute;
