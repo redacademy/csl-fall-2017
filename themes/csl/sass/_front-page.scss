@@ -12,22 +12,50 @@
   }
 }
 
-@media screen and (min-width: 1024px) {
-  .hero-container {
-    height: 85vh;
-    img {
-      height: 25%;
-      top: 4%;
-      right: 4%;
-      left: auto;
+//** Mission **//
+.home {
+  article {
+    background: url(../../images/mobile-front-bg.png);
+    background-size: 20rem;
+    height: 500px;
+    text-align: center;
+    h2{
+      text-transform: uppercase;
+      padding-top: 3rem;
+    }
+    p {
+      text-align: left;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-top: 0; 
     }
   }
 }
 
-//** Mission **//
+//** News **//
 
-article {
-  background: url(../../images/mobile-front-bg.png);
-  background-size: cover;
-  height: 88vh;
+.home {
+  .front-page-news {
+    display: none;
+  }
 }
+
+@media screen and (min-width: 1024px) {
+  .home {
+    .hero-container {
+      height: 85vh;
+      img {
+        height: 25%;
+        top: 4%;
+        right: 4%;
+        left: auto;
+      }
+    }
+    .front-page-news {
+      display: flex;
+    }
+  // home
+  }
+// media queries
+}
+

@@ -4,7 +4,7 @@
  *
  * @package RED_Starter_Theme
  */
-
+get_header('desktop');
 get_header(); ?>
 
 	<section id="primary" class="content-area">
