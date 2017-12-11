@@ -5,6 +5,7 @@
  *
  * @package CSL_Theme
  */
+
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -13,7 +14,6 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 			<?php
 			$alt_title = get_post_meta( get_the_ID(), '_event_alt_title', true );
 			$location = get_post_meta( get_the_ID(), '_event_location', true );
@@ -57,6 +57,7 @@ get_header(); ?>
           <div class="current-image image1">
           <?php the_post_thumbnail( )?>
           </div>
+          <?php if ( $gallery ) : ?>
           <div class="thumbnail-wrapper">
             <?php $i = 2; foreach( $gallery as $image_id => $image_url ) : ?>
 
@@ -65,6 +66,7 @@ get_header(); ?>
               </div>
             <?php $i++; endforeach;?>
           </div>
+          <?php endif; ?>
         </div>
 			</article><!-- #post-## -->
 		<?php endwhile; ?>
