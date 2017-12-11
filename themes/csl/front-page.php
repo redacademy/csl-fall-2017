@@ -4,7 +4,7 @@
  *
  * @package CSL_Theme
  */
-get_header('desktop');
+
 get_header(); ?>
 
 
