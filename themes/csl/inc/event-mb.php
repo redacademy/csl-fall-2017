@@ -17,7 +17,7 @@ function event_register_event_info() {
   ) );
   
   $cmb->add_field( array(
-    'name'           => 'Seasonal or Weekly',
+    'name'           => 'Seasonal, Weekly, <br> or for the Gallery',
     'desc'           => 'This is a required field',
     'id'             => $prefix . 'taxonomy_radio',
     'taxonomy'       => 'event_type', // Enter Taxonomy Slug
@@ -56,7 +56,7 @@ function event_register_event_info() {
     // 'date_format' => 'l jS \of F Y',
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'taxonomy_radio',
-      'data-conditional-value' => 'seasonal',
+      'data-conditional-value' => wp_json_encode( array( 'seasonal', 'gallery' ) ),
     ), 
   ) );
 
@@ -118,9 +118,9 @@ function event_register_event_info() {
   ) );
 
   $cmb->add_field( array(
-    'name' => 'For the Gallery',
-    'desc' => 'Update this event with pictures for the gallery!',
-    'id'   => 'wiki_test_file_list',
+    'name' => 'Gallery Images',
+    'desc' => 'Add pictures for the gallery! (Remember to set a featured image aswell)',
+    'id'   => $prefix . 'gallery_images',
     'type' => 'file_list',
     // 'preview_size' => array( 100, 100 ), // Default: array( 50, 50 )
     'query_args' => array( 'type' => 'image' ), // Only images attachment
@@ -128,7 +128,7 @@ function event_register_event_info() {
     'attributes' => array(
       'required'               => true,
       'data-conditional-id'    => $prefix . 'taxonomy_radio',
-      'data-conditional-value' => 'seasonal',
+      'data-conditional-value' => 'gallery',
     ), 
   ) );
 

@@ -964,7 +964,7 @@ header {
           flex-direction: column;
   position: absolute;
   width: 95%;
-  top: 52%;
+  top: 49%;
   left: 2.5%; }
   .page-template-contact .social-info .fa {
     font-size: 2rem;
@@ -1183,14 +1183,26 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+.hero-container {
+  background: url(../../images/csl-hero.png);
+  background-size: cover;
+  height: 40vh;
+  position: relative; }
+  .hero-container img {
+    position: absolute;
+    height: 55px;
+    bottom: 3vh;
+    left: 5vw; }
+
 .home article {
-  background: url(../../images/mobile-front-bg.png);
-  background-size: 20rem;
+  background: url(../../images/nature-background.png);
+  background-size: cover;
   height: 500px;
-  text-align: center; }
+  text-align: center;
+  color: white; }
   .home article h2 {
     text-transform: uppercase;
-    padding-top: 3rem; }
+    margin-top: 3rem; }
   .home article p {
     text-align: left;
     padding-left: 2rem;
@@ -1200,7 +1212,13 @@ object {
 .home .front-page-news {
   display: none; }
 
+.home .front-page-button {
+  display: none; }
+
 @media screen and (min-width: 1024px) {
+  .home .desktop-bg {
+    background: url(../../images/nature-background.png);
+    background-size: cover; }
   .home .hero-container {
     height: 85vh; }
     .home .hero-container img {
@@ -1208,6 +1226,22 @@ object {
       top: 4%;
       right: 4%;
       left: auto; }
+  .home article {
+    background: none;
+    background-size: 20rem;
+    height: 500px;
+    text-align: left;
+    color: white; }
+    .home article h2 {
+      text-transform: uppercase;
+      margin-top: 3rem;
+      border: 1px solid black;
+      background-color: black; }
+    .home article p {
+      text-align: left;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      margin-top: 0; }
   .home .front-page-news {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1216,4 +1250,29 @@ object {
         flex-wrap: wrap; }
     .home .front-page-news h2 {
       width: 100%;
-      text-align: center; } }
+      text-align: center; }
+    .home .front-page-news .front-page-news-gallery {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 100%; }
+  .home .front-page-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative; }
+    .home .front-page-button .see-more {
+      font-family: 'lato';
+      position: absolute;
+      top: 1.2rem;
+      text-align: center;
+      color: #1DAFB8;
+      line-height: 27px;
+      font-size: 1.7rem;
+      text-transform: uppercase; } }

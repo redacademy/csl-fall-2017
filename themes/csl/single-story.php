@@ -6,7 +6,7 @@
  */
 get_header('desktop');
  get_header(); ?>
-
+		<?php if ( have_posts() ) : ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php if ( is_single( $story = 'one-house' ) ) : ?>
 			
@@ -24,5 +24,10 @@ get_header('desktop');
 			<?php endif; ?>
 
 		<?php endwhile; // End of the loop. ?>
+	<?php else : ?>
+		
+		<?php get_template_part( 'template-parts/content', 'none' ); ?>
+
+	<?php endif; ?>
 
 <?php get_footer(); ?>

@@ -1,12 +1,12 @@
 <?php
-/**
- * The template for displaying all single posts.
- *
- * @package RED_Starter_Theme
- */
+
 get_header('desktop');
 get_header(); ?>
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> dc41053717a56ca5c7f00d9699466f478a6d3462
   <h2>In The News</h2>
   
 <?php	$news_query = new WP_Query( array( 
@@ -29,6 +29,26 @@ get_header(); ?>
 
 <?php endwhile; ?>
 <?php endif; ?>
+<<<<<<< HEAD
+=======
+=======
+		<div id="primary">
+			<div id="content" role="main">
+			<h2>In the News</h2>
+			<?php if(have_posts()): ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-<?php get_sidebar(); ?>
+					<?php get_template_part( 'template-parts/content', 'news' ); ?>
+
+
+				<?php endwhile; // End of the loop. ?>
+			<?php else : ?>
+						
+				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+		
+			<?php endif; ?>
+			<a class="twitter-timeline" href="https://twitter.com/cultrsaveslives?ref_src=twsrc%5Etfw">Tweets by cultrsaveslives</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+>>>>>>> 1b3a012732abaed0964a2b3fcedafeed137b9de8
+>>>>>>> dc41053717a56ca5c7f00d9699466f478a6d3462
+
 <?php get_footer(); ?>
