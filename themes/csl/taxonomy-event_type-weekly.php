@@ -5,10 +5,14 @@
  *
  * @package CSL_Theme
  */
-get_header('desktop');
+
 get_header(); ?>
 	<div id="primary" class="content-area">
+<<<<<<< HEAD
 	<h2 class="weekly-event-page-title">weekly events</h2>
+=======
+		<?php wp_nav_menu (array('theme_location' => 'secondary-menu','menu_class' => 'nav'));?>
+>>>>>>> e07a521f7f50c11626659657114ab35f99b93515
 		<main id="main" class="site-main" role="main">
 		
 
