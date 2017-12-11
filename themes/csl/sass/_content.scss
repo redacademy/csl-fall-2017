@@ -539,6 +539,8 @@ header{
     justify-content: center;
     align-items: center;
 		color:white;
+		padding-top: 1rem;
+    padding-bottom: 1rem;
 	}
 	.entry-content{
 		display:flex;
@@ -551,6 +553,9 @@ header{
 		display: none;
 		position: absolute;
     top: -60%;
+	}
+	.location{
+		display:flex;
 	}
 
 .site-main{

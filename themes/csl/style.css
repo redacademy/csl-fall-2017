@@ -1073,7 +1073,9 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: white; }
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .term-weekly .entry-content {
   display: -webkit-box;
@@ -1093,6 +1095,11 @@ header {
   display: none;
   position: absolute;
   top: -60%; }
+
+.term-weekly .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper .entry-title {
   background-color: rgba(29, 175, 184, 0.75); }
