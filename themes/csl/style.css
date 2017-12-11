@@ -1183,8 +1183,6 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
-<<<<<<< HEAD
-=======
 .hero-container {
   background: url(../../images/csl-hero.png);
   background-size: cover;
@@ -1225,4 +1223,3 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
->>>>>>> 3530f08ece7a6256ad936a0a4fc5262775b7f691

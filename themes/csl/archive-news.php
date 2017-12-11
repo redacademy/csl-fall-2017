@@ -7,30 +7,6 @@
 get_header('desktop');
 get_header(); ?>
 
-<<<<<<< HEAD
-	<?php if(have_posts()): ?>
-
-  
-
-		<?php while ( have_posts() ) : the_post(); ?>
-
-   
-			<?php get_template_part( 'template-parts/content-news' ); ?>
-      
-			<?php the_post_navigation(); ?>
-
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
-
-		<?php endwhile; // End of the loop. ?>
-			<?php endif; ?>
-		</main><!-- #main -->
-	</div><!-- #primary -->
-=======
   <h2>In The News</h2>
   
 <?php	$news_query = new WP_Query( array( 
@@ -53,7 +29,6 @@ get_header(); ?>
 
 <?php endwhile; ?>
 <?php endif; ?>
->>>>>>> 3530f08ece7a6256ad936a0a4fc5262775b7f691
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
