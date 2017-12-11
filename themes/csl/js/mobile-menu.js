@@ -9,14 +9,3 @@
   });
 
 })(jQuery);
-
-
-// (function ($){
-//   $( '.entry-title' ).hover(function() {
-//     $('.entry-title').toggleClass('hidden');
-//   },
-//   function (){
-//     $('.entry-content').toggleClass('display');
-  
-//   });
-// })(jQuery);

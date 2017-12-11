@@ -9,7 +9,9 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<div id="dialog" title="Basic dialog">
+  <p>This is the default dialog which is useful for displaying information. The dialog window can be moved, resized and closed with the 'x' icon.</p>
+</div>
     <div class="entry-content">
           <div class="contact-page-contact-info">
 						<p><?php echo get_theme_mod( 'title_value' ); ?></p>

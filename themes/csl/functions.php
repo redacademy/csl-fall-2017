@@ -93,8 +93,8 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
 	wp_enqueue_style('font-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-	wp_enqueue_style('lato','https://fonts.googleapis.com/css?family=Lato');
 	wp_enqueue_script('jquery');
+	wp_enqueue_script( 'contact-form-submit-alert', get_template_directory_uri() . '/build/js/contact-form-submit-alert.min.js',array(), '20130116', true );
 	wp_enqueue_script( 'weekly-event-hover', get_template_directory_uri() . '/build/js/weekly-event-hover.min.js',array(), '20130116', true );
 	wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/build/js/mobile-menu.min.js',array(), '20130115', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
@@ -111,18 +111,11 @@ add_action( 'wp_footer', 'mycustom_wp_footer' );
 function mycustom_wp_footer() {
 ?>
 <script type="text/javascript">
-
-document.addEventListener( 'wpcf7mailsent', function( event ) {
-	 
-	 {
-		alert("hello");
-	 } 
-}, false );
-
-
-// alerts on page load
-// alert("hello");
-
+	document.addEventListener( 'wpcf7mailsent', function( event ) {
+		{
+			alert("thank you for reaching out to us, we will get back to you as soon as possible! in the meantime check out some of our past events");
+		} 
+	}, false );
 </script>
 <?php
 }
