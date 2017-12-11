@@ -17,9 +17,8 @@
 					</ul>
 					
 				<div class="footer-container">
-					<div class="footer-logo-container">
-						<!-- -->
-					</div>
+					<a href="https://www.phs.ca/index.php/project/aboriginal-services/" class="footer-logo-container">
+					</a>
 					<div class="footer-contact-info">
 						<p><?php echo get_theme_mod( 'title_value' ); ?></p>		
 						<p><?php echo get_theme_mod( 'address_value' ); ?></p>

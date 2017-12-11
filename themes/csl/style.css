@@ -985,9 +985,6 @@ header {
 div.wpcf7-response-output, div.wpcf7-validation-errors {
   display: none !important; }
 
-span.wpcf7-not-valid-tip {
-  display: none; }
-
 @media screen and (min-width: 1024px) {
   .page-template-contact .entry-content {
     display: -webkit-box;
