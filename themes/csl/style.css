@@ -624,10 +624,11 @@ a {
   text-align: left; }
 
 .mobile-menu ul {
+  text-transform: uppercase;
   margin: 0;
   padding: 0; }
   .mobile-menu ul li:nth-child(odd) {
-    background: #18949a; }
+    background-color: #18949a; }
 
 .mobile-menu li {
   display: block;
@@ -1020,7 +1021,7 @@ header {
     width: 39% !important;
     position: absolute;
     left: 36%;
-    top: -61%; }
+    top: -48%; }
   .page-template-contact .social-info {
     height: 50%;
     width: auto;
@@ -1035,6 +1036,88 @@ header {
     margin-top: 2rem; }
   .page-template-contact .address-province {
     margin-top: 2rem; } }
+
+.term-weekly .site-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%; }
+
+.term-weekly .type-event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 220px;
+  margin: 1rem 0 1rem 0;
+  background-size: cover; }
+
+.term-weekly .entry-title-wrapper {
+  position: relative;
+  height: 100px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%; }
+
+.term-weekly .entry-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.term-weekly .entry-content {
+  position: absolute;
+  top: -60%;
+  color: white;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; }
+
+.term-weekly .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper .entry-title {
+  background-color: rgba(29, 175, 184, 0.75); }
+
+.term-weekly .site-main .type-event:nth-child(3n+2) .entry-title-wrapper .entry-title {
+  background-color: rgba(217, 31, 24, 0.75); }
+
+.term-weekly .site-main .type-event:nth-child(3n+3) .entry-title-wrapper .entry-title {
+  background-color: rgba(255, 203, 51, 0.75); }
+
+@media screen and (min-width: 1024px) {
+  .term-weekly .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .term-weekly .type-event {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    height: 50vw; }
+  .term-weekly .entry-content {
+    font-size: 1.5rem; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1111,16 +1194,32 @@ object {
     bottom: 3vh;
     left: 5vw; }
 
+.home article {
+  background: url(../../images/mobile-front-bg.png);
+  background-size: 20rem;
+  height: 500px;
+  text-align: center; }
+  .home article h2 {
+    text-transform: uppercase;
+    padding-top: 3rem; }
+  .home article p {
+    text-align: left;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 0; }
+
+.home .front-page-news {
+  display: none; }
+
 @media screen and (min-width: 1024px) {
-  .hero-container {
+  .home .hero-container {
     height: 85vh; }
-    .hero-container img {
+    .home .hero-container img {
       height: 25%;
       top: 4%;
       right: 4%;
-      left: auto; } }
-
-article {
-  background: url(../../images/mobile-front-bg.png);
-  background-size: cover;
-  height: 88vh; }
+      left: auto; }
+  .home .front-page-news {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }

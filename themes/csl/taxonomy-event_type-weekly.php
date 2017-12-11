@@ -3,8 +3,9 @@
  * The template for displaying product archive page.
  *
  *
- * @package inhabitent_Theme
+ * @package CSL_Theme
  */
+get_header('desktop');
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -23,7 +24,7 @@ get_header(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
 					
 					<!-- .entry-header -->
-
+				<div class="entry-title-wrapper">
 					<div class="entry-title">
 						<h2 class="title"><?php the_title(); ?>
 							<?php if ( $alt_title ) : ?>
@@ -58,6 +59,8 @@ get_header(); ?>
 						<?php endif; ?>
 						<div class="content"><?php the_content(); ?></div>
 					</div><!-- .entry-content -->
+				</div>	
+					
 				</article><!-- #post-## -->
 				<?php endwhile; ?>
 				

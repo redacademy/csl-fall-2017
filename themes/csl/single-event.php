@@ -5,7 +5,7 @@
  *
  * @package CSL_Theme
  */
-get_header('desktop');
+
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -14,15 +14,15 @@ get_header(); ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
-
 			<?php
 			$alt_title = get_post_meta( get_the_ID(), '_event_alt_title', true );
 			$location = get_post_meta( get_the_ID(), '_event_location', true );
 			$date = get_post_meta( get_the_ID(), '_event_date', true );
 			$s_time = get_post_meta( get_the_ID(), '_event_start_time', true );
-			$e_time = get_post_meta( get_the_ID(), '_event_end_time', true );
+      $e_time = get_post_meta( get_the_ID(), '_event_end_time', true );
+      $gallery = get_post_meta( get_the_ID(), '_event_gallery_images', true );
 			?>
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
+			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				
 				<!-- .entry-header -->
 
@@ -53,6 +53,21 @@ get_header(); ?>
 					<?php endif; ?>
 					<div class="content"><?php the_content(); ?></div>
 				</div><!-- .entry-content -->
+        <div class="image-cara">
+          <div class="current-image image1">
+          <?php the_post_thumbnail( )?>
+          </div>
+          <?php if ( $gallery ) : ?>
+          <div class="thumbnail-wrapper">
+            <?php $i = 2; foreach( $gallery as $image_id => $image_url ) : ?>
+
+              <div class="thumbnail-image image<?php echo $i ?>">
+                <?php echo wp_get_attachment_image( $image_id, 'thumbnail' ); ?>
+              </div>
+            <?php $i++; endforeach;?>
+          </div>
+          <?php endif; ?>
+        </div>
 			</article><!-- #post-## -->
 		<?php endwhile; ?>
 
