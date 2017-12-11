@@ -1037,6 +1037,88 @@ header {
   .page-template-contact .address-province {
     margin-top: 2rem; } }
 
+.term-weekly .site-main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%; }
+
+.term-weekly .type-event {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 220px;
+  margin: 1rem 0 1rem 0;
+  background-size: cover; }
+
+.term-weekly .entry-title-wrapper {
+  position: relative;
+  height: 100px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%; }
+
+.term-weekly .entry-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.term-weekly .entry-content {
+  position: absolute;
+  top: -60%;
+  color: white;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; }
+
+.term-weekly .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper .entry-title {
+  background-color: rgba(29, 175, 184, 0.75); }
+
+.term-weekly .site-main .type-event:nth-child(3n+2) .entry-title-wrapper .entry-title {
+  background-color: rgba(217, 31, 24, 0.75); }
+
+.term-weekly .site-main .type-event:nth-child(3n+3) .entry-title-wrapper .entry-title {
+  background-color: rgba(255, 203, 51, 0.75); }
+
+@media screen and (min-width: 1024px) {
+  .term-weekly .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .term-weekly .type-event {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    height: 50vw; }
+  .term-weekly .entry-content {
+    font-size: 1.5rem; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1101,6 +1183,8 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* Front page */
+<<<<<<< HEAD
+=======
 .hero-container {
   background: url(../../images/csl-hero.png);
   background-size: cover;
@@ -1141,3 +1225,4 @@ object {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; } }
+>>>>>>> 3530f08ece7a6256ad936a0a4fc5262775b7f691
