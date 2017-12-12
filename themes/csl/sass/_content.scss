@@ -456,7 +456,7 @@ header{
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 1;
-	background:$teal;
+	background-color: rgba(29, 175, 184, 0.75);
 	width: 90%;
 }
 .info-alert{
@@ -467,9 +467,10 @@ header{
 	margin-right: auto;
 	width: 90%;
 	.info-alert-text{
-		flex-basis:100%;
+		flex-basis:80%;
 		color:#FFFFFF;
 		text-align:center;
+		font-weight:bold;
 	}
 	.gallery-button{
 		position:relative;
@@ -662,6 +663,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 			height:50vw;
 		}
 		.entry-content{
+			top:20%;
 			font-size:1.5rem;
 		}
 	}
