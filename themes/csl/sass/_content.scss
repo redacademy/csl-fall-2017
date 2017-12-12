@@ -136,19 +136,15 @@ header{
 	//animate shit//
 .line1-active {
 	transform: rotate(270deg);
-	opacity:0.0;
-	background-color:black;
 	top:5px;
 }
 		
 .line2-active {
 	transform: rotate(45deg);
-	background-color:black;
 }
 		
 .line3-active {
 	transform: rotate(-45deg);
-	background-color:black;
 	top:-7px;
 }
 

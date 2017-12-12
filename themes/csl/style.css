@@ -671,19 +671,15 @@ header {
 .line1-active {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-  opacity: 0.0;
-  background-color: black;
   top: 5px; }
 
 .line2-active {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background-color: black; }
+          transform: rotate(45deg); }
 
 .line3-active {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  background-color: black;
   top: -7px; }
 
 .site-info {
