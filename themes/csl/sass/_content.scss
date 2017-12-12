@@ -637,6 +637,12 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
     margin-right: auto;
     width: 90%;
 	}
+	.icon{
+    width: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+	}
 	.location{
 		display:flex;
 	}
@@ -683,6 +689,9 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 		.entry-content{
 			top:20%;
 			font-size:1.5rem;
+		}
+		.icon{
+			width:6rem;
 		}
 	}
 }

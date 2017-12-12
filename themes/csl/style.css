@@ -1180,6 +1180,12 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   margin-right: auto;
   width: 90%; }
 
+.term-weekly .icon {
+  width: 4rem;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
 .term-weekly .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1226,7 +1232,9 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     height: 50vw; }
   .term-weekly .entry-content {
     top: 20%;
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .term-weekly .icon {
+    width: 6rem; } }
 
 /*--------------------------------------------------------------
 # Media
