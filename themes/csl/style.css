@@ -355,6 +355,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
+  border: none;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -1027,11 +1028,12 @@ header {
   font-size: 1.25rem !important;
   font-weight: bold;
   width: 8rem;
-  height: 4rem;
-  margin-top: 0.5rem;
+  height: 4.25rem;
   background: url("../../images/white-button.png") 10px 10px;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  position: absolute;
+  right: 2%; }
 
 /*	disables response output	 */
 div.wpcf7-response-output, div.wpcf7-validation-errors {
@@ -1089,7 +1091,9 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
             order: 0;
     margin-top: 2rem; }
   .page-template-contact .address-province {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+  .page-template-contact .wpcf7-submit {
+    bottom: 50%; } }
 
 .term-weekly .weekly-event-page-title {
   padding-left: 0.5rem;
