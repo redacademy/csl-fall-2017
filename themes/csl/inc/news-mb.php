@@ -28,7 +28,7 @@ function event_register_article_info() {
     'type'    => 'file',
     // Optional:
     'options' => array(
-      'url' => true, // Hide the text input for the url
+      'url' => false, // Hide the text input for the url
     ),
     'text'    => array(
       'add_upload_file_text' => 'Add File' // Change upload button text. Default: "Add or Upload File"
