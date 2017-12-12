@@ -1243,6 +1243,84 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .term-weekly .icon {
     width: 6rem; } }
 
+/* NEWS */
+.post-type-archive-news .article-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%; }
+
+.post-type-archive-news .page-title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 2%; }
+
+.post-type-archive-news .type-news {
+  position: relative;
+  height: 15rem;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  margin-top: 0.5rem;
+  background-size: cover;
+  background-position: center; }
+
+.post-type-archive-news .article-title {
+  position: absolute;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 40%;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: white;
+  margin: 0;
+  width: 100%;
+  padding: 0.5rem 1rem 1rem; }
+
+.post-type-archive-news .timeline-Widget.timeline-Widget--edge {
+  display: none !important; }
+
+@media screen and (min-width: 1024px) {
+  .post-type-archive-news #primary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .post-type-archive-news .content {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%; }
+  .post-type-archive-news .page-title {
+    color: #FFFFFF;
+    background: #000000;
+    width: 40%; }
+  .post-type-archive-news .type-news {
+    height: 18rem;
+    margin-bottom: 0.5rem; }
+  .post-type-archive-news .article-title {
+    font-size: 1rem; }
+  .post-type-archive-news article:nth-child(8n+3) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .post-type-archive-news article:nth-child(8n+8) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .post-type-archive-news .twitter-wrapper {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin-top: 5rem;
+    padding-right: 1rem;
+    overflow-y: scroll;
+    height: 215vh; }
+  .post-type-archive-news .twitter-timeline.twitter-timeline-rendered {
+    width: 100% !important; } }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
