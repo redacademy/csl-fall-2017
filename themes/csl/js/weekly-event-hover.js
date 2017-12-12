@@ -1,12 +1,10 @@
 (function ($){
 $('.entry-title-wrapper').hover(function(){
-  // $('.entry-title-wrapper').toggleClass('background');
-  $(this).find('.entry-title').fadeOut();
-  $(this).find('.entry-content').fadeIn();
+  $(this).find('.entry-title').fadeOut(200);
+  $(this).find('.entry-content').fadeIn(1000);
 }, function(){
-  // $('.entry-title-warpper').toggleClass('background');
-  $(this).find('.entry-title').fadeIn();
-  $(this).find('.entry-content').fadeOut();
+  $(this).find('.entry-title').fadeIn(1000);
+  $(this).find('.entry-content').fadeOut(0);
 });
 })(jQuery);
 

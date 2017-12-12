@@ -7,16 +7,5 @@
     $( '.mobile-menu' ).slideToggle( 'slow', function() {
     });
   });
-
-})(jQuery);
-
-
-// (function ($){
-//   $( '.entry-title' ).hover(function() {
-//     $('.entry-title').toggleClass('hidden');
-//   },
-//   function (){
-//     $('.entry-content').toggleClass('display');
   
-//   });
-// })(jQuery);
+})(jQuery);

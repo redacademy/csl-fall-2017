@@ -28,11 +28,15 @@ get_header(); ?>
 			<?php while ( have_posts() ) : the_post() ; ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+		<div class="mission-eagles">
+			<img src="<?php echo get_template_directory_uri() . '/images/eagle2.svg'; ?>" alt="eagle left" class="eagle-left">
 			<header class="entry-header">
-
+			
 				<h2><?php the_title(); ?></h2>
 
 			</header><!-- .entry-header -->
+			<img src="<?php echo get_template_directory_uri() . '/images/eagle1.svg'; ?>" alt="eagle right" class="eagle-right">
+    </div>
 			<div class="entry-content">
 				<?php the_excerpt(); ?>
 			</div><!-- .entry-content -->
