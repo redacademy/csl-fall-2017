@@ -629,7 +629,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 	}
 	.entry-content{
 		position: absolute;
-		top:0%;
+		top:-5%;
 		left:5%;
 		color:white;
 		display: none;
@@ -644,6 +644,9 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
     top: 0;
 	}
 	.location{
+		display:flex;
+	}
+	.days{
 		display:flex;
 	}
 
