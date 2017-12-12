@@ -106,19 +106,7 @@ function red_starter_scripts() {
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
 /* contact form alert */
-add_action( 'wp_footer', 'mycustom_wp_footer' );
 
-function mycustom_wp_footer() {
-?>
-<script type="text/javascript">
-	document.addEventListener( 'wpcf7mailsent', function( event ) {
-		{
-			alert("thank you for reaching out to us, we will get back to you as soon as possible! in the meantime check out some of our past events");
-		} 
-	}, false );
-</script>
-<?php
-}
 
 
 /**

@@ -289,9 +289,15 @@ header{
 .menu-menu-1-container{
 	visibility: hidden;
 }
+.desktop-header-logo{
+	display:none;
+}
 // desktop header //
 @media screen  and (min-width:1024px){
-	.site-header{
+	.toggle-open{
+		display:none;
+	}
+	.header-logo{
 		display:none;
 	}
 	.desktop-site-header{
@@ -302,6 +308,7 @@ header{
 		position: relative;
 	}
 	.desktop-header-logo{
+		display:block;
 		position: absolute;
 		height: 5rem;
 		padding-top:1rem;
@@ -445,6 +452,41 @@ header{
 		}
 	}
 }	
+.alert-container{
+	display:none;
+	position: fixed;
+	left: 5%;
+	right:5%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 1;
+	background:$teal;
+	width: 90%;
+}
+.info-alert{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	.info-alert-text{
+		flex-basis:100%;
+		color:#FFFFFF;
+		text-align:center;
+	}
+	.gallery-button{
+		position:relative;
+		p{
+		position: absolute;
+		font-weight:bold;
+		top: 20%;
+		left: 30%;
+		text-transform:uppercase;
+		color:#FFFFFF;
+		}
+	}
+}
 /*	disables response output	 */
 div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !important; }
 

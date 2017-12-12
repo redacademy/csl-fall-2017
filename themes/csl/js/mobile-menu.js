@@ -7,5 +7,5 @@
     $( '.mobile-menu' ).slideToggle( 'slow', function() {
     });
   });
-
+  
 })(jQuery);
