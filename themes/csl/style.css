@@ -254,6 +254,9 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h1 {
+  text-transform: uppercase; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -844,8 +847,13 @@ header {
 .menu-menu-1-container {
   visibility: hidden; }
 
+.desktop-header-logo {
+  display: none; }
+
 @media screen and (min-width: 1024px) {
-  .site-header {
+  .toggle-open {
+    display: none; }
+  .header-logo {
     display: none; }
   .desktop-site-header {
     display: block;
@@ -854,6 +862,7 @@ header {
     height: 5.75rem;
     position: relative; }
   .desktop-header-logo {
+    display: block;
     position: absolute;
     height: 5rem;
     padding-top: 1rem; }
@@ -885,8 +894,6 @@ header {
 
 .page-template-contact .wpcf7-form {
   background: url("../../images/contact-form-background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
   padding-top: 1rem;
   padding-bottom: 3rem;
   width: 100vw; }
@@ -994,6 +1001,49 @@ header {
   .page-template-contact .eagle-logo img {
     height: 80px; }
 
+.alert-container {
+  display: none;
+  position: fixed;
+  left: 5%;
+  right: 5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 1;
+  background: #1DAFB8;
+  width: 90%; }
+
+.info-alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; }
+  .info-alert .info-alert-text {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    color: #FFFFFF;
+    text-align: center; }
+  .info-alert .gallery-button {
+    position: relative; }
+    .info-alert .gallery-button p {
+      position: absolute;
+      font-weight: bold;
+      top: 20%;
+      left: 30%;
+      text-transform: uppercase;
+      color: #FFFFFF; }
+
+/*	disables response output	 */
+div.wpcf7-response-output, div.wpcf7-validation-errors {
+  display: none !important; }
+
 @media screen and (min-width: 1024px) {
   .page-template-contact .entry-content {
     display: -webkit-box;
@@ -1048,6 +1098,11 @@ header {
   .page-template-contact .address-province {
     margin-top: 2rem; } }
 
+.term-weekly .weekly-event-page-title {
+  padding-left: 0.5rem;
+  text-transform: uppercase;
+  color: #000000; }
+
 .term-weekly .site-main {
   margin-left: auto;
   margin-right: auto;
@@ -1089,10 +1144,37 @@ header {
   color: white;
   padding-top: 1rem;
   padding-bottom: 1rem; }
+  .term-weekly .entry-title .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .term-weekly .entry-title .alt-title {
+    color: #d3d3d3;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-left: 1rem; }
+  .term-weekly .entry-title .alt-title::before {
+    content: '['; }
+  .term-weekly .entry-title .alt-title::after {
+    content: ']'; }
+
+.term-weekly .entry-title-wrapper:hover {
+  height: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%; }
 
 .term-weekly .entry-content {
   position: absolute;
-  top: -60%;
+  top: 0%;
+  left: 5%;
   color: white;
   display: none;
   margin-left: auto;
@@ -1104,16 +1186,32 @@ header {
   display: -ms-flexbox;
   display: flex; }
 
-.term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper .entry-title {
+.term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper {
   background-color: rgba(29, 175, 184, 0.75); }
 
-.term-weekly .site-main .type-event:nth-child(3n+2) .entry-title-wrapper .entry-title {
+.term-weekly .site-main .type-event:nth-child(3n+2) .entry-title-wrapper {
   background-color: rgba(217, 31, 24, 0.75); }
 
-.term-weekly .site-main .type-event:nth-child(3n+3) .entry-title-wrapper .entry-title {
+.term-weekly .site-main .type-event:nth-child(3n+3) .entry-title-wrapper {
   background-color: rgba(255, 203, 51, 0.75); }
 
 @media screen and (min-width: 1024px) {
+  .term-weekly .weekly-event-page-title {
+    padding-left: 2.5%;
+    color: #fff;
+    background: #000000;
+    width: 31%;
+    height: 5vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 2rem; }
   .term-weekly .site-main {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1197,6 +1295,16 @@ object {
 .hero-container {
   background: url(../../images/csl-hero.png);
   background-size: cover;
+<<<<<<< HEAD
+  height: 40vh;
+  position: relative; }
+  .hero-container img {
+    position: absolute;
+    height: 55px;
+    bottom: 3vh;
+    left: 5vw; }
+
+=======
   background-position: left;
   height: 80vw;
   position: relative; }
@@ -1221,6 +1329,7 @@ object {
   top: 15%;
   width: 25%; }
 
+>>>>>>> 31b1ff0e2bf170ba51572cf30bf0825a52e9591d
 .home article {
   background: url(../../images/nature-background.png);
   background-size: contain;
