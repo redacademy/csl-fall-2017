@@ -1168,11 +1168,13 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 .term-weekly .entry-title-wrapper:hover {
   height: 100%;
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
+      flex-basis: 100%;
+  -webkit-transition: 1s;
+  transition: 1s; }
 
 .term-weekly .entry-content {
   position: absolute;
-  top: -5%;
+  top: -8%;
   left: 5%;
   color: white;
   display: none;

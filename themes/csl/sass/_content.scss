@@ -626,10 +626,11 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 	.entry-title-wrapper:hover{
 		height:100%;
 		flex-basis:100%;
+		transition: 1s;
 	}
 	.entry-content{
 		position: absolute;
-		top:-5%;
+		top:-8%;
 		left:5%;
 		color:white;
 		display: none;
