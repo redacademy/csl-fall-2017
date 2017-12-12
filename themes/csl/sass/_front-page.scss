@@ -16,29 +16,32 @@
 //** Mission **//
 .home {
   .mission-eagles {
-    padding: 2rem;
+    padding: 1em;
   }
   .eagle-left {
     position: absolute;
     left: 2%;
     top: 4%;
-    width: 30%;
+    width: 27%;
   }
   .eagle-right {
     position: absolute;
     right: 4%;
-    top: 20%;
+    top: 15%;
     width: 25%;
   }
   article {
     background: url(../../images/nature-background.png);
-    background-size: cover;
+    background-size: contain;
+    background-color: $teal;
+    background-repeat: no-repeat;
     text-align: center;
     color: white;
     font-family: $font__main;
     background-position: bottom;
-    height: 95vh;
+    height: 33em;
     position: relative;
+    
     
     h2{
       font-size: 8vw;
@@ -48,12 +51,13 @@
       margin-bottom: 0;
     }
     p {
-      font-size: 5vmin;
       text-align: left;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      margin-top: 0; 
+      padding-left: 12vw;
+      padding-right: 12vw;
     }
+  }
+  .entry-content{
+    margin-top: 0;
   }
 }
 
@@ -81,7 +85,7 @@
       background-position: center;
       height: 85vh;
       img {
-        height: 25%;
+        height: 22%;
         top: 4%;
         right: 1%;
         left: auto;
