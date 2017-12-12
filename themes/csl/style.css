@@ -1285,8 +1285,11 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   width: 100%;
   padding: 0.5rem 1rem 1rem; }
 
-.post-type-archive-news .timeline-Widget.timeline-Widget--edge {
+.post-type-archive-news .twitter-timeline.twitter-timeline-rendered {
   display: none !important; }
+
+.post-type-archive-news .site-footer {
+  margin-top: 2rem; }
 
 @media screen and (min-width: 1024px) {
   .post-type-archive-news #primary {
@@ -1319,7 +1322,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     overflow-y: scroll;
     height: 215vh; }
   .post-type-archive-news .twitter-timeline.twitter-timeline-rendered {
-    width: 100% !important; } }
+    width: 100% !important;
+    display: block !important; } }
 
 /*--------------------------------------------------------------
 # Media
