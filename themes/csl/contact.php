@@ -11,10 +11,11 @@ get_header(); ?>
 		<div class="alert-container">
         <div class="info-alert alert-box-success">
             <p class="info-alert-text">
-              this is the alert message box after contact form is submitted
+						Thank you for reaching out to us. We will get back to you as soon as possible!
+						In the meantime check out some of our past events.
             </p>
 						<a href="csl/gallery" class="gallery-button">
-							<img src='<?php echo get_template_directory_uri() . '/images/white-button.png'; ?>'>
+							<img src='<?php echo get_template_directory_uri() . '/images/yellow-button.png'; ?>'>
 								<p>Gallery</p>
 				    </a>
         </div>

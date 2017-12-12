@@ -14,6 +14,6 @@
 			echo $news_article_image_url;
 			?>);">
 	<a href="<?php echo $news_url ?>">
-			<h2><?php the_title(); ?></h2>
+			<h2 class="article-title"><?php the_title(); ?></h2>
 	</a>
 </article><!-- #post-## -->

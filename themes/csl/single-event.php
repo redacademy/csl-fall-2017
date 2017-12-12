@@ -1,11 +1,13 @@
 <?php
 /**
- * The template for displaying product archive page.
+ * The template for displayinfg a single event
  *
  *
  * @package CSL_Theme
  */
-
+if ( is_object_in_term( $post->ID, 'event_type', 'weekly' ) ) {
+	wp_redirect( home_url(), 301 );
+}
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">

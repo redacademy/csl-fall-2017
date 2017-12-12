@@ -134,21 +134,17 @@ header{
 }	
 
 	//animate shit//
-.line1.toggle-open {
+.line1-active {
 	transform: rotate(270deg);
-	opacity:0.0;
-	background-color:black;
 	top:5px;
 }
 		
-.line2.active {
+.line2-active {
 	transform: rotate(45deg);
-	background-color:black;
 }
 		
-.line3.active {
+.line3-active {
 	transform: rotate(-45deg);
-	background-color:black;
 	top:-7px;
 }
 
@@ -460,7 +456,7 @@ header{
 	top: 50%;
 	transform: translateY(-50%);
 	z-index: 1;
-	background:$teal;
+	background-color: rgba(29, 175, 184, 0.75);
 	width: 90%;
 }
 .info-alert{
@@ -471,9 +467,10 @@ header{
 	margin-right: auto;
 	width: 90%;
 	.info-alert-text{
-		flex-basis:100%;
+		flex-basis:80%;
 		color:#FFFFFF;
 		text-align:center;
+		font-weight:bold;
 	}
 	.gallery-button{
 		position:relative;
@@ -487,10 +484,22 @@ header{
 		}
 	}
 }
+.wpcf7-submit{
+	color:$teal;
+	text-transform:uppercase;
+	font-size:1.25rem !important;
+	font-weight:bold;
+	width: 8rem;
+	height: 4.25rem;
+	background:url('../../images/white-button.png')10px 10px;
+	background-size:cover;
+	background-position: center;
+	position: absolute;
+	right:2%;
+}
+
 /*	disables response output	 */
 div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !important; }
-
-
 
 //contact desktop//
 @media screen  and (min-width:1024px) {
@@ -552,14 +561,19 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 		.address-province{
 			margin-top:2rem;
 		}
+		.wpcf7-submit{
+		bottom:50%;
+		}
 	}
 }
 
 //weekly events//
 .term-weekly{
 	.weekly-event-page-title{
-		padding-left:0.5rem;
+		padding-left:2%;
 		text-transform: uppercase;
+		font-weight:bold;
+		font-size:1.5rem;
 		color:$black;
 	}
 	.site-main{
@@ -612,10 +626,11 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 	.entry-title-wrapper:hover{
 		height:100%;
 		flex-basis:100%;
+		transition: 1s;
 	}
 	.entry-content{
 		position: absolute;
-		top:0%;
+		top:-8%;
 		left:5%;
 		color:white;
 		display: none;
@@ -623,7 +638,16 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
     margin-right: auto;
     width: 90%;
 	}
+	.icon{
+    width: 4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+	}
 	.location{
+		display:flex;
+	}
+	.days{
 		display:flex;
 	}
 
@@ -667,7 +691,100 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 			height:50vw;
 		}
 		.entry-content{
+			top:20%;
 			font-size:1.5rem;
+		}
+		.icon{
+			width:6rem;
 		}
 	}
 }
+
+
+/* NEWS */
+.post-type-archive-news{
+	.article-wrapper{
+		display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 95%;
+	}
+	.page-title{
+		flex-basis:100%;
+		text-transform: uppercase;
+		color:$black;
+		padding-left:2%;
+	}
+	.type-news{
+		position: relative;
+		height:15rem;
+		flex-basis:49%;
+		margin-top:0.5rem;
+		background-size: cover;
+    background-position: center;
+	}
+	.article-title{
+		position: absolute;
+		bottom:0%;
+		background-color: rgba(0,0,0,.6);
+		height:40%;
+		font-size:0.85rem;
+		font-weight:lighter;
+		color:white;
+		margin: 0;
+		width:100%;
+		padding: 0.5rem 1rem 1rem;
+	}
+	.twitter-timeline.twitter-timeline-rendered{
+		display:none !important;
+	}
+	.site-footer{
+		margin-top:2rem;
+	}
+}
+@media screen  and (min-width:1024px){
+	.post-type-archive-news{
+		#primary{
+			display:flex;
+		}
+		.content{
+			flex-basis:60%;
+		}
+		.page-title{
+			color:#FFFFFF;
+			background:$black;
+			width:40%;
+		}
+		.type-news{
+			height:18rem;
+			margin-bottom:0.5rem;
+		}
+		.article-title{
+			font-size:1rem;
+		}
+		article:nth-child(8n+3){
+			flex-basis:100%;
+		}
+		article:nth-child(8n+8){
+			flex-basis:100%;
+		}
+		.twitter-wrapper{
+			flex-basis:40%;
+			margin-top:5rem;
+			padding-right:1rem;
+			overflow-y:scroll;
+			height:215vh;
+		}
+		.twitter-timeline.twitter-timeline-rendered{
+			width:100% !important;
+			display: block !important;
+			// padding-top:5rem !important;
+			// padding-right:1rem !important;
+			// height:2000px !important;
+			// overflow-y:scroll;
+		}
+	}
+}
+

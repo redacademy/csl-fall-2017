@@ -371,11 +371,7 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  color: rgba(0, 0, 0, 0.8);
+  border: none;
   font-size: 12px;
   font-size: 0.75rem;
   line-height: 1;
@@ -687,22 +683,18 @@ header {
       font-size: 1.5rem;
       padding-right: 1rem; }
 
-.line1.toggle-open {
+.line1-active {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-  opacity: 0.0;
-  background-color: black;
   top: 5px; }
 
-.line2.active {
+.line2-active {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  background-color: black; }
+          transform: rotate(45deg); }
 
-.line3.active {
+.line3-active {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
-  background-color: black;
   top: -7px; }
 
 .site-info {
@@ -1015,7 +1007,7 @@ header {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: 1;
-  background: #1DAFB8;
+  background-color: rgba(29, 175, 184, 0.75);
   width: 90%; }
 
 .info-alert {
@@ -1031,10 +1023,11 @@ header {
   margin-right: auto;
   width: 90%; }
   .info-alert .info-alert-text {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 80%;
+        flex-basis: 80%;
     color: #FFFFFF;
-    text-align: center; }
+    text-align: center;
+    font-weight: bold; }
   .info-alert .gallery-button {
     position: relative; }
     .info-alert .gallery-button p {
@@ -1044,6 +1037,19 @@ header {
       left: 30%;
       text-transform: uppercase;
       color: #FFFFFF; }
+
+.wpcf7-submit {
+  color: #1DAFB8;
+  text-transform: uppercase;
+  font-size: 1.25rem !important;
+  font-weight: bold;
+  width: 8rem;
+  height: 4.25rem;
+  background: url("../../images/white-button.png") 10px 10px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  right: 2%; }
 
 /*	disables response output	 */
 div.wpcf7-response-output, div.wpcf7-validation-errors {
@@ -1101,11 +1107,15 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
             order: 0;
     margin-top: 2rem; }
   .page-template-contact .address-province {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+  .page-template-contact .wpcf7-submit {
+    bottom: 50%; } }
 
 .term-weekly .weekly-event-page-title {
-  padding-left: 0.5rem;
+  padding-left: 2%;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
   color: #000000; }
 
 .term-weekly .site-main {
@@ -1174,11 +1184,13 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 .term-weekly .entry-title-wrapper:hover {
   height: 100%;
   -ms-flex-preferred-size: 100%;
-      flex-basis: 100%; }
+      flex-basis: 100%;
+  -webkit-transition: 1s;
+  transition: 1s; }
 
 .term-weekly .entry-content {
   position: absolute;
-  top: 0%;
+  top: -8%;
   left: 5%;
   color: white;
   display: none;
@@ -1186,7 +1198,18 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   margin-right: auto;
   width: 90%; }
 
+.term-weekly .icon {
+  width: 4rem;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
 .term-weekly .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.term-weekly .days {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -1231,7 +1254,92 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         flex-basis: 49%;
     height: 50vw; }
   .term-weekly .entry-content {
-    font-size: 1.5rem; } }
+    top: 20%;
+    font-size: 1.5rem; }
+  .term-weekly .icon {
+    width: 6rem; } }
+
+/* NEWS */
+.post-type-archive-news .article-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 95%; }
+
+.post-type-archive-news .page-title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-transform: uppercase;
+  color: #000000;
+  padding-left: 2%; }
+
+.post-type-archive-news .type-news {
+  position: relative;
+  height: 15rem;
+  -ms-flex-preferred-size: 49%;
+      flex-basis: 49%;
+  margin-top: 0.5rem;
+  background-size: cover;
+  background-position: center; }
+
+.post-type-archive-news .article-title {
+  position: absolute;
+  bottom: 0%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 40%;
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: white;
+  margin: 0;
+  width: 100%;
+  padding: 0.5rem 1rem 1rem; }
+
+.post-type-archive-news .twitter-timeline.twitter-timeline-rendered {
+  display: none !important; }
+
+.post-type-archive-news .site-footer {
+  margin-top: 2rem; }
+
+@media screen and (min-width: 1024px) {
+  .post-type-archive-news #primary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .post-type-archive-news .content {
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%; }
+  .post-type-archive-news .page-title {
+    color: #FFFFFF;
+    background: #000000;
+    width: 40%; }
+  .post-type-archive-news .type-news {
+    height: 18rem;
+    margin-bottom: 0.5rem; }
+  .post-type-archive-news .article-title {
+    font-size: 1rem; }
+  .post-type-archive-news article:nth-child(8n+3) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .post-type-archive-news article:nth-child(8n+8) {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%; }
+  .post-type-archive-news .twitter-wrapper {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+    margin-top: 5rem;
+    padding-right: 1rem;
+    overflow-y: scroll;
+    height: 215vh; }
+  .post-type-archive-news .twitter-timeline.twitter-timeline-rendered {
+    width: 100% !important;
+    display: block !important; } }
 
 /*--------------------------------------------------------------
 # Media
@@ -1324,12 +1432,15 @@ object {
   top: 15%;
   width: 25%; }
 
+<<<<<<< HEAD
 .home h2 {
   font-size: 8vw;
   text-transform: uppercase;
   margin-top: 4rem;
   margin-bottom: 0; }
 
+=======
+>>>>>>> eaaf0fd2081a8aa4bff1748f481aa34e0450e4bc
 .home article {
   background: url(../../images/nature-background.png);
   background-size: contain;
