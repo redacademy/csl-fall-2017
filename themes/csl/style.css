@@ -243,6 +243,9 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
+h1 {
+  text-transform: uppercase; }
+
 /* Copy */
 p {
   margin-bottom: 1.5rem; }
@@ -1277,6 +1280,16 @@ object {
 .hero-container {
   background: url(../../images/csl-hero.png);
   background-size: cover;
+<<<<<<< HEAD
+  height: 40vh;
+  position: relative; }
+  .hero-container img {
+    position: absolute;
+    height: 55px;
+    bottom: 3vh;
+    left: 5vw; }
+
+=======
   background-position: left;
   height: 80vw;
   position: relative; }
@@ -1301,6 +1314,7 @@ object {
   top: 20%;
   width: 25%; }
 
+>>>>>>> 31b1ff0e2bf170ba51572cf30bf0825a52e9591d
 .home article {
   background: url(../../images/nature-background.png);
   background-size: cover;
