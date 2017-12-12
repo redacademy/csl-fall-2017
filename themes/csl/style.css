@@ -1096,8 +1096,10 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     bottom: 50%; } }
 
 .term-weekly .weekly-event-page-title {
-  padding-left: 0.5rem;
+  padding-left: 2%;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.5rem;
   color: #000000; }
 
 .term-weekly .site-main {
