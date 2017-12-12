@@ -1432,15 +1432,12 @@ object {
   top: 15%;
   width: 25%; }
 
-<<<<<<< HEAD
 .home h2 {
   font-size: 8vw;
   text-transform: uppercase;
   margin-top: 4rem;
   margin-bottom: 0; }
 
-=======
->>>>>>> eaaf0fd2081a8aa4bff1748f481aa34e0450e4bc
 .home article {
   background: url(../../images/nature-background.png);
   background-size: contain;
