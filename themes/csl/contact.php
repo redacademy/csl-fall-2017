@@ -6,10 +6,19 @@
  */
 
 get_header(); ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
-
+		<div class="alert-container">
+        <div class="info-alert alert-box-success">
+            <p class="info-alert-text">
+              this is the alert message box after contact form is submitted
+            </p>
+						<a href="csl/gallery" class="gallery-button">
+							<img src='<?php echo get_template_directory_uri() . '/images/white-button.png'; ?>'>
+								<p>Gallery</p>
+				    </a>
+        </div>
+    </div>  
     <div class="entry-content">
           <div class="contact-page-contact-info">
 						<p><?php echo get_theme_mod( 'title_value' ); ?></p>

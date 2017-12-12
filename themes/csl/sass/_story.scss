@@ -1,0 +1,129 @@
+/*--------------------------------------------------------------
+# Story
+--------------------------------------------------------------*/
+
+/* Story */
+.single-story, .post-type-archive-story {
+  .entry-header {
+    margin: 2.5% 0 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .one-house-title, .entry-title {
+    padding: 0 5%;
+    
+  }
+
+  .alt-title {
+    text-transform: none;
+    font-weight: 500;
+  }
+
+  // .content-wrapper {
+  //   padding: 0 5% 2%;
+  // }
+
+  .entry-content {
+    padding: 0 5%;
+  }
+
+
+/* One-House */
+  .one-house-title-mobile {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .one-house-title-desktop {
+    display: none;
+
+    @include desktop {
+      display: flex;
+    }
+  }
+
+    .entry-content-mobile {
+      @include desktop {
+        display: none;
+      }
+    }
+
+    .entry-content-desktop {
+      display: none;
+      
+          @include desktop {
+            display: flex;
+
+          }
+    }
+
+  .one-house-hero[style] {
+    height: 50vh;
+    width: 100%;
+    background-position: center !important;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+
+    @include desktop {
+      height: 100vh;
+      width: 100%;
+    }
+  }
+
+  .meet-our-team {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    background: url("../../images/EagleBackground.png") repeat top;
+    background-size: contain;
+
+    .team-member {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: space-between;
+      align-items: center;
+      max-height: 100%;
+      width: 50vw;
+      text-align: center;
+
+      .team-member__image {
+        margin: 5% 0 2%;
+      }
+
+      .team-member__name {
+        margin: 2% 0;
+      }
+
+      .team-member__title {
+        margin: 2% 0;
+      }
+
+      p.team-member__description {
+        display: none;
+      }
+    }
+  }
+
+/* Origin */
+  .origin-image {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+/* Vision */
+
+
+
+/* Heritage */
+
+
+
+}
