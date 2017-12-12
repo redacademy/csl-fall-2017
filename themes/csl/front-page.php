@@ -64,13 +64,12 @@ get_header(); ?>
 		<div class="news-archive-image-wrapper">
 		<h3><?php the_title(); ?></h3>
 
-		
-			<a href="<?php echo $news_url ?>">
-				<?php 
-				$news_article_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_article_image_id', 1 ), 'medium' );
-				echo $news_article_image; 
-				?>
-			</a>
+				<a href="<?php echo $news_url ?>">
+					<?php 
+					$news_article_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_article_image_id', 1 ), 'medium' );
+					echo $news_article_image; 
+					?>
+				</a>
 		</div>
 
 	<?php endwhile; ?>
