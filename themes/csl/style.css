@@ -668,19 +668,19 @@ header {
       font-size: 1.5rem;
       padding-right: 1rem; }
 
-.line1.toggle-open {
+.line1-active {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
   opacity: 0.0;
   background-color: black;
   top: 5px; }
 
-.line2.active {
+.line2-active {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
   background-color: black; }
 
-.line3.active {
+.line3-active {
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
   background-color: black;

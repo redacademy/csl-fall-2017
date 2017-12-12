@@ -134,19 +134,19 @@ header{
 }	
 
 	//animate shit//
-.line1.toggle-open {
+.line1-active {
 	transform: rotate(270deg);
 	opacity:0.0;
 	background-color:black;
 	top:5px;
 }
 		
-.line2.active {
+.line2-active {
 	transform: rotate(45deg);
 	background-color:black;
 }
 		
-.line3.active {
+.line3-active {
 	transform: rotate(-45deg);
 	background-color:black;
 	top:-7px;
@@ -487,10 +487,9 @@ header{
 		}
 	}
 }
+
 /*	disables response output	 */
 div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !important; }
-
-
 
 //contact desktop//
 @media screen  and (min-width:1024px) {
