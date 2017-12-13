@@ -17,41 +17,39 @@
 
   <header class="entry-header">
   
-    <h1 class="one-house-title-mobile">
+    <h1 class="one-house-title-mobile"> <!-- mobile title -->
       <?php the_title() ?>
       <span class="alt-title"><?php echo $alt_title ?></span> 
     </h1>
 
     <div role="image" class="one-house-hero" aria-label="<?php echo get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true); ?>" style="background: url('<?php echo $one_house_hero[0]; ?>');"> 
 
-      <h1 class="one-house-title-desktop">
+      <h1 class="one-house-title-desktop"> <!-- desktop title -->
         <?php the_title() ?>
         <span class="alt-title"><?php echo $alt_title ?></span> 
       </h1>
-      <div class="entry-content-desktop">
+      <div class="entry-content-desktop"> <!-- desktop content -->
         <?php the_content(); ?>
       </div><!-- .entry-content -->
 
     </div>
 
-<?php endif; ?>
+  <?php endif; ?>
   
 	</header><!-- .entry-header -->
-  <section class="content-wrapper">
-    <div class="entry-content-mobile entry-content">
+  <section class="one-house-content-wrapper">
+    <div class="entry-content-mobile entry-content"> <!-- mobile content -->
       <?php the_content(); ?>
     </div><!-- .entry-content -->
 
     <?php if ( get_post_meta(get_the_ID(), '_story_team_member_group', true ) ) : ?>
     
-    <section class="meet-our-team">
-
       <?php ?>
-
+    <section class="meet-our-team-wrapper">
       <div class="meet-our-team-title">
         <h2>Meet our Team</h2>
       </div>
-
+    <section class="meet-our-team">
       <?php
         foreach( $team_member_group as $team_member ){
           if(isset($team_member['_story_name'])){ ?>
@@ -71,7 +69,7 @@
         }
       ?>
       <?php endif; ?>
-    
+    </section>
     </section>
   </section>
 </article><!-- #post-## -->
