@@ -168,7 +168,7 @@
 div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !important; }
 
 //contact desktop//
-@media screen  and (min-width:1024px) {
+@media screen  and (min-width:$desktop-width) {
 	.page-template-contact{
 		.entry-content{
 			display:flex;

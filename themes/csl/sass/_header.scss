@@ -126,7 +126,7 @@ header{
     top:-7px;
   }
 // desktop header //
-@media screen  and (min-width:1024px){
+@media screen  and (min-width:$desktop-width){
 	.toggle-open{
 		display:none;
 	}
