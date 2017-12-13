@@ -1149,7 +1149,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  z-index: 9999; }
   .page-template-contact .csl-social-media-class a {
     color: #000000;
     text-decoration: none;

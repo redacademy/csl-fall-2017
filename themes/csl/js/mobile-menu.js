@@ -6,7 +6,7 @@
     $('.line2').toggleClass('line2-active');
     $('.line3').toggleClass('line3-active');
     $('#masthead').toggleClass('header-teal');
-    $( '.mobile-menu' ).slideToggle( 'slow', function() {
+    $( '.mobile-menu' ).slideToggle( 100, function() {
     });
   });
   
