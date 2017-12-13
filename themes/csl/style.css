@@ -1138,8 +1138,30 @@ header {
   .page-template-contact .wpcf7-form p:nth-child(7) {
     text-align: right; }
 
-.page-template-contact .widget-area {
-  display: none; }
+.page-template-contact .widget-title {
+  font-size: 1rem; }
+
+.page-template-contact .csl-social-media-class {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 1rem; }
+  .page-template-contact .csl-social-media-class a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    width: 20%; }
+  .page-template-contact .csl-social-media-class a:hover {
+    color: #1DAFB8; }
+  .page-template-contact .csl-social-media-class .fa {
+    font-size: 2rem;
+    padding-right: 1rem; }
+  .page-template-contact .csl-social-media-class a:nth-child(3) {
+    padding-top: 0.5rem; }
 
 .page-template-contact .entry-title {
   position: absolute;
@@ -1197,6 +1219,9 @@ header {
           order: 1;
   margin-top: 2rem; }
 
+.page-template-contact .address-province p {
+  font-size: 1rem; }
+
 .page-template-contact .entry-content {
   position: relative; }
   .page-template-contact .entry-content p {
@@ -1205,7 +1230,7 @@ header {
 .page-template-contact .mapp-layout {
   margin-bottom: 10rem; }
 
-.page-template-contact .social-info {
+.page-template-contact .widget-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1215,20 +1240,8 @@ header {
           flex-direction: column;
   position: absolute;
   width: 95%;
-  top: 49%;
+  top: 48.5%;
   left: 2.5%; }
-  .page-template-contact .social-info .fa {
-    font-size: 2rem;
-    color: black;
-    padding-right: 1rem; }
-  .page-template-contact .social-info p:nth-child(1) {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem; }
-  .page-template-contact .social-info a {
-    text-decoration: none;
-    font-weight: bold;
-    color: black; }
 
 .page-template-contact .eagle-logo {
   position: absolute;
@@ -1262,10 +1275,10 @@ header {
   background-color: rgba(29, 175, 184, 0.75);
   position: absolute;
   left: 5%;
-  top: 40%; }
+  top: 30%; }
   .info-alert .info-alert-text {
-    -ms-flex-preferred-size: 80%;
-        flex-basis: 80%;
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
     color: #FFFFFF;
     text-align: center;
     font-weight: bold; }
@@ -1335,12 +1348,14 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     position: absolute;
     left: 36%;
     top: -48%; }
-  .page-template-contact .social-info {
+  .page-template-contact .widget-area {
     height: 50%;
     width: auto;
     top: 5%;
     right: 5%;
     left: 77%; }
+  .page-template-contact .eagle-logo {
+    top: 70%; }
   .page-template-contact .contact-additional-info {
     width: 30%;
     -webkit-box-ordinal-group: 1;
@@ -1350,7 +1365,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .page-template-contact .address-province {
     margin-top: 2rem; }
   .page-template-contact .wpcf7-submit {
-    bottom: 50%; } }
+    bottom: 50%;
+    right: -35%; } }
 
 .term-weekly .weekly-event-page-title {
   padding-left: 2%;
@@ -1412,7 +1428,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin-top: 1rem; }
   .term-weekly .entry-title .alt-title {
     color: #d3d3d3;
     font-size: 1rem;
@@ -1466,6 +1483,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   background-color: rgba(255, 203, 51, 0.75); }
 
 @media screen and (min-width: 750px) {
+  .term-weekly .title {
+    margin-top: 0.5rem; }
   .term-weekly .weekly-event-page-title {
     padding-left: 2.5%;
     color: #fff;
@@ -1480,8 +1499,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
             justify-content: flex-start;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
-    font-size: 2rem; }
+            align-items: center; }
   .term-weekly .site-main {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -18,9 +18,29 @@
 			text-align:right;
 		}
 	}
-	
-	.widget-area{
-		display:none;
+	.widget-title{
+		font-size:1rem;
+	}
+	.csl-social-media-class{
+		display:flex;
+		flex-direction: column;
+		margin-left:1rem;
+		a{
+			color:$black;
+			text-decoration: none;
+			font-size:1rem;
+			width:20%;
+		}
+		a:hover{
+			color:$teal;
+		}
+		.fa{
+			font-size:2rem;
+			padding-right:1rem;
+		}
+		a:nth-child(3){
+			padding-top:0.5rem;
+		}
 	}
 
 	.entry-title{
@@ -76,6 +96,11 @@
 		order: 1;
     margin-top: 2rem;
 	}
+	.address-province{
+		p{
+			font-size:1rem;
+		}
+	}
 	.entry-content{
 		position: relative;
 		p{
@@ -86,29 +111,15 @@
 		margin-bottom:10rem;
 	}
 
-	.social-info{
+	.widget-area{
 		display: flex;
-    flex-direction: column;
+		flex-direction: column;
 		position: absolute;
 		width:95%;
-    top: 49%;
-    left: 2.5%;
-		.fa{
-			font-size:2rem;
-			color:black;
-			padding-right:1rem;
-		}
-		p:nth-child(1){
-			font-size:1.5rem;
-			font-weight:bold;
-			margin-bottom:1rem
-		}
-		a{
-			text-decoration: none;
-			font-weight:bold;
-			color:black;
-		}
+		top: 48.5%;
+		left: 2.5%;
 	}
+
 	.eagle-logo{
 		position: absolute;
     right: 5%;
@@ -138,9 +149,9 @@
 	background-color: rgba(29, 175, 184, 0.75);
 	position: absolute;
 	left: 5%;
-	top: 40%;
+	top: 30%;
 	.info-alert-text{
-		flex-basis:80%;
+		flex-basis:90%;
 		color:#FFFFFF;
 		text-align:center;
 		font-weight:bold;
@@ -219,12 +230,15 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 			left: 36%;
 			top: -48%;
 		}
-		.social-info{
+		.widget-area{
 			height:50%;
 			width:auto;
 			top: 5%;
 			right: 5%;
 			left:77%;
+		}
+		.eagle-logo{
+			top:70%;
 		}
 		.contact-additional-info{
 			width: 30%;
@@ -236,6 +250,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 		}
 		.wpcf7-submit{
 		bottom:50%;
+		right:-35%;
 		}
 	}
 }
