@@ -1139,9 +1139,10 @@ header {
 
 .page-template-contact .entry-title {
   position: absolute;
-  top: -1%;
-  left: 5%;
-  text-transform: uppercase; }
+  top: -2%;
+  left: 4%;
+  text-transform: uppercase;
+  font-size: 30px; }
 
 .page-template-contact .contact-page-contact-info {
   display: -webkit-box;
@@ -1218,9 +1219,12 @@ header {
     padding-right: 1rem; }
   .page-template-contact .social-info p:nth-child(1) {
     font-size: 1.5rem;
-    font-weight: bold; }
-  .page-template-contact .social-info a:nth-child(2) {
-    margin-top: 1rem; }
+    font-weight: bold;
+    margin-bottom: 1rem; }
+  .page-template-contact .social-info a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black; }
 
 .page-template-contact .eagle-logo {
   position: absolute;
@@ -1514,7 +1518,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 
 .post-type-archive-news .type-news {
   position: relative;
-  height: 15rem;
+  height: 75vw;
   -ms-flex-preferred-size: 49%;
       flex-basis: 49%;
   margin-top: 0.5rem;
