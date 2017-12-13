@@ -46,8 +46,8 @@
 						<span class="line3"></span>
 					</button>
 					<ul class="social-icons">
-						<?php echo '<i class="fa fa-facebook-square" aria-hidden="true"></i>' ?>
-						<?php echo '<i class="fa fa-twitter" aria-hidden="true"></i>' ?>
+						<a href="https://www.facebook.com/groups/104973563172567/about/"><?php echo '<i class="fa fa-facebook-square" aria-hidden="true"></i>' ?></a>
+						<a href= "https://twitter.com/cultrsaveslives?lang=en"><?php echo '<i class="fa fa-twitter" aria-hidden="true"></i>' ?>  </a>
 					<ul>
 					
 

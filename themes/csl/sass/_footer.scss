@@ -7,7 +7,7 @@
 	height: auto;
 	padding-top: 2rem;
 	font-size: 1.25rem;
-	margin-left: 1rem;
+	margin-left: 11vw;
 	margin-right: 1rem;
 	padding-left: 0;
 	a{
@@ -86,13 +86,17 @@
 	.site-info{
 		position: relative;
 	}
+	.footer-nav-wrapper{
+		font-size:1rem;
+		margin-left:0;
+	}
  .footer-nav{
 	flex-direction: row;
 	justify-content: space-around;
 	position: absolute;
-	width: 63%;
+	width: 67vw;
 	bottom: 35%;
-	margin-left: 10%;
+	margin-left: 10vw;
 	padding-left: 1rem;
  }
  .footer-logo-container{
