@@ -44,14 +44,12 @@
 
     <?php if ( get_post_meta(get_the_ID(), '_story_team_member_group', true ) ) : ?>
     
-    <section class="meet-our-team">
-
       <?php ?>
-
+    <section class="meet-our-team-wrapper">
       <div class="meet-our-team-title">
         <h2>Meet our Team</h2>
       </div>
-
+    <section class="meet-our-team">
       <?php
         foreach( $team_member_group as $team_member ){
           if(isset($team_member['_story_name'])){ ?>
@@ -71,7 +69,7 @@
         }
       ?>
       <?php endif; ?>
-    
+    </section>
     </section>
   </section>
 </article><!-- #post-## -->
