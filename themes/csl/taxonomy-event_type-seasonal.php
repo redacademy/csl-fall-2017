@@ -8,7 +8,7 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area">
-		<?php wp_nav_menu (array('theme_location' => 'secondary-menu','menu_class' => 'nav'));?>
+		<?php wp_nav_menu (array('theme_location' => 'secondary-menu','menu_class' => 'nav sub-nav'));?>
 		<main id="main" class="site-main owl-carousel owl-theme" role="main">
 
 		<?php if ( have_posts() ) : ?>
@@ -23,37 +23,43 @@ get_header(); ?>
 			$s_time = get_post_meta( get_the_ID(), '_event_start_time', true );
 			$e_time = get_post_meta( get_the_ID(), '_event_end_time', true );
 			?>
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
-				
-				<!-- .entry-header -->
-
-				<div class="entry-title">
-					<h2 class="title"><?php the_title(); ?>
-						<?php if ( $alt_title ) : ?>
-						<span class="alt-title"><?php echo $alt_title ?></span>
+			<article id="post-<?php the_ID(); ?>" <?php post_class( 'owl-lazy' ); ?> data-src="<?php 
+			if ( has_post_thumbnail( ) ) {
+				the_post_thumbnail_url( );
+			} else {
+				echo get_template_directory_uri() . '/images/NatureBackground1.png';
+			}
+			
+			?>">
+				<div class="entry-wrapper">
+					<div class="entry-title">
+						<h2 class="title"><?php the_title(); ?>
+							<?php if ( $alt_title ) : ?>
+							<span class="alt-title"><?php echo $alt_title ?></span>
+							<?php endif; ?>
+						</h2>
+					</div><!-- .entry-title -->
+					<div class="entry-content">
+						<?php if ( $date ) : ?>
+						<span class="date"><?php 
+						$date = explode( '/', $date);
+						echo date('F jS, Y', mktime(0, 0, 0, $date[0], $date[1], $date[2]));
+						?></span>
 						<?php endif; ?>
-					</h2>
-				</div><!-- .entry-title -->
-				<div class="entry-content">
-					<?php if ( $date ) : ?>
-					<span class="date"><?php 
-					$date = explode( '/', $date);
-					echo date('F jS, Y', mktime(0, 0, 0, $date[0], $date[1], $date[2]));
-					?></span>
-					<?php endif; ?>
-					<?php if ( $s_time ) : ?>
-					<span class="time"><?php 
-					echo strtolower( str_replace( ' ', '', ltrim($s_time, '0' ) ) ); 
-					if ( $e_time ) {
-						echo ' - ' . strtolower( str_replace( ' ', '', ltrim($e_time, '0' ) ) );
-					}
-					?></span>
-					<?php endif; ?>
-					<?php if ( $location ) : ?>
-					<span class="location"><?php echo $location ?></span>
-					<?php endif; ?>
-					<div class="content"><?php the_content(); ?></div>
-				</div><!-- .entry-content -->
+						<?php if ( $s_time ) : ?>
+						<span class="time"><?php 
+						echo strtolower( str_replace( ' ', '', ltrim($s_time, '0' ) ) ); 
+						if ( $e_time ) {
+							echo ' - ' . strtolower( str_replace( ' ', '', ltrim($e_time, '0' ) ) );
+						}
+						?></span>
+						<?php endif; ?>
+						<?php if ( $location ) : ?>
+						<span class="location"><?php echo $location ?></span>
+						<?php endif; ?>
+						<div class="content"><?php the_content(); ?></div>
+					</div><!-- .entry-content -->
+				</div>
 			</article><!-- #post-## -->
 		<?php endwhile; ?>
 

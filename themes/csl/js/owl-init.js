@@ -5,7 +5,8 @@
       nav:true,
       items: 1,
       center: true,
-      navText: ['','']
+      navText: ['',''],
+      lazyLoad: true
 
     });
     $('.owl-prev').append('<p class="screen-reader-text">Button for previous entry.</p>');
