@@ -822,32 +822,30 @@ object {
 .display {
   display: block; }
 
-.header-widget-area .csl-social-media-class {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  font-size: 2rem;
-  margin-bottom: 0;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-  height: 4rem; }
-
-.header-widget-area .social-media-container {
-  padding-right: 0.5rem; }
-
-.header-widget-area a {
-  color: white; }
-
-.header-widget-area a:hover {
-  color: #1DAFB8; }
-
-.header-widget-area p {
-  display: none; }
+.header-widget-area {
+  padding-right: 1%; }
+  .header-widget-area .csl-social-media-class {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 1.25rem;
+    margin-bottom: 0;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    height: 4rem; }
+  .header-widget-area .social-media-container {
+    padding-right: 0.5rem; }
+  .header-widget-area a {
+    color: white; }
+  .header-widget-area a:hover {
+    color: #1DAFB8; }
+  .header-widget-area p {
+    display: none; }
 
 .line1, .line2, .line3 {
   margin-top: 5px;
