@@ -9,7 +9,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<?php wp_nav_menu (array('theme_location' => 'secondary-menu','menu_class' => 'nav'));?>
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main owl-carousel owl-theme" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
