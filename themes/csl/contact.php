@@ -40,14 +40,8 @@ get_header(); ?>
             </div>
 					</div>
 			<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_sidebar(); ?>
+				<?php get_sidebar(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-        <!-- <div class="social-info">
-          <p>Stay Connected</p>
-					<a href="https://www.facebook.com/groups/104973563172567/about/"><?php echo '<i class="fa fa-facebook-square" aria-hidden="true"></i>' ?>Facebook</a>
-					<a href= "https://twitter.com/cultrsaveslives?lang=en"><?php echo '<i class="fa fa-twitter" aria-hidden="true"></i>' ?>Twitter</a>
-          <img src="<?php echo get_template_directory_uri() . '/images/eagle1.svg'; ?>" class="eagle-logo" alt="eagle logo" />
-        </div> -->
 
 			<?php endwhile; // End of the loop. ?>
 
