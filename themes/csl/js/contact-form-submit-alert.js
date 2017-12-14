@@ -6,7 +6,7 @@
 
       if($('.wpcf7-form').hasClass('sent')){
         $('.alert-container').css({
-          "display": "block"
+          'display': 'block'
         });
       }
     }

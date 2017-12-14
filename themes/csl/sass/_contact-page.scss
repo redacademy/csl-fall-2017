@@ -1,6 +1,7 @@
 
 // contact page //
 .page-template-contact{
+
 	.wpcf7-form{
 		background:url('../../images/contact-form-background.png');
 		padding-top:1rem;
@@ -18,16 +19,43 @@
 			text-align:right;
 		}
 	}
-	
+	.widget-title{
+		font-size:1rem;
+	}
 	.widget-area{
-		display:none;
+		.csl-social-media-class{
+			display:flex;
+			flex-direction: column;
+			margin-left:1rem;
+			z-index:9999;
+			a{
+				color:$black;
+				text-decoration: none;
+				font-size:1rem;
+			}
+			a:hover{
+				color:$teal;
+			}
+			.fa{
+				font-size:2rem;
+				padding-right:1rem;
+			}
+			a:nth-child(3){
+				padding-top:0.5rem;
+			}
+		}
+	}	
+	.social-media-container{
+		display:flex;
+		flex-direction: row;
 	}
 
 	.entry-title{
 		position: absolute;
-		top:-1%;
-		left:5%;
-		text-transform: uppercase;
+    top: -2%;
+    left: 4%;
+    text-transform: uppercase;
+    font-size: 30px;
 	}
 	.contact-page-contact-info{
 		display: flex;
@@ -75,6 +103,11 @@
 		order: 1;
     margin-top: 2rem;
 	}
+	.address-province{
+		p{
+			font-size:1rem;
+		}
+	}
 	.entry-content{
 		position: relative;
 		p{
@@ -85,26 +118,15 @@
 		margin-bottom:10rem;
 	}
 
-	.social-info{
+	.widget-area{
 		display: flex;
-    flex-direction: column;
+		flex-direction: column;
 		position: absolute;
 		width:95%;
-    top: 49%;
-    left: 2.5%;
-		.fa{
-			font-size:2rem;
-			color:black;
-			padding-right:1rem;
-		}
-		p:nth-child(1){
-			font-size:1.5rem;
-			font-weight:bold;
-		}
-		a:nth-child(2){
-			margin-top:1rem;
-		}
+		top: 48.5%;
+		left: 2.5%;
 	}
+
 	.eagle-logo{
 		position: absolute;
     right: 5%;
@@ -117,13 +139,12 @@
 .alert-container{
 	display:none;
 	position: fixed;
-	left: 5%;
-	right:5%;
-	top: 50%;
-	transform: translateY(-50%);
+	position: fixed;
+	top: 0%;
+	height: 100%;
 	z-index: 1;
-	background-color: rgba(29, 175, 184, 0.75);
-	width: 90%;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
 }
 .info-alert{
 	display: flex;
@@ -132,8 +153,12 @@
 	margin-left: auto;
 	margin-right: auto;
 	width: 90%;
+	background-color: rgba(29, 175, 184, 0.75);
+	position: absolute;
+	left: 5%;
+	top: 30%;
 	.info-alert-text{
-		flex-basis:80%;
+		flex-basis:90%;
 		color:#FFFFFF;
 		text-align:center;
 		font-weight:bold;
@@ -168,7 +193,7 @@
 div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !important; }
 
 //contact desktop//
-@media screen  and (min-width:1024px) {
+@media screen  and (min-width:$desktop-width) {
 	.page-template-contact{
 		.entry-content{
 			display:flex;
@@ -212,12 +237,15 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 			left: 36%;
 			top: -48%;
 		}
-		.social-info{
+		.widget-area{
 			height:50%;
 			width:auto;
 			top: 5%;
 			right: 5%;
 			left:77%;
+		}
+		.eagle-logo{
+			top:70%;
 		}
 		.contact-additional-info{
 			width: 30%;
@@ -229,6 +257,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !importan
 		}
 		.wpcf7-submit{
 		bottom:50%;
+		right:-35%;
 		}
 	}
 }

@@ -5,7 +5,7 @@
  *
  * @package CSL_Theme
  */
-if ( is_object_in_term( $post->ID, 'event_type', 'weekly' ) ) {
+if ( is_object_in_term( $post->ID, 'event_type', 'weekly' ) || is_object_in_term( $post->ID, 'event_type', 'seasonal' ) ) {
 	wp_redirect( home_url(), 301 );
 }
 get_header(); ?>
