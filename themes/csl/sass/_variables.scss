@@ -2,8 +2,13 @@
 
 $base__space-unit: 1.5rem;
 
+<<<<<<< HEAD
 // Screen Sizes
-$desktop-width: 650px;
+$desktop-width: 750px;
+=======
+// Screen Size Break
+$desktop-width: 1024px;
+>>>>>>> 54dc23d9b52de52386e81173857c1c9a23a2b67b
 
 // Colors
 
@@ -32,8 +37,12 @@ $alt-gray:#d3d3d3;
 
 // Typography
 
+// $font__size:
+// $font__h1: 
 $font__main: 'Lato', sans-serif;
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+

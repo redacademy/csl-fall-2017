@@ -61,18 +61,18 @@ get_header(); ?>
 
 
 		<?php $news_url = get_post_meta( get_the_ID(), '_article_url', true); ?>
+		
 		<div class="news-archive-image-wrapper">
+		<a href="<?php echo $news_url ?>">
 		<h3><?php the_title(); ?></h3>
 
-		
-			<a href="<?php echo $news_url ?>">
-				<?php 
-				$news_article_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_article_image_id', 1 ), 'medium' );
-				echo $news_article_image; 
-				?>
-			</a>
+					<?php 
+					$news_article_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_article_image_id', 1 ), 'medium' );
+					echo $news_article_image; 
+					?>
+				</a>
 		</div>
-
+		
 	<?php endwhile; ?>
 	</section>
 	</section>
@@ -83,10 +83,11 @@ get_header(); ?>
 	<?php endif; ?>
 	<!-- end of the loops -->
 
-		
+		<div class="front-page-see-more">
 			<a href="/csl/news" class="front-page-button">
 				<img src="<?php echo get_template_directory_uri() . '/images/white-button.png'; ?>" alt="see more button">
-				<div class="see-more">See<br>More</div>
+				<span class="see-more">See<br>More</span>
 			</a>
+		</div>
 	</section> <!-- Desktop Background -->
 <?php get_footer(); ?>
