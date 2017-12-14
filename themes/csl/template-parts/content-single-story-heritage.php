@@ -7,7 +7,7 @@
 ?>
 
   <?php
-    $heritage_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_heritage_image_id', 1 ), 'large' );
+    $heritage_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_heritage_image_id', 1 ), 'medium-large' );
   ?>
 
 <article id="post-<?php the_ID(); ?>" class="heritage-container">  
@@ -20,7 +20,7 @@
     
     <div class="heritage-featured-image heritage-images">
       <?php if ( has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail( 'large' ); ?>
+        <?php the_post_thumbnail( 'medium-large' ); ?>
       <?php endif; ?>
     </div><!-- feature-image -->
 

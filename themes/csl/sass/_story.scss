@@ -89,7 +89,7 @@
       height: 50vh;
       width: 100%;
       background-position: center !important;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat !important;
       background-size: cover !important;
 
       @include desktop {
@@ -204,35 +204,14 @@
 
 /* Vision */
   .vision-container {
-
-    @include desktop {
-      padding: 2.5% 2.5% 0;
-
-      h1 {
-        padding: 0;
-      }
-    }
-  }  
-
-  .vision-wrapper {
-    display: grid;
-		grid-template-areas: "entry-header" "featured-image" "vision-content" "image-two";
-		grid-gap: $base__space-unit/2;
-		width: 100%;
-    height: auto;
-    
-    @include desktop {
-      display: grid;
-      grid-template-areas: "entry-header featured-image" "vision-content featured-image" "vision-content image-two";
-    }
-    
+    // h1 {
+    //   padding: 0;
+    // }
     .entry-header {
-      grid-area: entry-header;
       margin-left: 0;
     }
 
     .entry-content {
-      grid-area: vision-content;
       margin-top: 0;
 
       p {
@@ -244,46 +223,59 @@
       }
 
       @include desktop {
-        padding: 0;
+        padding: 2.5% 0 0 2.5%;
       }
     }
 
-    .vision-featured-image {
-      grid-area: featured-image;
-      max-width: 100%;
-      width: 100%;
+    @include desktop {
+      padding: 2.5% 0;
 
-      img {
-        min-width: 100%;
-        min-height: 100%;
-      }
-
-      @include desktop {
-        margin-top: 5%;
-
-        img {
-          min-height: 10%;
-        }
+      .vision-mobile {
+        display: none;
       }
     }
+  }  
 
-    .vision-image-two {
-      grid-area: image-two;
-      width: 100%;
-
-      img {
-        min-width: 100%;
-        min-height: 100%;
-      }
-
-      @include desktop {
-        img {
-          min-height: 10%;
-        }
-      }
-    }
-
+.vision-wrapper-desktop {
+  @include desktop {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
   }
+
+  .desktop-content-wrapper {
+    flex-basis: 50%;
+  }
+
+  .vision-desktop {
+    display: none;
+  }
+
+  @include desktop {
+    .vision-desktop {
+      display: initial;
+      flex-basis: 100%;
+    }
+  }
+}
+
+.vision-wrapper-mobile {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  height: auto;
+  
+  @include desktop {
+    // margin: 0 2.5%;
+    flex-basis: 45%;    
+  }
+  
+  .vision-featured-image {
+    grid-area: featured-image;
+    max-width: 100%;
+    width: 100%;
+  }
+}
 /* End of Vision */
 
 /* Heritage */

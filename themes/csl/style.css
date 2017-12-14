@@ -1625,7 +1625,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     height: 50vh;
     width: 100%;
     background-position: center !important;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-size: cover !important; }
     @media (min-width: 1024px) {
       .single-story .one-house-container .one-house-hero[style], .post-type-archive-story .one-house-container .one-house-hero[style] {
@@ -1736,55 +1736,62 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
       margin: 0; }
+  .single-story .vision-container .entry-header, .post-type-archive-story .vision-container .entry-header {
+    margin-left: 0; }
+  .single-story .vision-container .entry-content, .post-type-archive-story .vision-container .entry-content {
+    margin-top: 0; }
+    .single-story .vision-container .entry-content p, .post-type-archive-story .vision-container .entry-content p {
+      margin-top: 0; }
+    .single-story .vision-container .entry-content ul, .post-type-archive-story .vision-container .entry-content ul {
+      padding-left: 5%; }
+    @media (min-width: 1024px) {
+      .single-story .vision-container .entry-content, .post-type-archive-story .vision-container .entry-content {
+        padding: 2.5% 0 0 2.5%; } }
   @media (min-width: 1024px) {
     .single-story .vision-container, .post-type-archive-story .vision-container {
-      padding: 2.5% 2.5% 0; }
-      .single-story .vision-container h1, .post-type-archive-story .vision-container h1 {
-        padding: 0; } }
-  .single-story .vision-wrapper, .post-type-archive-story .vision-wrapper {
-    display: grid;
-    grid-template-areas: "entry-header" "featured-image" "vision-content" "image-two";
-    grid-gap: 0.75rem;
+      padding: 2.5% 0; }
+      .single-story .vision-container .vision-mobile, .post-type-archive-story .vision-container .vision-mobile {
+        display: none; } }
+  @media (min-width: 1024px) {
+    .single-story .vision-wrapper-desktop, .post-type-archive-story .vision-wrapper-desktop {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
+  .single-story .vision-wrapper-desktop .desktop-content-wrapper, .post-type-archive-story .vision-wrapper-desktop .desktop-content-wrapper {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%; }
+  .single-story .vision-wrapper-desktop .vision-desktop, .post-type-archive-story .vision-wrapper-desktop .vision-desktop {
+    display: none; }
+  @media (min-width: 1024px) {
+    .single-story .vision-wrapper-desktop .vision-desktop, .post-type-archive-story .vision-wrapper-desktop .vision-desktop {
+      display: initial;
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; } }
+  .single-story .vision-wrapper-mobile, .post-type-archive-story .vision-wrapper-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
     width: 100%;
     height: auto; }
     @media (min-width: 1024px) {
-      .single-story .vision-wrapper, .post-type-archive-story .vision-wrapper {
-        display: grid;
-        grid-template-areas: "entry-header featured-image" "vision-content featured-image" "vision-content image-two"; } }
-    .single-story .vision-wrapper .entry-header, .post-type-archive-story .vision-wrapper .entry-header {
-      grid-area: entry-header;
-      margin-left: 0; }
-    .single-story .vision-wrapper .entry-content, .post-type-archive-story .vision-wrapper .entry-content {
-      grid-area: vision-content;
-      margin-top: 0; }
-      .single-story .vision-wrapper .entry-content p, .post-type-archive-story .vision-wrapper .entry-content p {
-        margin-top: 0; }
-      .single-story .vision-wrapper .entry-content ul, .post-type-archive-story .vision-wrapper .entry-content ul {
-        padding-left: 5%; }
-      @media (min-width: 1024px) {
-        .single-story .vision-wrapper .entry-content, .post-type-archive-story .vision-wrapper .entry-content {
-          padding: 0; } }
-    .single-story .vision-wrapper .vision-featured-image, .post-type-archive-story .vision-wrapper .vision-featured-image {
+      .single-story .vision-wrapper-mobile, .post-type-archive-story .vision-wrapper-mobile {
+        -ms-flex-preferred-size: 45%;
+            flex-basis: 45%; } }
+    .single-story .vision-wrapper-mobile .vision-featured-image, .post-type-archive-story .vision-wrapper-mobile .vision-featured-image {
       grid-area: featured-image;
       max-width: 100%;
       width: 100%; }
-      .single-story .vision-wrapper .vision-featured-image img, .post-type-archive-story .vision-wrapper .vision-featured-image img {
-        min-width: 100%;
-        min-height: 100%; }
-      @media (min-width: 1024px) {
-        .single-story .vision-wrapper .vision-featured-image, .post-type-archive-story .vision-wrapper .vision-featured-image {
-          margin-top: 5%; }
-          .single-story .vision-wrapper .vision-featured-image img, .post-type-archive-story .vision-wrapper .vision-featured-image img {
-            min-height: 10%; } }
-    .single-story .vision-wrapper .vision-image-two, .post-type-archive-story .vision-wrapper .vision-image-two {
-      grid-area: image-two;
-      width: 100%; }
-      .single-story .vision-wrapper .vision-image-two img, .post-type-archive-story .vision-wrapper .vision-image-two img {
-        min-width: 100%;
-        min-height: 100%; }
-      @media (min-width: 1024px) {
-        .single-story .vision-wrapper .vision-image-two img, .post-type-archive-story .vision-wrapper .vision-image-two img {
-          min-height: 10%; } }
   @media (min-width: 1024px) {
     .single-story .heritage-container, .post-type-archive-story .heritage-container {
       background-color: #D91F18;

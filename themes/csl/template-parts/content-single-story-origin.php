@@ -16,7 +16,7 @@
 	<section class="origin-wrapper">
 		<div class="origin-featured-image">
 			<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( 'large' ); ?>
+				<?php the_post_thumbnail( 'medium-large' ); ?>
 			<?php endif; ?>
 		</div>
 
