@@ -64,9 +64,19 @@ add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
  */
 function red_starter_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html( 'Sidebar' ),
+		'name'          => esc_html( 'Social Media For Contact Page' ),
 		'id'            => 'sidebar-1',
 		'description'   => '',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => esc_html( 'Social Media For Header' ),
+		'id'            => 'sidebar-2',
+		'description'   => 'side bar for header',
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -92,20 +102,21 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style('main-font','https://fonts.googleapis.com/css?family=Lato');
 	wp_enqueue_style('font-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'contact-form-submit-alert', get_template_directory_uri() . '/build/js/contact-form-submit-alert.min.js',array(), '20130116', true );
 	wp_enqueue_script( 'weekly-event-hover', get_template_directory_uri() . '/build/js/weekly-event-hover.min.js',array(), '20130116', true );
 	wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/build/js/mobile-menu.min.js',array(), '20130115', true );
 	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), null, true );
+	wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/build/js/owl-init.min.js', array(), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
-
-/* contact form alert */
 
 
 

@@ -1,0 +1,263 @@
+
+// contact page //
+.page-template-contact{
+
+	.wpcf7-form{
+		background:url('../../images/contact-form-background.png');
+		padding-top:1rem;
+		padding-bottom:3rem;
+		width: 100vw;
+		p{
+			padding-left:1rem;
+			padding-right:1rem;
+			color:white;
+		}
+		p:nth-child(2){
+			font-size:1.5rem;
+		}
+		p:nth-child(7){
+			text-align:right;
+		}
+	}
+	.widget-title{
+		font-size:1rem;
+	}
+	.widget-area{
+		.csl-social-media-class{
+			display:flex;
+			flex-direction: column;
+			margin-left:1rem;
+			z-index:9999;
+			a{
+				color:$black;
+				text-decoration: none;
+				font-size:1rem;
+			}
+			a:hover{
+				color:$teal;
+			}
+			.fa{
+				font-size:2rem;
+				padding-right:1rem;
+			}
+			a:nth-child(3){
+				padding-top:0.5rem;
+			}
+		}
+	}	
+	.social-media-container{
+		display:flex;
+		flex-direction: row;
+	}
+
+	.entry-title{
+		position: absolute;
+    top: -2%;
+    left: 4%;
+    text-transform: uppercase;
+    font-size: 30px;
+	}
+	.contact-page-contact-info{
+		display: flex;
+		flex-direction: column;
+		padding-top:3rem;
+		width: 90%;
+    @include center();
+		>p:nth-child(1){
+			margin:0;
+			font-size:1.25rem;
+		}
+		p:nth-child(2){
+			margin:0;
+		}
+		p:nth-child(3){
+			margin:0;
+		}
+	}
+
+	.contact-weekday-hours{
+		display:flex;
+		padding-top:2rem;
+		p:nth-child(1){
+			font-size:1rem;
+			font-weight:bold;
+		}
+		p:nth-child(2){
+			font-size:1rem;
+			padding-left:1rem;
+		}
+	}
+
+	.contact-weekend-hours{
+		display:flex;
+		p:nth-child(1){
+			font-size:1rem;
+			font-weight:bold;
+		}
+		p:nth-child(2){
+			font-size:1rem;
+			padding-left:1rem;
+		}
+	}
+	.contact-additional-info{
+		order: 1;
+    margin-top: 2rem;
+	}
+	.address-province{
+		p{
+			font-size:1rem;
+		}
+	}
+	.entry-content{
+		position: relative;
+		p{
+			margin:0;
+		}
+	}
+	.mapp-layout{
+		margin-bottom:10rem;
+	}
+
+	.widget-area{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		width:95%;
+		top: 48.5%;
+		left: 2.5%;
+	}
+
+	.eagle-logo{
+		position: absolute;
+    right: 5%;
+		top: 30%;
+		img{
+			height:80px;
+		}
+	}
+}	
+.alert-container{
+	display:none;
+	position: fixed;
+	position: fixed;
+	top: 0%;
+	height: 100%;
+	z-index: 1;
+	width: 100%;
+	background-color: rgba(0,0,0,0.4);
+}
+.info-alert{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	background-color: rgba(29, 175, 184, 0.75);
+	position: absolute;
+	left: 5%;
+	top: 30%;
+	.info-alert-text{
+		flex-basis:90%;
+		color:#FFFFFF;
+		text-align:center;
+		font-weight:bold;
+	}
+	.gallery-button{
+		position:relative;
+		p{
+		position: absolute;
+		font-weight:bold;
+		top: 20%;
+		left: 30%;
+		text-transform:uppercase;
+		color:#FFFFFF;
+		}
+	}
+}
+.wpcf7-submit{
+	color:$teal;
+	text-transform:uppercase;
+	font-size:1.25rem !important;
+	font-weight:bold;
+	width: 8rem;
+	height: 4.25rem;
+	background:url('../../images/white-button.png')10px 10px;
+	background-size:cover;
+	background-position: center;
+	position: absolute;
+	right:2%;
+}
+
+/*	disables response output	 */
+div.wpcf7-response-output, div.wpcf7-validation-errors { display: none !important; }
+
+//contact desktop//
+@media screen  and (min-width:$desktop-width) {
+	.page-template-contact{
+		.entry-content{
+			display:flex;
+			flex-wrap:wrap;
+		}
+		.wpcf7{
+			width:100%;
+			margin-top:10rem;
+		}
+		.wpcf7-form{
+			display:flex;
+			flex-wrap:wrap;
+			p:nth-child(2){
+				position: absolute;;
+			}
+			p:nth-child(3){
+				margin-top: 3rem;
+				width: 35%;
+			}
+			p:nth-child(4){
+				margin-top: 3rem;
+				width: 45%;
+			}
+			p:nth-child(5){
+				margin-top: 3rem;
+				width: 20%;
+			}
+			p:nth-child(6){
+				margin-top: 3rem;
+				width: 80%;
+			}
+			p:nth-child(7){
+				position: absolute;
+				right: 5%;
+				bottom: 5%;
+			}
+		}
+		.mapp-layout{
+			width: 39% !important;
+			position: absolute;
+			left: 36%;
+			top: -48%;
+		}
+		.widget-area{
+			height:50%;
+			width:auto;
+			top: 5%;
+			right: 5%;
+			left:77%;
+		}
+		.eagle-logo{
+			top:70%;
+		}
+		.contact-additional-info{
+			width: 30%;
+			order:0;
+			margin-top: 2rem;
+		}
+		.address-province{
+			margin-top:2rem;
+		}
+		.wpcf7-submit{
+		bottom:50%;
+		right:-35%;
+		}
+	}
+}

@@ -31,7 +31,7 @@ function csl_customizer_register( $wp_customize ) {
         'type' => 'textarea',
         'priority' => 10,
         'section' => 'title_section',
-        'label' => __( 'Textarea Field'),
+        'label' => __( 'Add a title'),
         'description' => '',
     ) );
 
@@ -57,7 +57,7 @@ function csl_customizer_register( $wp_customize ) {
     'type' => 'textarea',
     'priority' => 10,
     'section' => 'content_section',
-    'label' => __( 'Textarea Field'),
+    'label' => __( 'Add some content / this will show only on the contact page'),
     'description' => '',
   ) );
 

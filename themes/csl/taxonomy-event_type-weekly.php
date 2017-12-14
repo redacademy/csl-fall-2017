@@ -9,6 +9,7 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<?php wp_nav_menu (array('theme_location' => 'secondary-menu','menu_class' => 'nav'));?>
+		<div class="weekly-event-page-title">weekly events</div>
 		<main id="main" class="site-main" role="main">
 		
 

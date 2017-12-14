@@ -11,10 +11,11 @@ get_header(); ?>
 		<div class="alert-container">
         <div class="info-alert alert-box-success">
             <p class="info-alert-text">
-              this is the alert message box after contact form is submitted
+						Thank you for reaching out to us. We will get back to you as soon as possible!
+						In the meantime check out some of our past events.
             </p>
 						<a href="csl/gallery" class="gallery-button">
-							<img src='<?php echo get_template_directory_uri() . '/images/white-button.png'; ?>'>
+							<img src='<?php echo get_template_directory_uri() . '/images/yellow-button.png'; ?>'>
 								<p>Gallery</p>
 				    </a>
         </div>
@@ -39,19 +40,13 @@ get_header(); ?>
             </div>
 					</div>
 			<?php while ( have_posts() ) : the_post(); ?>
-
+				<?php get_sidebar(); ?>
 				<?php get_template_part( 'template-parts/content', 'page' ); ?>
-        <div class="social-info">
-          <p>Stay Connected</p>
-          <a><?php echo '<i class="fa fa-facebook-square" aria-hidden="true"></i>' ?>facebook</a>
-          <a><?php echo '<i class="fa fa-twitter" aria-hidden="true"></i>' ?>twitter</a>
-          <img src="<?php echo get_template_directory_uri() . '/images/eagle1.svg'; ?>" class="eagle-logo" alt="eagle logo" />
-        </div>
 
 			<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
+
 <?php get_footer(); ?>
