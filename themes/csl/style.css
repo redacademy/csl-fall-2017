@@ -262,7 +262,7 @@ h2 {
 p {
   font-size: 18px; }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 750px) {
   h1 {
     font-size: 36px;
     font-weight: bold; }
@@ -817,11 +817,7 @@ object {
           max-width: none; }
   .home .front-page-see-more {
     text-align: center;
-<<<<<<< HEAD
     padding-bottom: 1rem; }
-=======
-    padding-bottom: 2rem; }
->>>>>>> 64903980619d3bb0e92de3cc4a7f39dcc56d30b8
   .home .front-page-button {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -857,19 +853,26 @@ object {
     display: inline; }
 
 .term-seasonal article {
-  color: #ffffff;
-  height: 900px;
-  border: none;
-  background-size: cover; }
+  background-size: auto 300px;
+  background-repeat: no-repeat;
+  padding-top: 300px; }
+  @media (min-width: 750px) {
+    .term-seasonal article {
+      color: #ffffff;
+      height: 900px;
+      background-size: cover; } }
 
 .term-seasonal .entry-wrapper {
   padding-left: 2.5%;
-  padding-right: 5%;
-  position: absolute;
-  top: 12%;
-  display: inline-block;
-  background: rgba(0, 0, 0, 0.5);
-  width: 60%; }
+  padding-right: 2.5%; }
+  @media (min-width: 750px) {
+    .term-seasonal .entry-wrapper {
+      position: absolute;
+      top: 12%;
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.5);
+      width: 60%;
+      padding-right: 5%; } }
 
 /* MOBILE MENU	*/
 .display {
@@ -1985,8 +1988,6 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
               column-count: 2;
       -webkit-column-gap: 3rem;
               column-gap: 3rem; } }
-<<<<<<< HEAD
-=======
 
 /**
  * Owl Carousel v2.2.1
@@ -2252,16 +2253,21 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 .owl-theme .owl-dots .owl-dot span {
   width: 10px;
   height: 10px;
-  border: 1px solid black;
+  border: 1px solid white;
   margin: 5px 7px;
-  background: rgba(0, 0, 0, 0.5);
+  background: transparent;
   display: block;
   -webkit-backface-visibility: visible;
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
   border-radius: 30px; }
+  @media (min-width: 750px) {
+    .owl-theme .owl-dots .owl-dot span {
+      width: 17px;
+      height: 17px;
+      border: 1px solid white;
+      margin: 5px 14px; } }
 
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-  border: 2px solid black;
-  background: rgba(255, 255, 255, 0.5); }
->>>>>>> 64903980619d3bb0e92de3cc4a7f39dcc56d30b8
+  border: none;
+  background: white; }
