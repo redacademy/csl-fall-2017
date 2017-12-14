@@ -4,7 +4,6 @@
  *
  * @package Culture_Saves_Lives_Theme
  */
-
  ?>
 
 <?php 
@@ -15,26 +14,35 @@
 
 <article id="post-<?php the_ID(); ?>" class="vision-container">
 
-<section class="vision-wrapper">
-<header class="entry-header">
+  <header class="entry-header vision-mobile">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
+  <section class="vision-wrapper-desktop">
+    <div class="desktop-content-wrapper">
+      <header class="entry-header vision-desktop">
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+      </header><!-- .entry-header -->
 
-
-    <div class="entry-content">
-      <?php the_content(); ?>
-    </div><!-- .entry-content -->
+      <div class="entry-content vision-desktop">
+        <?php the_content(); ?>
+      </div><!-- Desktop entry-content -->
+    </div>
+    <section class="vision-wrapper vision-wrapper-mobile">
 
     <div class="vision-featured-image vision-image">
       <?php if ( has_post_thumbnail() ) : ?>
         <?php the_post_thumbnail( 'medium-large' ); ?>
       <?php endif; ?>
     </div>
+
+    <div class="entry-content vision-mobile">
+      <?php the_content(); ?>
+    </div><!-- Mobile entry-content -->
     
     <div class="vision-image-two vision-image">
       <?php echo $vision_secondary_image; ?>
     </div>
-
+    </section>
   </section>
 </article>
