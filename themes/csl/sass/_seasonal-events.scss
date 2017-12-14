@@ -16,18 +16,26 @@
     }
   }
   article {
-    color: $white;
-    height: 900px;
-    border: none;
-    background-size: cover;
+    background-size: auto 300px;
+    background-repeat: no-repeat;
+    padding-top: 300px;
+    @include desktop {
+      color: $white;
+      height: 900px;
+      background-size: cover;
+    }
+    
   }
   .entry-wrapper {
     padding-left: 2.5%;
-    padding-right: 5%;
-    position: absolute;
-    top: 12%;
-    display: inline-block;
-    background: $trans-black;
-    width: 60%;
+    padding-right: 2.5%;
+    @include desktop {
+      position: absolute;
+      top: 12%;
+      display: inline-block;
+      background: $trans-black;
+      width: 60%;
+      padding-right: 5%;
+    }
   }
 }
