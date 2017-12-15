@@ -1507,7 +1507,6 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 
 .term-weekly .entry-content {
   position: absolute;
-  top: -8%;
   left: 5%;
   color: white;
   display: none;
@@ -1605,7 +1604,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       flex-basis: 49%;
   margin-top: 0.5rem;
   background-size: cover;
-  background-position: center; }
+  background-position: center;
+  overflow: hidden; }
 
 .post-type-archive-news .article-title {
   position: absolute;
@@ -1617,7 +1617,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   color: white;
   margin: 0;
   width: 100%;
-  padding: 0.5rem 1rem 1rem; }
+  padding: 1rem 1rem 1rem; }
 
 .post-type-archive-news .twitter-timeline.twitter-timeline-rendered {
   display: none !important; }
