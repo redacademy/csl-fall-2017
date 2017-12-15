@@ -16,7 +16,7 @@
 //** Mission **//
 .home {
   .mission-eagles {
-    padding: 1em;
+    padding: 1rem;
   }
   .eagle-left {
     position: absolute;
@@ -53,7 +53,7 @@
       text-align: left;
       padding-left: 12vw;
       padding-right: 12vw;
-      margin-bottom: 28%;
+      padding-bottom: 28%;
     }
   }
   .entry-content{
@@ -81,8 +81,9 @@
       text-transform: uppercase;
       border: 1px solid black;
       background-color: black;
-      padding-right: 1em;
-      padding-left: 1em;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin: 4rem 0;
     }
     .desktop-bg {
       background: url(../../images/nature-background.png);
@@ -103,7 +104,7 @@
       }
     }
     .mission-eagles {
-        padding-left: 0;
+        padding: 0;
         .eagle-left {
           left: 60%;
           top: 20%;
@@ -118,9 +119,7 @@
       background: none;
       text-align: left;
       color: white;
-      h2{
-        margin: 2rem 0 2rem 0;
-      }
+
       p {
         text-align: left;
         padding-left: 2rem;
@@ -128,7 +127,7 @@
         margin-top: 0; 
         margin-right: 35%;
         font-size: 1.7rem;
-        margin-bottom: 0; 
+        padding-bottom: 0; 
       }
     }
     .front-page-news {
@@ -143,7 +142,7 @@
         .news-archive-image-wrapper {
           position: relative;
           overflow: hidden;
-          height: 64%;
+          height: 300px;
           flex-basis: 30%;
           h3 {
             position: absolute;
@@ -151,12 +150,15 @@
             z-index: 1;
             color: white;
             background-color: rgba(0, 0, 0, 0.5);
-            height: 45%;
+            width: 100%;
+            min-height: 135px;
             margin: 0;
             padding: .5rem 1rem 1rem 1rem;
           }
           img {
-            width: 125%;
+            min-width: 440px;
+            min-height: 300px;
+            max-height: auto;
             max-width: none;
           }
         }
@@ -164,17 +166,17 @@
     }
     .front-page-see-more{
       text-align: center;
-      padding-bottom: 1rem;
+      padding: 1rem 0;
     }
     .front-page-button {
-      display: inline-flex;
-      justify-content: center;
+      display: inline-block;
       position: relative;
       .see-more {
         font-family: $font__main;
         font-weight: bold;
         position: absolute;
         top: 1.2rem;
+        left: 42px;
         text-align: center;
         color: $teal;
         line-height: 27px;

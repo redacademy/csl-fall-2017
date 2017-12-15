@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package Culture_Saves_Lives_Theme
+ * @package CSL_Theme
  */
  ?>
 
@@ -11,6 +11,14 @@
   $vision_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_vision_image_id', 1 ), 'medium-large' );
 
 ?>
+
+<?php if ( is_single( 'vision' ) ) : ?>
+
+  <div class="story-nav">
+    <?php wp_nav_menu( array( 'theme_location' => 'story-menu' ) ); ?>
+  </div>
+  
+<?php endif; ?>
 
 <article id="post-<?php the_ID(); ?>" class="vision-container">
 
@@ -24,7 +32,7 @@
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
       </header><!-- .entry-header -->
 
-      <div class="entry-content vision-desktop">
+      <div class="entry-content-desktop vision-desktop">
         <?php the_content(); ?>
       </div><!-- Desktop entry-content -->
     </div>
