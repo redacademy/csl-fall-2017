@@ -872,7 +872,23 @@ object {
     .sub-nav {
       display: block; } }
   .sub-nav li {
-    display: inline; }
+    display: inline;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .sub-nav li:first-of-type::after {
+      content: '|';
+      padding: 1.25rem;
+      font-weight: 400; }
+    .sub-nav li a {
+      text-decoration: none;
+      color: white; }
+      .sub-nav li a:visited {
+        color: white; }
+      .sub-nav li a:hover {
+        font-weight: 900; }
+  .sub-nav .current-event-page {
+    font-weight: 900; }
 
 /* MOBILE MENU	*/
 .display {
@@ -919,15 +935,11 @@ object {
   display: none; }
 
 .toggle-open {
-  -webkit-box-shadow: none;
-          box-shadow: none;
   border: none;
   background: none;
   position: absolute;
-  -ms-flex-item-align: center;
-      align-self: center;
-  height: 3.5rem;
-  z-index: 9999; }
+  z-index: 9999;
+  top: 30%; }
 
 .mobile-menu {
   display: none;
@@ -947,7 +959,9 @@ object {
     background-color: #18949a; }
 
 .mobile-menu li {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 1rem 0 1rem 0;
   padding-left: 1rem; }
 
@@ -958,6 +972,7 @@ object {
   padding-left: 1rem; }
 
 .mobile-menu a {
+  width: 100%;
   text-decoration: none;
   color: white; }
 
@@ -1075,12 +1090,19 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-left: auto; }
   .site-header {
     height: 147px; }
   .content-area {
-    padding-top: 147px; } }
+    padding-top: 147px; }
+  .header-widget-area {
+    position: absolute;
+    right: 0;
+    height: 0;
+    top: 0; }
+  .widget csl-social-media-class {
+    height: 90%; } }
 
 .site-info {
   background: #000000; }
@@ -1591,14 +1613,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .term-weekly .title {
     margin-top: 0.5rem; }
   .term-weekly .wrapper {
-    padding-top: 3rem; }
-  .term-weekly .header-widget-area {
-    position: absolute;
-    right: 0;
-    height: 0;
-    top: 30%; }
-  .term-weekly .widget csl-social-media-class {
-    height: 90%; }
+    padding-top: 3.5rem; }
   .term-weekly .weekly-event-page-title {
     padding-left: 2.5%;
     color: #fff;
@@ -1644,7 +1659,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       flex-basis: 100%;
   text-transform: uppercase;
   color: #000000;
-  padding-left: 2%; }
+  padding-left: 2%;
+  margin-top: 5rem; }
 
 .post-type-archive-news .type-news {
   position: relative;
@@ -1685,7 +1701,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .post-type-archive-news .page-title {
     color: #FFFFFF;
     background: #000000;
-    width: 40%; }
+    width: 49%; }
   .post-type-archive-news .type-news {
     height: 30vw;
     margin-bottom: 0.5rem; }

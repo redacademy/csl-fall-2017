@@ -1,6 +1,6 @@
 <?php
 /**
- * RED Starter Theme functions and definitions.
+ * csl Starter Theme functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
@@ -13,11 +13,11 @@
 
 
 
-if ( ! function_exists( 'red_starter_setup' ) ) :
+if ( ! function_exists( 'csl_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  */
-function red_starter_setup() {
+function csl_starter_setup() {
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
 
@@ -45,25 +45,25 @@ function red_starter_setup() {
 	) );
 
 }
-endif; // red_starter_setup
-add_action( 'after_setup_theme', 'red_starter_setup' );
+endif; // csl_starter_setup
+add_action( 'after_setup_theme', 'csl_starter_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
  * @global int $content_width
  */
-function red_starter_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'red_starter_content_width', 640 );
+function csl_starter_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'csl_starter_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
+add_action( 'after_setup_theme', 'csl_starter_content_width', 0 );
 
 /**
  * Register widget area.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-function red_starter_widgets_init() {
+function csl_starter_widgets_init() {
 	register_sidebar( array(
 		'name'          => esc_html( 'Social Media For Contact Page' ),
 		'id'            => 'sidebar-1',
@@ -84,32 +84,32 @@ function red_starter_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 }
-add_action( 'widgets_init', 'red_starter_widgets_init' );
+add_action( 'widgets_init', 'csl_starter_widgets_init' );
 
 /**
  * Filter the stylesheet_uri to output the minified CSS file.
  */
-function red_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
+function csl_starter_minified_css( $stylesheet_uri, $stylesheet_dir_uri ) {
 	if ( file_exists( get_template_directory() . '/build/css/style.min.css' ) ) {
 		$stylesheet_uri = $stylesheet_dir_uri . '/build/css/style.min.css';
 	}
 
 	return $stylesheet_uri;
 }
-add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
+add_filter( 'stylesheet_uri', 'csl_starter_minified_css', 10, 2 );
 
 /**
  * Enqueue scripts and styles.
  */
-function red_starter_scripts() {
-	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-	wp_enqueue_style('main-font','https://fonts.googleapis.com/css?family=Lato');
+function csl_starter_scripts() {
+	wp_enqueue_style( 'csl-starter-style', get_stylesheet_uri() );
+	wp_enqueue_style('main-font','https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 	wp_enqueue_style('font-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'contact-form-submit-alert', get_template_directory_uri() . '/build/js/contact-form-submit-alert.min.js',array(), '20130116', true );
 	wp_enqueue_script( 'weekly-event-hover', get_template_directory_uri() . '/build/js/weekly-event-hover.min.js',array(), '20130116', true );
 	wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/build/js/mobile-menu.min.js',array(), '20130115', true );
-	wp_enqueue_script( 'red-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
+	wp_enqueue_script( 'csl-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), null, true );
 	wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/build/js/owl-init.min.js', array(), null, true );
 
@@ -117,7 +117,7 @@ function red_starter_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
-add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+add_action( 'wp_enqueue_scripts', 'csl_starter_scripts' );
 
 
 /**

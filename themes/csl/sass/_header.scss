@@ -40,13 +40,11 @@
 	display:none;
 }
 .toggle-open{
-	box-shadow: none;
 	border: none;
 	background:none;
 	position:absolute;
-	align-self:center;
-	height:3.5rem;
 	z-index:9999;
+	top:30%;
 	
 }
 
@@ -72,7 +70,7 @@
 }
 
 .mobile-menu li {
-	display: block; 
+	display: flex; 
 	padding:1rem 0 1rem 0; 
 	padding-left:1rem;
 }
@@ -85,6 +83,7 @@
 }
 
 .mobile-menu a{
+	width:100%;
 	text-decoration:none;
 	color:white;
 }
@@ -202,7 +201,7 @@ header{
 		max-width: 60%;
     flex-basis: 90%;
     display: flex;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-left: auto;
 	}
 	.site-header {
@@ -211,5 +210,14 @@ header{
 	}
 	.content-area {
 		padding-top: 147px;
+	}
+	.header-widget-area{
+		position: absolute;
+		right: 0;
+		height: 0;
+		top: 0;
+	}
+	.widget csl-social-media-class{
+		height:90%
 	}
 }	
