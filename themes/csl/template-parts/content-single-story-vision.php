@@ -14,13 +14,16 @@
 
 <?php if ( is_single( 'vision' ) ) : ?>
 
-  <div class="story-nav">
-    <?php wp_nav_menu( array( 'theme_location' => 'story-menu' ) ); ?>
-  </div>
+  <ul class="sub-nav">
+    <li><a href="/csl/story/#one-house">One-House</One-House></a></li>
+    <li><a href="/csl/story/#origin">Origin</a></li>
+    <li><a href="/csl/story/#vision">Vision</a></li>
+    <li><a href="/csl/story/#heritage">Heritage</a></li>
+  </ul>
   
 <?php endif; ?>
 
-<article id="post-<?php the_ID(); ?>" class="vision-container">
+<article id="vision" class="vision-container">
 
   <header class="entry-header vision-mobile">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

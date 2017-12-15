@@ -8,13 +8,16 @@
 
 <?php if ( is_single( 'origin' ) ) : ?>
 
-  <div class="story-nav">
-    <?php wp_nav_menu( array( 'theme_location' => 'story-menu' ) ); ?>
-  </div>
+	<ul class="sub-nav">
+		<li><a href="/csl/story/#one-house">One-House</One-House></a></li>
+		<li><a href="/csl/story/#origin">Origin</a></li>
+		<li><a href="/csl/story/#vision">Vision</a></li>
+		<li><a href="/csl/story/#heritage">Heritage</a></li>
+	</ul>
   
 <?php endif; ?>
 
-<article id="post-<?php the_ID(); ?>" class="origin-container">
+<article id="origin" class="origin-container">
 	<header class="entry-header">
 		
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
