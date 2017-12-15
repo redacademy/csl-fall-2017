@@ -8,74 +8,79 @@
 
 get_header(); ?>
 	<div id="primary" class="content-area">
-		<?php wp_nav_menu (array('theme_location' => 'secondary-menu','menu_class' => 'nav'));?>
-		<div class="weekly-event-page-title">weekly events</div>
-		<main id="main" class="site-main" role="main">
+		<ul class="sub-nav">
+			<li><a href="<?php  echo get_term_link( 'seasonal', 'event_type' ) ?>">Seasonal</a></li>
+			<li class="current-event-page"><a href="<?php echo get_term_link( 'weekly', 'event_type' ) ?>">Weekly</a></li>
+		</ul>
+		<div class="wrapper">
+			<h1 class="weekly-event-page-title">Weekly Events</h1>
+			<main id="main" class="site-main" role="main">
 		
 
-		<?php
-		if ( have_posts() ) : while ( have_posts() ) : the_post();
+			<?php
+			if ( have_posts() ) : while ( have_posts() ) : the_post();
 
-				$alt_title = get_post_meta( get_the_ID(), '_event_alt_title', true );
-				$location = get_post_meta( get_the_ID(), '_event_location', true );
-				$days = get_post_meta( get_the_ID(), '_event_day', true );
-				$s_time = get_post_meta( get_the_ID(), '_event_start_time', true );
-				$e_time = get_post_meta( get_the_ID(), '_event_end_time', true );
-				$icon = wp_get_attachment_image( get_post_meta( get_the_ID(), '_event_icon_id', 1 ), 'thumbnail' );
-				?>
+					$alt_title = get_post_meta( get_the_ID(), '_event_alt_title', true );
+					$location = get_post_meta( get_the_ID(), '_event_location', true );
+					$days = get_post_meta( get_the_ID(), '_event_day', true );
+					$s_time = get_post_meta( get_the_ID(), '_event_start_time', true );
+					$e_time = get_post_meta( get_the_ID(), '_event_end_time', true );
+					$icon = wp_get_attachment_image( get_post_meta( get_the_ID(), '_event_icon_id', 1 ), 'thumbnail' );
+					?>
 
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
-					
-					<!-- .entry-header -->
-				<div class="entry-title-wrapper">
-					<div class="entry-title">
-						<h2 class="title"><?php the_title(); ?>
-							<?php if ( $alt_title ) : ?>
-							<span class="alt-title"><?php echo $alt_title ?></span>
+					<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>style="background-image: url(<?php the_post_thumbnail_url( )?>);">
+						
+						<!-- .entry-header -->
+					<div class="entry-title-wrapper">
+						<div class="entry-title">
+							<h2 class="title"><?php the_title(); ?>
+								<?php if ( $alt_title ) : ?>
+								<span class="alt-title"><?php echo $alt_title ?></span>
+								<?php endif; ?>
+							</h2>
+						</div><!-- .entry-title -->
+						<div class="entry-content">
+							<?php if ( $s_time ) : ?>
+							<span class="time"><?php 
+							echo strtolower( str_replace( ' ', '', ltrim($s_time, '0' ) ) ); 
+							if ( $e_time ) {
+								echo ' - ' . strtolower( str_replace( ' ', '', ltrim($e_time, '0' ) ) );
+							}
+							?></span>
 							<?php endif; ?>
-						</h2>
-					</div><!-- .entry-title -->
-					<div class="entry-content">
-						<?php if ( $s_time ) : ?>
-						<span class="time"><?php 
-						echo strtolower( str_replace( ' ', '', ltrim($s_time, '0' ) ) ); 
-						if ( $e_time ) {
-							echo ' - ' . strtolower( str_replace( ' ', '', ltrim($e_time, '0' ) ) );
-						}
-						?></span>
-						<?php endif; ?>
-						<?php if ( $days ) : ?>
-						<span class="days">
-						<?php
-							echo short_days( $days );
-						?>
-						</span>
+							<?php if ( $days ) : ?>
+							<span class="days">
+							<?php
+								echo short_days( $days );
+							?>
+							</span>
 
-						<?php endif; ?>
-						<?php if ( $icon ) : ?>
-						<div class="icon">
-							<?php echo $icon ?>
-						</div>
-						<?php endif; ?>
-						<?php if ( $location ) : ?>
-						<span class="location"><?php echo $location ?></span>
-						<?php endif; ?>
-						<div class="content"><?php the_content(); ?></div>
-					</div><!-- .entry-content -->
-				</div>	
+							<?php endif; ?>
+							<?php if ( $icon ) : ?>
+							<div class="icon">
+								<?php echo $icon ?>
+							</div>
+							<?php endif; ?>
+							<?php if ( $location ) : ?>
+							<span class="location"><?php echo $location ?></span>
+							<?php endif; ?>
+							<div class="content"><?php the_content(); ?></div>
+						</div><!-- .entry-content -->
+					</div>	
+						
+					</article><!-- #post-## -->
+					<?php endwhile; ?>
 					
-				</article><!-- #post-## -->
-				<?php endwhile; ?>
-				
-			<?php else : ?>
+				<?php else : ?>
 
-				<?php get_template_part( 'template-parts/content', 'none' ); ?>
+					<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-			<?php endif; ?>
+				<?php endif; ?>
 
 
 
-		</main><!-- #main -->
+			</main><!-- #main -->
+		</div>
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
