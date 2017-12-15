@@ -10,18 +10,8 @@
     $heritage_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_heritage_image_id', 1 ), 'medium-large' );
   ?>
 
-<?php if ( is_single( 'heritage' ) ) : ?>
-
-  <ul class="sub-nav">
-    <li><a href="/csl/story/#one-house">One-House</One-House></a></li>
-    <li><a href="/csl/story/#origin">Origin</a></li>
-    <li><a href="/csl/story/#vision">Vision</a></li>
-    <li><a href="/csl/story/#heritage">Heritage</a></li>
-  </ul>
-  
-<?php endif; ?>
-
-<article id="heritage" class="heritage-container">  
+<article class="heritage-container"> 
+  <div class="hash-holder" id="heritage"></div>
 
   <header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

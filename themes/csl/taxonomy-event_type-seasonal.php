@@ -30,7 +30,7 @@ get_header(); ?>
 			if ( has_post_thumbnail( ) ) {
 				the_post_thumbnail_url( );
 			} else {
-				echo get_template_directory_uri() . '/images/NatureBackground1.png';
+				echo get_template_directory_uri() . '/images/nature-background1.png';
 			}
 			
 			?>">

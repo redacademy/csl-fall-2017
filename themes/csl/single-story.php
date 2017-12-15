@@ -6,6 +6,15 @@
  */
 
  get_header(); ?>
+ <div id="primary" class="content-area">
+
+      <ul class="sub-nav">
+        <li><a href="<?php echo home_url() ?>/story/#one-house">One-House</a></li>
+        <li><a href="<?php echo home_url() ?>/story/#origin">Origin</a></li>
+        <li><a href="<?php echo home_url() ?>/story/#vision">Vision</a></li>
+        <li><a href="<?php echo home_url() ?>/story/#heritage">Heritage</a></li>
+			</ul>
+		
 
 		<?php if ( have_posts() ) : ?>
 
@@ -31,5 +40,6 @@
 		<?php get_template_part( 'template-parts/content', 'none' ); ?>
 
 	<?php endif; ?>
+</div>
 
 <?php get_footer(); ?>
