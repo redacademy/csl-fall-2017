@@ -872,7 +872,23 @@ object {
     .sub-nav {
       display: block; } }
   .sub-nav li {
-    display: inline; }
+    display: inline;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .sub-nav li:first-of-type::after {
+      content: '|';
+      padding: 1.25rem;
+      font-weight: 400; }
+    .sub-nav li a {
+      text-decoration: none;
+      color: white; }
+      .sub-nav li a:visited {
+        color: white; }
+      .sub-nav li a:hover {
+        font-weight: 900; }
+  .sub-nav .current-event-page {
+    font-weight: 900; }
 
 /* MOBILE MENU	*/
 .display {
@@ -1071,12 +1087,19 @@ header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-left: auto; }
   .site-header {
     height: 147px; }
   .content-area {
-    padding-top: 147px; } }
+    padding-top: 147px; }
+  .header-widget-area {
+    position: absolute;
+    right: 0;
+    height: 0;
+    top: 0; }
+  .widget csl-social-media-class {
+    height: 90%; } }
 
 .site-info {
   background: #000000; }
@@ -1587,14 +1610,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .term-weekly .title {
     margin-top: 0.5rem; }
   .term-weekly .wrapper {
-    padding-top: 3rem; }
-  .term-weekly .header-widget-area {
-    position: absolute;
-    right: 0;
-    height: 0;
-    top: 30%; }
-  .term-weekly .widget csl-social-media-class {
-    height: 90%; }
+    padding-top: 3.5rem; }
   .term-weekly .weekly-event-page-title {
     padding-left: 2.5%;
     color: #fff;

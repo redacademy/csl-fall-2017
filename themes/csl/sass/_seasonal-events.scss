@@ -38,6 +38,28 @@
   list-style: none;
   padding-left: 2.5%;
   li {
+    &:first-of-type::after {
+      content: '|';
+      padding: 1.25rem;
+      font-weight: 400;
+    }
     display: inline;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    a {
+      text-decoration: none;
+      color: white;
+      &:visited {
+        color: white;
+      }
+      &:hover {
+        font-weight: 900;
+      }
+    }
   }
+  .current-event-page {
+    font-weight: 900;
+  }
+
 }
