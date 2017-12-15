@@ -120,7 +120,6 @@ function red_starter_scripts() {
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
 
-
 /**
  * Custom template tags for this theme.
  */
@@ -154,4 +153,5 @@ require get_template_directory() . '/inc/event-mb.php';
 require get_template_directory() . '/inc/story-mb.php';
 
 require get_template_directory() . '/inc/news-mb.php';
+
 

@@ -84,9 +84,9 @@ get_header(); ?>
 	<!-- end of the loops -->
 
 		<div class="front-page-see-more">
-			<a href="/csl/news" class="front-page-button">
+			<a href="<?php echo get_post_type_archive_link( 'news' ); ?>" class="front-page-button">
 				<img src="<?php echo get_template_directory_uri() . '/images/white-button.png'; ?>" alt="see more button">
-				<span class="see-more">See<br>More</span>
+				<span class="see-more">See More</span>
 			</a>
 		</div>
 	</section> <!-- Desktop Background -->

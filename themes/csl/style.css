@@ -828,12 +828,13 @@ object {
       font-weight: bold;
       position: absolute;
       top: 1.2rem;
-      left: 42px;
+      left: 40px;
       text-align: center;
       color: #1DAFB8;
       line-height: 27px;
       font-size: 1.7rem;
-      text-transform: uppercase; } }
+      text-transform: uppercase;
+      max-width: 50%; } }
 
 .term-seasonal article {
   background-size: auto 350px;
@@ -1221,7 +1222,7 @@ header {
     bottom: 35%;
     margin-left: 7vw; }
   .footer-logo-container {
-    height: 10vw;
+    height: 12vw;
     width: 13vw;
     margin-left: 1%;
     background-size: 9vw; }
