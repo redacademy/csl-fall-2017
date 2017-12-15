@@ -14,7 +14,7 @@ get_header(); ?>
 						Thank you for reaching out to us. We will get back to you as soon as possible!
 						In the meantime check out some of our past events.
             </p>
-						<a href="<?php get_term_link( get_query_var('event'), get_query_var('gallery')); ?>" class="gallery-button">
+						<a href="<?php echo get_term_link( 'gallery','event_type' ); ?>" class="gallery-button">
 							<img src='<?php echo get_template_directory_uri() . '/images/yellow-button.png'; ?>'>
 								<p>Gallery</p>
 				    </a>

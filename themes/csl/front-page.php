@@ -44,25 +44,33 @@ get_header(); ?>
 	<?php endwhile; ?>
 	<?php endif; ?>
 
+<?php $args = array(
+	'posts_per_page'   => 3,
+	'orderby'          => 'date',
+	'order'            => 'DESC',
+	'post_type'        => 'news',
+);
+$news_posts = get_posts( $args ); ?>
 
-		<?php	$news_query = new WP_Query( array( 
-			'post_type' => 'news',
-			'posts_per_page' => 3  
-			));
-		?>
-	<section class="front-page-news">
+<section class="front-page-news">
 
 		<h2>In The News</h2>
+
+		<section class="front-page-news-gallery">
+
+<?php foreach ( $news_posts as $post ) : setup_postdata( $post ); ?>
+
+	
 		
 	<!-- start of the loops -->
-	<?php if ($news_query -> have_posts()): ?>
-	<section class="front-page-news-gallery">
-	<?php while ( $news_query -> have_posts() ) : $news_query -> the_post(); ?>
-
+	
 
 		<?php $news_url = get_post_meta( get_the_ID(), '_article_url', true); ?>
 		
 		<div class="news-archive-image-wrapper">
+		<?php if ( has_post_thumbnail() ): ?>
+	<?php ( the_post_thumbnail('medium') ); ?>
+	<?php endif; ?>
 		<a href="<?php echo $news_url ?>">
 		<h3><?php the_title(); ?></h3>
 
@@ -73,20 +81,22 @@ get_header(); ?>
 				</a>
 		</div>
 		
-	<?php endwhile; ?>
+	
+	<?php endforeach; wp_reset_postdata(); ?>
 	</section>
 	</section>
 	
 
 
+	
 
-	<?php endif; ?>
+
 	<!-- end of the loops -->
 
 		<div class="front-page-see-more">
-			<a href="/csl/news" class="front-page-button">
+			<a href="<?php echo get_post_type_archive_link( 'news' ); ?>" class="front-page-button">
 				<img src="<?php echo get_template_directory_uri() . '/images/white-button.png'; ?>" alt="see more button">
-				<span class="see-more">See<br>More</span>
+				<span class="see-more">See More</span>
 			</a>
 		</div>
 	</section> <!-- Desktop Background -->
