@@ -29,7 +29,7 @@
  }
   .owl-theme .owl-nav [class*='owl-'] {
     color: #FFF;
-    background: rgba(0,0,0,0.5);
+    background: $trans-black;
     line-height: 30px;
     text-align: center;
     height: 30px;
@@ -37,7 +37,7 @@
     cursor: pointer;
     border-radius: 3px; }
     .owl-theme .owl-nav [class*='owl-']:hover {
-      background:rgba(0,0,0,0.5);
+      background:$trans-black;
       color: #FFF;
       text-decoration: none; }
   .owl-theme .owl-nav .disabled {
@@ -49,6 +49,9 @@
 
 .owl-theme .owl-dots {
   text-align: center;
+  position: absolute;
+  bottom: 12px;
+  width: 100%; 
   -webkit-tap-highlight-color: transparent; }
   .owl-theme .owl-dots .owl-dot {
     display: inline-block;
@@ -59,7 +62,7 @@
       height: 10px;
       border: 1px solid black;
       margin: 5px 7px;
-      background:rgba(0,0,0,0.5);
+      background:$trans-black;
       display: block;
       -webkit-backface-visibility: visible;
       transition: opacity 200ms ease;
