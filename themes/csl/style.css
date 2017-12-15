@@ -872,21 +872,21 @@ object {
     .sub-nav {
       display: block; } }
   .sub-nav li {
-    display: inline;
+    height: 2rem;
+    line-height: 2rem;
+    display: inline-block;
     font-size: 20px;
-    text-transform: uppercase;
-    letter-spacing: 1px; }
-    .sub-nav li:first-of-type::after {
+    text-transform: uppercase; }
+    .sub-nav li::after {
       content: '|';
-      padding: 1.25rem;
-      font-weight: 400; }
+      margin: 0 1.25rem; }
+    .sub-nav li:last-of-type::after {
+      content: ''; }
     .sub-nav li a {
       text-decoration: none;
       color: white; }
       .sub-nav li a:visited {
         color: white; }
-      .sub-nav li a:hover {
-        font-weight: 900; }
   .sub-nav .current-event-page {
     font-weight: 900; }
 
@@ -1059,12 +1059,6 @@ header {
     background: black;
     height: 147px;
     position: relative; }
-  .desktop-header-logo {
-    display: block;
-    position: absolute;
-    height: 5.25rem;
-    margin: 43px 0 0 0.75rem;
-    width: auto; }
   .main-navigation {
     height: 5.25rem;
     margin: 43px 0 0; }
@@ -1104,6 +1098,22 @@ header {
     top: 0; }
   .widget csl-social-media-class {
     height: 90%; } }
+
+@media screen and (min-width: 750px) {
+  .desktop-header-logo {
+    display: block;
+    position: absolute;
+    height: 4rem;
+    margin: 63px 0 0 0.75rem;
+    width: auto; } }
+
+@media screen and (min-width: 1024px) {
+  .desktop-header-logo {
+    display: block;
+    position: absolute;
+    height: 5.25rem;
+    margin: 43px 0 0 0.75rem;
+    width: auto; } }
 
 .site-info {
   background: #000000; }
