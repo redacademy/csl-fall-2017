@@ -26,8 +26,6 @@
 
     <div role="image" class="one-house-hero" aria-label="<?php echo get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true); ?>" style="background: url('<?php echo $one_house_hero[0]; ?>');"> 
     
-
-
       <div class="one-house-wrapper-desktop">
 
         <h1 class="one-house-title-desktop"> <!-- desktop title -->

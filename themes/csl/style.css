@@ -1762,7 +1762,10 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .single-story .alt-title, .post-type-archive-story .alt-title {
     text-transform: none;
     font-weight: 500;
-    color: #ffffff; }
+    padding-left: 1.125rem; }
+    @media (min-width: 750px) {
+      .single-story .alt-title, .post-type-archive-story .alt-title {
+        color: #ffffff; } }
   .single-story .entry-content, .post-type-archive-story .entry-content {
     padding: 0 2.5%; }
     .single-story .entry-content p, .post-type-archive-story .entry-content p {
@@ -1862,7 +1865,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       width: 50%;
       text-align: center; }
       .single-story .one-house-container .meet-our-team .team-member .team-member__image, .post-type-archive-story .one-house-container .meet-our-team .team-member .team-member__image {
-        margin: 5% 0 2%; }
+        margin: 5% 0 2%;
+        border-radius: 50%; }
       .single-story .one-house-container .meet-our-team .team-member .team-member__name, .post-type-archive-story .one-house-container .meet-our-team .team-member .team-member__name {
         margin: 2% 0; }
       .single-story .one-house-container .meet-our-team .team-member .team-member__title, .post-type-archive-story .one-house-container .meet-our-team .team-member .team-member__title {
@@ -1921,7 +1925,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .single-story .vision-container .entry-content, .post-type-archive-story .vision-container .entry-content {
     margin-top: 0; }
     .single-story .vision-container .entry-content ul, .post-type-archive-story .vision-container .entry-content ul {
-      padding-left: 2.5%; }
+      padding-left: 5%; }
     @media (min-width: 750px) {
       .single-story .vision-container .entry-content, .post-type-archive-story .vision-container .entry-content {
         padding: 2.5% 0 0 2.5%; } }

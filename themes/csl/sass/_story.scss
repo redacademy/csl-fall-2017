@@ -41,7 +41,11 @@
   .alt-title {
     text-transform: none;
     font-weight: 500;
-    color: $white;
+    padding-left: $base__space-unit*0.75;
+
+    @include desktop {
+      color: $white;
+    }
   }
 
   .entry-content {
@@ -151,6 +155,7 @@
 
         .team-member__image {
           margin: 5% 0 2%;
+          border-radius: 50%;
         }
 
         .team-member__name {
@@ -239,7 +244,7 @@
       }
 
       ul {
-        padding-left: 2.5%;
+        padding-left: 5%;
       }
 
       @include desktop {
