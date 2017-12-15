@@ -6,6 +6,14 @@
  */
  ?>
 
+<?php if ( is_single( 'origin' ) ) : ?>
+
+  <div class="story-nav">
+    <?php wp_nav_menu( array( 'theme_location' => 'story-menu' ) ); ?>
+  </div>
+  
+<?php endif; ?>
+
 <article id="post-<?php the_ID(); ?>" class="origin-container">
 	<header class="entry-header">
 		
