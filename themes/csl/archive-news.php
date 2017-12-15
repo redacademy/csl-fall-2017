@@ -3,7 +3,7 @@
 
 get_header(); ?>
 
-        <div id="primary">
+        <div id="primary" class="content-area">
             <div class="content" role="main">
                 <h2 class="page-title">In the News</h2>
             <?php if(have_posts()): ?>
