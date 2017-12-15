@@ -40,13 +40,11 @@
 	display:none;
 }
 .toggle-open{
-	box-shadow: none;
 	border: none;
 	background:none;
 	position:absolute;
-	align-self:center;
-	height:3.5rem;
 	z-index:9999;
+	top:30%;
 	
 }
 
@@ -72,7 +70,7 @@
 }
 
 .mobile-menu li {
-	display: block; 
+	display: flex; 
 	padding:1rem 0 1rem 0; 
 	padding-left:1rem;
 }
@@ -85,6 +83,7 @@
 }
 
 .mobile-menu a{
+	width:100%;
 	text-decoration:none;
 	color:white;
 }
@@ -112,12 +111,15 @@ header{
 	width: 100%;
 	background: black;
 	height: 5.75rem;
-	position: relative;
+	position: fixed;
+	z-index: 99999999999;
 }
 .header-teal{
 	background:$teal;
 }
-
+.content-area {
+	padding-top: 5.75rem;
+}
 .header-logo{
 	height: 40px;
 	width:135px;
@@ -166,15 +168,14 @@ header{
 		display: block;
 		width: 100%;
 		background: black;
-		height: 5.75rem;
+		height: 147px;
 		position: relative;
 	}
-	.desktop-header-logo{
-		display:block;
-		position: absolute;
-		height: 5rem;
-		padding-top:1rem;
-		width: 28vw;
+	
+	.main-navigation {
+		height: 5.25rem;
+		margin: 43px 0 0;
+
 	}
 	.menu{
 		display: flex;
@@ -194,7 +195,43 @@ header{
 		max-width: 60%;
     flex-basis: 90%;
     display: flex;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-left: auto;
 	}
+	.site-header {
+		height: 147px;
+
+	}
+	.content-area {
+		padding-top: 147px;
+	}
+	.header-widget-area{
+		position: absolute;
+		right: 0;
+		height: 0;
+		top: 0;
+	}
+	.widget csl-social-media-class{
+		height:90%
+	}
 }	
+@media screen  and (min-width:750px){
+	
+	.desktop-header-logo{
+		display:block;
+		position: absolute;
+		height: 4rem;
+		margin: 63px 0 0 0.75rem;
+		width: auto;
+	}
+}
+@media screen  and (min-width:1024px){
+	
+	.desktop-header-logo{
+		display:block;
+		position: absolute;
+		height: 5.25rem;
+		margin: 43px 0 0 0.75rem;
+		width: auto;
+	}
+}

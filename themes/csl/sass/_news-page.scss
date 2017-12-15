@@ -15,6 +15,7 @@
     text-transform: uppercase;
     color:$black;
     padding-left:2%;
+    margin-top: 5rem;
   }
   .type-news{
     position: relative;
@@ -23,6 +24,7 @@
     margin-top:0.5rem;
     background-size: cover;
     background-position: center;
+    overflow:hidden;
   }
   .article-title{
     position: absolute;
@@ -34,7 +36,7 @@
     color:white;
     margin: 0;
     width:100%;
-    padding: 0.5rem 1rem 1rem;
+    padding: 1rem 1rem 1rem;
   }
   .twitter-timeline.twitter-timeline-rendered{
     display:none !important;
@@ -55,7 +57,7 @@
     .page-title{
       color:#FFFFFF;
       background:$black;
-      width:40%;
+      width:49%;
     }
     .type-news{
       height:30vw;

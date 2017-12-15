@@ -2,7 +2,7 @@
 /**
  * Template part for displaying single posts.
  *
- * @package Culture_Saves_Lives_Theme
+ * @package CSL_Theme
  */
  ?>
 
@@ -12,7 +12,18 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" class="vision-container">
+<?php if ( is_single( 'vision' ) ) : ?>
+
+  <ul class="sub-nav">
+    <li><a href="/csl/story/#one-house">One-House</One-House></a></li>
+    <li><a href="/csl/story/#origin">Origin</a></li>
+    <li><a href="/csl/story/#vision">Vision</a></li>
+    <li><a href="/csl/story/#heritage">Heritage</a></li>
+  </ul>
+  
+<?php endif; ?>
+
+<article id="vision" class="vision-container">
 
   <header class="entry-header vision-mobile">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -24,7 +35,7 @@
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
       </header><!-- .entry-header -->
 
-      <div class="entry-content vision-desktop">
+      <div class="entry-content-desktop vision-desktop">
         <?php the_content(); ?>
       </div><!-- Desktop entry-content -->
     </div>
