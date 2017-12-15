@@ -1570,6 +1570,11 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   /* End of Vision */
   /* Heritage */
   /* End of Heritage */ }
+  .single-story .story-nav, .post-type-archive-story .story-nav {
+    background-color: #D91F18;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5)));
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    text-decoration: none; }
   .single-story .entry-header, .post-type-archive-story .entry-header {
     width: 100%;
     height: 100%;
@@ -1635,7 +1640,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .single-story .one-house-container .meet-our-team-wrapper, .post-type-archive-story .one-house-container .meet-our-team-wrapper {
     text-align: center;
     background-color: yellow;
-    background: url("../../images/EagleBackground.png") repeat top;
+    background: url("../../images/eagle-background.png") repeat top;
     background-size: contain; }
     .single-story .one-house-container .meet-our-team-wrapper h2, .post-type-archive-story .one-house-container .meet-our-team-wrapper h2 {
       margin-top: 0;
@@ -1738,12 +1743,13 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       margin: 0; }
   .single-story .vision-container .entry-header, .post-type-archive-story .vision-container .entry-header {
     margin-left: 0; }
+    @media (min-width: 1024px) {
+      .single-story .vision-container .entry-header .entry-title, .post-type-archive-story .vision-container .entry-header .entry-title {
+        width: 50%; } }
   .single-story .vision-container .entry-content, .post-type-archive-story .vision-container .entry-content {
     margin-top: 0; }
-    .single-story .vision-container .entry-content p, .post-type-archive-story .vision-container .entry-content p {
-      margin-top: 0; }
     .single-story .vision-container .entry-content ul, .post-type-archive-story .vision-container .entry-content ul {
-      padding-left: 5%; }
+      padding-left: 2.5%; }
     @media (min-width: 1024px) {
       .single-story .vision-container .entry-content, .post-type-archive-story .vision-container .entry-content {
         padding: 2.5% 0 0 2.5%; } }
@@ -1773,7 +1779,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     .single-story .vision-wrapper-desktop .vision-desktop, .post-type-archive-story .vision-wrapper-desktop .vision-desktop {
       display: initial;
       -ms-flex-preferred-size: 100%;
-          flex-basis: 100%; } }
+          flex-basis: 100%;
+      padding: 2.5% 0 0 2.5%; } }
   .single-story .vision-wrapper-mobile, .post-type-archive-story .vision-wrapper-mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1784,14 +1791,16 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
             flex-flow: column nowrap;
     width: 100%;
     height: auto; }
+    .single-story .vision-wrapper-mobile img, .post-type-archive-story .vision-wrapper-mobile img {
+      min-width: 100%;
+      min-height: 100%; }
     @media (min-width: 1024px) {
       .single-story .vision-wrapper-mobile, .post-type-archive-story .vision-wrapper-mobile {
-        -ms-flex-preferred-size: 45%;
-            flex-basis: 45%; } }
-    .single-story .vision-wrapper-mobile .vision-featured-image, .post-type-archive-story .vision-wrapper-mobile .vision-featured-image {
-      grid-area: featured-image;
-      max-width: 100%;
-      width: 100%; }
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+        .single-story .vision-wrapper-mobile img, .post-type-archive-story .vision-wrapper-mobile img {
+          min-height: 10%;
+          padding-right: 2.5%; } }
   @media (min-width: 1024px) {
     .single-story .heritage-container, .post-type-archive-story .heritage-container {
       background-color: #D91F18;

@@ -30,6 +30,7 @@ function red_starter_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
+		'story-menu' => esc_html( 'Story' ),
 		'secondary-menu' => __( 'Mobile Menu' ),
 		'footer-menu' => __( 'Footer Mobile Menu' )
 	) );

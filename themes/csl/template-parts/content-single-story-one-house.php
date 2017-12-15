@@ -10,7 +10,9 @@
 
   <?php 
     $alt_title = get_post_meta( get_the_ID(), '_story_alt_title', true ); 
+    
     $team_member_group = get_post_meta( get_the_ID(), '_story_team_member_group', true ); 
+    
     if ( $one_house_hero = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium-large' ) ) :
   ?>
 
@@ -23,15 +25,33 @@
     </h1>
 
     <div role="image" class="one-house-hero" aria-label="<?php echo get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true); ?>" style="background: url('<?php echo $one_house_hero[0]; ?>');"> 
+
+      <div class="story-nav">
+<?php
+      $posts = get_post('story');
+      ?>
+      <?php echo '<ul>' ?>
+      <?php
+foreach ( $posts as $post ) {
+   echo '<li><a href="#' . $post->slug . '">' . the_title() . '</a></li>';
+}
+?>
+
+<?php echo '</ul>' ?>
+
+      </div>
       
       <div class="one-house-wrapper-desktop">
+
         <h1 class="one-house-title-desktop"> <!-- desktop title -->
           <?php the_title() ?>
           <span class="alt-title"><?php echo $alt_title ?></span> 
         </h1>
+
         <div class="entry-content-desktop"> <!-- desktop content -->
           <?php the_content(); ?>
         </div><!-- .entry-content -->
+
       </div>
 
     </div>
