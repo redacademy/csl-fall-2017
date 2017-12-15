@@ -1920,6 +1920,9 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
       margin: 0; }
+  @media (min-width: 750px) {
+    .single-story .vision-container .vision-wrapper-desktop, .post-type-archive-story .vision-container .vision-wrapper-desktop {
+      padding-top: 2.5%; } }
   .single-story .vision-container .entry-header, .post-type-archive-story .vision-container .entry-header {
     margin-left: 0; }
     @media (min-width: 750px) {
@@ -1934,7 +1937,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         padding: 2.5% 0 0 2.5%; } }
   @media (min-width: 750px) {
     .single-story .vision-container, .post-type-archive-story .vision-container {
-      padding: 2.5% 0; }
+      margin: 0; }
       .single-story .vision-container .vision-mobile, .post-type-archive-story .vision-container .vision-mobile {
         display: none; } }
   @media (min-width: 750px) {
@@ -2044,7 +2047,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 
 .hash-holder {
   position: relative;
-  top: -147px; }
+  top: -146px; }
 
 /**
  * Owl Carousel v2.2.1

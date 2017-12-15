@@ -4,6 +4,7 @@
   .not('[href="#"]')
   .not('[href="#0"]')
   .on('click' , function(event) {
+    event.preventDefault();
     // On-page links
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
