@@ -108,15 +108,25 @@
 		.title{
 			margin-top:0.5rem;
 		}
+		.wrapper {
+			padding-top: 3rem;
+		}
+		.header-widget-area{
+			position: absolute;
+			right: 0;
+			height: 0;
+			top: 30%;
+		}
+		.widget csl-social-media-class{
+			height:90%
+		}
 		.weekly-event-page-title{
 			padding-left: 2.5%;
 			color: #fff;
 			background:$black;
 			width: 31%;
-			height: 5vw;
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
+			height: 4.2rem;
+			line-height: 4.2rem;
 		}
 		.site-main{
 			display: flex;
