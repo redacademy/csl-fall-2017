@@ -2,13 +2,21 @@
 /**
  * Template part for displaying single posts.
  *
- * @package Culture_Saves_Lives_Theme
+ * @package CSL_Theme
  */
 ?>
 
   <?php
     $heritage_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_heritage_image_id', 1 ), 'medium-large' );
   ?>
+
+<?php if ( is_single( 'heritage' ) ) : ?>
+
+  <div class="story-nav">
+    <?php wp_nav_menu( array( 'theme_location' => 'story-menu' ) ); ?>
+  </div>
+  
+<?php endif; ?>
 
 <article id="post-<?php the_ID(); ?>" class="heritage-container">  
 

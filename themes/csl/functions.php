@@ -30,6 +30,7 @@ function red_starter_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html( 'Primary Menu' ),
+		'story-menu' => esc_html( 'Story' ),
 		'secondary-menu' => __( 'Mobile Menu' ),
 		'footer-menu' => __( 'Footer Mobile Menu' )
 	) );
@@ -119,7 +120,6 @@ function red_starter_scripts() {
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
 
-
 /**
  * Custom template tags for this theme.
  */
@@ -153,4 +153,5 @@ require get_template_directory() . '/inc/event-mb.php';
 require get_template_directory() . '/inc/story-mb.php';
 
 require get_template_directory() . '/inc/news-mb.php';
+
 

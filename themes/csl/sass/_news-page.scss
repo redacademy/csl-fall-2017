@@ -23,6 +23,7 @@
     margin-top:0.5rem;
     background-size: cover;
     background-position: center;
+    overflow:hidden;
   }
   .article-title{
     position: absolute;
@@ -34,7 +35,7 @@
     color:white;
     margin: 0;
     width:100%;
-    padding: 0.5rem 1rem 1rem;
+    padding: 1rem 1rem 1rem;
   }
   .twitter-timeline.twitter-timeline-rendered{
     display:none !important;

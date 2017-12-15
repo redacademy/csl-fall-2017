@@ -1,33 +1,43 @@
 .term-seasonal {
-  .sub-nav {
-    display: none;
-    @include desktop {
-      display: block;
-    }
-    position: fixed;
-    width:100%;
-    z-index: 1001;
-    color: $white;
-    background-color: $trans-black;
-    list-style: none;
-    padding-left: 2.5%;
-    li {
-      display: inline;
-    }
-  }
   article {
-    color: $white;
-    height: 900px;
-    border: none;
-    background-size: cover;
+    background-size: auto 350px;
+    background-position: center top;  
+    background-repeat: no-repeat;
+    padding-top: 350px;
+    @include desktop {
+      color: $white;
+      height: 900px;
+      background-size: cover;
+    }
+    
   }
   .entry-wrapper {
     padding-left: 2.5%;
-    padding-right: 5%;
-    position: absolute;
-    top: 12%;
-    display: inline-block;
-    background: $trans-black;
-    width: 60%;
+    padding-right: 2.5%;
+    @include desktop {
+      position: absolute;
+      top: 100px;
+      display: inline-block;
+      background: $trans-black;
+      width: 60%;
+      padding-right: 5%;
+    }
+  }
+}
+//also used on weekly events
+.sub-nav {
+  display: none;
+  @include desktop {
+    display: block;
+  }
+  position: fixed;
+  width:100%;
+  z-index: 1001;
+  color: $white;
+  background-color: $trans-black;
+  list-style: none;
+  padding-left: 2.5%;
+  li {
+    display: inline;
   }
 }
