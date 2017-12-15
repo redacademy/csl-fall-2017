@@ -15,6 +15,7 @@
   <div class="story-nav">
     <?php wp_nav_menu( array( 'theme_location' => 'story-menu' ) ); ?>
   </div>
+  
 <?php endif; ?>
 
 <article id="post-<?php the_ID(); ?>" class="heritage-container">  

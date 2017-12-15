@@ -12,4 +12,5 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 
 <div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-1' ); ?>
+	<img src="<?php echo get_template_directory_uri() . '/images/eagle1.svg'; ?>" class="eagle-logo" alt="eagle logo" />
 </div><!-- #secondary -->
