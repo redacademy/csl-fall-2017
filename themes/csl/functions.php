@@ -103,7 +103,7 @@ add_filter( 'stylesheet_uri', 'red_starter_minified_css', 10, 2 );
  */
 function red_starter_scripts() {
 	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
-	wp_enqueue_style('main-font','https://fonts.googleapis.com/css?family=Lato');
+	wp_enqueue_style('main-font','https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 	wp_enqueue_style('font-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_script('jquery');
 	wp_enqueue_script( 'contact-form-submit-alert', get_template_directory_uri() . '/build/js/contact-form-submit-alert.min.js',array(), '20130116', true );

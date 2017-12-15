@@ -202,7 +202,7 @@ header{
 		max-width: 60%;
     flex-basis: 90%;
     display: flex;
-    font-size: 1rem;
+    font-size: 1.25rem;
     margin-left: auto;
 	}
 	.site-header {
@@ -211,5 +211,14 @@ header{
 	}
 	.content-area {
 		padding-top: 147px;
+	}
+	.header-widget-area{
+		position: absolute;
+		right: 0;
+		height: 0;
+		top: 0;
+	}
+	.widget csl-social-media-class{
+		height:90%
 	}
 }	
