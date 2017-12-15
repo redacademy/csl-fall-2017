@@ -828,12 +828,13 @@ object {
       font-weight: bold;
       position: absolute;
       top: 1.2rem;
-      left: 42px;
+      left: 40px;
       text-align: center;
       color: #1DAFB8;
       line-height: 27px;
       font-size: 1.7rem;
-      text-transform: uppercase; } }
+      text-transform: uppercase;
+      max-width: 50%; } }
 
 .term-seasonal .sub-nav {
   display: none;
