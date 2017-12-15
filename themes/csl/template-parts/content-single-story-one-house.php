@@ -6,8 +6,6 @@
  */
  ?>
 
-<article id="post-<?php the_ID(); ?>" class="one-house-container">
-
   <?php 
     $alt_title = get_post_meta( get_the_ID(), '_story_alt_title', true ); 
     
@@ -16,6 +14,7 @@
     if ( $one_house_hero = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium-large' ) ) :
   ?>
 
+<article id="one-house" class="one-house-container">
 
   <header class="entry-header">
   
@@ -25,22 +24,23 @@
     </h1>
 
     <div role="image" class="one-house-hero" aria-label="<?php echo get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true); ?>" style="background: url('<?php echo $one_house_hero[0]; ?>');"> 
+    
+    <?php if ( is_single( 'one-house' ) ) : ?>
+      <ul class="sub-nav">
+        <li><a href="/csl/story/#one-house">One-House</One-House></a></li>
+        <li><a href="/csl/story/#origin">Origin</a></li>
+        <li><a href="/csl/story/#vision">Vision</a></li>
+        <li><a href="/csl/story/#heritage">Heritage</a></li>
+      </ul>
+    <?php else: ?>
+        <ul class="sub-nav">
+          <li><a href="#one-house">One-House</One-House></a></li>
+          <li><a href="#origin">Origin</a></li>
+          <li><a href="#vision">Vision</a></li>
+          <li><a href="#heritage">Heritage</a></li>
+        </ul>
+    <?php endif; ?>
 
-      <div class="story-nav">
-<?php
-      $posts = get_post('story');
-      ?>
-      <?php echo '<ul>' ?>
-      <?php
-foreach ( $posts as $post ) {
-   echo '<li><a href="#' . $post->slug . '">' . the_title() . '</a></li>';
-}
-?>
-
-<?php echo '</ul>' ?>
-
-      </div>
-      
       <div class="one-house-wrapper-desktop">
 
         <h1 class="one-house-title-desktop"> <!-- desktop title -->
@@ -63,10 +63,11 @@ foreach ( $posts as $post ) {
     <div class="entry-content-mobile entry-content"> <!-- mobile content -->
       <?php the_content(); ?>
     </div><!-- .entry-content -->
+   
 
     <?php if ( get_post_meta(get_the_ID(), '_story_team_member_group', true ) ) : ?>
     
-      <?php ?>
+      <?php $team_member_group = get_post_meta( get_the_ID(), '_story_team_member_group', true ); ?>
     <section class="meet-our-team-wrapper">
       <div class="meet-our-team-title">
         <h2>Meet our Team</h2>
