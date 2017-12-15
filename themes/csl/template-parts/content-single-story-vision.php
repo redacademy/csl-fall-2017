@@ -12,19 +12,8 @@
 
 ?>
 
-<?php if ( is_single( 'vision' ) ) : ?>
-
-  <ul class="sub-nav">
-    <li><a href="/csl/story/#one-house">One-House</One-House></a></li>
-    <li><a href="/csl/story/#origin">Origin</a></li>
-    <li><a href="/csl/story/#vision">Vision</a></li>
-    <li><a href="/csl/story/#heritage">Heritage</a></li>
-  </ul>
-  
-<?php endif; ?>
-
-<article id="vision" class="vision-container">
-
+<article class="vision-container">
+  <div class="hash-holder" id="vision"></div>
   <header class="entry-header vision-mobile">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->

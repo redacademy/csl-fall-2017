@@ -2035,6 +2035,10 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
               column-gap: 3rem;
       color: #ffffff; } }
 
+.hash-holder {
+  position: relative;
+  top: -147px; }
+
 /**
  * Owl Carousel v2.2.1
  * Copyright 2013-2017 David Deutsch
