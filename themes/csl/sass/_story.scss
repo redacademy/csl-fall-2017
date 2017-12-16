@@ -221,6 +221,11 @@
 /* Vision */
   .vision-container {
 
+    .vision-wrapper-desktop {
+      @include desktop {
+        padding-top: 2.5%;
+      }
+    }
     .entry-header {
       margin-left: 0;
 
@@ -248,7 +253,7 @@
     }
 
     @include desktop {
-      padding: 2.5% 0;
+      margin: 0;
 
       .vision-mobile {
         display: none;
@@ -365,5 +370,5 @@
 }
 .hash-holder {
   position: relative;
-  top: -147px;
+  top: -146px;
 }
