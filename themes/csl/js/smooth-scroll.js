@@ -6,7 +6,7 @@
         setTimeout(function() {
             $('html, body').scrollTop(0).show();
             $('html, body').animate({
-                scrollTop: $(window.location.hash).offset().top
+                scrollTop: $(window.location.hash).offset(1000).top
                 }, 1000)
         }, 0);
     }
