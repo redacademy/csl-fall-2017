@@ -46,7 +46,6 @@
 	position:absolute;
 	z-index:9999;
 	top:34%;
-	
 }
 
 .mobile-menu{
@@ -136,7 +135,8 @@ header{
 .desktop-header-logo{
 	display:none;
 }
-// Animation for Mobile Menu //
+
+// ANIMATION FOR MOBILE MENU //
   .line1-active {
     transform: rotate(225deg);
     top: 8px;
@@ -150,7 +150,7 @@ header{
     transform: rotate(-45deg);
     top:-7px;
   }
-// Desktop Header //
+// DESKTOP HEADER //
 @media screen  and (min-width:$desktop-width){
 	.site-header{
 		background:$black !important;
@@ -212,6 +212,8 @@ header{
 		}
 	}
 }	
+
+// MEDIA BREAK FOR HEADER LOGO SCALING //
 @media screen  and (min-width:750px){
 	
 	.desktop-header-logo{
