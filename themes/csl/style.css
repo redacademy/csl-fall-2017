@@ -946,7 +946,7 @@ object {
   display: none;
   z-index: 2;
   font-size: 1rem;
-  width: 85%;
+  width: 100%;
   height: auto;
   background: #1DAFB8;
   position: fixed;
@@ -1277,7 +1277,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 1rem;
-  z-index: 9999; }
+  z-index: 1; }
   .page-template-contact .widget-area .csl-social-media-class a {
     color: #000000;
     text-decoration: none;
@@ -1688,8 +1688,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   position: absolute;
   bottom: 0%;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 40%;
-  font-size: 0.85rem;
+  min-height: 40%;
+  font-size: 0.75rem;
   font-weight: lighter;
   color: white;
   margin: 0;
