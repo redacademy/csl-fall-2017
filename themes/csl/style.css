@@ -2352,3 +2352,49 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   border: none;
   background: white; }
+
+.error404 .content-area {
+  padding-top: 3.75rem; }
+
+.error404 .page-content {
+  background: url("../../images/nature-background.png");
+  height: 75vh;
+  width: 100vw;
+  position: relative;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.error404 .page-title {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  text-align: center; }
+
+.error404 .home-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 15%;
+  text-decoration: none;
+  background: url("../../images/white-button.png");
+  height: 6rem;
+  width: 10.5rem;
+  font-size: 2rem;
+  color: #1DAFB8;
+  text-transform: uppercase; }

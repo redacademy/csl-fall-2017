@@ -1,0 +1,38 @@
+.error404{
+  .content-area{
+    padding-top:3.75rem;
+  }
+  .page-content{
+    background:url('../../images/nature-background.png');
+    height:75vh;
+    width:100vw;
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap;
+  }
+  .page-title{
+    flex-basis:100%;
+    text-align:center;
+  }
+
+  .home-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 15%;
+    text-decoration: none;
+    background:url('../../images/white-button.png');
+    height: 6rem;
+    width: 10.5rem;
+    font-size:2rem;
+    color:$teal;
+    text-transform: uppercase;
+  }
+
+
+
+}
