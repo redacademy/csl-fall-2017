@@ -14,8 +14,9 @@
     if ( $one_house_hero = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'medium-large' ) ) :
   ?>
 
-<article id="one-house" class="one-house-container">
 
+<article class="one-house-container">
+  <div class="hash-holder" id="one-house"></div>
   <header class="entry-header">
   
     <h1 class="one-house-title-mobile"> <!-- mobile title -->
@@ -25,21 +26,7 @@
 
     <div role="image" class="one-house-hero" aria-label="<?php echo get_post_meta(get_post_thumbnail_id( $post->ID ), '_wp_attachment_image_alt', true); ?>" style="background: url('<?php echo $one_house_hero[0]; ?>');"> 
     
-    <?php if ( is_single( 'one-house' ) ) : ?>
-      <ul class="sub-nav">
-        <li><a href="/csl/story/#one-house">One-House</One-House></a></li>
-        <li><a href="/csl/story/#origin">Origin</a></li>
-        <li><a href="/csl/story/#vision">Vision</a></li>
-        <li><a href="/csl/story/#heritage">Heritage</a></li>
-      </ul>
-    <?php else: ?>
-        <ul class="sub-nav">
-          <li><a href="#one-house">One-House</One-House></a></li>
-          <li><a href="#origin">Origin</a></li>
-          <li><a href="#vision">Vision</a></li>
-          <li><a href="#heritage">Heritage</a></li>
-        </ul>
-    <?php endif; ?>
+
 
       <div class="one-house-wrapper-desktop">
 

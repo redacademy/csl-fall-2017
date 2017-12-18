@@ -55,8 +55,15 @@
 	width:85%; 
 	height:auto;
 	background:$teal;
-	position:absolute; 
+	position:fixed; 
+	padding-top : 5.75rem; 
+	@include desktop {
+		padding-top: 147px;
+	}
 	text-align:left;
+	min-height: 79vh;
+	max-height: 100vh;
+	overflow-y: scroll;
 }
 
 .mobile-menu ul {
@@ -72,13 +79,6 @@
 .mobile-menu li {
 	display: flex; 
 	padding:1rem 0 1rem 0; 
-	padding-left:1rem;
-}
-
-.mobile-menu ul a li { 
-	text-decoration:none; 
-	margin: 0px; 
-	color:white;
 	padding-left:1rem;
 }
 

@@ -8,6 +8,14 @@
 get_header(); ?>
 
 	<div id="primary" class="content-area">
+
+      <ul class="sub-nav">
+        <li><a href="#one-house">One-House</One-House></a></li>
+        <li><a href="#origin">Origin</a></li>
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#heritage">Heritage</a></li>
+      </ul>
+
 		<main id="main" class="site-main" role="main">
 
 			<?php

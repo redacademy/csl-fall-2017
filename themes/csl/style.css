@@ -879,7 +879,8 @@ object {
     text-transform: uppercase; }
     .sub-nav li::after {
       content: '|';
-      margin: 0 1.25rem; }
+      margin: 0 1.25rem;
+      font-weight: 400; }
     .sub-nav li:last-of-type::after {
       content: ''; }
     .sub-nav li a {
@@ -948,8 +949,15 @@ object {
   width: 85%;
   height: auto;
   background: #1DAFB8;
-  position: absolute;
-  text-align: left; }
+  position: fixed;
+  padding-top: 5.75rem;
+  text-align: left;
+  min-height: 79vh;
+  max-height: 100vh;
+  overflow-y: scroll; }
+  @media (min-width: 750px) {
+    .mobile-menu {
+      padding-top: 147px; } }
 
 .mobile-menu ul {
   text-transform: uppercase;
@@ -963,12 +971,6 @@ object {
   display: -ms-flexbox;
   display: flex;
   padding: 1rem 0 1rem 0;
-  padding-left: 1rem; }
-
-.mobile-menu ul a li {
-  text-decoration: none;
-  margin: 0px;
-  color: white;
   padding-left: 1rem; }
 
 .mobile-menu a {
@@ -1670,7 +1672,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   text-transform: uppercase;
   color: #000000;
   padding-left: 2%;
-  margin-top: 5rem; }
+  margin-top: 2rem; }
 
 .post-type-archive-news .type-news {
   position: relative;
@@ -1913,6 +1915,9 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
       margin: 0; }
+  @media (min-width: 750px) {
+    .single-story .vision-container .vision-wrapper-desktop, .post-type-archive-story .vision-container .vision-wrapper-desktop {
+      padding-top: 2.5%; } }
   .single-story .vision-container .entry-header, .post-type-archive-story .vision-container .entry-header {
     margin-left: 0; }
     @media (min-width: 750px) {
@@ -1927,7 +1932,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         padding: 2.5% 0 0 2.5%; } }
   @media (min-width: 750px) {
     .single-story .vision-container, .post-type-archive-story .vision-container {
-      padding: 2.5% 0; }
+      margin: 0; }
       .single-story .vision-container .vision-mobile, .post-type-archive-story .vision-container .vision-mobile {
         display: none; } }
   @media (min-width: 750px) {
@@ -2034,6 +2039,10 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       -webkit-column-gap: 3rem;
               column-gap: 3rem;
       color: #ffffff; } }
+
+.hash-holder {
+  position: relative;
+  top: -146px; }
 
 /**
  * Owl Carousel v2.2.1
@@ -2248,6 +2257,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
  */
 .owl-theme .owl-nav {
   -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav.disabled {
+    display: none; }
   .owl-theme .owl-nav .owl-prev {
     position: absolute;
     top: 175px; }
