@@ -2448,3 +2448,17 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   font-size: 2rem;
   color: #1DAFB8;
   text-transform: uppercase; }
+
+.error404 .eagle-one {
+  position: absolute;
+  left: 2%;
+  top: 10%; }
+
+.error404 .eagle-two {
+  position: absolute;
+  bottom: 2%;
+  right: 1%; }
+
+@media screen and (min-width: 750px) {
+  .error404 .eagle-one {
+    top: 20%; } }

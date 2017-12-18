@@ -20,6 +20,9 @@ get_header(); ?>
 				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home" class="home-button">
 					Home
 					</a>
+					<img src="<?php echo get_template_directory_uri() . '/images/eagle2.svg'; ?>" alt="eagle left" class="eagle-one">
+					<img src="<?php echo get_template_directory_uri() . '/images/eagle1.svg'; ?>" alt="eagle right" class="eagle-two">
+
 				</div><!-- .page-content -->
 			</section><!-- .error-404 -->
 

@@ -32,7 +32,20 @@
     color:$teal;
     text-transform: uppercase;
   }
+  .eagle-one{
+    position: absolute;
+    left: 2%;
+    top: 10%;
 
-
-
+  }
+  .eagle-two{
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+  }
+  @media screen  and (min-width:$desktop-width) {
+    .eagle-one{
+      top:20%;
+    }
+  }
 }
