@@ -1262,8 +1262,7 @@ header {
   padding-top: 1rem;
   padding-bottom: 2.25rem;
   width: 100vw;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-size: contain; }
   .page-template-contact .wpcf7-form p {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1384,7 +1383,7 @@ header {
           flex-direction: column;
   position: absolute;
   width: 95%;
-  top: 46%;
+  top: 46.5%;
   left: 2.5%; }
 
 .page-template-contact .eagle-logo {
