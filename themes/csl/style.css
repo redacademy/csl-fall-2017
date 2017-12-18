@@ -879,7 +879,8 @@ object {
     text-transform: uppercase; }
     .sub-nav li::after {
       content: '|';
-      margin: 0 1.25rem; }
+      margin: 0 1.25rem;
+      font-weight: 400; }
     .sub-nav li:last-of-type::after {
       content: ''; }
     .sub-nav li a {
@@ -2262,6 +2263,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
  */
 .owl-theme .owl-nav {
   -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav.disabled {
+    display: none; }
   .owl-theme .owl-nav .owl-prev {
     position: absolute;
     top: 175px; }
