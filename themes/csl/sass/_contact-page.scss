@@ -11,6 +11,8 @@
 		padding-top:1rem;
 		padding-bottom:2.25rem;
 		width: 100vw;
+		background-size:cover;
+		background-repeat: no-repeat;
 		p{
 			padding-left:1rem;
 			padding-right:1rem;
@@ -119,7 +121,7 @@
 		}
 	}
 	.mapp-layout{
-		margin-bottom:10rem;
+		margin-bottom:12rem;
 	}
 
 	.widget-area{
@@ -127,7 +129,7 @@
 		flex-direction: column;
 		position: absolute;
 		width:95%;
-		top: 47%;
+		top: 46%;
 		left: 2.5%;
 	}
 
@@ -191,6 +193,7 @@
 	background-position: center;
 	position: absolute;
 	right:5%;
+	outline:transparent;
 }
 
 /*	disables response output	 */

@@ -1261,7 +1261,9 @@ header {
   background: url("../../images/contact-form-background.png");
   padding-top: 1rem;
   padding-bottom: 2.25rem;
-  width: 100vw; }
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat; }
   .page-template-contact .wpcf7-form p {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -1370,7 +1372,7 @@ header {
     margin: 0; }
 
 .page-template-contact .mapp-layout {
-  margin-bottom: 10rem; }
+  margin-bottom: 12rem; }
 
 .page-template-contact .widget-area {
   display: -webkit-box;
@@ -1382,7 +1384,7 @@ header {
           flex-direction: column;
   position: absolute;
   width: 95%;
-  top: 47%;
+  top: 46%;
   left: 2.5%; }
 
 .page-template-contact .eagle-logo {
@@ -1445,7 +1447,8 @@ header {
   background-size: cover;
   background-position: center;
   position: absolute;
-  right: 5%; }
+  right: 5%;
+  outline: transparent; }
 
 /*	disables response output	 */
 div.wpcf7-response-output, div.wpcf7-validation-errors {
