@@ -886,7 +886,8 @@ object {
     text-transform: uppercase; }
     .sub-nav li::after {
       content: '|';
-      margin: 0 1.25rem; }
+      margin: 0 1.25rem;
+      font-weight: 400; }
     .sub-nav li:last-of-type::after {
       content: ''; }
     .sub-nav li a {
@@ -952,7 +953,7 @@ object {
   display: none;
   z-index: 2;
   font-size: 1rem;
-  width: 85%;
+  width: 100%;
   height: auto;
   background: #1DAFB8;
   position: fixed;
@@ -977,12 +978,6 @@ object {
   display: -ms-flexbox;
   display: flex;
   padding: 1rem 0 1rem 0;
-  padding-left: 1rem; }
-
-.mobile-menu ul a li {
-  text-decoration: none;
-  margin: 0px;
-  color: white;
   padding-left: 1rem; }
 
 .mobile-menu a {
@@ -1289,7 +1284,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 1rem;
-  z-index: 9999; }
+  z-index: 1; }
   .page-template-contact .widget-area .csl-social-media-class a {
     color: #000000;
     text-decoration: none;
@@ -1684,7 +1679,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   text-transform: uppercase;
   color: #000000;
   padding-left: 2%;
-  margin-top: 5rem; }
+  margin-top: 2rem; }
 
 .post-type-archive-news .type-news {
   position: relative;
@@ -1700,8 +1695,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   position: absolute;
   bottom: 0%;
   background-color: rgba(0, 0, 0, 0.6);
-  height: 40%;
-  font-size: 0.85rem;
+  min-height: 40%;
+  font-size: 0.75rem;
   font-weight: lighter;
   color: white;
   margin: 0;
@@ -1965,6 +1960,9 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     @media (min-width: 750px) {
       .single-story .origin-wrapper .origin-image-two, .post-type-archive-story .origin-wrapper .origin-image-two {
         display: none; } }
+  @media (min-width: 750px) {
+    .single-story .vision-container .vision-wrapper-desktop, .post-type-archive-story .vision-container .vision-wrapper-desktop {
+      padding-top: 2.5%; } }
   .single-story .vision-container .entry-header, .post-type-archive-story .vision-container .entry-header {
     margin-left: 0; }
     @media (min-width: 750px) {
@@ -1982,7 +1980,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         padding: 0 0 1.5rem 6%; } }
   @media (min-width: 750px) {
     .single-story .vision-container, .post-type-archive-story .vision-container {
-      padding: 2.5% 0; }
+      margin: 0; }
       .single-story .vision-container .vision-mobile, .post-type-archive-story .vision-container .vision-mobile {
         display: none; } }
   @media (min-width: 750px) {
@@ -2094,7 +2092,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 
 .hash-holder {
   position: relative;
-  top: -147px; }
+  top: -146px; }
 
 /**
  * Owl Carousel v2.2.1
@@ -2309,6 +2307,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
  */
 .owl-theme .owl-nav {
   -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav.disabled {
+    display: none; }
   .owl-theme .owl-nav .owl-prev {
     position: absolute;
     top: 175px; }

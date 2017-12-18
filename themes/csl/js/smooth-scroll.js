@@ -3,8 +3,9 @@
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
-  .on( 'click' , function(event) {
-    // On-page links    
+  .on('click' , function(event) {
+    event.preventDefault();
+    // On-page links
     if (
       location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') 
       && 
@@ -33,6 +34,13 @@
         });
       }
     }
+<<<<<<< HEAD
   });
 
+=======
+    else {
+        $('html, body').show();
+    }
+});
+>>>>>>> 95b1a812012605d4d53790b9ec10d2360d0302c8
 })(jQuery)

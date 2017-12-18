@@ -55,21 +55,23 @@ get_header(); ?>
 					<?php endif; ?>
 					<div class="content"><?php the_content(); ?></div>
 				</div><!-- .entry-content -->
-        <div class="image-cara">
-          <div class="current-image image1">
-          <?php the_post_thumbnail( )?>
-          </div>
-          <?php if ( $gallery ) : ?>
-          <div class="thumbnail-wrapper">
-            <?php $i = 2; foreach( $gallery as $image_id => $image_url ) : ?>
+        <div class="owl-carousel2 owl-theme">
+          <?php the_post_thumbnail( ); ?>
+					<?php if ( $gallery ) : ?>
+					<?php foreach( $gallery as $image_id => $image_url ) : ?>
+            <?php echo wp_get_attachment_image( $image_id ); ?>
+					<?php endforeach;?>
+				</div>
+				<div class="thumbnail-wrapper owl-carousel3 owl-theme">
 
-              <div class="thumbnail-image image<?php echo $i ?>">
-                <?php echo wp_get_attachment_image( $image_id, 'thumbnail' ); ?>
-              </div>
-            <?php $i++; endforeach;?>
-          </div>
-          <?php endif; ?>
-        </div>
+					<?php the_post_thumbnail( 'thumbnail' ); ?>
+
+					<?php foreach( $gallery as $image_id => $image_url ) : ?>
+						<?php echo wp_get_attachment_image( $image_id, 'thumbnail' ); ?>
+					<?php endforeach;?>
+					
+				</div>
+				<?php endif; ?>
 			</article><!-- #post-## -->
 		<?php endwhile; ?>
 
