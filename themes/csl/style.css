@@ -2341,3 +2341,16 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
   border: none;
   background: white; }
+
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme-event-main .owl-nav {
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme-event-main .owl-nav.disabled {
+    display: none; }
