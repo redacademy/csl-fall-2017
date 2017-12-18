@@ -63,14 +63,19 @@
           if(isset($team_member['_story_name'])){ ?>
         <?php  $team_member_image = wp_get_attachment_image( $team_member['_story_member_image_id'], 'medium' ); ?>
           <section class="team-member">
+            
             <div class="team-member__image">
               <?php echo $team_member_image; ?>
             </div>
-            <h3 class="team-member__name" ><?php echo ( $team_member['_story_name'] ); ?></h3>
+            
+            <div class="team-member__header">
+              <h3 class="team-member__name" ><?php echo ( $team_member['_story_name'] ); ?></h3>
 
-            <h3 class="team-member__title"><?php echo ( $team_member['_story_title'] ); ?></h3>
+              <h3 class="team-member__title"><?php echo '<span class="team-member__hyphen">&thinsp; &mdash; &thinsp; </span>' . ( $team_member['_story_title'] ); ?></h3>
+            </div>  
 
             <p class="team-member__description"><?php echo ( $team_member['_story_member_description'] ); ?></p>
+
           </section>
       <?php
           }

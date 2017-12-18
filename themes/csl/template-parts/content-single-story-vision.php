@@ -24,7 +24,7 @@
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
       </header><!-- .entry-header -->
 
-      <div class="entry-content-desktop vision-desktop">
+      <div class="entry-content vision-desktop">
         <?php the_content(); ?>
       </div><!-- Desktop entry-content -->
     </div>
