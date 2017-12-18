@@ -10,7 +10,7 @@
 	font-size: 1.25rem;
 	margin-bottom: 0;
 	align-items: flex-end;
-	height: 4rem;
+	height: 4.5rem;
 	}
 	.social-media-container{
 		padding-right:0.5rem;
@@ -40,11 +40,12 @@
 	display:none;
 }
 .toggle-open{
+	outline:transparent;
 	border: none;
 	background:none;
 	position:absolute;
 	z-index:9999;
-	top:30%;
+	top:34%;
 	
 }
 
@@ -52,14 +53,11 @@
 	display: none;
 	z-index:2; 
 	font-size:1rem;
-	width:85%; 
+	width:100%; 
 	height:auto;
 	background:$teal;
 	position:fixed; 
 	padding-top : 5.75rem; 
-	@include desktop {
-		padding-top: 147px;
-	}
 	text-align:left;
 	min-height: 79vh;
 	max-height: 100vh;
@@ -70,7 +68,6 @@
 	text-transform:uppercase;
 	margin: 0;
 	padding: 0; 
-
 	li:nth-child(odd){
 		background-color:$secondary-teal;
 	}
@@ -124,7 +121,7 @@ header{
 	height: 40px;
 	width:135px;
 	position: absolute;
-	top: 25%;
+	top: 34%;
 	@include center();
 	left: 25%;
 	right: 25%;
@@ -139,7 +136,7 @@ header{
 .desktop-header-logo{
 	display:none;
 }
-//animate shit//
+// Animation for Mobile Menu //
   .line1-active {
     transform: rotate(225deg);
     top: 8px;
@@ -153,7 +150,7 @@ header{
     transform: rotate(-45deg);
     top:-7px;
   }
-// desktop header //
+// Desktop Header //
 @media screen  and (min-width:$desktop-width){
 	.site-header{
 		background:$black !important;
@@ -210,9 +207,9 @@ header{
 		right: 0;
 		height: 0;
 		top: 0;
-	}
-	.widget csl-social-media-class{
-		height:90%
+		.csl-social-media-class{
+			height:2.5rem;
+		}
 	}
 }	
 @media screen  and (min-width:750px){
