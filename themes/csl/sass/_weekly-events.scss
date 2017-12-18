@@ -25,7 +25,7 @@
 	}
 	.entry-title-wrapper{
 		position: relative;
-		height:100px;
+		height:118px;
 		flex-basis: 90%;
 
 	}
@@ -124,6 +124,7 @@
 			display: flex;
 			flex-wrap: wrap;
 			justify-content: space-between;
+			margin-bottom:1rem;
 		}
 		.type-event{
 			flex-basis:49%;
