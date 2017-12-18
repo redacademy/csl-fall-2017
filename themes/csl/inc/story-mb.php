@@ -45,6 +45,26 @@ function story_register_story_info() {
     ),
   ) );
 
+  //Origin
+  $cmb->add_field( array(
+    'name'    => 'Origin Image',
+    'desc'    => 'Upload an image.',
+    'id'      => $prefix . 'origin_image',
+    'type'    => 'file',
+    // Optional:
+    'attributes' => array(
+      'data-conditional-id'    => $prefix . 'radio',
+      'data-conditional-value' => 'origin',
+    ),
+    'options' => array(
+      'url' => true, // Hide the text input for the url
+    ),
+    'text'    => array(
+      'add_upload_file_text' => 'Add Image' // Change upload button text. Default: "Add or Upload File"
+    ),
+    'preview_size' => 'medium', // Image size to use when previewing in the admin.
+  ) );
+
 //VISION
   $cmb->add_field( array(
     'name'    => 'Vision Image',
