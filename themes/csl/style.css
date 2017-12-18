@@ -910,7 +910,7 @@ object {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    height: 4rem; }
+    height: 4.5rem; }
   .header-widget-area .social-media-container {
     padding-right: 0.5rem; }
   .header-widget-area a {
@@ -940,7 +940,7 @@ object {
   background: none;
   position: absolute;
   z-index: 9999;
-  top: 30%; }
+  top: 34%; }
 
 .mobile-menu {
   display: none;
@@ -955,9 +955,6 @@ object {
   min-height: 79vh;
   max-height: 100vh;
   overflow-y: scroll; }
-  @media (min-width: 750px) {
-    .mobile-menu {
-      padding-top: 147px; } }
 
 .mobile-menu ul {
   text-transform: uppercase;
@@ -1018,7 +1015,7 @@ header {
   height: 40px;
   width: 135px;
   position: absolute;
-  top: 25%;
+  top: 34%;
   margin-left: auto;
   margin-right: auto;
   left: 25%;
@@ -1097,8 +1094,8 @@ header {
     right: 0;
     height: 0;
     top: 0; }
-  .widget csl-social-media-class {
-    height: 90%; } }
+    .header-widget-area .csl-social-media-class {
+      height: 2.5rem; } }
 
 @media screen and (min-width: 750px) {
   .desktop-header-logo {
@@ -1251,10 +1248,13 @@ header {
       .sub-menu li a {
         text-decoration: none; } }
 
+.page-template-contact .entry-content > p {
+  display: none; }
+
 .page-template-contact .wpcf7-form {
   background: url("../../images/contact-form-background.png");
   padding-top: 1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 2.25rem;
   width: 100vw; }
   .page-template-contact .wpcf7-form p {
     padding-left: 1rem;
@@ -1301,8 +1301,8 @@ header {
 
 .page-template-contact .entry-title {
   position: absolute;
-  top: -2%;
-  left: 4%;
+  top: -1.35%;
+  left: 5%;
   text-transform: uppercase;
   font-size: 30px; }
 
@@ -1376,7 +1376,7 @@ header {
           flex-direction: column;
   position: absolute;
   width: 95%;
-  top: 48.5%;
+  top: 47%;
   left: 2.5%; }
 
 .page-template-contact .eagle-logo {
@@ -1433,13 +1433,13 @@ header {
   text-transform: uppercase;
   font-size: 1.25rem !important;
   font-weight: bold;
-  width: 8rem;
-  height: 4.25rem;
+  width: 6rem;
+  height: 3.5rem;
   background: url("../../images/white-button.png") 10px 10px;
   background-size: cover;
   background-position: center;
   position: absolute;
-  right: 2%; }
+  right: 5%; }
 
 /*	disables response output	 */
 div.wpcf7-response-output, div.wpcf7-validation-errors {
@@ -1489,7 +1489,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     width: auto;
     top: 5%;
     right: 5%;
-    left: 77%; }
+    left: 75%; }
   .page-template-contact .eagle-logo {
     top: 70%; }
   .page-template-contact .contact-additional-info {
@@ -1501,8 +1501,10 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .page-template-contact .address-province {
     margin-top: 2rem; }
   .page-template-contact .wpcf7-submit {
-    bottom: 50%;
-    right: -35%; } }
+    width: 9rem;
+    height: 4.5rem;
+    bottom: 10%;
+    right: -55%; } }
 
 .term-weekly .weekly-event-page-title {
   padding-left: 2%;
