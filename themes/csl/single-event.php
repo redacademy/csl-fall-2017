@@ -55,7 +55,11 @@ get_header(); ?>
 					<?php endif; ?>
 					<div class="content"><?php the_content(); ?></div>
 				</div><!-- .entry-content -->
+				<div class="back-button">
+					<a href="<?php echo get_term_link( 'gallery','event_type' ); ?>">Back</a>
+				</div>
 			</article><!-- #post-## -->
+			
 			<div class="owl-carousel owl-event-main owl-theme-event-main owl-theme">
 				<?php the_post_thumbnail( 'full', ['sync-data' => 0, 'class' => 'owl-lazy', 'data-src' => get_the_post_thumbnail_url( get_the_ID(), 'full' )]); ?>
 				<?php if ( $gallery ) : ?>
