@@ -4,7 +4,7 @@
 }
 .footer-nav-wrapper{
 	font-size: 1.25rem;
-	margin-left: 11vw;
+	// margin-left: 11vw;
 	flex-basis:100%;
 	a{
 		color:white;
@@ -18,6 +18,10 @@
 	margin: 0;
 	max-height: 6rem;
 	list-style: none;
+	padding-left:17vw;
+	li:nth-last-child(-n+3){
+		margin-left:5rem;
+	}
 }
 .footer-container{
 	display:flex;
@@ -30,10 +34,10 @@
 .footer-logo-container{
 	background:url("../../images/footer-icon.png");
 	border-radius: 50%;
-	width: 26vw;
-	height: 26vw;
+	width: 20vw;
+	height: 20vw;
 	background-color: #fff;
-	background-size: 20vw;
+	background-size: 15vw;
 	background-position: 50%;
 	background-repeat: no-repeat;
 	margin-left: 10%;
@@ -44,6 +48,7 @@
 	display:flex;
 	flex-direction: column;
 	justify-content: center;
+	flex-basis:59%;
 	color:white;
 	border-left: 1px solid white;
 	order:3;
@@ -101,6 +106,10 @@
 	width: 65vw;
 	bottom: 24%;
 	left: 9%;
+	padding-left:1rem;
+	li:nth-last-child(-n+3){
+		margin-left:0;
+	}
  }
  .footer-logo-container{
 	height: 11vw;
@@ -110,6 +119,10 @@
  }
  .footer-contact-info{
 	 font-size:0.75rem;
+	 flex-basis:23%;
+	 >p:nth-child(1){
+		 font-size:1rem;
+	 }
  }
  .sub-menu{
 	 font-size:0.75rem;
@@ -126,3 +139,4 @@
 	 }
  }
 }	
+

@@ -1177,7 +1177,6 @@ header {
 
 .footer-nav-wrapper {
   font-size: 1.25rem;
-  margin-left: 11vw;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%; }
   .footer-nav-wrapper a {
@@ -1198,7 +1197,10 @@ header {
           justify-content: baseline;
   margin: 0;
   max-height: 6rem;
-  list-style: none; }
+  list-style: none;
+  padding-left: 17vw; }
+  .footer-nav li:nth-last-child(-n+3) {
+    margin-left: 5rem; }
 
 .footer-container {
   display: -webkit-box;
@@ -1210,15 +1212,16 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 20rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .footer-logo-container {
   background: url("../../images/footer-icon.png");
   border-radius: 50%;
-  width: 26vw;
-  height: 26vw;
+  width: 20vw;
+  height: 20vw;
   background-color: #fff;
-  background-size: 20vw;
+  background-size: 15vw;
   background-position: 50%;
   background-repeat: no-repeat;
   margin-left: 10%;
@@ -1239,6 +1242,8 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-preferred-size: 59%;
+      flex-basis: 59%;
   color: white;
   border-left: 1px solid white;
   -webkit-box-ordinal-group: 4;
@@ -1295,14 +1300,21 @@ header {
     position: absolute;
     width: 65vw;
     bottom: 24%;
-    left: 9%; }
+    left: 9%;
+    padding-left: 1rem; }
+    .footer-nav li:nth-last-child(-n+3) {
+      margin-left: 0; }
   .footer-logo-container {
     height: 11vw;
     width: 11vw;
     margin-left: 1%;
     background-size: 9vw; }
   .footer-contact-info {
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%; }
+    .footer-contact-info > p:nth-child(1) {
+      font-size: 1rem; }
   .sub-menu {
     font-size: 0.75rem;
     font-weight: lighter;
