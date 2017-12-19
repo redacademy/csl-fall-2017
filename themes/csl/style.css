@@ -856,9 +856,7 @@ object {
       display: inline-block;
       background: rgba(0, 0, 0, 0.5);
       width: 60%;
-      padding-right: 5%; }
-      .term-seasonal .entry-wrapper p {
-        font-size: 18px; } }
+      padding-right: 5%; } }
 
 .sub-nav {
   display: none;
@@ -891,6 +889,19 @@ object {
         color: white; }
   .sub-nav .current-event-page {
     font-weight: 900; }
+
+.tax-event_type .title {
+  text-transform: uppercase;
+  margin-bottom: 0; }
+
+.tax-event_type .alt-title {
+  margin-left: 5px; }
+
+.tax-event_type .date {
+  font-size: 25px; }
+
+.tax-event_type .entry-content {
+  margin-top: 0; }
 
 .tax-event_type .entry-content .time,
 .tax-event_type .entry-content .date,
@@ -1204,7 +1215,7 @@ header {
 .footer-logo-container {
   background: url("../../images/footer-icon.png");
   border-radius: 50%;
-  width: 28vw;
+  width: 26vw;
   height: 26vw;
   background-color: #fff;
   background-size: 20vw;
@@ -1287,7 +1298,7 @@ header {
     left: 9%; }
   .footer-logo-container {
     height: 11vw;
-    width: 12vw;
+    width: 11vw;
     margin-left: 1%;
     background-size: 9vw; }
   .footer-contact-info {
