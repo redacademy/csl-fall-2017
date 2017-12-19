@@ -131,5 +131,22 @@ function event_register_event_info() {
       'data-conditional-value' => 'gallery',
     ), 
   ) );
-
+  $cmb->add_field( array(
+    'name'           => 'Select if and where you would like this to be featured',
+    'desc'           => '(optional)',
+    'id'             => $prefix . 'featured_radio',
+    'taxonomy'       => 'featured', // Enter Taxonomy Slug
+    'type'           => 'taxonomy_radio_inline',
+    'show_option_none'=> true,
+    'attributes' => array(
+      'required'               => true,
+      'data-conditional-id'    => $prefix . 'taxonomy_radio',
+      'data-conditional-value' => 'gallery',
+    ), 
+    // Optional :
+    'text'           => array(
+      'no_terms_text' => 'Sorry, no terms could be found.' // Change default text. Default: "No terms"
+    ),
+    'remove_default' => 'true'
+  ) );
 }
