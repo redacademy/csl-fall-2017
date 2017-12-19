@@ -43,6 +43,7 @@
     <div class="vision-image-two vision-image">
       <?php echo $vision_secondary_image; ?>
     </div>
+    
     </section>
   </section>
 </article>

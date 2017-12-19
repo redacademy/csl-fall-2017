@@ -8,12 +8,15 @@
 
 <?php 
 
-  $origin_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_origin_image_id', 1 ), 'medium-large' );
+	$origin_secondary_image_mobile = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_origin_image_id', 1 ), 'medium' );
+	
+	$origin_secondary_image_desktop = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_origin_image_id', 1 ), 'medium-large' );
 
 ?>
 
 <article class="origin-container">
 	<div class="hash-holder" id="origin"></div>
+	
 	<header class="entry-header">
 		
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -23,7 +26,7 @@
 	<section class="origin-wrapper">
 		<div class="origin-featured-image">
 			<?php if ( has_post_thumbnail() ) : ?>
-				<?php the_post_thumbnail( 'medium-large' ); ?>
+				<?php the_post_thumbnail( 'medium' ); ?>
 			<?php endif; ?>
 		</div>
 
@@ -33,7 +36,7 @@
 		</div><!-- .entry-content -->
 
 		<div class="origin-image-two">
-      <?php echo $origin_secondary_image; ?>
+      <?php echo $origin_secondary_image_mobile; ?>
     </div>
 	</section>
 </article>
