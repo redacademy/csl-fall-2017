@@ -896,10 +896,12 @@ object {
   margin-bottom: 0; }
 
 .term-seasonal .alt-title {
-  margin-left: 5px; }
+  margin-left: 5px;
+  font-weight: 400; }
 
-.term-seasonal .date {
-  font-size: 25px; }
+@media (min-width: 750px) {
+  .term-seasonal .date {
+    font-size: 25px; } }
 
 .term-seasonal .entry-content {
   margin-top: 0; }
