@@ -720,7 +720,8 @@ object {
     text-align: left;
     padding-left: 12vw;
     padding-right: 12vw;
-    padding-bottom: 28%; }
+    padding-bottom: 28%;
+    margin-bottom: 0; }
 
 .home .entry-content {
   margin-top: 0; }
@@ -895,10 +896,12 @@ object {
   margin-bottom: 0; }
 
 .tax-event_type .alt-title {
-  margin-left: 5px; }
+  margin-left: 5px;
+  font-weight: 400; }
 
-.tax-event_type .date {
-  font-size: 25px; }
+@media (min-width: 750px) {
+  .tax-event_type .date {
+    font-size: 25px; } }
 
 .tax-event_type .entry-content {
   margin-top: 0; }
