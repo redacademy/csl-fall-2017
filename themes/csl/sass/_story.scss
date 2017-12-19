@@ -2,14 +2,15 @@
 # Story
 --------------------------------------------------------------*/
 
-/* Story */
-.single-story, .post-type-archive-story {
 
+/* Story */
+
+.single-story,
+.post-type-archive-story {
   .entry-header {
     width: 100%;
     height: 100%;
     padding: 5% 0 2.5%;
-
     @include desktop {
       .entry-title {
         color: $white;
@@ -17,106 +18,83 @@
         width: 30%;
       }
     }
-
     h1 {
       margin: 0;
       padding: 0 2.5%;
     }
   }
-
   .alt-title {
     text-transform: none;
     font-weight: 500;
     padding-left: $base__space-unit*0.75;
-
     @include desktop {
       color: $white;
     }
   }
-
   .entry-content {
     padding: 0 2.5%;
-
     p {
       margin-top: 0;
     }
   }
-
-
-
-
-/* One-House */
+  /* One-House */
   .one-house-container {
     .entry-header {
       padding: 0;
     }
-
     .one-house-title-mobile {
       padding-top: $base__space-unit;
       @include desktop {
-        display: none;
-        // padding-top: 0;
+        display: none; // padding-top: 0;
       }
     }
-
     .one-house-wrapper-desktop {
       @include desktop {
-        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) );
+        background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
         padding: 2.5%;
         width: 70%;
       }
     }
-
     .one-house-title-desktop {
       display: none;
       padding: 0;
-
       @include desktop {
         display: flex;
         color: $white;
       }
     }
-
-      .entry-content-mobile {
-        @include desktop {
-          display: none;
-        }
-      }
-
-      .entry-content-desktop {
+    .entry-content-mobile {
+      @include desktop {
         display: none;
-        
-            @include desktop {
-              display: flex;
-              color: $white;
-            }
       }
-
+    }
+    .entry-content-desktop {
+      display: none;
+      @include desktop {
+        display: flex;
+        color: $white;
+      }
+    }
     .one-house-hero[style] {
       height: 50vh;
       width: 100%;
       background-position: center !important;
       background-repeat: no-repeat !important;
       background-size: cover !important;
-
       @include desktop {
         height: 100vh;
         width: 100%;
         padding: 5% 0 2.5%;
       }
     }
-
     .meet-our-team-wrapper {
       text-align: center;
       background-color: yellow;
       background: url("../../images/eagle-background.png") repeat top;
       background-size: contain;
-      
       .meet-our-team-title {
         padding-top: $base__space-unit;
-        
         h2 {
-      
           @include desktop {
             text-align: left;
             padding-left: 2.5%;
@@ -134,12 +112,10 @@
       align-items: center;
       width: 100%;
       height: 100%;
-
       @include desktop {
         flex-flow: row wrap;
         justify-content: space-around;
       }
-
       .team-member {
         flex: 0 1 40%;
         display: flex;
@@ -150,7 +126,6 @@
         height: 50%;
         text-align: center;
         padding: 0 0 $base__space-unit;
-
         .team-member__header {
           .team-member__hyphen {
             display: none;
@@ -158,34 +133,27 @@
           @include desktop {
             display: flex;
             flex-flow: row nowrap;
-
             .team-member__hyphen {
               display: initial;
             }
           }
         }
-
         .team-member__image {
           margin: 5% 0 2%;
-
           img {
             height: 25vh;
             width: 25vh;
             border-radius: 50%;
           }
         }
-
         .team-member__name {
           margin: 2% 0;
         }
-
         .team-member__title {
           margin: 2% 0;
         }
-
         p.team-member__description {
           display: none;
-
           @include desktop {
             display: inherit;
           }
@@ -194,8 +162,7 @@
     }
   }
   /* End of One-House */
-
-/* Origin */
+  /* Origin */
   .origin-container {
     @include desktop {
       background-color: $teal;
@@ -203,61 +170,49 @@
       background-size: cover;
     }
   }
-
   .origin-wrapper {
     display: flex;
     flex-flow: column nowrap;
-    
     @include desktop {
       flex-flow: row nowrap;
       justify-content: space-between;
       color: $white;
-    }  
-
+    }
     .origin-featured-image {
       width: 100%;
       height: auto;
-
       img {
         min-width: 100%;
         min-height: 100%;
         max-height: 75vh;
       }
-
       @include desktop {
         // width: 40vw;
         flex: 0 2 50%;
         margin: 0 0 $base__space-unit 2.5vw;
-        
         img {
-         min-height: 10%;
+          min-height: 10%;
         }
       }
     }
-    
     .entry-content {
       flex: 0 1 50%;
       margin: 0;
     }
-    
     .origin-image-two {
-
       img {
         min-width: 100%;
         min-height: 100%;
         max-height: 75vh;
       }
-
       @include desktop {
         display: none;
       }
     }
   }
-/* End of Origin */
-
-/* Vision */
+  /* End of Origin */
+  /* Vision */
   .vision-container {
-
     .vision-wrapper-desktop {
       @include desktop {
         padding-top: 2.5%;
@@ -265,116 +220,102 @@
     }
     .entry-header {
       margin-left: 0;
-
       @include desktop {
         .entry-title {
           width: 60%;
         }
       }
     }
-
     .entry-content {
       p {
         margin-top: 0;
-
         @include desktop {
           padding: 2.5% 0 0 2.5%;
         }
       }
-
-      ul {
-        padding: 0 0 $base__space-unit 3%;
-
+      .teal-border {
+        border-top: 3px solid $teal;
+        margin: 2rem 40%;
         @include desktop {
-          padding: 0 0 $base__space-unit 6%;
+          display: none;
+        }
+      }
+      ul {
+        padding: 0 7% $base__space-unit;
+        @include desktop {
+          padding: 0 10% $base__space-unit;
         }
       }
     }
-
     @include desktop {
       margin: 0;
-
       .vision-mobile {
         display: none;
       }
     }
-  }  
-
-.vision-wrapper-desktop {
-  @include desktop {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
   }
-
-  .desktop-content-wrapper {
-    flex-basis: 50%;
-  }
-
-  .vision-desktop {
-    display: none;
-  }
-
-  @include desktop {
+  .vision-wrapper-desktop {
+    @include desktop {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+    .desktop-content-wrapper {
+      flex-basis: 50%;
+    }
     .vision-desktop {
-      display: initial;
-      flex-basis: 100%;
-      padding: 2.5% 0 0 2.5%;
+      display: none;
+    }
+    @include desktop {
+      .vision-desktop {
+        display: initial;
+        flex-basis: 100%;
+        padding: 2.5% 0 0 2.5%;
+      }
     }
   }
-}
-
-.vision-wrapper-mobile {
-  display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  height: auto;
-
-  img {
-    min-width: 100%;
-    min-height: 100%;
-    max-height: 75vh;
-  }
-  
-  @include desktop {
-    flex-basis: 50%;   
-    
+  .vision-wrapper-mobile {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: auto;
     img {
-      min-height: 10%;
-      padding-right: 2.5%;
+      min-width: 100%;
+      min-height: 100%;
+      max-height: 75vh;
+    }
+    @include desktop {
+      flex-basis: 50%;
+      img {
+        min-height: 10%;
+        padding-right: 2.5%;
+      }
     }
   }
-}
-/* End of Vision */
-
-/* Heritage */
+  /* End of Vision */
+  /* Heritage */
   .heritage-container {
     @include desktop {
       background-color: $red;
       background: url("../../images/orca-background.png") no-repeat center;
       background-size: cover;
     }
-
     .heritage-wrapper {
-    display: flex;
-    flex-flow: column nowrap;
-    
+      display: flex;
+      flex-flow: column nowrap;
       @include desktop {
         flex-flow: row wrap;
         justify-content: space-between;
       }
     }
-
     .heritage-featured-image {
       width: 100%;
       height: auto;
-      
       img {
         min-width: 100%;
         min-height: 100%;
         max-height: 75vh;
       }
-
       @include desktop {
         order: 2;
         flex: 0 2 50%;
@@ -383,21 +324,17 @@
         margin-bottom: $base__space-unit;
       }
     }
-
     .heritage-image-two {
       display: none;
-
       @include desktop {
         order: 3;
         flex: 0 2 50%;
         display: inherit;
         padding: 2.5%;
-        margin-bottom: $base__space-unit;        
+        margin-bottom: $base__space-unit;
       }
     }
-    
     .entry-content {
-
       @include desktop {
         flex: 0 1 100%;
         margin: 0;
@@ -407,9 +344,9 @@
       }
     }
   }
-
-/* End of Heritage */
+  /* End of Heritage */
 }
+
 .hash-holder {
   position: relative;
   top: -146px;
