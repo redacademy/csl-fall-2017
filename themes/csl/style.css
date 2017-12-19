@@ -856,7 +856,9 @@ object {
       display: inline-block;
       background: rgba(0, 0, 0, 0.5);
       width: 60%;
-      padding-right: 5%; } }
+      padding-right: 5%; }
+      .term-seasonal .entry-wrapper p {
+        font-size: 18px; } }
 
 .sub-nav {
   display: none;
@@ -890,6 +892,15 @@ object {
   .sub-nav .current-event-page {
     font-weight: 900; }
 
+.tax-event_type .entry-content .time,
+.tax-event_type .entry-content .date,
+.tax-event_type .entry-content .location {
+  width: 100%;
+  display: block; }
+
+.tax-event_type .entry-content .time {
+  font-weight: bold; }
+
 @media (min-width: 750px) {
   .tax-event_type .widget-area {
     display: none; } }
@@ -903,6 +914,7 @@ object {
   margin: 0 1rem;
   z-index: 1; }
   .tax-event_type .widget-area .csl-social-media-class h2 {
+    width: 100%;
     font-size: 0.95rem;
     margin-bottom: 0; }
   .tax-event_type .widget-area .csl-social-media-class a {

@@ -60,7 +60,7 @@ get_header(); ?>
 						<?php if ( $location ) : ?>
 						<span class="location"><?php echo $location ?></span>
 						<?php endif; ?>
-						<div class="content"><?php the_content(); ?></div>
+						<div class="content"><?php echo seasonal_content(200); ?></div>
 					</div><!-- .entry-content -->
 				</div>
 			</article><!-- #post-## -->
@@ -75,4 +75,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php get_sidebar('event');?>
+		
+
 <?php get_footer(); ?>
