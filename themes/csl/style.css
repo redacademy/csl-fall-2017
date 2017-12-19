@@ -720,7 +720,8 @@ object {
     text-align: left;
     padding-left: 12vw;
     padding-right: 12vw;
-    padding-bottom: 28%; }
+    padding-bottom: 28%;
+    margin-bottom: 0; }
 
 .home .entry-content {
   margin-top: 0; }
