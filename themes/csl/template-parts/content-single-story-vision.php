@@ -8,7 +8,7 @@
 
 <?php 
 
-  $vision_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_vision_image_id', 1 ), 'medium-large' );
+  $vision_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_vision_image_id', 1 ), 'medium' );
 
 ?>
 
@@ -32,7 +32,7 @@
 
     <div class="vision-featured-image vision-image">
       <?php if ( has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail( 'medium-large' ); ?>
+        <?php the_post_thumbnail( 'medium' ); ?>
       <?php endif; ?>
     </div>
 

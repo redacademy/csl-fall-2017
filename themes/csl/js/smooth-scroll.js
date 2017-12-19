@@ -1,10 +1,10 @@
 (function($){
+
   $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
   .not('[href="#0"]')
-  .on('click' , function(event) {
-    event.preventDefault();
+  .click(function(event) {
     // On-page links
     if (
       location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') 
@@ -17,15 +17,15 @@
       // Does a scroll target exist?
       if (target.length) {
         // Only prevent default if animation is actually gonna happen
-        event.preventDefault();        
-        $('html, body').animate({
+        event.preventDefault();
+        $('html, body').stop().animate({
           scrollTop: target.offset().top
         }, 1000, function() {
           // Callback after animation
           // Must change focus!
           var $target = $(target);
           $target.focus();
-          if ($target.is(":focus")) { // Checking if the target was focused
+          if ($target.is(':focus')) { // Checking if the target was focused
             return false;
           } else {
             $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
@@ -34,13 +34,24 @@
         });
       }
     }
-<<<<<<< HEAD
   });
 
-=======
-    else {
-        $('html, body').show();
-    }
-});
->>>>>>> 95b1a812012605d4d53790b9ec10d2360d0302c8
+    /**
+     * Check if url has fragment, if so scroll to section on page
+     * Fixes jumping on page load when 
+     */
+    if(location.hash.length){
+      var target = $(location.hash);
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1000);
+  }
+
+
+      
+
+
+
+   
+
 })(jQuery)

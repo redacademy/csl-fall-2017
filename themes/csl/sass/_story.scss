@@ -273,20 +273,22 @@
       }
     }
 
-    .entry-content p {
-      margin-top: 0;
+    .entry-content {
+      p {
+        margin-top: 0;
 
-      @include desktop {
-        padding: 2.5% 0 0 2.5%;
+        @include desktop {
+          padding: 2.5% 0 0 2.5%;
+        }
       }
-    }
 
-    .entry-content ul {
-        padding: 0 0 $base__space-unit 2.5%;
+      ul {
+        padding: 0 0 $base__space-unit 3%;
 
         @include desktop {
           padding: 0 0 $base__space-unit 6%;
         }
+      }
     }
 
     @include desktop {
@@ -378,6 +380,7 @@
         flex: 0 2 50%;
         padding: 2.5%;
         max-height: 50%;
+        margin-bottom: $base__space-unit;
       }
     }
 
@@ -389,6 +392,7 @@
         flex: 0 2 50%;
         display: inherit;
         padding: 2.5%;
+        margin-bottom: $base__space-unit;        
       }
     }
     
