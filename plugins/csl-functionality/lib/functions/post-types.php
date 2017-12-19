@@ -8,7 +8,7 @@
 // Add your custom post types here...
 
 
-// EVENT posts
+// EVENT postst
 function custom_post_type_events() {
   
     $labels = array(

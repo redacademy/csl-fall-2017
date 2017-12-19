@@ -191,4 +191,3 @@ function seasonal_content($limit){
   return $content;
 }
 
-
