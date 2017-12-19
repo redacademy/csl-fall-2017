@@ -750,7 +750,7 @@ object {
     background-repeat: no-repeat;
     background-position: bottom right; }
   .home .hero-container {
-    background-position: center;
+    background-position: 80%;
     height: 85vh; }
     .home .hero-container img {
       height: 22%;
