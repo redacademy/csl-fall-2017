@@ -891,33 +891,33 @@ object {
   .sub-nav .current-event-page {
     font-weight: 900; }
 
-.tax-event_type .title {
+.term-seasonal .title {
   text-transform: uppercase;
   margin-bottom: 0; }
 
-.tax-event_type .alt-title {
+.term-seasonal .alt-title {
   margin-left: 5px; }
 
-.tax-event_type .date {
+.term-seasonal .date {
   font-size: 25px; }
 
-.tax-event_type .entry-content {
+.term-seasonal .entry-content {
   margin-top: 0; }
 
-.tax-event_type .entry-content .time,
-.tax-event_type .entry-content .date,
-.tax-event_type .entry-content .location {
+.term-seasonal .entry-content .time,
+.term-seasonal .entry-content .date,
+.term-seasonal .entry-content .location {
   width: 100%;
   display: block; }
 
-.tax-event_type .entry-content .time {
+.term-seasonal .entry-content .time {
   font-weight: bold; }
 
 @media (min-width: 750px) {
-  .tax-event_type .widget-area {
+  .term-seasonal .widget-area {
     display: none; } }
 
-.tax-event_type .widget-area .csl-social-media-class {
+.term-seasonal .widget-area .csl-social-media-class {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -925,23 +925,23 @@ object {
       flex-wrap: wrap;
   margin: 0 1rem;
   z-index: 1; }
-  .tax-event_type .widget-area .csl-social-media-class h2 {
+  .term-seasonal .widget-area .csl-social-media-class h2 {
     width: 100%;
     font-size: 0.95rem;
     margin-bottom: 0; }
-  .tax-event_type .widget-area .csl-social-media-class a {
+  .term-seasonal .widget-area .csl-social-media-class a {
     color: #000000;
     text-decoration: none;
     font-size: 1rem; }
-  .tax-event_type .widget-area .csl-social-media-class a:hover {
+  .term-seasonal .widget-area .csl-social-media-class a:hover {
     color: #1DAFB8; }
-  .tax-event_type .widget-area .csl-social-media-class .fa {
+  .term-seasonal .widget-area .csl-social-media-class .fa {
     font-size: 1.5rem;
     padding-right: 1rem; }
-  .tax-event_type .widget-area .csl-social-media-class a:nth-child(3) {
+  .term-seasonal .widget-area .csl-social-media-class a:nth-child(3) {
     padding-top: 0.5rem; }
 
-.tax-event_type .widget-area .social-media-container {
+.term-seasonal .widget-area .social-media-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1632,6 +1632,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 100%;
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
   color: white;
@@ -1679,6 +1680,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   margin-left: auto;
   margin-right: auto;
   width: 90%; }
+  .term-weekly .entry-content .content p {
+    font-size: 1rem; }
 
 .term-weekly .icon {
   width: 4rem;
@@ -1734,6 +1737,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .term-weekly .entry-content {
     top: 20%;
     font-size: 1.5rem; }
+    .term-weekly .entry-content .content p {
+      font-size: 1.5rem; }
   .term-weekly .icon {
     width: 6rem; } }
 
