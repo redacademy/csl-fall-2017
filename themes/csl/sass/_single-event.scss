@@ -1,10 +1,101 @@
 .single-event {
-  main>*{
-    display: inline-block
+  .site-main {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    @include desktop {
+      height: 950px;
+      
+    }
+    
   }
   article {
-    width: 380px;
-  }
+    order: 2;
+    width: 100%;
+    @include desktop {
+      flex: 0 0 100%;
+      width: 26%;
+      order: 0;
+      overflow-y: scroll;
+      
+    }
+    
+  } 
+  .owl-event-main {
+    order: 1;
+    width: 100%;
+    @include desktop {
+      order: 0;
+      .owl-nav {
+        display: none;
+      }
+      .owl-dots {
+        display: none;
+      }
+      flex: 0 0 740px;
+      width: 74%;
+   
+    }
 
+    .owl-stage *:not(img) {
+      height: 350px;
+      @include desktop {
+        height: 740px;
+      }
+    }
+    .owl-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+    }
+    img {
+      height: 350px;
+      width: auto;
+      max-width: none;
+    }
+    @include desktop {
+      img {
+        max-width: 100%;
+        width: auto;
+        max-height: 100%;
+        height: auto;
+      }
+    }
+    
+    
+  }
+  .owl-event-thumbs {
+    width: 100%;
+    .owl-nav {
+      display: none;
+    }
+    .owl-dots {
+      display: none;
+    }
+    order: 3;
+    @include desktop {
+      .owl-nav {
+        display: initial;
+      }
+      .owl-dots {
+        display: initial;
+      }
+      order: 0;
+      width: 74%;
+      flex: 0 0 210px;
+  
+      img {
+        width: 160px;
+        width: auto;
+        height: 160px;
+        height: auto;
+      }
+    }
+    
+    
+
+  }
 
 }
