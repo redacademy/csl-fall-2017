@@ -1287,8 +1287,10 @@ header {
     background-size: 9vw; }
   .footer-contact-info {
     font-size: 0.75rem;
-    -ms-flex-preferred-size: 27%;
-        flex-basis: 27%; }
+    -ms-flex-preferred-size: 23%;
+        flex-basis: 23%; }
+    .footer-contact-info > p:nth-child(1) {
+      font-size: 1rem; }
   .sub-menu {
     font-size: 0.75rem;
     font-weight: lighter;
