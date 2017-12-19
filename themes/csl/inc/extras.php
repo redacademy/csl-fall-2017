@@ -129,6 +129,4 @@ function short_days( $days ){
 
 
 
-
-
 	
