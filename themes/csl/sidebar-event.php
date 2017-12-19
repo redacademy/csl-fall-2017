@@ -11,6 +11,6 @@ if ( ! is_active_sidebar( 'sidebar-3' ) ) {
 }
 ?>
 
-<div id="secondary" class="header-widget-area" role="complementary">
+<div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'sidebar-3' ); ?>
 </div><!-- #secondary -->
