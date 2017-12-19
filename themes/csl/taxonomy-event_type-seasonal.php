@@ -66,7 +66,6 @@ get_header(); ?>
 			</article><!-- #post-## -->
 		<?php endwhile; ?>
 
-
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
@@ -75,5 +74,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	<?php get_sidebar('event');?>
 <?php get_footer(); ?>

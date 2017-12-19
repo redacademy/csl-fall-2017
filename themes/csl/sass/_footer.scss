@@ -1,5 +1,4 @@
-
-// Footer //
+// FOOTER //
 .site-info{
 	background:$black;
 }
@@ -82,6 +81,7 @@
 .sub-menu{
 	display:none;
 }
+// FOOTER DESKTOP //
 @media screen  and (min-width:$desktop-width) {
 	.footer-container{
 		height:15rem;

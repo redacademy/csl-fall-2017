@@ -83,6 +83,16 @@ function csl_starter_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html( 'Social Media For Seasonal Events Page ' ),
+		'id'            => 'sidebar-3',
+		'description'   => 'side bar for events page',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'csl_starter_widgets_init' );
 
@@ -112,7 +122,7 @@ function csl_starter_scripts() {
 	wp_enqueue_script( 'csl-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
 	wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), null, true );
 	wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/build/js/owl-init.min.js', array(), null, true );
-	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array(), null, false );
+	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array(), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

@@ -61,7 +61,7 @@
       <?php
         foreach( $team_member_group as $team_member ){
           if(isset($team_member['_story_name'])){ ?>
-        <?php  $team_member_image = wp_get_attachment_image( $team_member['_story_member_image_id'], 'medium' ); ?>
+        <?php  $team_member_image = wp_get_attachment_image( $team_member['_story_member_image_id'], 'thumbnail' ); ?>
           <section class="team-member">
             
             <div class="team-member__image">
