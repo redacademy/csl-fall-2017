@@ -71,8 +71,9 @@
   }
   
   width: 100%; 
-  -webkit-tap-highlight-color: transparent; }
-  .owl-theme .owl-dots .owl-dot {
+  -webkit-tap-highlight-color: transparent;
+}
+.owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
     *display: inline; }
@@ -94,4 +95,6 @@
       border-radius: 30px; }
     .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
       border: none;
-      background: white; }
+      background: white; 
+}
+

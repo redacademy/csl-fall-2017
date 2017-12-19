@@ -6,6 +6,12 @@
  */
  ?>
 
+<?php 
+
+  $origin_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_origin_image_id', 1 ), 'medium-large' );
+
+?>
+
 <article class="origin-container">
 	<div class="hash-holder" id="origin"></div>
 	<header class="entry-header">
@@ -25,6 +31,10 @@
 		<div class="entry-content">
 			<?php the_content(); ?>
 		</div><!-- .entry-content -->
+
+		<div class="origin-image-two">
+      <?php echo $origin_secondary_image; ?>
+    </div>
 	</section>
 </article>
   

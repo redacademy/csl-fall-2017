@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+			<?php the_post(); ?>
 			<?php
 			$alt_title = get_post_meta( get_the_ID(), '_event_alt_title', true );
 			$location = get_post_meta( get_the_ID(), '_event_location', true );
@@ -55,25 +55,25 @@ get_header(); ?>
 					<?php endif; ?>
 					<div class="content"><?php the_content(); ?></div>
 				</div><!-- .entry-content -->
-        <div class="owl-carousel2 owl-theme">
-          <?php the_post_thumbnail( ); ?>
-					<?php if ( $gallery ) : ?>
-					<?php foreach( $gallery as $image_id => $image_url ) : ?>
-            <?php echo wp_get_attachment_image( $image_id ); ?>
-					<?php endforeach;?>
-				</div>
-				<div class="thumbnail-wrapper owl-carousel3 owl-theme">
-
-					<?php the_post_thumbnail( 'thumbnail' ); ?>
-
-					<?php foreach( $gallery as $image_id => $image_url ) : ?>
-						<?php echo wp_get_attachment_image( $image_id, 'thumbnail' ); ?>
-					<?php endforeach;?>
-					
-				</div>
-				<?php endif; ?>
 			</article><!-- #post-## -->
-		<?php endwhile; ?>
+			<div class="owl-carousel owl-event-main owl-theme-event-main owl-theme">
+				<?php the_post_thumbnail( 'full', ['sync-data' => 0, 'class' => 'owl-lazy', 'data-src' => get_the_post_thumbnail_url( get_the_ID(), 'full' )]); ?>
+				<?php if ( $gallery ) : ?>
+				<?php $i = 1; foreach( $gallery as $image_id => $image_url ) : ?>
+					<?php echo wp_get_attachment_image( $image_id, 'full', '', ['sync-data' => $i, 'class' => 'owl-lazy', 'data-src' => wp_get_attachment_image_url( $image_id, 'full' )]); ?>
+				<?php $i++; endforeach;?>
+			</div>
+			<div class="thumbnail-wrapper owl-carousel owl-event-thumbs owl-theme">
+
+				<?php the_post_thumbnail( 'thumbnail', ['sync-data' => 0, 'class' => 'owl-lazy', 'data-src' => get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' )] ); ?>
+
+				<?php $i = 1; foreach( $gallery as $image_id => $image_url ) : ?>
+					<?php echo wp_get_attachment_image( $image_id, 'thumbnail', '', ['sync-data' => $i, 'class' => 'owl-lazy', 'data-src' => wp_get_attachment_image_url( $image_id, 'thumbnail' )] ); ?>
+				<?php $i++; endforeach;?>
+				
+			</div>
+			<?php endif; ?>
+			
 
 
 		<?php else : ?>

@@ -83,6 +83,16 @@ function csl_starter_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => esc_html( 'Social Media For Seasonal Events Page ' ),
+		'id'            => 'sidebar-3',
+		'description'   => 'side bar for events page',
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'csl_starter_widgets_init' );
 
@@ -154,5 +164,22 @@ require get_template_directory() . '/inc/event-mb.php';
 require get_template_directory() . '/inc/story-mb.php';
 
 require get_template_directory() . '/inc/news-mb.php';
+
+//limit words for seasonal events content//
+function seasonal_content($limit){
+  $content = explode(' ', get_the_content(), $limit);
+ 
+  if (count($content)>=$limit){
+       array_pop($content);
+       $content = implode(" ",$content).'...';
+  } else {
+    $content = implode(" ",$content);
+  }
+ 
+  $content = preg_replace('/\[.+\]/','', $content);
+  $content = apply_filters('the_content', $content); 
+  $content = str_replace(']]>', ']]&gt;', $content);
+  return $content;
+}
 
 
