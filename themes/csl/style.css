@@ -1473,7 +1473,7 @@ header {
   position: fixed;
   top: 0%;
   height: 100%;
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4); }
 
@@ -1505,7 +1505,7 @@ header {
       position: absolute;
       font-weight: bold;
       top: 20%;
-      left: 30%;
+      left: 27.5%;
       text-transform: uppercase;
       color: #FFFFFF; }
 
@@ -1736,9 +1736,9 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     height: 50vw; }
   .term-weekly .entry-content {
     top: 20%;
-    font-size: 1.5rem; }
+    font-size: 1.25rem; }
     .term-weekly .entry-content .content p {
-      font-size: 1.5rem; }
+      font-size: 1rem; }
   .term-weekly .icon {
     width: 6rem; } }
 
