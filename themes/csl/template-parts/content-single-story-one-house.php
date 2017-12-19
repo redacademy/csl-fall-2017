@@ -43,7 +43,8 @@
 
   <?php endif; ?>
   
-	</header><!-- .entry-header -->
+  </header><!-- .entry-header -->
+  
   <section class="one-house-content-wrapper">
     <div class="entry-content-mobile entry-content"> <!-- mobile content -->
       <?php the_content(); ?>

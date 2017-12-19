@@ -1,8 +1,11 @@
 /*--------------------------------------------------------------
 # Story
 --------------------------------------------------------------*/
+.hash-holder {
+  position: relative;
+  top: -146px;
+}
 
-/* Story */
 .single-story, .post-type-archive-story {
 
   .entry-header {
@@ -16,11 +19,6 @@
         background-color: $black;
         width: 30%;
       }
-    }
-
-    .hash-holder {
-      position: relative;
-      top: -146px;
     }
 
     h1 {
@@ -47,10 +45,7 @@
     }
   }
 
-
-
-
-/* One-House */
+/*----- One-House -----*/
   .one-house-container {
     .entry-header {
       padding: 0;
@@ -205,7 +200,7 @@
   }
   /* End of One-House */
 
-/* Origin */
+/*----- Origin -----*/
   .origin-container {
     @include desktop {
       background-color: $teal;
@@ -235,7 +230,6 @@
       }
 
       @include desktop {
-        // width: 40vw;
         flex-basis: 50%;
         margin: 0 0 $base__space-unit 2.5vw;
         
@@ -265,7 +259,7 @@
   }
 /* End of Origin */
 
-/* Vision */
+/*----- Vision -----*/
   .vision-container {
 
     .vision-wrapper-desktop {
@@ -351,13 +345,13 @@
     
     img {
       min-height: 10%;
-      padding-right: 2.5%;
+      padding: 0 2.5% $base__space-unit;
     }
   }
 }
 /* End of Vision */
 
-/* Heritage */
+/*----- Heritage -----*/
   .heritage-container {
     @include desktop {
       background-color: $red;
@@ -422,9 +416,12 @@
         column-count: 2;
         column-gap: $base__space-unit*2;
         color: $white;
+
+        p {
+          margin-top: 0;
+        }
       }
     }
   }
-
 /* End of Heritage */
 }

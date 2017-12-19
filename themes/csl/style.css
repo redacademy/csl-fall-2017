@@ -1826,15 +1826,18 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 /*--------------------------------------------------------------
 # Story
 --------------------------------------------------------------*/
-/* Story */
+.hash-holder {
+  position: relative;
+  top: -146px; }
+
 .single-story, .post-type-archive-story {
-  /* One-House */
+  /*----- One-House -----*/
   /* End of One-House */
-  /* Origin */
+  /*----- Origin -----*/
   /* End of Origin */
-  /* Vision */
+  /*----- Vision -----*/
   /* End of Vision */
-  /* Heritage */
+  /*----- Heritage -----*/
   /* End of Heritage */ }
   .single-story .entry-header, .post-type-archive-story .entry-header {
     width: 100%;
@@ -1845,9 +1848,6 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         color: #ffffff;
         background-color: #000000;
         width: 30%; } }
-    .single-story .entry-header .hash-holder, .post-type-archive-story .entry-header .hash-holder {
-      position: relative;
-      top: -146px; }
     .single-story .entry-header h1, .post-type-archive-story .entry-header h1 {
       margin: 0;
       padding: 0 2.5%; }
@@ -2109,7 +2109,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
             flex-basis: 50%; }
         .single-story .vision-wrapper-mobile img, .post-type-archive-story .vision-wrapper-mobile img {
           min-height: 10%;
-          padding-right: 2.5%; } }
+          padding: 0 2.5% 1.5rem; } }
   @media (min-width: 750px) {
     .single-story .heritage-container, .post-type-archive-story .heritage-container {
       background-color: #D91F18;
@@ -2176,7 +2176,9 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
               column-count: 2;
       -webkit-column-gap: 3rem;
               column-gap: 3rem;
-      color: #ffffff; } }
+      color: #ffffff; }
+      .single-story .heritage-container .entry-content p, .post-type-archive-story .heritage-container .entry-content p {
+        margin-top: 0; } }
 
 /**
  * Owl Carousel v2.2.1

@@ -7,7 +7,7 @@
 ?>
 
   <?php
-    $heritage_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_heritage_image_id', 1 ), 'medium' );
+    $heritage_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_heritage_image_id', 1 ), 'medium-large' );
   ?>
 
 <article class="heritage-container"> 
