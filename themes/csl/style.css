@@ -809,7 +809,8 @@ object {
           width: 100%;
           min-height: 135px;
           margin: 0;
-          padding: .5rem 1rem 1rem 1rem; }
+          padding: .5rem 1rem 1rem 1rem;
+          font-size: 1rem; }
         .home .front-page-news .front-page-news-gallery .news-archive-image-wrapper img {
           min-width: 440px;
           min-height: 300px;
