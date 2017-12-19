@@ -116,16 +116,25 @@ function csl_starter_scripts() {
 	wp_enqueue_style('main-font','https://fonts.googleapis.com/css?family=Lato:300,400,700,900');
 	wp_enqueue_style('font-awesome','https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js');
-	wp_enqueue_script( 'contact-form-submit-alert', get_template_directory_uri() . '/build/js/contact-form-submit-alert.min.js',array(), '20130116', true );
-	wp_enqueue_script( 'weekly-event-hover', get_template_directory_uri() . '/build/js/weekly-event-hover.min.js',array(), '20130116', true );
 	wp_enqueue_script( 'mobile-menu', get_template_directory_uri() . '/build/js/mobile-menu.min.js',array(), '20130115', true );
 	wp_enqueue_script( 'csl-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20130115', true );
-	wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), null, true );
-	wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/build/js/owl-init.min.js', array(), null, true );
-	wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array(), null, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
+	}
+
+	if ( is_archive() && is_tax('event_type', 'seasonal') || is_tax('event_type', 'gallery') ){
+		wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), null, true );
+		wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/build/js/owl-init.min.js', array(), null, true );
+	}
+	if ( is_archive() && is_tax('event_type', 'weekly') ){
+		wp_enqueue_script( 'weekly-event-hover', get_template_directory_uri() . '/build/js/weekly-event-hover.min.js',array(), '20130116', true );
+	}
+	if ( is_page('contact') ){
+		wp_enqueue_script( 'contact-form-submit-alert', get_template_directory_uri() . '/build/js/contact-form-submit-alert.min.js',array(), '20130116', true );
+	}
+	if ( is_archive('story')){
+		wp_enqueue_script( 'smooth-scroll', get_template_directory_uri() . '/build/js/smooth-scroll.min.js', array(), null, true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'csl_starter_scripts' );
