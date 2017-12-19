@@ -21,6 +21,7 @@
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
 			<header id="masthead" class="site-header" role="banner">
+				
 				<div class="site-branding">
 					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
@@ -30,6 +31,7 @@
 						<img src="<?php echo get_template_directory_uri() . '/images/header-logo.png'; ?>" class="header-logo" alt="csl logo" />
 					</a>
 				</div>
+
 				<div class= "site-logo">
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 						<img src="<?php echo get_template_directory_uri() . '/images/desktop-header-logo.png'; ?>" class="desktop-header-logo" alt="csl logo" />
@@ -48,7 +50,6 @@
 					
 					<?php get_sidebar('header'); ?>
 					
-
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 			<div class="mobile-menu">

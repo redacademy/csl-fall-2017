@@ -1,5 +1,5 @@
 (function($){
-  $('.owl-carousel').owlCarousel({
+  $('.owl-seasonal').owlCarousel({
     loop:true,
     nav:true,
     items: 1,
@@ -8,24 +8,46 @@
     lazyLoad: true
 
   });
-  $('.owl-carousel2').owlCarousel({
-    loop:true,
+  $('.owl-event-main').owlCarousel({
+    loop:false,
     nav:false,
+    dots: false,
     items: 1,
     center: true,
-    lazyLoad: true
+    lazyLoad: true,
+    startPosition: 0
+
+  }).on('change.owl.carousel', function(e) {
+    if (e.property.name != 'position') return;
+    console.log(e);
+    $('.owl-event-thumbs').trigger('to.owl.carousel', [ e.property.value , 300]);
+  });
+  $('.owl-event-thumbs').owlCarousel({
+    loop:false,
+    nav:true,
+    dots: false,
+    items: 6,
+    center: false,
+    navText: ['',''],
+    lazyLoad: true,
+    startPosition: 0,
+    mouseDrag: false,
+    touchDrag: false,
+    freeDrag: false,
+    pullDrag: false
 
   });
-  $('.owl-carousel3').owlCarousel({
-    loop:true,
-    nav:true,
-    items: 6,
-    center: true,
-    navText: ['',''],
-    lazyLoad: true
-
+  $('.owl-event-thumbs .owl-prev').on('click', function(){
+    $('.owl-event-main').trigger('prev.owl.carousel', [300]);
+  });
+  $('.owl-event-thumbs .owl-next').on('click', function(){
+    $('.owl-event-main').trigger('next.owl.carousel', [300]);
+  });
+  $('.thumbnail-wrapper img').on('click', function(e){
+    console.log(e);
+    $('.owl-event-main').trigger('to.owl.carousel', [ e.target.getAttribute('sync-data') , 300]);
+    $('.owl-event-thumbs').trigger('to.owl.carousel', [ e.target.getAttribute('sync-data') , 300]);
   });
   $('.owl-prev').append('<p class="screen-reader-text">Button for previous entry.</p>');
   $('.owl-next').append('<p class="screen-reader-text">Button for next entry.</p>');
-
 })(jQuery)

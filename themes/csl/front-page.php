@@ -60,8 +60,7 @@ $news_posts = get_posts( $args ); ?>
 
 <?php foreach ( $news_posts as $post ) : setup_postdata( $post ); ?>
 
-	
-		
+
 	<!-- start of the loops -->
 	
 

@@ -1,7 +1,7 @@
 .term-seasonal {
   article {
     background-size: auto 350px;
-    background-position: center top;  
+    background-position: center top;
     background-repeat: no-repeat;
     padding-top: 350px;
     @include desktop {
@@ -9,7 +9,9 @@
       height: 900px;
       background-size: cover;
     }
-    
+    .content {
+      overflow-wrap: break-word;
+    }
   }
   .entry-wrapper {
     padding-left: 2.5%;
@@ -24,6 +26,7 @@
     }
   }
 }
+
 //also used on weekly events
 .sub-nav {
   display: none;
@@ -62,5 +65,44 @@
   .current-event-page {
     font-weight: 900;
   }
+}
 
+// SEASONAL WIDGET AREA //
+.tax-event_type {
+  .widget-area {
+    @include desktop {
+      display: none;
+    }
+    .csl-social-media-class {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 1rem;
+      z-index: 1;
+      h2 {
+        font-size: 0.95rem;
+        margin-bottom: 0;
+      }
+      
+      a {
+        color: $black;
+        text-decoration: none;
+        font-size: 1rem;
+      }
+      a:hover {
+        color: $teal;
+      }
+      .fa {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+      }
+      a:nth-child(3) {
+        padding-top: 0.5rem;
+      }
+    }
+    .social-media-container {
+      display: flex;
+      align-items: baseline;
+      margin-right: 1rem;
+    }
+  }
 }

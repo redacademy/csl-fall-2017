@@ -12,7 +12,7 @@ get_header(); ?>
 			<li class="current-event-page"><a href="<?php  echo get_term_link( 'seasonal', 'event_type' ) ?>">Seasonal</a></li>
 			<li><a href="<?php echo get_term_link( 'weekly', 'event_type' ) ?>">Weekly</a></li>
 		</ul>
-		<main id="main" class="site-main owl-carousel owl-theme" role="main">
+		<main id="main" class="site-main owl-seasonal owl-carousel owl-theme" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -66,7 +66,6 @@ get_header(); ?>
 			</article><!-- #post-## -->
 		<?php endwhile; ?>
 
-
 		<?php else : ?>
 
 			<?php get_template_part( 'template-parts/content', 'none' ); ?>
@@ -75,5 +74,5 @@ get_header(); ?>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+	<?php get_sidebar('event');?>
 <?php get_footer(); ?>
