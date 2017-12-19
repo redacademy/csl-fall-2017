@@ -23,9 +23,9 @@
       background: $trans-black;
       width: 60%;
       padding-right: 5%;
-      p {
-        font-size: 18px;
-      }
+      // p {
+      //   font-size: 18px;
+      // }
     }
   }
 }
@@ -72,6 +72,19 @@
 
 // SEASONAL WIDGET AREA //
 .tax-event_type {
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 0;
+  }
+  .alt-title {
+    margin-left: 5px;
+  }
+  .date{
+    font-size: 25px;
+  }
+  .entry-content{
+    margin-top: 0;
+  }
   .entry-content {
     .time,
     .date,
