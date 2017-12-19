@@ -63,7 +63,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "content";
 @import "media";
 @import "page-templates";
-@import "_front-page.scss";
+@import "front-page";
 @import "seasonal-events";
 @import "header";
 @import "footer";
@@ -74,3 +74,4 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "owl-carousel";
 @import "owl-theme-default";
 @import "404";
+@import "single-event";
