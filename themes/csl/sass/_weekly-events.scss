@@ -116,44 +116,52 @@
 	}
 }	
 
-	@media screen  and (min-width:$desktop-width){
-		.title{
-			margin-top:0.5rem;
-		}
-		
-		.wrapper {
-			padding-top: 3.5rem;
-		}
-		
-		.weekly-event-page-title{
-			padding-left: 2.5%;
-			color: #fff;
-			background:$black;
-			width: 31%;
-			height: 4.2rem;
-			line-height: 4.2rem;
-		}
-		.site-main{
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			margin-bottom:1rem;
-		}
-		.type-event{
-			flex-basis:49%;
-			height:50vw;
-		}
-		.entry-content{
-			top:20%;
-			font-size:1.25rem;
-			.content{
-				p{
-					font-size:1.25rem;
-				}
+@media screen  and (min-width:$desktop-width){
+	.title{
+		margin-top:0.5rem;
+	}
+	
+	.wrapper {
+		padding-top: 3.5rem;
+	}
+	
+	.weekly-event-page-title{
+		padding-left: 2.5%;
+		color: #fff;
+		background:$black;
+		width: 31%;
+		height: 4.2rem;
+		line-height: 4.2rem;
+	}
+	.site-main{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin-bottom:1rem;
+	}
+	.type-event{
+		flex-basis:49%;
+		height:50vw;
+	}
+	.entry-content{
+		top:0%;
+		font-size:1.25rem;
+		.content{
+			p{
+				font-size:1.25rem;
 			}
 		}
-		.icon{
-			width:6rem;
-		}
 	}
+	.icon{
+		width:6rem;
+	}
+  }
+}
+
+@media screen  and (min-width:1024px){
+	.term-weekly{
+		.entry-content{
+			top:25%;
+		}
+	}	
 }
