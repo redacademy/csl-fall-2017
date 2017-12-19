@@ -1387,7 +1387,8 @@ header {
   top: -1.35%;
   left: 5%;
   text-transform: uppercase;
-  font-size: 30px; }
+  font-size: 30px;
+  margin-top: 0.5rem; }
 
 .page-template-contact .contact-page-contact-info {
   display: -webkit-box;
@@ -1737,12 +1738,16 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         flex-basis: 49%;
     height: 50vw; }
   .term-weekly .entry-content {
-    top: 20%;
+    top: 0%;
     font-size: 1.25rem; }
     .term-weekly .entry-content .content p {
       font-size: 1.25rem; }
   .term-weekly .icon {
     width: 6rem; } }
+
+@media screen and (min-width: 1024px) {
+  .term-weekly .entry-content {
+    top: 25%; } }
 
 /* NEWS */
 .post-type-archive-news .article-wrapper {
