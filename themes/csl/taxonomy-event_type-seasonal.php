@@ -38,7 +38,7 @@ get_header(); ?>
 					<div class="entry-title">
 						<h2 class="title"><?php the_title(); ?>
 							<?php if ( $alt_title ) : ?>
-							<span class="alt-title"><?php echo $alt_title ?></span>
+							<span class="alt-title">[<?php echo $alt_title ?>]</span>
 							<?php endif; ?>
 						</h2>
 					</div><!-- .entry-title -->
@@ -60,7 +60,7 @@ get_header(); ?>
 						<?php if ( $location ) : ?>
 						<span class="location"><?php echo $location ?></span>
 						<?php endif; ?>
-						<div class="content"><?php the_content(); ?></div>
+						<div class="content"><?php echo seasonal_content(180); ?></div>
 					</div><!-- .entry-content -->
 				</div>
 			</article><!-- #post-## -->
@@ -75,4 +75,6 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	<?php get_sidebar('event');?>
+		
+
 <?php get_footer(); ?>

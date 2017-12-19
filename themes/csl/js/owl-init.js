@@ -10,17 +10,18 @@
   });
   $('.owl-event-main').owlCarousel({
     loop:false,
-    nav:false,
-    dots: false,
+    nav:true,
+    dots: true,
+    navText: ['',''],
     items: 1,
     center: true,
     lazyLoad: true,
     startPosition: 0
 
-  }).on('change.owl.carousel', function(e) {
-    if (e.property.name != 'position') return;
+  }).on('dragged.owl.carousel', function(e) {
+    // if (e.property.name != 'position') return;
     console.log(e);
-    $('.owl-event-thumbs').trigger('to.owl.carousel', [ e.property.value , 300]);
+    $('.owl-event-thumbs').trigger('to.owl.carousel', [ e.page.index , 300]);
   });
   $('.owl-event-thumbs').owlCarousel({
     loop:false,
@@ -44,7 +45,7 @@
     $('.owl-event-main').trigger('next.owl.carousel', [300]);
   });
   $('.thumbnail-wrapper img').on('click', function(e){
-    console.log(e);
+    // console.log(e);
     $('.owl-event-main').trigger('to.owl.carousel', [ e.target.getAttribute('sync-data') , 300]);
     $('.owl-event-thumbs').trigger('to.owl.carousel', [ e.target.getAttribute('sync-data') , 300]);
   });

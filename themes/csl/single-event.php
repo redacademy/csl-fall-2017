@@ -56,14 +56,14 @@ get_header(); ?>
 					<div class="content"><?php the_content(); ?></div>
 				</div><!-- .entry-content -->
 			</article><!-- #post-## -->
-			<div class="owl-carousel owl-event-main owl-theme-event-main">
+			<div class="owl-carousel owl-event-main owl-theme-event-main owl-theme">
 				<?php the_post_thumbnail( 'full', ['sync-data' => 0, 'class' => 'owl-lazy', 'data-src' => get_the_post_thumbnail_url( get_the_ID(), 'full' )]); ?>
 				<?php if ( $gallery ) : ?>
 				<?php $i = 1; foreach( $gallery as $image_id => $image_url ) : ?>
 					<?php echo wp_get_attachment_image( $image_id, 'full', '', ['sync-data' => $i, 'class' => 'owl-lazy', 'data-src' => wp_get_attachment_image_url( $image_id, 'full' )]); ?>
 				<?php $i++; endforeach;?>
 			</div>
-			<div class="thumbnail-wrapper owl-carousel owl-event-thumbs owl-theme -event-thumbs">
+			<div class="thumbnail-wrapper owl-carousel owl-event-thumbs owl-theme">
 
 				<?php the_post_thumbnail( 'thumbnail', ['sync-data' => 0, 'class' => 'owl-lazy', 'data-src' => get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' )] ); ?>
 
