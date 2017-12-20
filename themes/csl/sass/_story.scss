@@ -221,7 +221,7 @@
   .vision-container {
     .vision-wrapper-desktop {
       @include desktop {
-        padding-top: 2.5%;
+        padding: 2.5% 0 2.5%;
       }
     }
     .entry-header {

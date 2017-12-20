@@ -2141,7 +2141,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   @media (min-width: 750px) {
     .single-story .vision-container .vision-wrapper-desktop,
     .post-type-archive-story .vision-container .vision-wrapper-desktop {
-      padding-top: 2.5%; } }
+      padding: 2.5% 0 2.5%; } }
   .single-story .vision-container .entry-header,
   .post-type-archive-story .vision-container .entry-header {
     margin-left: 0; }
