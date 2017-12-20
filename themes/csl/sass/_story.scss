@@ -221,7 +221,7 @@
   .vision-container {
     .vision-wrapper-desktop {
       @include desktop {
-        padding-top: 2.5%;
+        padding: 2.5% 0 2.5%;
       }
     }
     .entry-header {
@@ -236,7 +236,7 @@
       p {
         margin-top: 0;
         @include desktop {
-          padding: 2.5% 0 0 2.5%;
+          padding: 2.5% 2.5% 0 2.5%;
         }
       }
       .teal-border {
@@ -280,6 +280,11 @@
       }
     }
   }
+  .vision-featured-image {
+    padding-top: $base__space-unit;
+    padding-bottom: $base__space-unit;
+  }
+
   .vision-image-two {
     display: flex;
       img {
