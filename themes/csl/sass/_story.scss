@@ -1,9 +1,17 @@
 /*--------------------------------------------------------------
 # Story
 --------------------------------------------------------------*/
+.hash-holder {
+  position: relative;
+  top: -146px;
+}
 
+<<<<<<< HEAD
+.single-story, .post-type-archive-story {
+=======
 
 /* Story */
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
 
 .single-story,
 .post-type-archive-story {
@@ -37,7 +45,12 @@
       margin-top: 0;
     }
   }
+<<<<<<< HEAD
+
+/*----- One-House -----*/
+=======
   /* One-House */
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
   .one-house-container {
     .entry-header {
       padding: 0;
@@ -92,6 +105,15 @@
       background-color: yellow;
       background: url("../../images/eagle-background.png") repeat top;
       background-size: contain;
+<<<<<<< HEAD
+
+      include desktop {
+        background: url("../../images/eagle-background.png") repeat top;
+        background-size: contain;
+      }
+      
+=======
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       .meet-our-team-title {
         padding-top: $base__space-unit;
         h2 {
@@ -117,7 +139,7 @@
         justify-content: space-around;
       }
       .team-member {
-        flex: 0 1 40%;
+        flex-basis: 40%;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
@@ -162,7 +184,12 @@
     }
   }
   /* End of One-House */
+<<<<<<< HEAD
+
+/*----- Origin -----*/
+=======
   /* Origin */
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
   .origin-container {
     @include desktop {
       background-color: $teal;
@@ -187,8 +214,7 @@
         max-height: 75vh;
       }
       @include desktop {
-        // width: 40vw;
-        flex: 0 2 50%;
+        flex-basis: 50%;
         margin: 0 0 $base__space-unit 2.5vw;
         img {
           min-height: 10%;
@@ -196,7 +222,7 @@
       }
     }
     .entry-content {
-      flex: 0 1 50%;
+      flex-basis: 50%;
       margin: 0;
     }
     .origin-image-two {
@@ -210,8 +236,14 @@
       }
     }
   }
+<<<<<<< HEAD
+/* End of Origin */
+
+/*----- Vision -----*/
+=======
   /* End of Origin */
   /* Vision */
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
   .vision-container {
     .vision-wrapper-desktop {
       @include desktop {
@@ -286,6 +318,16 @@
     width: 100%;
     height: auto;
     img {
+<<<<<<< HEAD
+      min-height: 10%;
+      padding: 0 2.5% $base__space-unit;
+    }
+  }
+}
+/* End of Vision */
+
+/*----- Heritage -----*/
+=======
       min-width: 100%;
       min-height: 100%;
       max-height: 75vh;
@@ -300,6 +342,7 @@
   }
   /* End of Vision */
   /* Heritage */
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
   .heritage-container {
     @include desktop {
       background-color: $red;
@@ -324,36 +367,51 @@
       }
       @include desktop {
         order: 2;
-        flex: 0 2 50%;
+        flex-basis: 50%;
         padding: 2.5%;
         max-height: 50%;
         margin-bottom: $base__space-unit;
       }
     }
     .heritage-image-two {
+<<<<<<< HEAD
+      height: auto;
+      max-height: 100%;
+
+      img {
+        min-width: 100%;
+        min-height: 100%;
+        max-height: 75vh;
+      }
+
+=======
       display: none;
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       @include desktop {
         order: 3;
-        flex: 0 2 50%;
+        flex-basis: 50%;
         display: inherit;
         padding: 2.5%;
         margin-bottom: $base__space-unit;
+<<<<<<< HEAD
+        width: 100%;     
+=======
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       }
     }
     .entry-content {
       @include desktop {
-        flex: 0 1 100%;
+        flex-basis: 100%;
         margin: 0;
         column-count: 2;
         column-gap: $base__space-unit*2;
         color: $white;
+
+        p {
+          margin-top: 0;
+        }
       }
     }
   }
-  /* End of Heritage */
-}
-
-.hash-holder {
-  position: relative;
-  top: -146px;
+/* End of Heritage */
 }

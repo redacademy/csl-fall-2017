@@ -1837,16 +1837,25 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 /*--------------------------------------------------------------
 # Story
 --------------------------------------------------------------*/
+<<<<<<< HEAD
+.hash-holder {
+  position: relative;
+  top: -146px; }
+
+.single-story, .post-type-archive-story {
+  /*----- One-House -----*/
+=======
 /* Story */
 .single-story,
 .post-type-archive-story {
   /* One-House */
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
   /* End of One-House */
-  /* Origin */
+  /*----- Origin -----*/
   /* End of Origin */
-  /* Vision */
+  /*----- Vision -----*/
   /* End of Vision */
-  /* Heritage */
+  /*----- Heritage -----*/
   /* End of Heritage */ }
   .single-story .entry-header,
   .post-type-archive-story .entry-header {
@@ -1939,8 +1948,15 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     background-color: yellow;
     background: url("../../images/eagle-background.png") repeat top;
     background-size: contain; }
+<<<<<<< HEAD
+    .single-story .one-house-container .meet-our-team-wrapper include desktop, .post-type-archive-story .one-house-container .meet-our-team-wrapper include desktop {
+      background: url("../../images/eagle-background.png") repeat top;
+      background-size: contain; }
+    .single-story .one-house-container .meet-our-team-wrapper .meet-our-team-title, .post-type-archive-story .one-house-container .meet-our-team-wrapper .meet-our-team-title {
+=======
     .single-story .one-house-container .meet-our-team-wrapper .meet-our-team-title,
     .post-type-archive-story .one-house-container .meet-our-team-wrapper .meet-our-team-title {
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       padding-top: 1.5rem; }
       @media (min-width: 750px) {
         .single-story .one-house-container .meet-our-team-wrapper .meet-our-team-title h2,
@@ -1976,11 +1992,17 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
                 flex-flow: row wrap;
         -ms-flex-pack: distribute;
             justify-content: space-around; } }
+<<<<<<< HEAD
+    .single-story .one-house-container .meet-our-team .team-member, .post-type-archive-story .one-house-container .meet-our-team .team-member {
+      -ms-flex-preferred-size: 40%;
+          flex-basis: 40%;
+=======
     .single-story .one-house-container .meet-our-team .team-member,
     .post-type-archive-story .one-house-container .meet-our-team .team-member {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 40%;
               flex: 0 1 40%;
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -2071,20 +2093,32 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         min-height: 100%;
         max-height: 75vh; }
       @media (min-width: 750px) {
+<<<<<<< HEAD
+        .single-story .origin-wrapper .origin-featured-image, .post-type-archive-story .origin-wrapper .origin-featured-image {
+          -ms-flex-preferred-size: 50%;
+              flex-basis: 50%;
+=======
         .single-story .origin-wrapper .origin-featured-image,
         .post-type-archive-story .origin-wrapper .origin-featured-image {
           -webkit-box-flex: 0;
               -ms-flex: 0 2 50%;
                   flex: 0 2 50%;
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
           margin: 0 0 1.5rem 2.5vw; }
           .single-story .origin-wrapper .origin-featured-image img,
           .post-type-archive-story .origin-wrapper .origin-featured-image img {
             min-height: 10%; } }
+<<<<<<< HEAD
+    .single-story .origin-wrapper .entry-content, .post-type-archive-story .origin-wrapper .entry-content {
+      -ms-flex-preferred-size: 50%;
+          flex-basis: 50%;
+=======
     .single-story .origin-wrapper .entry-content,
     .post-type-archive-story .origin-wrapper .entry-content {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 50%;
               flex: 0 1 50%;
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       margin: 0; }
     .single-story .origin-wrapper .origin-image-two img,
     .post-type-archive-story .origin-wrapper .origin-image-two img {
@@ -2194,7 +2228,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         .single-story .vision-wrapper-mobile img,
         .post-type-archive-story .vision-wrapper-mobile img {
           min-height: 10%;
-          padding-right: 2.5%; } }
+          padding: 0 2.5% 1.5rem; } }
   @media (min-width: 750px) {
     .single-story .heritage-container,
     .post-type-archive-story .heritage-container {
@@ -2235,43 +2269,56 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         -webkit-box-ordinal-group: 3;
             -ms-flex-order: 2;
                 order: 2;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 2 50%;
-                flex: 0 2 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         padding: 2.5%;
         max-height: 50%;
         margin-bottom: 1.5rem; } }
+<<<<<<< HEAD
+  .single-story .heritage-container .heritage-image-two, .post-type-archive-story .heritage-container .heritage-image-two {
+    height: auto;
+    max-height: 100%; }
+    .single-story .heritage-container .heritage-image-two img, .post-type-archive-story .heritage-container .heritage-image-two img {
+      min-width: 100%;
+      min-height: 100%;
+      max-height: 75vh; }
+=======
   .single-story .heritage-container .heritage-image-two,
   .post-type-archive-story .heritage-container .heritage-image-two {
     display: none; }
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
     @media (min-width: 750px) {
       .single-story .heritage-container .heritage-image-two,
       .post-type-archive-story .heritage-container .heritage-image-two {
         -webkit-box-ordinal-group: 4;
             -ms-flex-order: 3;
                 order: 3;
-        -webkit-box-flex: 0;
-            -ms-flex: 0 2 50%;
-                flex: 0 2 50%;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
         display: inherit;
         padding: 2.5%;
-        margin-bottom: 1.5rem; } }
+        margin-bottom: 1.5rem;
+        width: 100%; } }
   @media (min-width: 750px) {
+<<<<<<< HEAD
+    .single-story .heritage-container .entry-content, .post-type-archive-story .heritage-container .entry-content {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%;
+=======
     .single-story .heritage-container .entry-content,
     .post-type-archive-story .heritage-container .entry-content {
       -webkit-box-flex: 0;
           -ms-flex: 0 1 100%;
               flex: 0 1 100%;
+>>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       margin: 0;
       -webkit-column-count: 2;
               column-count: 2;
       -webkit-column-gap: 3rem;
               column-gap: 3rem;
-      color: #ffffff; } }
-
-.hash-holder {
-  position: relative;
-  top: -146px; }
+      color: #ffffff; }
+      .single-story .heritage-container .entry-content p, .post-type-archive-story .heritage-container .entry-content p {
+        margin-top: 0; } }
 
 /**
  * Owl Carousel v2.2.1
