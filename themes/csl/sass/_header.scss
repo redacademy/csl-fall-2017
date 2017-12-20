@@ -167,13 +167,6 @@
 		.header-logo{
 			display:none;
 		}
-		.desktop-site-header{
-			display: block;
-			width: 100%;
-			background: black;
-			height: 147px;
-			position: relative;
-		}
 		
 		.main-navigation {
 			height: 5.25rem;
@@ -232,11 +225,14 @@
 	}
 	@media screen  and (min-width:1024px){
 		
+		.site-header{
+			height:110px;
+		}
 		.desktop-header-logo{
 			display: block;
 			position: absolute;
 			height: 5rem;
-			margin: 0.75rem 1rem 1rem 1rem;
+			margin: 1rem 1rem 1rem 1rem;
 			width: auto;
 		}
 	}
