@@ -1642,135 +1642,148 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   color: white;
   padding-top: 1rem;
   padding-bottom: 1rem; }
+
+.term-weekly .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 220px;
+  margin: 1rem 0 1rem 0;
+  background-size: cover;
+  overflow: hidden; }
+
+.term-weekly .entry-title-wrapper {
+  position: relative;
+  height: 118px;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%; }
+
+.term-weekly .entry-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  -ms-flex-preferred-size: 90%;
+      flex-basis: 90%;
+  color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
   .term-weekly .entry-title .title {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 100%;
-    height: 220px;
-    margin: 1rem 0 1rem 0;
-    background-size: cover;
-    overflow: hidden; }
-  .term-weekly .entry-title .entry-title-wrapper {
-    position: relative;
-    height: 118px;
-    -ms-flex-preferred-size: 90%;
-        flex-basis: 90%; }
-  .term-weekly .entry-title .entry-title {
+    margin-top: 1rem; }
+  .term-weekly .entry-title .alt-title {
+    color: #d3d3d3;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding-left: 1rem; }
+  .term-weekly .entry-title .alt-title::before {
+    content: '['; }
+  .term-weekly .entry-title .alt-title::after {
+    content: ']'; }
+
+.term-weekly .entry-title-wrapper {
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.term-weekly .entry-title-wrapper:hover {
+  height: 100%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-transition: 1s;
+  transition: 1s; }
+
+.term-weekly .entry-content {
+  position: absolute;
+  left: 5%;
+  color: white;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%; }
+  .term-weekly .entry-content .content p {
+    font-size: 1rem; }
+
+.term-weekly .icon {
+  width: 4rem;
+  position: absolute;
+  right: 0;
+  top: 0; }
+
+.term-weekly .location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.term-weekly .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper {
+  background-color: rgba(29, 175, 184, 0.75); }
+
+.term-weekly .site-main .type-event:nth-child(3n+2) .entry-title-wrapper {
+  background-color: rgba(217, 31, 24, 0.75); }
+
+.term-weekly .site-main .type-event:nth-child(3n+3) .entry-title-wrapper {
+  background-color: rgba(255, 203, 51, 0.75); }
+
+@media screen and (min-width: 750px) {
+  .term-weekly .title {
+    margin-top: 0.5rem; }
+  .term-weekly .wrapper {
+    padding-top: 3.5rem; }
+  .term-weekly .weekly-event-page-title {
+    padding-left: 2.5%;
+    color: #fff;
+    background: #000000;
+    width: 31%;
+    height: 4.2rem;
+    line-height: 4.2rem; }
+  .term-weekly .site-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 100%;
-    -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
-    color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
-    .term-weekly .entry-title .entry-title .title {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center;
-      margin-top: 1rem; }
-    .term-weekly .entry-title .entry-title .alt-title {
-      color: #d3d3d3;
-      font-size: 1rem;
-      font-weight: lighter;
-      padding-left: 1rem; }
-    .term-weekly .entry-title .entry-title .alt-title::before {
-      content: '['; }
-    .term-weekly .entry-title .entry-title .alt-title::after {
-      content: ']'; }
-  .term-weekly .entry-title .entry-title-wrapper {
-    -webkit-transition: 1s;
-    transition: 1s; }
-  .term-weekly .entry-title .entry-title-wrapper:hover {
-    height: 100%;
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-    -webkit-transition: 1s;
-    transition: 1s; }
-  .term-weekly .entry-title .entry-content {
-    position: absolute;
-    left: 5%;
-    color: white;
-    display: none;
-    margin-left: auto;
-    margin-right: auto;
-    width: 90%; }
-    .term-weekly .entry-title .entry-content .content p {
-      font-size: 1rem; }
-  .term-weekly .entry-title .icon {
-    width: 4rem;
-    position: absolute;
-    right: 0;
-    top: 0; }
-  .term-weekly .entry-title .location {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .term-weekly .entry-title .days {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
-  .term-weekly .entry-title .site-main .type-event:nth-child(3n+1) .entry-title-wrapper {
-    background-color: rgba(29, 175, 184, 0.75); }
-  .term-weekly .entry-title .site-main .type-event:nth-child(3n+2) .entry-title-wrapper {
-    background-color: rgba(217, 31, 24, 0.75); }
-  .term-weekly .entry-title .site-main .type-event:nth-child(3n+3) .entry-title-wrapper {
-    background-color: rgba(255, 203, 51, 0.75); }
-  @media screen and (min-width: 750px) {
-    .term-weekly .entry-title .title {
-      margin-top: 0.5rem; }
-    .term-weekly .entry-title .wrapper {
-      padding-top: 3.5rem; }
-    .term-weekly .entry-title .weekly-event-page-title {
-      padding-left: 2.5%;
-      color: #fff;
-      background: #000000;
-      width: 31%;
-      height: 4.2rem;
-      line-height: 4.2rem; }
-    .term-weekly .entry-title .site-main {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      margin-bottom: 1rem; }
-    .term-weekly .entry-title .type-event {
-      -ms-flex-preferred-size: 49%;
-          flex-basis: 49%;
-      height: 50vw; }
-    .term-weekly .entry-title .entry-content {
-      top: 0%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 1rem; }
+  .term-weekly .type-event {
+    -ms-flex-preferred-size: 49%;
+        flex-basis: 49%;
+    height: 50vw; }
+  .term-weekly .entry-content {
+    top: 0%;
+    font-size: 1.25rem; }
+    .term-weekly .entry-content .content p {
       font-size: 1.25rem; }
-      .term-weekly .entry-title .entry-content .content p {
-        font-size: 1.25rem; }
-    .term-weekly .entry-title .icon {
-      width: 6rem; } }
+  .term-weekly .icon {
+    width: 6rem; } }
 
 @media screen and (min-width: 1024px) {
   .term-weekly .term-weekly .entry-content {
