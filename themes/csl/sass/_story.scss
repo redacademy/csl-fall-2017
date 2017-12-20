@@ -306,6 +306,12 @@
       }
     }
   }
+  .vision-image-two {
+    display: flex;
+    img {
+      height: 100%;
+    }
+  }
   .vision-wrapper-mobile {
     display: flex;
     flex-flow: column nowrap;

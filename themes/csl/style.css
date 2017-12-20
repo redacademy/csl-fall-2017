@@ -2196,6 +2196,14 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       -ms-flex-preferred-size: 100%;
           flex-basis: 100%;
       padding: 2.5% 0 0 2.5%; } }
+  .single-story .vision-image-two,
+  .post-type-archive-story .vision-image-two {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .single-story .vision-image-two img,
+    .post-type-archive-story .vision-image-two img {
+      height: 100%; }
   .single-story .vision-wrapper-mobile,
   .post-type-archive-story .vision-wrapper-mobile {
     display: -webkit-box;
