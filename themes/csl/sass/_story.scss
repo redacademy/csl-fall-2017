@@ -6,8 +6,6 @@
   top: -100px;
 }
 
-.single-story, .post-type-archive-story {
-
 .single-story,
 .post-type-archive-story {
   .entry-header {
@@ -200,14 +198,17 @@
       }
     }
     .entry-content {
-      flex-basis: 50%;
+      // flex-basis: 50%;
       margin: 0;
+      @include desktop {
+        flex-basis: 50%;
+      }
     }
     .origin-image-two {
+      display: flex;
       img {
         min-width: 100%;
-        min-height: 100%;
-        max-height: 75vh;
+        height: 100%;
       }
       @include desktop {
         display: none;
@@ -220,7 +221,7 @@
   .vision-container {
     .vision-wrapper-desktop {
       @include desktop {
-        padding-top: 2.5%;
+        padding: 2.5% 0 2.5%;
       }
     }
     .entry-header {
@@ -235,21 +236,21 @@
       p {
         margin-top: 0;
         @include desktop {
-          padding: 2.5% 0 0 2.5%;
+          padding: 2.5% 2.5% 0 2.5%;
         }
       }
       .teal-border {
         border-top: 3px solid $teal;
-        margin: 2rem 40%;
+        margin: 2rem 40% ;
         @include desktop {
           display: none;
         }
       }
       ul {
         padding: 0 7% $base__space-unit;
-        @include desktop {
-          padding: 0 10% $base__space-unit;
-        }
+        // @include desktop {
+        //   padding: 0 10% $base__space-unit;
+        // }
       }
     }
     @include desktop {
@@ -279,20 +280,29 @@
       }
     }
   }
+  .vision-featured-image {
+    padding-top: $base__space-unit;
+    padding-bottom: $base__space-unit;
+  }
+
   .vision-image-two {
     display: flex;
-    img {
-      height: 100%;
+      img {
+        height: 100%;
+      }
+    @include desktop {
+      padding-bottom: $base__space-unit;
     }
   }
   .vision-wrapper-mobile {
+    flex-basis: 50%;
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
     height: auto;
     img {
       min-height: 10%;
-      padding: 0 2.5% $base__space-unit;
+      padding: 0;
     }
   }
 }
@@ -330,13 +340,10 @@
       }
     }
     .heritage-image-two {
-      height: auto;
-      max-height: 100%;
-
+      display: flex;
       img {
         min-width: 100%;
-        min-height: 100%;
-        max-height: 75vh;
+        height: 100%;
       }
 
       @include desktop {
@@ -363,4 +370,3 @@
     }
   }
 /* End of Heritage */
-}

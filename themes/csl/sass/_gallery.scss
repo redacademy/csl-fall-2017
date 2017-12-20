@@ -1,0 +1,275 @@
+.term-gallery {
+  .alt-title {
+    margin-left: 5px;
+    font-weight: 400;
+    &:before {
+      content: '[ ';
+    }
+    &:after {
+      content: ' ]';
+    }
+  }
+  .page-navigation {
+    width: 100%;
+    position: relative;
+    height: 100px;
+    img {
+      position: absolute;
+      right: 0;
+    }
+    img:first-of-type {
+      left: 0;
+    }
+    
+    a {
+      position: absolute;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 170px;
+      right: 0;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: $white;
+    }
+    @media screen and (max-width: 350px) {
+      img {
+        width: 127.5px;
+        height: 75px;
+      }
+      a {
+        width: 127.5px;
+        height: 75px;
+      }
+    }
+
+  }
+  .page-navigation:not(.first-page) {
+    a {
+      right: 0;
+    }
+    a:first-of-type {
+      left: 0;
+    }
+  }
+  .page-title{
+    width: 100%;
+    text-transform: uppercase;
+    color:$black;
+    padding-left:2.5%;
+    margin-top: 2rem;
+    @include desktop {
+      color:#FFFFFF;
+      background:$black;
+      width:25%;
+      
+    }
+  }
+  .site-main {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    padding: 2.5%;
+    .col-1 {
+      flex: 0 0 100%;
+      display: flex;
+      flex-flow: row wrap;
+      height: auto;
+      @include desktop {
+        flex: 0 0 36.75%;
+        flex-flow: column nowrap;
+
+      }
+      
+    }
+    .col-2 {
+      flex: 0 0 100%;
+      
+      display: flex;
+      align-items: stretch;
+      flex-flow: row wrap;
+      @include desktop {
+        flex-flow: column nowrap;
+        flex: 0 0 60.75%;
+      }
+    }
+    [class*="feat-"] {
+      article {
+        width:100%;
+        height: 100%;
+      }
+      width: 100%;
+      margin: 0;
+      margin-bottom: 2.5vw;
+    }
+    .feat-1 {
+      height: 160px;
+      flex: 0 0 100%;
+      @include desktop {
+        flex: 0 0 340px;
+        height: 340px;
+        article {
+          height: 340px;
+          margin-bottom: 0;
+        }
+      }
+
+    }
+    .feat-2 {
+      height: 220px;
+      flex: 0 0 48.75%;
+      margin-right: auto;
+      @include desktop {
+        margin-right: 0;
+        flex: 0 0 480px;
+        height: 480px;
+        article {
+          height: 480px;
+          margin-bottom: 0;
+        }
+      }
+    }
+    .feat-3 {
+      height: 220px;
+      flex: 0 0 48.75%;
+      @include desktop {
+        flex: 0 0 480px;
+        height: 480px;
+        article {
+          height: 480px;
+          margin-bottom: 0;
+        }
+      }
+
+    }
+    .feat-4 {
+      height: 160px;
+      flex: 0 0 100%;
+      @include desktop {
+        flex: 0 0 480px;
+        height: 480px;
+        article {
+          height: 480px;
+          margin-bottom: 0;
+        }
+      }
+
+    }
+    .feat-5 {
+      height: 120px;
+      flex: 0 0 100%;
+      @include desktop {
+        flex: 0 0 280px;
+        height: 280px;
+        margin-bottom: 3.75vw;
+        article {
+          height: 280px;
+          margin-bottom: 0;
+          
+        }
+      }
+    }
+    .feat-6 {
+      height: 150px;
+      article {
+        height: 150px;
+        margin-bottom: 0;
+      }
+      flex: 1 1 40%;
+      margin-right: 2.5vw;
+      @include desktop {
+        // flex: 0 0 0;
+        height: 640px;
+        article {
+          height: 640px;
+        }
+        margin-bottom: 0;
+      }
+
+    }
+    .feat-7 {
+      height: 150px;
+      article {
+        height: 150px;
+        margin-bottom: 0;
+      }
+      flex: 1 1 40%;
+      @include desktop {
+        // flex: 0 0 0;
+        height: 640px;
+        article {
+          height: 640px;
+        }
+        margin-bottom: 0;
+      } 
+
+    }
+    .mini-row {
+      display: flex;
+      flex-flow: column nowrap;
+      flex: 0 0 48.75%;
+      margin-right: auto;
+      @include desktop {
+        margin-right: 0;
+        flex-flow: row nowrap;
+        height: 640px;
+        flex: 0 0 640px;
+        margin-bottom: 3.75vw;
+      }
+    }
+    .feat-8 {
+      height: auto;
+      flex: 0 0 48.75%;
+      @include desktop {
+        flex: 0 0 860px;
+        height: 860px;
+        article {
+          height: 860px;
+          margin-bottom: 0;
+        }
+      }
+
+    }
+    article {
+      flex: 0 0 100%;
+      @include desktop {
+        flex: 0 0 48.75%;
+      }
+      background-size: cover;
+      background-position: center;
+      background-color: $red;
+      height: 220px;
+      @include desktop {
+        height: 400px;
+      }
+      margin-bottom: 2.5vw;
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        color: $white;
+        text-decoration: none;
+      }
+      .entry-title {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+      }
+      h2 {
+        min-height: 3rem;
+        @include desktop {
+          min-height: 6rem;
+        }
+        background: $trans-black;
+        padding: 0.5rem 1rem 0;
+        width: 100%;
+        margin-bottom: 0;
+        
+      }
+    }
+  }
+}

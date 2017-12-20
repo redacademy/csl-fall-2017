@@ -8,7 +8,7 @@
 
 <?php 
 
-	$origin_secondary_image = wp_get_attachment_image_url( get_post_meta( get_the_ID(), '_story_origin_image_id', 1 ), 'medium' );
+	$origin_secondary_image = wp_get_attachment_image( get_post_meta( get_the_ID(), '_story_origin_image_id', 1 ), 'medium-large' );
 
 ?>
 
@@ -33,7 +33,7 @@
 		</div><!-- .entry-content -->
 
 		<div class="origin-image-two">
-      <img src="<?php echo esc_url( $origin_secondary_image ); ?>" />
+      <?php echo ( $origin_secondary_image ); ?>"
 		</div>
 		
 	</section>
