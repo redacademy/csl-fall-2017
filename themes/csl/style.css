@@ -1659,7 +1659,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   height: 220px;
   margin: 1rem 0 1rem 0;
   background-size: cover;
-  overflow: hidden; }
+  overflow: hidden;
+  max-height: 110%; }
 
 .term-weekly .entry-title-wrapper {
   position: relative;
@@ -1683,28 +1684,33 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   color: white;
   padding-top: 1rem;
   padding-bottom: 1rem; }
-  .term-weekly .entry-title .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 1rem; }
-  .term-weekly .entry-title .alt-title {
-    color: #d3d3d3;
-    font-size: 1rem;
-    font-weight: lighter;
-    padding-left: 1rem; }
-  .term-weekly .entry-title .alt-title::before {
-    content: '['; }
-  .term-weekly .entry-title .alt-title::after {
-    content: ']'; }
+
+.term-weekly .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  font-size: 1rem; }
+
+.term-weekly .alt-title {
+  color: #d3d3d3;
+  font-size: 1rem;
+  font-weight: lighter;
+  padding-left: 1rem; }
+
+.term-weekly .alt-title::before {
+  content: '['; }
+
+.term-weekly .alt-title::after {
+  content: ']'; }
 
 .term-weekly .entry-title-wrapper {
   -webkit-transition: 1s;
@@ -1756,7 +1762,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 @media screen and (min-width: 750px) {
   .term-weekly .title {
     margin-top: 0.5rem;
-    height: auto; }
+    height: auto;
+    font-size: 30px; }
   .term-weekly .wrapper {
     padding-top: 3.5rem; }
   .term-weekly .weekly-event-page-title {
