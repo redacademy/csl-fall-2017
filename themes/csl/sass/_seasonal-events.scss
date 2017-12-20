@@ -71,16 +71,19 @@
 }
 
 // SEASONAL WIDGET AREA //
-.tax-event_type {
+.term-seasonal {
   .title {
     text-transform: uppercase;
     margin-bottom: 0;
   }
   .alt-title {
     margin-left: 5px;
+    font-weight: 400;
   }
   .date{
+    @include desktop {
     font-size: 25px;
+    }
   }
   .entry-content{
     margin-top: 0;
