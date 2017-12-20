@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 .hash-holder {
   position: relative;
-  top: -146px;
+  top: -100px;
 }
 
 .single-story,
@@ -198,7 +198,6 @@
       }
     }
     .entry-content {
-      // flex-basis: 50%;
       margin: 0;
       @include desktop {
         flex-basis: 50%;
@@ -248,9 +247,9 @@
       }
       ul {
         padding: 0 7% $base__space-unit;
-        // @include desktop {
-        //   padding: 0 10% $base__space-unit;
-        // }
+        @include desktop {
+          padding: 0 10% $base__space-unit;
+        }
       }
     }
     @include desktop {

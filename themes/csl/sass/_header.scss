@@ -172,7 +172,7 @@
 		
 		.main-navigation {
 			height: 5.25rem;
-			margin: 43px 0 0;
+			margin: 3px 0 0;
 
 		}
 		.menu{
@@ -197,11 +197,11 @@
 			margin-left: auto;
 		}
 		.site-header {
-			height: 147px;
+			height: 100px;
 
 		}
 		.content-area {
-			padding-top: 147px;
+			padding-top: 100px;
 		}
 		.header-widget-area{
 			position: absolute;
@@ -218,20 +218,20 @@
 	@media screen  and (min-width:750px){
 		
 		.desktop-header-logo{
-			display:block;
+			display: block;
 			position: absolute;
 			height: 4rem;
-			margin: 63px 0 0 0.75rem;
+			margin: 22px 0 0 .75rem;
 			width: auto;
 		}
 	}
 	@media screen  and (min-width:1024px){
 		
 		.desktop-header-logo{
-			display:block;
+			display: block;
 			position: absolute;
-			height: 5.25rem;
-			margin: 43px 0 0 0.75rem;
+			height: 5rem;
+			margin: 0.75rem 1rem 1rem 1rem;
 			width: auto;
 		}
 	}
