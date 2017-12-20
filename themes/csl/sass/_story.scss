@@ -6,13 +6,7 @@
   top: -146px;
 }
 
-<<<<<<< HEAD
 .single-story, .post-type-archive-story {
-=======
-
-/* Story */
->>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
-
 .single-story,
 .post-type-archive-story {
   .entry-header {
@@ -45,12 +39,8 @@
       margin-top: 0;
     }
   }
-<<<<<<< HEAD
 
 /*----- One-House -----*/
-=======
-  /* One-House */
->>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
   .one-house-container {
     .entry-header {
       padding: 0;
@@ -105,15 +95,6 @@
       background-color: yellow;
       background: url("../../images/eagle-background.png") repeat top;
       background-size: contain;
-<<<<<<< HEAD
-
-      include desktop {
-        background: url("../../images/eagle-background.png") repeat top;
-        background-size: contain;
-      }
-      
-=======
->>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       .meet-our-team-title {
         padding-top: $base__space-unit;
         h2 {
@@ -184,12 +165,8 @@
     }
   }
   /* End of One-House */
-<<<<<<< HEAD
 
 /*----- Origin -----*/
-=======
-  /* Origin */
->>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
   .origin-container {
     @include desktop {
       background-color: $teal;
@@ -312,7 +289,6 @@
     width: 100%;
     height: auto;
     img {
-<<<<<<< HEAD
       min-height: 10%;
       padding: 0 2.5% $base__space-unit;
     }
@@ -321,22 +297,6 @@
 /* End of Vision */
 
 /*----- Heritage -----*/
-=======
-      min-width: 100%;
-      min-height: 100%;
-      max-height: 75vh;
-    }
-    @include desktop {
-      flex-basis: 50%;
-      img {
-        min-height: 10%;
-        padding-right: 2.5%;
-      }
-    }
-  }
-  /* End of Vision */
-  /* Heritage */
->>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
   .heritage-container {
     @include desktop {
       background-color: $red;
@@ -368,7 +328,6 @@
       }
     }
     .heritage-image-two {
-<<<<<<< HEAD
       height: auto;
       max-height: 100%;
 
@@ -378,19 +337,13 @@
         max-height: 75vh;
       }
 
-=======
-      display: none;
->>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       @include desktop {
         order: 3;
         flex-basis: 50%;
         display: inherit;
         padding: 2.5%;
         margin-bottom: $base__space-unit;
-<<<<<<< HEAD
         width: 100%;     
-=======
->>>>>>> 37dcddb5bb951a16e17ebfd805dcead9f4097981
       }
     }
     .entry-content {
