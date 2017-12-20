@@ -6,15 +6,6 @@
   top: -146px;
 }
 
-<<<<<<< HEAD
-// .single-story, .post-type-archive-story {
-=======
-.single-story, .post-type-archive-story {
-<<<<<<< HEAD
-=======
->>>>>>> a9c8a67bad922a75ea0a12632e249a6f88a574ff
-
->>>>>>> 25f1f09deec3c96aed65e7f4bcee25dc1f3a8784
 .single-story,
 .post-type-archive-story {
   .entry-header {
@@ -207,14 +198,17 @@
       }
     }
     .entry-content {
-      flex-basis: 50%;
+      // flex-basis: 50%;
       margin: 0;
+      @include desktop {
+        flex-basis: 50%;
+      }
     }
     .origin-image-two {
+      display: flex;
       img {
         min-width: 100%;
-        min-height: 100%;
-        max-height: 75vh;
+        height: 100%;
       }
       @include desktop {
         display: none;
@@ -291,6 +285,9 @@
       img {
         height: 100%;
       }
+    @include desktop {
+      padding-bottom: $base__space-unit;
+    }
   }
   .vision-wrapper-mobile {
     flex-basis: 50%;
@@ -338,13 +335,10 @@
       }
     }
     .heritage-image-two {
-      height: auto;
-      max-height: 100%;
-
+      display: flex;
       img {
         min-width: 100%;
-        min-height: 100%;
-        max-height: 75vh;
+        height: 100%;
       }
 
       @include desktop {
@@ -371,4 +365,3 @@
     }
   }
 /* End of Heritage */
-// }
