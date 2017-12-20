@@ -1122,7 +1122,7 @@ header {
     position: relative; }
   .main-navigation {
     height: 5.25rem;
-    margin: 43px 0 0; }
+    margin: 3px 0 0; }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1149,9 +1149,9 @@ header {
     font-size: 1.25rem;
     margin-left: auto; }
   .site-header {
-    height: 147px; }
+    height: 100px; }
   .content-area {
-    padding-top: 147px; }
+    padding-top: 100px; }
   .header-widget-area {
     position: absolute;
     right: 0;
@@ -1165,15 +1165,15 @@ header {
     display: block;
     position: absolute;
     height: 4rem;
-    margin: 63px 0 0 0.75rem;
+    margin: 22px 0 0 .75rem;
     width: auto; } }
 
 @media screen and (min-width: 1024px) {
   .desktop-header-logo {
     display: block;
     position: absolute;
-    height: 5.25rem;
-    margin: 43px 0 0 0.75rem;
+    height: 5rem;
+    margin: 0.75rem 1rem 1rem 1rem;
     width: auto; } }
 
 .site-info {
@@ -1753,7 +1753,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 
 @media screen and (min-width: 750px) {
   .term-weekly .title {
-    margin-top: 0.5rem; }
+    margin-top: 0.5rem;
+    height: auto; }
   .term-weekly .wrapper {
     padding-top: 3.5rem; }
   .term-weekly .weekly-event-page-title {
@@ -1786,8 +1787,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     width: 6rem; } }
 
 @media screen and (min-width: 1024px) {
-  .term-weekly .term-weekly .entry-content {
-    top: 25%; } }
+  .term-weekly .entry-content {
+    top: 20%; } }
 
 /* NEWS */
 .post-type-archive-news .article-wrapper {
@@ -1878,7 +1879,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 --------------------------------------------------------------*/
 .hash-holder {
   position: relative;
-  top: -146px; }
+  top: -100px; }
 
 .single-story,
 .post-type-archive-story {
@@ -2822,7 +2823,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         -ms-flex: 0 0 47%;
             flex: 0 0 47%;
     width: 47%;
-    height: auto;
+    height: 47vw;
     margin-bottom: 2vw; }
 
 .owl-event-thumbs {
