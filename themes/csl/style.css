@@ -2769,6 +2769,48 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         height: 160px;
         height: auto; } }
 
+.term-gallery .page-navigation {
+  width: 100%;
+  position: relative;
+  height: 100px; }
+  .term-gallery .page-navigation img {
+    position: absolute;
+    right: 0; }
+  .term-gallery .page-navigation img:first-of-type {
+    left: 0; }
+  .term-gallery .page-navigation a {
+    position: absolute;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100px;
+    width: 170px;
+    right: 0;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #ffffff; }
+  @media screen and (max-width: 350px) {
+    .term-gallery .page-navigation img {
+      width: 127.5px;
+      height: 75px; }
+    .term-gallery .page-navigation a {
+      width: 127.5px;
+      height: 75px; } }
+
+.term-gallery .page-navigation:not(.first-page) a {
+  right: 0; }
+
+.term-gallery .page-navigation:not(.first-page) a:first-of-type {
+  left: 0; }
+
 .term-gallery .page-title {
   width: 100%;
   text-transform: uppercase;
@@ -2929,7 +2971,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     @media (min-width: 750px) {
       .term-gallery .site-main .feat-6 {
         height: 640px;
-        margin-bottom: 3.75vw; }
+        margin-bottom: 0; }
         .term-gallery .site-main .feat-6 article {
           height: 640px; } }
   .term-gallery .site-main .feat-7 {
@@ -2943,7 +2985,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     @media (min-width: 750px) {
       .term-gallery .site-main .feat-7 {
         height: 640px;
-        margin-bottom: 3.75vw; }
+        margin-bottom: 0; }
         .term-gallery .site-main .feat-7 article {
           height: 640px; } }
   .term-gallery .site-main .mini-row {
@@ -2968,7 +3010,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         height: 640px;
         -webkit-box-flex: 0;
             -ms-flex: 0 0 640px;
-                flex: 0 0 640px; } }
+                flex: 0 0 640px;
+        margin-bottom: 3.75vw; } }
   .term-gallery .site-main .feat-8 {
     height: auto;
     -webkit-box-flex: 0;

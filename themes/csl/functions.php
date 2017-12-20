@@ -201,3 +201,13 @@ function seasonal_content($limit){
 // }
 // add_action( 'admin_menu', 'remove_menus' );
 
+
+function csl_pre_get_posts( $query ) {
+	if ( is_archive() && is_tax('event_type', 'gallery') && $query->is_main_query() ) {
+		$query->set('posts_per_page', 8 );
+	}
+
+}
+
+add_action( 'pre_get_posts', 'csl_pre_get_posts' );
+

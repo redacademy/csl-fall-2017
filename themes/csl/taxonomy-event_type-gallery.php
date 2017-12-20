@@ -40,6 +40,7 @@
 		);
 	$all_posts_ids = get_posts( $ids_args );
 	
+	
 	// Make sure we have posts before continuing
 	if ( $all_posts_ids ) {
 			// Set all our posts that should move to the front 
@@ -47,11 +48,9 @@
 			// Add the array of posts to the front of our $all_posts_ids array
 			$post_ids_merged = array_merge( $move_to_front, $all_posts_ids );
 			// Make sure that we remove the ID's from their original positions
-			$reordered_ids   = array_unique( $post_ids_merged );
-	
+			$reordered_ids   = array_values( array_unique( $post_ids_merged ) );
+			
 			// Now we can run our normal query to display 12 posts per page
-			$page = get_query_var( 'paged' ) ? get_query_var( 'paged' ) : 1;
-			$offset = ( $page - 1 ) * 8;
 			$args = [
 					'post_type' 		=> 'event',
 					'tax_query'			=> array(
@@ -64,7 +63,7 @@
 					'post__in'       => $reordered_ids,
 					'orderby'        => 'post__in',
 					'order'          => 'ASC',
-					'offset'				=> $offset
+					'paged'          => get_query_var( 'paged', 1 ),
 			];
 		$query = new WP_Query( $args ); 
 	
@@ -181,9 +180,13 @@
 		
 		?>
 	</main><!-- #main -->
-<?php	
-	// csl_numbered_pagination( $query );
-  posts_nav_link();
+
+	<div class="page-navigation <?php if ( !is_paged() ) { echo 'first-page'; } ?>">
+		<img src='<?php echo get_template_directory_uri() . '/images/red-button.png'; ?>'>
+		<img src='<?php echo get_template_directory_uri() . '/images/red-button.png'; ?>'>
+	  <?php	posts_nav_link(' ', 'Prev', 'Next'); ?>
+	</div>
+<?php
 }
 	wp_reset_postdata();
 	?>
