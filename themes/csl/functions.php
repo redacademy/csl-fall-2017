@@ -123,7 +123,7 @@ function csl_starter_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 
-	if ( is_archive() && is_tax('event_type', 'seasonal') || is_tax('event_type', 'gallery') ){
+	if ( is_tax('event_type', 'seasonal') || is_singular( 'event' )  ){
 		wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), null, true );
 		wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/build/js/owl-init.min.js', array(), null, true );
 	}
