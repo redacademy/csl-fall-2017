@@ -54,5 +54,6 @@
 			</header><!-- #masthead -->
 			<div class="mobile-menu">
 				<?php wp_nav_menu (array('theme_location' => 'secondary-menu','menu_class' => 'nav'));?>
+				<div class="mobile-menu-filler"></div>
 			</div> 
 			<div id="content" class="site-content">
