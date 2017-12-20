@@ -7,6 +7,10 @@
 }
 
 .single-story, .post-type-archive-story {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 25f1f09deec3c96aed65e7f4bcee25dc1f3a8784
 .single-story,
 .post-type-archive-story {
   .entry-header {
@@ -213,8 +217,9 @@
       }
     }
   }
-  /* End of Origin */
-  /* Vision */
+/* End of Origin */
+
+/*----- Vision -----*/
   .vision-container {
     .vision-wrapper-desktop {
       @include desktop {
