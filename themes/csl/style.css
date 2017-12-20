@@ -984,7 +984,9 @@ object {
   display: block; }
 
 .header-widget-area {
-  padding-right: 1%; }
+  padding-right: 1%;
+  position: absolute;
+  right: 0; }
   .header-widget-area .csl-social-media-class {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1024,12 +1026,10 @@ object {
   display: none; }
 
 .toggle-open {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   outline: transparent;
   border: none;
   background: none;
-  z-index: 9999; }
+  z-index: 2; }
 
 .mobile-menu {
   display: none;
@@ -1075,10 +1075,7 @@ header {
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  display: flex; }
   .main-navigation .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1112,7 +1109,8 @@ header {
   margin-left: auto;
   margin-right: auto;
   left: 25%;
-  right: 25%; }
+  right: 25%;
+  z-index: 10; }
 
 .desktop-site-header {
   display: none; }
