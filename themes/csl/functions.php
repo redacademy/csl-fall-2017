@@ -191,17 +191,6 @@ function seasonal_content($limit){
   return $content;
 }
 
-//
-
-// function remove_menus(){
-  
-//   remove_menu_page( 'edit.php' );                   //Posts
-//   remove_menu_page( 'edit-comments.php' );          //Comments
-
-// }
-// add_action( 'admin_menu', 'remove_menus' );
-
-
 function csl_pre_get_posts( $query ) {
 	if ( is_archive() && is_tax('event_type', 'gallery') && $query->is_main_query() ) {
 		$query->set('posts_per_page', 8 );

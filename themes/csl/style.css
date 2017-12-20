@@ -608,6 +608,27 @@ a {
 .bypostauthor {
   display: block; }
 
+.post-template-default .entry-header {
+  padding-top: 7rem; }
+
+.post-template-default .entry-content {
+  height: 100vh;
+  margin-left: 2.5%;
+  margin-right: 2.5%; }
+
+.post-template-default .entry-title {
+  color: #fff;
+  background: #000;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -1040,8 +1061,8 @@ object {
   color: white; }
 
 .mobile-menu-filler {
-  padding: 2rem;
-  background-color: #18949a; }
+  height: 56px;
+  background-color: transparent; }
 
 header {
   display: inline-block;
