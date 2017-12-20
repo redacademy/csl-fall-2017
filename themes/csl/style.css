@@ -1753,7 +1753,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
 
 @media screen and (min-width: 750px) {
   .term-weekly .title {
-    margin-top: 0.5rem; }
+    margin-top: 0.5rem;
+    height: auto; }
   .term-weekly .wrapper {
     padding-top: 3.5rem; }
   .term-weekly .weekly-event-page-title {
@@ -1786,8 +1787,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     width: 6rem; } }
 
 @media screen and (min-width: 1024px) {
-  .term-weekly .term-weekly .entry-content {
-    top: 25%; } }
+  .term-weekly .entry-content {
+    top: 20%; } }
 
 /* NEWS */
 .post-type-archive-news .article-wrapper {
