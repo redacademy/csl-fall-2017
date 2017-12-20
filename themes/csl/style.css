@@ -3019,7 +3019,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       min-height: 3rem;
       background: rgba(0, 0, 0, 0.5);
       padding: 0.5rem 1rem 0;
-      width: 100%; }
+      width: 100%;
+      margin-bottom: 0; }
       @media (min-width: 750px) {
         .term-gallery .site-main article h2 {
           min-height: 6rem; } }

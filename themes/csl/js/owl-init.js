@@ -20,7 +20,6 @@
 
   }).on('dragged.owl.carousel', function(e) {
     // if (e.property.name != 'position') return;
-    console.log(e);
     $('.owl-event-thumbs').trigger('to.owl.carousel', [ e.page.index , 300]);
   });
   $('.owl-event-thumbs').owlCarousel({
