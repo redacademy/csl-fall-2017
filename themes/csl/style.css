@@ -2822,7 +2822,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         -ms-flex: 0 0 47%;
             flex: 0 0 47%;
     width: 47%;
-    height: auto;
+    height: 47vw;
     margin-bottom: 2vw; }
 
 .owl-event-thumbs {
