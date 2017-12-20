@@ -1807,7 +1807,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .term-weekly .type-event {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
-    height: 50vw; }
+    height: 35vw; }
   .term-weekly .entry-content {
     top: 0%;
     font-size: 1.25rem; }
