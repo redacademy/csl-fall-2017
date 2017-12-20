@@ -241,7 +241,7 @@
       }
       .teal-border {
         border-top: 3px solid $teal;
-        margin: 2rem 40%;
+        margin: 2rem 40% ;
         @include desktop {
           display: none;
         }
