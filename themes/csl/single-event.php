@@ -53,7 +53,7 @@ get_header(); ?>
 					<?php if ( $location ) : ?>
 					<span class="location"><?php echo $location ?></span>
 					<?php endif; ?>
-					<div class="content"><?php the_content(); ?></div>
+					<div class="content"><?php echo seasonal_content(80); ?></div>
 				</div><!-- .entry-content -->
 				<div class="back-button">
 					<a href="<?php echo get_term_link( 'gallery','event_type' ); ?>">Back</a>
