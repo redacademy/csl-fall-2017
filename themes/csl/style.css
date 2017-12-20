@@ -694,7 +694,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .hero-container {
-  background: url(../../images/csl-hero.png);
+  background: url(../../images/csl-hero-mobile.jpg);
   background-size: cover;
   background-position: left;
   height: 80vw;
@@ -754,23 +754,8 @@ object {
   display: none; }
 
 @media screen and (min-width: 750px) {
-  .home h2 {
-    color: white;
-    font-size: 3vw;
-    text-align: left;
-    text-transform: uppercase;
-    border: 1px solid black;
-    background-color: black;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    margin: 4rem 0; }
-  .home .desktop-bg {
-    background: url(../../images/nature-background.png);
-    background-color: #1DAFB8;
-    background-size: 150%;
-    background-repeat: no-repeat;
-    background-position: bottom right; }
   .home .hero-container {
+    background: url(../../images/csl-hero.png);
     background-position: 80%;
     height: 85vh; }
     .home .hero-container img {
@@ -778,6 +763,22 @@ object {
       top: 4%;
       right: 1%;
       left: auto; }
+    .home .hero-container h2 {
+      color: white;
+      font-size: 3vw;
+      text-align: left;
+      text-transform: uppercase;
+      border: 1px solid black;
+      background-color: black;
+      padding-right: 1rem;
+      padding-left: 1rem;
+      margin: 4rem 0; }
+    .home .hero-container .desktop-bg {
+      background: url(../../images/nature-background.png);
+      background-color: #1DAFB8;
+      background-size: 150%;
+      background-repeat: no-repeat;
+      background-position: bottom right; }
   .home .mission-eagles {
     padding: 0; }
     .home .mission-eagles .eagle-left {
@@ -974,6 +975,10 @@ object {
       -ms-flex-align: baseline;
           align-items: baseline;
   margin-right: 1rem; }
+
+@media screen and (min-width: 1024px) {
+  .sub-nav {
+    padding-top: 1rem; } }
 
 /* MOBILE HEADER	*/
 .display {
@@ -1807,7 +1812,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .term-weekly .type-event {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
-    height: 50vw; }
+    height: 32vw; }
   .term-weekly .entry-content {
     top: 0%;
     font-size: 1.25rem; }
