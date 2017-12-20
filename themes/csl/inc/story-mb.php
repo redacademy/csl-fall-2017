@@ -57,7 +57,7 @@ function story_register_story_info() {
       'data-conditional-value' => 'origin',
     ),
     'options' => array(
-      'url' => true, // Hide the text input for the url
+      'url' => false, // Hide the text input for the url
     ),
     'text'    => array(
       'add_upload_file_text' => 'Add Image' // Change upload button text. Default: "Add or Upload File"
@@ -77,7 +77,7 @@ function story_register_story_info() {
       'data-conditional-value' => 'vision',
     ),
     'options' => array(
-      'url' => true, // Hide the text input for the url
+      'url' => false, // Hide the text input for the url
     ),
     'text'    => array(
       'add_upload_file_text' => 'Add Image' // Change upload button text. Default: "Add or Upload File"
@@ -101,7 +101,7 @@ function story_register_story_info() {
       'data-conditional-value' => 'heritage',
     ),
     'options' => array(
-      'url' => true, // Hide the text input for the url
+      'url' => false, // Hide the text input for the url
     ),
     'text'    => array(
       'add_upload_file_text' => 'Add Image' // Change upload button text. Default: "Add or Upload File"
