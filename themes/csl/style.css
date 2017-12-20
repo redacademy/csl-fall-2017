@@ -694,7 +694,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .hero-container {
-  background: url(../../images/csl-hero-mobile.jpg);
+  background: url(../../images/csl-hero-mobile.png);
   background-size: cover;
   background-position: left;
   height: 80vw;
