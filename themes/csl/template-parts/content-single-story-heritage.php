@@ -21,7 +21,7 @@
     
     <div class="heritage-featured-image heritage-images">
       <?php if ( has_post_thumbnail() ) : ?>
-        <?php the_post_thumbnail( 'medium-large' ); ?>
+        <?php the_post_thumbnail( 'medium' ); ?>
       <?php endif; ?>
     </div><!-- feature-image -->
 

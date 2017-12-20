@@ -171,18 +171,17 @@
  /**
   * Display numbered post pagination instead of "Older Posts" and "Next Posts".
   */
- function red_starter_numbered_pagination() {
- 	global $wp_query;
+ function csl_numbered_pagination( $query ) {
  	$big = 999999999;
 
- 	if ( $wp_query->max_num_pages > 1 ) {
+ 	if ( $query->max_num_pages > 1 ) {
  		echo '<nav role="navigation" class="search-pagination">';
  		echo paginate_links(
  			array(
  				'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
  				'format' => '?paged=%#%',
  				'current' => max( 1, get_query_var('paged') ),
- 				'total' => $wp_query->max_num_pages,
+ 				'total' => $query->max_num_pages,
  				'prev_text' => esc_html( '&larr; Previous' ),
  				'next_text' => esc_html( 'Next &rarr;' ),
  			)
