@@ -144,7 +144,7 @@ function csl_customizer_register( $wp_customize ) {
       'priority' => 10,
       'capability' => 'edit_theme_options',
       'theme_supports' => '',
-      'title' => __( 'Add Weekday Hours/Time'),
+      'title' => __( 'Add Weekday Hours'),
       'description' => '',
       'panel' => 'panel_id',
     ) );
@@ -161,7 +161,7 @@ function csl_customizer_register( $wp_customize ) {
       'type' => 'textarea',
       'priority' => 10,
       'section' => 'weekday_hours_section',
-      'label' => __( 'Add Weekday Hours/Time'),
+      'label' => __( 'Add Weekday Hours'),
       'description' => '',
     ) );
 
@@ -170,7 +170,7 @@ function csl_customizer_register( $wp_customize ) {
       'priority' => 10,
       'capability' => 'edit_theme_options',
       'theme_supports' => '',
-      'title' => __( 'Add Weekend Dates/Time Open'),
+      'title' => __( 'Add Weekends Open'),
       'description' => '',
       'panel' => 'panel_id',
     ) );
@@ -187,7 +187,7 @@ function csl_customizer_register( $wp_customize ) {
       'type' => 'textarea',
       'priority' => 10,
       'section' => 'weekend_section',
-      'label' => __( 'Add Weekend Dates/Time'),
+      'label' => __( 'Add Weekends open'),
       'description' => '',
     ) );    
 
@@ -196,7 +196,7 @@ function csl_customizer_register( $wp_customize ) {
     'priority' => 10,
     'capability' => 'edit_theme_options',
     'theme_supports' => '',
-    'title' => __( 'Add Weekend Hours/Time'),
+    'title' => __( 'Add Weekend Hours'),
     'description' => '',
     'panel' => 'panel_id',
   ) );
@@ -213,7 +213,7 @@ function csl_customizer_register( $wp_customize ) {
     'type' => 'textarea',
     'priority' => 10,
     'section' => 'weekend_hours_section',
-    'label' => __( 'Add Weekend Hours/Time'),
+    'label' => __( 'Add Weekend Hours'),
     'description' => '',
   ) );    
   
