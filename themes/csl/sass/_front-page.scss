@@ -1,6 +1,6 @@
 //** Hero Image **//
 .hero-container {
-  background: url(../../images/csl-hero-mobile.png);
+  background: url(../../images/csl-hero.png);
   background-size: cover;
   background-position: left;
   height: 80vw;
@@ -73,7 +73,6 @@
 @media screen and (min-width: $desktop-width) {
   .home {
     .hero-container {
-      background: url(../../images/csl-hero.png);
       background-position: 80%;
       height: 85vh;
       img {
