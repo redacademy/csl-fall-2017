@@ -694,7 +694,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .hero-container {
-  background: url(../../images/csl-hero-mobile.png);
+  background: url(../../images/csl-hero.png);
   background-size: cover;
   background-position: left;
   height: 80vw;
@@ -755,7 +755,6 @@ object {
 
 @media screen and (min-width: 750px) {
   .home .hero-container {
-    background: url(../../images/csl-hero.png);
     background-position: 80%;
     height: 85vh; }
     .home .hero-container img {
