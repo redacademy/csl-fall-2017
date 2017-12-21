@@ -985,7 +985,9 @@ object {
   display: block; }
 
 .header-widget-area {
-  padding-right: 1%; }
+  padding-right: 1%;
+  position: absolute;
+  right: 0; }
   .header-widget-area .csl-social-media-class {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1025,12 +1027,10 @@ object {
   display: none; }
 
 .toggle-open {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
   outline: transparent;
   border: none;
   background: none;
-  z-index: 9999; }
+  z-index: 2; }
 
 .mobile-menu {
   display: none;
@@ -1076,10 +1076,7 @@ header {
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  display: flex; }
   .main-navigation .social-icons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1113,7 +1110,8 @@ header {
   margin-left: auto;
   margin-right: auto;
   left: 25%;
-  right: 25%; }
+  right: 25%;
+  z-index: 10; }
 
 .desktop-site-header {
   display: none; }
@@ -2427,11 +2425,11 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   display: block; }
 
 .owl-carousel.owl-loading {
-  opacity: 0;
+  opacity: 1;
   display: block; }
 
 .owl-carousel.owl-hidden {
-  opacity: 0; }
+  opacity: 1; }
 
 .owl-carousel.owl-refresh .owl-item {
   visibility: hidden; }
@@ -2480,13 +2478,13 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 @keyframes fadeOut {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 /*
  * 	Owl Carousel - Auto Height Plugin
@@ -2499,7 +2497,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 400ms ease;
   transition: opacity 400ms ease; }
 
