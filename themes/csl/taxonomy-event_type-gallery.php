@@ -12,7 +12,7 @@
 			$query1 = new WP_Query( array(  
 						'post_type' 		=> 'event',
 						'orderby' 			=> 'modified',
-						'order'					=> 'ASC',
+						'order'					=> 'DESC',
 						'tax_query'			=> array(
 							array(
 								'taxonomy' => 'featured',
