@@ -5,6 +5,8 @@
 	
 	.header-widget-area{
 		padding-right:1%;
+		position: absolute;
+    right: 0;
 		.csl-social-media-class{
 		display:flex;
 		flex-direction:row;
@@ -41,11 +43,10 @@
 		display:none;
 	}
 	.toggle-open{
-		flex-basis:100%;
 		outline:transparent;
 		border: none;
 		background:none;
-		z-index:9999;
+		z-index:2;
 	}
 
 	.mobile-menu{
@@ -84,8 +85,8 @@
 		color:white;
 	}
 	.mobile-menu-filler{
-		padding:2rem;
-		background-color:$secondary-teal;
+		height:56px;
+		background-color:transparent;
 	}
 
 	header{
@@ -94,7 +95,6 @@
 	}
 	.main-navigation{
 		display:flex;
-		justify-content: space-between;
 			.social-icons{
 			display:flex;
 			align-self:center;
@@ -128,6 +128,7 @@
 		@include center();
 		left: 25%;
 		right: 25%;
+		z-index:10;
 	}
 
 	.desktop-site-header{
