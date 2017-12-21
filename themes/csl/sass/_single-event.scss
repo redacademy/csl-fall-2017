@@ -120,7 +120,6 @@
       width: auto;
       max-width: none;
       position: absolute;
-      min-width: 100%;
     }
     @include desktop {
       img {
@@ -128,7 +127,6 @@
         width: auto;
         max-height: 100%;
         height: auto;
-        min-width: 0;
       }
     }
     
