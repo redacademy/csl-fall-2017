@@ -11,6 +11,8 @@
 		for ($i = 1; $i <= 8; $i++) {
 			$query1 = new WP_Query( array(  
 						'post_type' 		=> 'event',
+						'orderby' 			=> 'modified',
+						'order'					=> 'ASC',
 						'tax_query'			=> array(
 							array(
 								'taxonomy' => 'featured',
