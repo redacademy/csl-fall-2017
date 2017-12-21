@@ -762,22 +762,22 @@ object {
       top: 4%;
       right: 1%;
       left: auto; }
-    .home .hero-container h2 {
-      color: white;
-      font-size: 3vw;
-      text-align: left;
-      text-transform: uppercase;
-      border: 1px solid black;
-      background-color: black;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      margin: 4rem 0; }
-    .home .hero-container .desktop-bg {
-      background: url(../../images/nature-background.png);
-      background-color: #1DAFB8;
-      background-size: 150%;
-      background-repeat: no-repeat;
-      background-position: bottom right; }
+  .home h2 {
+    color: white;
+    font-size: 3vw;
+    text-align: left;
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: black;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 4rem 0; }
+  .home .desktop-bg {
+    background: url(../../images/nature-background.png);
+    background-color: #1DAFB8;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: bottom right; }
   .home .mission-eagles {
     padding: 0; }
     .home .mission-eagles .eagle-left {
@@ -2834,15 +2834,13 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     height: 350px;
     width: auto;
     max-width: none;
-    position: absolute;
-    min-width: 100%; }
+    position: absolute; }
   @media (min-width: 750px) {
     .single-event .owl-event-main img {
       max-width: 100%;
       width: auto;
       max-height: 100%;
-      height: auto;
-      min-width: 0; } }
+      height: auto; } }
 
 .thumbnail-wrapper {
   -webkit-box-ordinal-group: 4;
