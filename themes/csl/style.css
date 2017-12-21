@@ -2425,11 +2425,11 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   display: block; }
 
 .owl-carousel.owl-loading {
-  opacity: 0;
+  opacity: 1;
   display: block; }
 
 .owl-carousel.owl-hidden {
-  opacity: 0; }
+  opacity: 1; }
 
 .owl-carousel.owl-refresh .owl-item {
   visibility: hidden; }
@@ -2478,13 +2478,13 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 @keyframes fadeOut {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 /*
  * 	Owl Carousel - Auto Height Plugin
@@ -2497,7 +2497,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 400ms ease;
   transition: opacity 400ms ease; }
 
