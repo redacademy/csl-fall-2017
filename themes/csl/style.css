@@ -2814,6 +2814,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       .single-event .owl-event-main .owl-stage *:not(img) {
         height: 740px; } }
   .single-event .owl-event-main .owl-item {
+    width: 100vw !important;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2834,15 +2835,15 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     height: 350px;
     width: auto;
     max-width: none;
-    position: absolute;
-    min-width: 100%; }
+    position: absolute; }
   @media (min-width: 750px) {
-    .single-event .owl-event-main img {
-      max-width: 100%;
-      width: auto;
-      max-height: 100%;
-      height: auto;
-      min-width: 0; } }
+    .single-event .owl-event-main {
+      width: auto !important; }
+      .single-event .owl-event-main img {
+        max-width: 100%;
+        width: auto;
+        max-height: 100%;
+        height: auto; } }
 
 .thumbnail-wrapper {
   -webkit-box-ordinal-group: 4;
