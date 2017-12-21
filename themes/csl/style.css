@@ -2833,13 +2833,15 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     height: 350px;
     width: auto;
     max-width: none;
-    position: absolute; }
+    position: absolute;
+    min-width: 100%; }
   @media (min-width: 750px) {
     .single-event .owl-event-main img {
       max-width: 100%;
       width: auto;
       max-height: 100%;
-      height: auto; } }
+      height: auto;
+      min-width: 0; } }
 
 .thumbnail-wrapper {
   -webkit-box-ordinal-group: 4;
