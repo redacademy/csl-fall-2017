@@ -694,7 +694,7 @@ object {
 --------------------------------------------------------------*/
 /* Front page */
 .hero-container {
-  background: url(../../images/csl-hero-mobile.png);
+  background: url(../../images/csl-hero.png);
   background-size: cover;
   background-position: left;
   height: 80vw;
@@ -755,7 +755,6 @@ object {
 
 @media screen and (min-width: 750px) {
   .home .hero-container {
-    background: url(../../images/csl-hero.png);
     background-position: 80%;
     height: 85vh; }
     .home .hero-container img {
@@ -763,22 +762,22 @@ object {
       top: 4%;
       right: 1%;
       left: auto; }
-    .home .hero-container h2 {
-      color: white;
-      font-size: 3vw;
-      text-align: left;
-      text-transform: uppercase;
-      border: 1px solid black;
-      background-color: black;
-      padding-right: 1rem;
-      padding-left: 1rem;
-      margin: 4rem 0; }
-    .home .hero-container .desktop-bg {
-      background: url(../../images/nature-background.png);
-      background-color: #1DAFB8;
-      background-size: 150%;
-      background-repeat: no-repeat;
-      background-position: bottom right; }
+  .home h2 {
+    color: white;
+    font-size: 3vw;
+    text-align: left;
+    text-transform: uppercase;
+    border: 1px solid black;
+    background-color: black;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin: 4rem 0; }
+  .home .desktop-bg {
+    background: url(../../images/nature-background.png);
+    background-color: #1DAFB8;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: bottom right; }
   .home .mission-eagles {
     padding: 0; }
     .home .mission-eagles .eagle-left {
@@ -2010,7 +2009,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .post-type-archive-story .one-house-container .meet-our-team-wrapper {
     text-align: center;
     background-color: yellow;
-    background: url("../../images/eagle-background.png") repeat top;
+    background: url("../../images/eagle-background-yellow.png") repeat top;
     background-size: contain; }
     .single-story .one-house-container .meet-our-team-wrapper .meet-our-team-title,
     .post-type-archive-story .one-house-container .meet-our-team-wrapper .meet-our-team-title {
@@ -2200,11 +2199,11 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         display: none; } }
   .single-story .vision-container .entry-content ul,
   .post-type-archive-story .vision-container .entry-content ul {
-    padding: 0 7% 1.5rem; }
+    padding: 0 5% 1.5rem; }
     @media (min-width: 750px) {
       .single-story .vision-container .entry-content ul,
       .post-type-archive-story .vision-container .entry-content ul {
-        padding: 0 10% 1.5rem; } }
+        padding: 0 7.5% 1.5rem; } }
   @media (min-width: 750px) {
     .single-story .vision-container,
     .post-type-archive-story .vision-container {
@@ -2241,8 +2240,11 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       padding: 2.5% 0 0 2.5%; } }
   .single-story .vision-featured-image,
   .post-type-archive-story .vision-featured-image {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem; }
+    padding: 0; }
+    @media (min-width: 750px) {
+      .single-story .vision-featured-image,
+      .post-type-archive-story .vision-featured-image {
+        padding: 1.5rem 2.5%; } }
   .single-story .vision-image-two,
   .post-type-archive-story .vision-image-two {
     display: -webkit-box;
@@ -2254,7 +2256,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     @media (min-width: 750px) {
       .single-story .vision-image-two,
       .post-type-archive-story .vision-image-two {
-        padding-bottom: 1.5rem; } }
+        padding: 0 2.5% 1.5rem 2.5%; } }
   .single-story .vision-wrapper-mobile,
   .post-type-archive-story .vision-wrapper-mobile {
     -ms-flex-preferred-size: 50%;
@@ -2270,8 +2272,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     height: auto; }
     .single-story .vision-wrapper-mobile img,
     .post-type-archive-story .vision-wrapper-mobile img {
-      min-height: 10%;
-      padding: 0; }
+      min-height: 10%; }
 
 /* End of Vision */
 /*----- Heritage -----*/
@@ -2425,11 +2426,11 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   display: block; }
 
 .owl-carousel.owl-loading {
-  opacity: 0;
+  opacity: 1;
   display: block; }
 
 .owl-carousel.owl-hidden {
-  opacity: 0; }
+  opacity: 1; }
 
 .owl-carousel.owl-refresh .owl-item {
   visibility: hidden; }
@@ -2478,13 +2479,13 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 @keyframes fadeOut {
   0% {
     opacity: 1; }
   100% {
-    opacity: 0; } }
+    opacity: 1; } }
 
 /*
  * 	Owl Carousel - Auto Height Plugin
@@ -2497,7 +2498,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
  * 	Owl Carousel - Lazy Load Plugin
  */
 .owl-carousel .owl-item .owl-lazy {
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: opacity 400ms ease;
   transition: opacity 400ms ease; }
 
@@ -2935,12 +2936,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   width: 100%;
   position: relative;
   height: 100px; }
-  .term-gallery .page-navigation img {
-    position: absolute;
-    right: 0; }
-  .term-gallery .page-navigation img:first-of-type {
-    left: 0; }
   .term-gallery .page-navigation a {
+    background-image: url(../../images/red-button.png);
     position: absolute;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -2960,9 +2957,6 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     text-transform: uppercase;
     color: #ffffff; }
   @media screen and (max-width: 350px) {
-    .term-gallery .page-navigation img {
-      width: 127.5px;
-      height: 75px; }
     .term-gallery .page-navigation a {
       width: 127.5px;
       height: 75px; } }
@@ -3194,7 +3188,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
             flex: 0 0 100%;
     background-size: cover;
     background-position: center;
-    background-color: #D91F18;
+    background-color: #1DAFB8;
     height: 220px;
     margin-bottom: 2.5vw; }
     @media (min-width: 750px) {

@@ -182,8 +182,6 @@
 	</main><!-- #main -->
 
 	<div class="page-navigation <?php if ( !is_paged() ) { echo 'first-page'; } ?>">
-		<img src='<?php echo get_template_directory_uri() . '/images/red-button.png'; ?>'>
-		<img src='<?php echo get_template_directory_uri() . '/images/red-button.png'; ?>'>
 	  <?php	posts_nav_link(' ', 'Prev', 'Next'); ?>
 	</div>
 <?php
