@@ -2904,7 +2904,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
                 flex: 0 0 9vw;
         width: 9vw;
         height: 9vw;
-        margin: 0 0.5vw; }
+        margin: 0.5vw 0.5vw 0; }
         .owl-event-thumbs .owl-item:hover {
           cursor: pointer; }
       .owl-event-thumbs img {
@@ -2919,7 +2919,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
                 flex: 0 0 11vw;
         width: 11vw;
         height: 11vw;
-        margin: 0 .666vw; }
+        margin: 0.666vw .666vw 0; }
       .owl-event-thumbs img {
         width: 11vw;
         height: 11vw; } }
