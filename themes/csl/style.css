@@ -2240,7 +2240,7 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
       padding: 2.5% 0 0 2.5%; } }
   .single-story .vision-featured-image,
   .post-type-archive-story .vision-featured-image {
-    padding: 1.5rem 0; }
+    padding: 0; }
     @media (min-width: 750px) {
       .single-story .vision-featured-image,
       .post-type-archive-story .vision-featured-image {
@@ -2938,12 +2938,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   width: 100%;
   position: relative;
   height: 100px; }
-  .term-gallery .page-navigation img {
-    position: absolute;
-    right: 0; }
-  .term-gallery .page-navigation img:first-of-type {
-    left: 0; }
   .term-gallery .page-navigation a {
+    background-image: url(../../images/red-button.png);
     position: absolute;
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -2963,9 +2959,6 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     text-transform: uppercase;
     color: #ffffff; }
   @media screen and (max-width: 350px) {
-    .term-gallery .page-navigation img {
-      width: 127.5px;
-      height: 75px; }
     .term-gallery .page-navigation a {
       width: 127.5px;
       height: 75px; } }
