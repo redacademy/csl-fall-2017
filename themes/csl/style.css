@@ -2832,7 +2832,6 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   .single-event .owl-event-main img {
     height: 350px;
     width: auto;
-    position: absolute;
     max-width: none;
     position: absolute; }
   @media (min-width: 750px) {
