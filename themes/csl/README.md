@@ -1,8 +1,6 @@
-# The Avengers
+# Culture Saves Lives
 
-Jenny: Hi
-
-A WordPress starter theme for RED Academy students, forked from Underscores.
+A custom theme for Culture saves lives, forked from Underscores.
 
 ## Installation
 
@@ -22,4 +20,10 @@ Next you'll need to run `npm install` **inside your theme directory** next to in
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
-si esta bien
+## Notes
+
+### 1. For an event entry, there is a word count limit on the entry. If you publish a post, and see it cutoff with a "..." you have exceeded the word limit.
+
+### 2. Landing gallery page order is as follows:
+
+![Gallery Key](https://i.imgur.com/z6StVfe.png)
