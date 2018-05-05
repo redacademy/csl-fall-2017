@@ -12,8 +12,9 @@
 		<footer id="colophon" class="site-footer" role="contentinfo">
 			<div class="site-info">					
 				<div class="footer-container">
-					<a href="https://www.phs.ca/index.php/project/aboriginal-services/" class="footer-logo-container">
-					</a>
+					<!-- <a href=https://www.phs.ca/index.php/project/aboriginal-services/" -->
+					<div class="footer-logo-container">
+					</div>
 					<div class="footer-nav-wrapper">
 						<?php wp_nav_menu (array('theme_location' => 'footer-menu','menu_class' => 'footer-nav'));?>
 					</div>

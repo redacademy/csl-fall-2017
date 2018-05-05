@@ -28,9 +28,9 @@ function story_register_story_info() {
     ),
     'options' => array(
       'one-house' => __( 'One House', 'cmb2' ),
-		  'origin'    => __( 'Origin', 'cmb2' ),
+      'movement'    => __( 'Movement', 'cmb2' ),
 		  'vision'    => __( 'Vision', 'cmb2' ),
-      'heritage'  => __( 'Heritage', 'cmb2' ),
+      'acknowledgement'  => __( 'Acknowledgement', 'cmb2' ),
     ) ) );
     
     // Optional :
@@ -45,16 +45,16 @@ function story_register_story_info() {
     ),
   ) );
 
-  //Origin
+  //movement
   $cmb->add_field( array(
-    'name'    => 'Origin Image',
+    'name'    => 'Movement Image',
     'desc'    => 'Upload an image.',
-    'id'      => $prefix . 'origin_image',
+    'id'      => $prefix . 'movement_image',
     'type'    => 'file',
     // Optional:
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'radio',
-      'data-conditional-value' => 'origin',
+      'data-conditional-value' => 'movement',
     ),
     'options' => array(
       'url' => false, // Hide the text input for the url
@@ -89,16 +89,16 @@ function story_register_story_info() {
     'preview_size' => 'medium', // Image size to use when previewing in the admin.
   ) );
 
-//HERITAGE
+//acknowledgement
   $cmb->add_field( array(
-    'name'    => 'Heritage Image',
+    'name'    => 'acknowledgement Image',
     'desc'    => 'Upload an image.',
-    'id'      => $prefix . 'heritage_image',
+    'id'      => $prefix . 'acknowledgement_image',
     'type'    => 'file',
     // Optional:
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'radio',
-      'data-conditional-value' => 'heritage',
+      'data-conditional-value' => 'acknowledgement',
     ),
     'options' => array(
       'url' => false, // Hide the text input for the url
@@ -165,7 +165,7 @@ function story_register_story_info() {
   ) );
   //End of One House
 
-  //ORIGIN
+  //movement
  
 
 

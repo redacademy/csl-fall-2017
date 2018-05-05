@@ -10,9 +10,9 @@
 
       <ul class="sub-nav">
         <li><a href="<?php echo home_url() ?>/story/#one-house">One-House</a></li>
-        <li><a href="<?php echo home_url() ?>/story/#origin">Origin</a></li>
+        <li><a href="<?php echo home_url() ?>/story/#movement">Movement</a></li>
         <li><a href="<?php echo home_url() ?>/story/#vision">Vision</a></li>
-        <li><a href="<?php echo home_url() ?>/story/#heritage">Heritage</a></li>
+        <li><a href="<?php echo home_url() ?>/story/#acknowledgement">Acknowledgement</a></li>
 			</ul>
 		
 
@@ -23,14 +23,14 @@
 			
 				<?php get_template_part( 'template-parts/content', 'single-story-one-house' ); ?>
 
-			<?php elseif ( is_single( $story = 'origin' ) ) : ?>
-				<?php get_template_part( 'template-parts/content', 'single-story-origin' ); ?>
+			<?php elseif ( is_single( $story = 'movement' ) ) : ?>
+				<?php get_template_part( 'template-parts/content', 'single-story-movement' ); ?>
 
 			<?php elseif ( is_single( $story = 'vision' ) ) : ?>
 				<?php get_template_part( 'template-parts/content', 'single-story-vision' ); ?>
 
-			<?php elseif ( is_single( $story = 'heritage' ) ) : ?>
-				<?php get_template_part( 'template-parts/content', 'single-story-heritage' ); ?>
+			<?php elseif ( is_single( $story = 'acknowledgement' ) ) : ?>
+				<?php get_template_part( 'template-parts/content', 'single-story-acknowledgement' ); ?>
 
 			<?php endif; ?>
 

@@ -11,9 +11,9 @@ get_header(); ?>
 
       <ul class="sub-nav">
         <li><a href="#one-house">One-House</One-House></a></li>
-        <li><a href="#origin">Origin</a></li>
+        <li><a href="#movement">Movement</a></li>
         <li><a href="#vision">Vision</a></li>
-        <li><a href="#heritage">Heritage</a></li>
+        <li><a href="#acknowledgement">Acknowledgement</a></li>
       </ul>
 
 		<main id="main" class="site-main" role="main">
@@ -29,11 +29,11 @@ get_header(); ?>
 				?>
 
 			<?php
-					$origin_query = new WP_Query( array( 'name' => 'origin', 'post_type' => 'story', 'post_per_page' => 1  ) );
-				if ($origin_query -> have_posts() ) {
+					$movement_query = new WP_Query( array( 'name' => 'movement', 'post_type' => 'story', 'post_per_page' => 1  ) );
+				if ($movement_query -> have_posts() ) {
 					
-						$origin_query -> the_post(  );
-						get_template_part( 'template-parts/content-single-story-origin');
+						$movement_query -> the_post(  );
+						get_template_part( 'template-parts/content-single-story-movement');
 					}
 					wp_reset_postdata();
 				?>
@@ -49,11 +49,11 @@ get_header(); ?>
 				?>
 
 			<?php
-					$heritage_query = new WP_Query( array( 'name' => 'heritage', 'post_type' => 'story', 'post_per_page' => 1  ) );
-				if ($heritage_query -> have_posts() ) {
+					$acknowledgement_query = new WP_Query( array( 'name' => 'acknowledgement', 'post_type' => 'story', 'post_per_page' => 1  ) );
+				if ($acknowledgement_query -> have_posts() ) {
 					
-						$heritage_query -> the_post();
-						get_template_part( 'template-parts/content-single-story-heritage');
+						$acknowledgement_query -> the_post();
+						get_template_part( 'template-parts/content-single-story-acknowledgement');
 					}
 					wp_reset_postdata();
 				?>
