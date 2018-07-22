@@ -127,7 +127,7 @@ function csl_starter_scripts() {
 		wp_enqueue_script( 'owlcarousel', get_template_directory_uri() . '/owlcarousel/owl.carousel.min.js', array(), null, true );
 		wp_enqueue_script( 'owl-init', get_template_directory_uri() . '/build/js/owl-init.min.js', array(), null, true );
 	}
-	if ( is_archive() && is_tax('event_type', 'weekly') ){
+	if ( is_archive() && ( is_tax('event_type', 'weekly') || is_tax('event_type', 'anwe') )){
 		wp_enqueue_script( 'weekly-event-hover', get_template_directory_uri() . '/build/js/weekly-event-hover.min.js',array(), '20130116', true );
 	}
 	if ( is_page('contact') ){

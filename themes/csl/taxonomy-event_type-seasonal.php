@@ -11,6 +11,7 @@ get_header(); ?>
 		<ul class="sub-nav">
 			<li class="current-event-page"><a href="<?php  echo get_term_link( 'seasonal', 'event_type' ) ?>">Seasonal</a></li>
 			<li><a href="<?php echo get_term_link( 'weekly', 'event_type' ) ?>">Weekly</a></li>
+			<li><a href="<?php echo get_term_link( 'anwe', 'event_type' ) ?>">Anwe</a></li>
 		</ul>
 		<main id="main" class="site-main owl-seasonal owl-carousel owl-theme" role="main">
 

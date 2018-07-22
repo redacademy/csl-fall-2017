@@ -76,7 +76,7 @@ function event_register_event_info() {
     ),
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'taxonomy_radio',
-      'data-conditional-value' => 'weekly',
+      'data-conditional-value' => wp_json_encode( array( 'weekly', 'anwe' ) ),
     ), 
   ) );
 
@@ -113,7 +113,7 @@ function event_register_event_info() {
     'preview_size' => 'small', // Image size to use when previewing in the admin.
     'attributes' => array(
       'data-conditional-id'    => $prefix . 'taxonomy_radio',
-      'data-conditional-value' => 'weekly',
+      'data-conditional-value' => wp_json_encode( array( 'weekly', 'anwe' ) ),
     ), 
   ) );
 

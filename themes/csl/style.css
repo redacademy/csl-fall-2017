@@ -1623,19 +1623,22 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
     bottom: 10%;
     right: -55%; } }
 
-.term-weekly .weekly-event-page-title {
+.term-weekly .weekly-event-page-title,
+.term-anwe .weekly-event-page-title {
   padding-left: 2%;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.5rem;
   color: #000000; }
 
-.term-weekly .site-main {
+.term-weekly .site-main,
+.term-anwe .site-main {
   margin-left: auto;
   margin-right: auto;
   width: 95%; }
 
-.term-weekly .type-event {
+.term-weekly .type-event,
+.term-anwe .type-event {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1651,13 +1654,15 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   background-size: cover;
   overflow: hidden; }
 
-.term-weekly .entry-title-wrapper {
+.term-weekly .entry-title-wrapper,
+.term-anwe .entry-title-wrapper {
   position: relative;
   height: 118px;
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%; }
 
-.term-weekly .entry-title {
+.term-weekly .entry-title,
+.term-anwe .entry-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1674,7 +1679,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
-.term-weekly .title {
+.term-weekly .title,
+.term-anwe .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1691,13 +1697,15 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   overflow: hidden;
   max-height: 110%; }
 
-.term-weekly .entry-title-wrapper {
+.term-weekly .entry-title-wrapper,
+.term-anwe .entry-title-wrapper {
   position: relative;
   height: 118px;
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%; }
 
-.term-weekly .entry-title {
+.term-weekly .entry-title,
+.term-anwe .entry-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1714,7 +1722,8 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
-.term-weekly .title {
+.term-weekly .title,
+.term-anwe .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1729,30 +1738,36 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   margin-top: 1rem;
   font-size: 1rem; }
 
-.term-weekly .alt-title {
+.term-weekly .alt-title,
+.term-anwe .alt-title {
   color: #d3d3d3;
   font-size: 1rem;
   font-weight: lighter;
   padding-left: 1rem; }
 
-.term-weekly .alt-title::before {
+.term-weekly .alt-title::before,
+.term-anwe .alt-title::before {
   content: '['; }
 
-.term-weekly .alt-title::after {
+.term-weekly .alt-title::after,
+.term-anwe .alt-title::after {
   content: ']'; }
 
-.term-weekly .entry-title-wrapper {
+.term-weekly .entry-title-wrapper,
+.term-anwe .entry-title-wrapper {
   -webkit-transition: 1s;
   transition: 1s; }
 
-.term-weekly .entry-title-wrapper:hover {
+.term-weekly .entry-title-wrapper:hover,
+.term-anwe .entry-title-wrapper:hover {
   height: 100%;
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   -webkit-transition: 1s;
   transition: 1s; }
 
-.term-weekly .entry-content {
+.term-weekly .entry-content,
+.term-anwe .entry-content {
   position: absolute;
   left: 5%;
   color: white;
@@ -1760,49 +1775,60 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
   margin-left: auto;
   margin-right: auto;
   width: 90%; }
-  .term-weekly .entry-content .content p {
+  .term-weekly .entry-content .content p,
+  .term-anwe .entry-content .content p {
     font-size: 1rem; }
 
-.term-weekly .icon {
+.term-weekly .icon,
+.term-anwe .icon {
   width: 4rem;
   position: absolute;
   right: 0;
   top: 0; }
 
-.term-weekly .location {
+.term-weekly .location,
+.term-anwe .location {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.term-weekly .days {
+.term-weekly .days,
+.term-anwe .days {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper {
+.term-weekly .site-main .type-event:nth-child(3n+1) .entry-title-wrapper,
+.term-anwe .site-main .type-event:nth-child(3n+1) .entry-title-wrapper {
   background-color: rgba(29, 175, 184, 0.75); }
 
-.term-weekly .site-main .type-event:nth-child(3n+2) .entry-title-wrapper {
+.term-weekly .site-main .type-event:nth-child(3n+2) .entry-title-wrapper,
+.term-anwe .site-main .type-event:nth-child(3n+2) .entry-title-wrapper {
   background-color: rgba(217, 31, 24, 0.75); }
 
-.term-weekly .site-main .type-event:nth-child(3n+3) .entry-title-wrapper {
+.term-weekly .site-main .type-event:nth-child(3n+3) .entry-title-wrapper,
+.term-anwe .site-main .type-event:nth-child(3n+3) .entry-title-wrapper {
   background-color: rgba(255, 203, 51, 0.75); }
 
 @media screen and (min-width: 750px) {
-  .term-weekly .title {
+  .term-weekly .title,
+  .term-anwe .title {
     margin-top: 0.5rem;
     height: auto;
     font-size: 30px; }
-  .term-weekly .wrapper {
+  .term-weekly .wrapper,
+  .term-anwe .wrapper {
     padding-top: 3.5rem; }
-  .term-weekly .weekly-event-page-title {
+  .term-weekly .weekly-event-page-title,
+  .term-anwe .weekly-event-page-title {
     padding-left: 2.5%;
     color: #fff;
     background: #000000;
     width: 31%;
     height: 4.2rem;
     line-height: 4.2rem; }
-  .term-weekly .site-main {
+  .term-weekly .site-main,
+  .term-anwe .site-main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1812,20 +1838,25 @@ div.wpcf7-response-output, div.wpcf7-validation-errors {
         -ms-flex-pack: justify;
             justify-content: space-between;
     margin-bottom: 1rem; }
-  .term-weekly .type-event {
+  .term-weekly .type-event,
+  .term-anwe .type-event {
     -ms-flex-preferred-size: 49%;
         flex-basis: 49%;
     height: 32vw; }
-  .term-weekly .entry-content {
+  .term-weekly .entry-content,
+  .term-anwe .entry-content {
     top: 0%;
     font-size: 1.25rem; }
-    .term-weekly .entry-content .content p {
+    .term-weekly .entry-content .content p,
+    .term-anwe .entry-content .content p {
       font-size: 1.25rem; }
-  .term-weekly .icon {
+  .term-weekly .icon,
+  .term-anwe .icon {
     width: 6rem; } }
 
 @media screen and (min-width: 1024px) {
-  .term-weekly .entry-content {
+  .term-weekly .entry-content,
+  .term-anwe .entry-content {
     top: 20%; } }
 
 /* NEWS */

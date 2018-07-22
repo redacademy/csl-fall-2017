@@ -10,11 +10,11 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<ul class="sub-nav">
 			<li><a href="<?php  echo get_term_link( 'seasonal', 'event_type' ) ?>">Seasonal</a></li>
-			<li class="current-event-page"><a href="<?php echo get_term_link( 'weekly', 'event_type' ) ?>">Weekly</a></li>
-			<li><a href="<?php echo get_term_link( 'anwe', 'event_type' ) ?>">Anwe</a></li>
+			<li><a href="<?php echo get_term_link( 'weekly', 'event_type' ) ?>">Weekly</a></li>
+			<li class="current-event-page"><a href="<?php echo get_term_link( 'anwe', 'event_type' ) ?>">Anwe</a></li>
 		</ul>
 		<div class="wrapper">
-			<h1 class="weekly-event-page-title">Weekly Events</h1>
+			<h1 class="weekly-event-page-title">Community Programming</h1>
 			<main id="main" class="site-main" role="main">
 		
 
