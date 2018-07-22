@@ -19,8 +19,14 @@ get_header(); ?>
 				</header>
 			<?php endif; ?>
 
-				<div class= "hero-container">
-					<img src="<?php echo get_template_directory_uri() . '/images/csl-text.svg'; ?>" alt="hero-image">
+				<div class= "hero-container"<?php if ( is_page('home-feature') ) : 
+						echo 'style="background: url(' . "'" . wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' )[0] . "')" . '"';
+						endif;
+						?>>
+					
+						
+					
+						<img src="<?php echo get_template_directory_uri() . '/images/csl-text.svg'; ?>" alt="hero-image">
 				</div>
 
 	<section class="desktop-bg">
